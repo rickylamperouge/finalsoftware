@@ -99,22 +99,22 @@ public class AutoEvNarrativa extends JFrame {
 		contentPane.add(lblNewLabel_1);
 		
 		JScrollPane scrollPane_1 = new JScrollPane();
-		scrollPane_1.setBounds(10, 285, 896, 123);
+		scrollPane_1.setBounds(10, 285, 702, 123);
 		contentPane.add(scrollPane_1);
 		
 		table_1 = new JTable();
 		table_1.setFont(new Font("Arial", Font.PLAIN, 12));
 		table_1.setModel(new DefaultTableModel(
 			new Object[][] {
-				{"a. Participaci\u00F3n y aportaci\u00F3n a reuniones de facultad y de comit\u00E9s a nivel de Recinto.", null},
-				{"b. Servicio en comit\u00E9s y en organizaciones a nivel institucional", null},
-				{"c. Colaboraci\u00F3n en actividades estudiantiles", null},
-				{"d. Asistencia a actos oficiales", null},
-				{"e. Designaci\u00F3n como director/a de departamento, presidente de comit\u00E9 y otras", null},
-				{"f. Participaci\u00F3n en organismos de gobierno; tales como: el Senado y el Consejo Universitario ", null},
+				{"a. Participaci\u00F3n y aportaci\u00F3n a reuniones de facultad y de comit\u00E9s a nivel de Recinto."},
+				{"b. Servicio en comit\u00E9s y en organizaciones a nivel institucional"},
+				{"c. Colaboraci\u00F3n en actividades estudiantiles"},
+				{"d. Asistencia a actos oficiales"},
+				{"e. Designaci\u00F3n como director/a de departamento, presidente de comit\u00E9 y otras"},
+				{"f. Participaci\u00F3n en organismos de gobierno; tales como: el Senado y el Consejo Universitario "},
 			},
 			new String[] {
-				"Preguntas:", "Puntuaci\u00F3n:"
+				"Preguntas:"
 			}
 		));
 		table_1.getColumnModel().getColumn(0).setPreferredWidth(616);
@@ -244,9 +244,58 @@ public class AutoEvNarrativa extends JFrame {
 		lblNewLabel_6_1_1_5.setBounds(762, 219, 46, 14);
 		contentPane.add(lblNewLabel_6_1_1_5);
 		
+		JSpinner spinner9 = new JSpinner();
+		spinner9.setBounds(722, 285, 30, 20);
+		contentPane.add(spinner9);
+		
+		JSpinner spinner10 = new JSpinner();
+		spinner10.setBounds(722, 305, 30, 20);
+		contentPane.add(spinner10);
+		
+		JSpinner spinner11 = new JSpinner();
+		spinner11.setBounds(722, 326, 30, 20);
+		contentPane.add(spinner11);
+		
+		JSpinner spinner12 = new JSpinner();
+		spinner12.setBounds(722, 347, 30, 20);
+		contentPane.add(spinner12);
+		
+		JSpinner spinner13 = new JSpinner();
+		spinner13.setBounds(722, 369, 30, 20);
+		contentPane.add(spinner13);
+		
+		JSpinner spinner14 = new JSpinner();
+		spinner14.setBounds(722, 390, 30, 20);
+		contentPane.add(spinner14);
+		
+		JLabel lblNewLabel_6_2 = new JLabel("a");
+		lblNewLabel_6_2.setBounds(762, 292, 46, 14);
+		contentPane.add(lblNewLabel_6_2);
+		
+		JLabel lblNewLabel_6_1_2 = new JLabel("b");
+		lblNewLabel_6_1_2.setBounds(762, 308, 46, 14);
+		contentPane.add(lblNewLabel_6_1_2);
+		
+		JLabel lblNewLabel_6_1_1_6 = new JLabel("c");
+		lblNewLabel_6_1_1_6.setBounds(762, 329, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_6);
+		
+		JLabel lblNewLabel_6_1_1_1_1 = new JLabel("d");
+		lblNewLabel_6_1_1_1_1.setBounds(762, 350, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_1_1);
+		
+		JLabel lblNewLabel_6_1_1_2_1 = new JLabel("e");
+		lblNewLabel_6_1_1_2_1.setBounds(762, 372, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_2_1);
+		
+		JLabel lblNewLabel_6_1_1_3_1 = new JLabel("f");
+		lblNewLabel_6_1_1_3_1.setBounds(762, 393, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_3_1);
+		
 		JButton btnNewButton = new JButton("Continuar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				//Calidad Panel
 				int calidadA = (int) spinner.getValue();
 				System.out.println(calidadA);
 				int calidadB = (int) spinner_1.getValue();
@@ -265,9 +314,29 @@ public class AutoEvNarrativa extends JFrame {
 				System.out.println(calidadH);
 				int totalCalidad = calidadA + calidadB + calidadC + calidadD + calidadE + calidadF + calidadG + calidadH;
 				System.out.println(totalCalidad);
+				//Servicio panel
+				int servicioA = (int) spinner9.getValue();
+				System.out.println(servicioA);
+				int servicioB = (int) spinner10.getValue();
+				System.out.println(servicioB);
+				int servicioC = (int) spinner11.getValue();
+				System.out.println(servicioC);
+				int servicioD = (int) spinner12.getValue();
+				System.out.println(servicioD);
+				int servicioE = (int) spinner13.getValue();
+				System.out.println(servicioE);
+				int servicioF = (int) spinner14.getValue();
+				System.out.println(servicioF);
+				int totalServicio = servicioA + servicioB + servicioC + servicioD + servicioE + calidadF;
+				System.out.println(totalServicio);
+				
+				
+				
+				
 			}
 		});
 		btnNewButton.setBounds(397, 690, 89, 23);
 		contentPane.add(btnNewButton);
 	}
+	
 }
