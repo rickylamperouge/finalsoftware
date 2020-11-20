@@ -103,7 +103,6 @@ public class AutoEvNarrativa extends JFrame {
 		contentPane.add(scrollPane_1);
 		
 		table_1 = new JTable();
-		table.setRowHeight(30);
 		table_1.setFont(new Font("Arial", Font.PLAIN, 12));
 		table_1.setModel(new DefaultTableModel(
 			new Object[][] {
