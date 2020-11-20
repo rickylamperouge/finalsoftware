@@ -13,6 +13,8 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.JButton;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class AutoEvNarrativa extends JFrame {
 
@@ -77,7 +79,8 @@ public class AutoEvNarrativa extends JFrame {
 				return columnTypes[columnIndex];
 			}
 		});
-		table.getColumnModel().getColumn(0).setPreferredWidth(615);
+		table.getColumnModel().getColumn(0).setPreferredWidth(626);
+		table.getColumnModel().getColumn(0).setMinWidth(31);
 		scrollPane.setViewportView(table);
 		
 		JLabel lblNewLabel = new JLabel("Instrumento II");
@@ -165,17 +168,106 @@ public class AutoEvNarrativa extends JFrame {
 		table_3.getColumnModel().getColumn(0).setPreferredWidth(609);
 		scrollPane_3.setViewportView(table_3);
 		
-		JButton btnNewButton = new JButton("Continuar\r\n");
-		btnNewButton.setBounds(414, 686, 89, 23);
-		contentPane.add(btnNewButton);
-		
 		JLabel lblNewLabel_5 = new JLabel("Puntuaci\u00F3n");
-		lblNewLabel_5.setBounds(783, 80, 97, 14);
+		lblNewLabel_5.setBounds(783, 52, 97, 14);
 		contentPane.add(lblNewLabel_5);
 		
 		JSpinner spinner = new JSpinner();
-		spinner.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner.setBounds(722, 96, 30, 20);
+		spinner.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner.setBounds(722, 73, 30, 20);
 		contentPane.add(spinner);
+		
+		JSpinner spinner_1 = new JSpinner();
+		spinner_1.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner_1.setBounds(722, 93, 30, 20);
+		contentPane.add(spinner_1);
+		
+		JSpinner spinner_1_1 = new JSpinner();
+		spinner_1_1.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner_1_1.setBounds(722, 114, 30, 20);
+		contentPane.add(spinner_1_1);
+		
+		JSpinner spinner_1_1_1 = new JSpinner();
+		spinner_1_1_1.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner_1_1_1.setBounds(722, 135, 30, 20);
+		contentPane.add(spinner_1_1_1);
+		
+		JSpinner spinner_1_1_1_1 = new JSpinner();
+		spinner_1_1_1_1.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner_1_1_1_1.setBounds(722, 157, 30, 20);
+		contentPane.add(spinner_1_1_1_1);
+		
+		JSpinner spinner_1_1_1_1_1 = new JSpinner();
+		spinner_1_1_1_1_1.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner_1_1_1_1_1.setBounds(722, 178, 30, 20);
+		contentPane.add(spinner_1_1_1_1_1);
+		
+		JSpinner spinner_1_1_1_1_2 = new JSpinner();
+		spinner_1_1_1_1_2.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner_1_1_1_1_2.setBounds(722, 195, 30, 20);
+		contentPane.add(spinner_1_1_1_1_2);
+		
+		JSpinner spinner_1_1_1_1_3 = new JSpinner();
+		spinner_1_1_1_1_3.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner_1_1_1_1_3.setBounds(722, 216, 30, 20);
+		contentPane.add(spinner_1_1_1_1_3);
+		
+		JLabel lblNewLabel_6 = new JLabel("a");
+		lblNewLabel_6.setBounds(762, 80, 46, 14);
+		contentPane.add(lblNewLabel_6);
+		
+		JLabel lblNewLabel_6_1 = new JLabel("b");
+		lblNewLabel_6_1.setBounds(762, 96, 46, 14);
+		contentPane.add(lblNewLabel_6_1);
+		
+		JLabel lblNewLabel_6_1_1 = new JLabel("c");
+		lblNewLabel_6_1_1.setBounds(762, 117, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1);
+		
+		JLabel lblNewLabel_6_1_1_1 = new JLabel("d");
+		lblNewLabel_6_1_1_1.setBounds(762, 138, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_1);
+		
+		JLabel lblNewLabel_6_1_1_2 = new JLabel("e");
+		lblNewLabel_6_1_1_2.setBounds(762, 160, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_2);
+		
+		JLabel lblNewLabel_6_1_1_3 = new JLabel("f");
+		lblNewLabel_6_1_1_3.setBounds(762, 181, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_3);
+		
+		JLabel lblNewLabel_6_1_1_4 = new JLabel("g");
+		lblNewLabel_6_1_1_4.setBounds(762, 198, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_4);
+		
+		JLabel lblNewLabel_6_1_1_5 = new JLabel("h");
+		lblNewLabel_6_1_1_5.setBounds(762, 219, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_5);
+		
+		JButton btnNewButton = new JButton("Continuar");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				int calidadA = (int) spinner.getValue();
+				System.out.println(calidadA);
+				int calidadB = (int) spinner_1.getValue();
+				System.out.println(calidadB);
+				int calidadC = (int) spinner_1_1.getValue();
+				System.out.println(calidadC);
+				int calidadD = (int) spinner_1_1_1.getValue();
+				System.out.println(calidadD);
+				int calidadE = (int) spinner_1_1_1_1.getValue();
+				System.out.println(calidadE);
+				int calidadF = (int) spinner_1_1_1_1_1.getValue();
+				System.out.println(calidadF);
+				int calidadG = (int) spinner_1_1_1_1_2.getValue();
+				System.out.println(calidadG);
+				int calidadH = (int) spinner_1_1_1_1_3.getValue();
+				System.out.println(calidadH);
+				int totalCalidad = calidadA + calidadB + calidadC + calidadD + calidadE + calidadF + calidadG + calidadH;
+				System.out.println(totalCalidad);
+			}
+		});
+		btnNewButton.setBounds(397, 690, 89, 23);
+		contentPane.add(btnNewButton);
 	}
 }
