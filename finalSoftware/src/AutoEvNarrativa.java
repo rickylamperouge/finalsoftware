@@ -11,6 +11,8 @@ import java.awt.Font;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JButton;
+import javax.swing.JSpinner;
+import javax.swing.SpinnerNumberModel;
 
 public class AutoEvNarrativa extends JFrame {
 
@@ -48,34 +50,34 @@ public class AutoEvNarrativa extends JFrame {
 		contentPane.setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 73, 896, 176);
+		scrollPane.setBounds(10, 73, 702, 176);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
 		table.setFont(new Font("Arial", Font.PLAIN, 12));
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
-				{"a. Dominio de la disciplina que ense\u00F1a", null},
-				{"b. Habilidad para organizar el contenido y presentarlo en forma clara, l\u00F3gica e imaginativa", null},
-				{"c. . Conocimiento de los desarrollos actuales de la disciplina ", null},
-				{"d. Habilidad para relacionar la disciplina con otras esferas del conocimiento", null},
-				{"e. Habilidad para promover y ampliar el inter\u00E9s del estudiante en la disciplina", null},
-				{"f. Habilidad para desarrollar y utilizar m\u00E9todos y estrategias adecuadas, incluyendo \u201Cassessment\u201D para una ense\u00F1anza efectiva", null},
-				{"g. Disponibilidad y eficacia en la orientaci\u00F3n acad\u00E9mica del estudiante", null},
-				{"h. Posesi\u00F3n de los atributos de integridad, laboriosidad, liberalidad y objetividad en la ense\u00F1anza ", null},
+				{"a. Dominio de la disciplina que ense\u00F1a"},
+				{"b. Habilidad para organizar el contenido y presentarlo en forma clara, l\u00F3gica e imaginativa"},
+				{"c. . Conocimiento de los desarrollos actuales de la disciplina "},
+				{"d. Habilidad para relacionar la disciplina con otras esferas del conocimiento"},
+				{"e. Habilidad para promover y ampliar el inter\u00E9s del estudiante en la disciplina"},
+				{"f. Habilidad para desarrollar y utilizar m\u00E9todos y estrategias adecuadas, incluyendo \u201Cassessment\u201D para una ense\u00F1anza efectiva"},
+				{"g. Disponibilidad y eficacia en la orientaci\u00F3n acad\u00E9mica del estudiante"},
+				{"h. Posesi\u00F3n de los atributos de integridad, laboriosidad, liberalidad y objetividad en la ense\u00F1anza "},
 			},
 			new String[] {
-				"Preguntas:", "Puntuaci\u00F3n"
+				"Preguntas:"
 			}
 		) {
 			Class[] columnTypes = new Class[] {
-				String.class, Object.class
+				String.class
 			};
 			public Class getColumnClass(int columnIndex) {
 				return columnTypes[columnIndex];
 			}
 		});
-		table.getColumnModel().getColumn(0).setPreferredWidth(646);
+		table.getColumnModel().getColumn(0).setPreferredWidth(615);
 		scrollPane.setViewportView(table);
 		
 		JLabel lblNewLabel = new JLabel("Instrumento II");
@@ -166,5 +168,14 @@ public class AutoEvNarrativa extends JFrame {
 		JButton btnNewButton = new JButton("Continuar\r\n");
 		btnNewButton.setBounds(414, 686, 89, 23);
 		contentPane.add(btnNewButton);
+		
+		JLabel lblNewLabel_5 = new JLabel("Puntuaci\u00F3n");
+		lblNewLabel_5.setBounds(783, 80, 97, 14);
+		contentPane.add(lblNewLabel_5);
+		
+		JSpinner spinner = new JSpinner();
+		spinner.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner.setBounds(722, 96, 30, 20);
+		contentPane.add(spinner);
 	}
 }
