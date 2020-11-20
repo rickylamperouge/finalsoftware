@@ -61,5 +61,9 @@ public class instrumento1 extends JFrame {
 		));
 		table.getColumnModel().getColumn(0).setPreferredWidth(474);
 		scrollPane.setViewportView(table);
+		
+		JLabel lblNewLabel_1 = new JLabel("Puntuaci\u00F3n");
+		lblNewLabel_1.setBounds(747, 96, 78, 14);
+		contentPane.add(lblNewLabel_1);
 	}
 }
