@@ -1,23 +1,27 @@
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+import java.awt.Font;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 
-public class AutoEvNarrativa2 extends JFrame {
+public class AutoEvNarrativa2 {
 
-	private JPanel contentPane;
+	private JFrame frame;
+	private JTable table;
 
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	public static void Page2() {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					AutoEvNarrativa2 frame = new AutoEvNarrativa2();
-					frame.setVisible(true);
+					AutoEvNarrativa2 window = new AutoEvNarrativa2();
+					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -26,15 +30,52 @@ public class AutoEvNarrativa2 extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	 * Create the application.
 	 */
 	public AutoEvNarrativa2() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
-		setContentPane(contentPane);
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 932, 820);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Autoevaluaci\u00F3n Narrativa");
+		lblNewLabel.setFont(new Font("Arial", Font.PLAIN, 14));
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setBounds(0, 11, 916, 14);
+		frame.getContentPane().add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Crecimiento y Desarrollo Profesional");
+		lblNewLabel_1.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblNewLabel_1.setBounds(10, 36, 209, 14);
+		frame.getContentPane().add(lblNewLabel_1);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(10, 56, 896, 126);
+		frame.getContentPane().add(scrollPane);
+		
+		table = new JTable();
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+				{"a. Obtenci\u00F3n de premios, ayudas y becas ", null},
+				{"b. Nombramiento como asesor/a en agencias del gobierno estatal o federal", null},
+				{"c. Participaci\u00F3n activa en organizaciones profesionales ", null},
+				{"d. Recurso en conferencias y charlas", null},
+				{"e. Participaci\u00F3n en conferencias, congresos o institutos ", null},
+				{"f. Educaci\u00F3n post doctoral, educaci\u00F3n continua", null},
+			},
+			new String[] {
+				"Preguntas:", "Puntuaci\u00F3n"
+			}
+		));
+		table.getColumnModel().getColumn(0).setPreferredWidth(609);
+		scrollPane.setViewportView(table);
 	}
 
 }
