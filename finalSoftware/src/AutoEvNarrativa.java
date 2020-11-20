@@ -127,18 +127,18 @@ public class AutoEvNarrativa extends JFrame {
 		contentPane.add(lblNewLabel_3);
 		
 		JScrollPane scrollPane_2 = new JScrollPane();
-		scrollPane_2.setBounds(10, 444, 896, 60);
+		scrollPane_2.setBounds(10, 444, 702, 60);
 		contentPane.add(scrollPane_2);
 		
 		table_2 = new JTable();
 		table_2.setFont(new Font("Arial", Font.PLAIN, 12));
 		table_2.setModel(new DefaultTableModel(
 			new Object[][] {
-				{"a. Servicio en el campo profesional del profesor como consultor o investigador", null},
-				{"b. Servicio como recurso: conferenciante de grupos de la comunidad, participaci\u00F3n activa en gestiones pol\u00EDticas, religiosas o c\u00EDvicas", null},
+				{"a. Servicio en el campo profesional del profesor como consultor o investigador"},
+				{"b. Servicio como recurso: conferenciante de grupos de la comunidad, participaci\u00F3n activa en gestiones pol\u00EDticas, religiosas o c\u00EDvicas"},
 			},
 			new String[] {
-				"Preguntas:", "Puntuaci\u00F3n"
+				"Preguntas:"
 			}
 		));
 		table_2.getColumnModel().getColumn(0).setPreferredWidth(641);
@@ -150,20 +150,20 @@ public class AutoEvNarrativa extends JFrame {
 		contentPane.add(lblNewLabel_4);
 		
 		JScrollPane scrollPane_3 = new JScrollPane();
-		scrollPane_3.setBounds(10, 540, 896, 113);
+		scrollPane_3.setBounds(10, 540, 702, 113);
 		contentPane.add(scrollPane_3);
 		
 		table_3 = new JTable();
 		table_3.setModel(new DefaultTableModel(
 			new Object[][] {
-				{"a. Publicaciones ", null},
-				{"b. Presentaciones y trabajos creativos relacionados con la disciplina que ense\u00F1a ", null},
-				{"c. Propuestas dise\u00F1adas y presentadas ", null},
-				{"d. Concesi\u00F3n de ayudas para investigaci\u00F3n y proyectos ", null},
-				{"e. Invenciones, patentes, labor art\u00EDstica y actuaci\u00F3n ", null},
+				{"a. Publicaciones "},
+				{"b. Presentaciones y trabajos creativos relacionados con la disciplina que ense\u00F1a "},
+				{"c. Propuestas dise\u00F1adas y presentadas "},
+				{"d. Concesi\u00F3n de ayudas para investigaci\u00F3n y proyectos "},
+				{"e. Invenciones, patentes, labor art\u00EDstica y actuaci\u00F3n "},
 			},
 			new String[] {
-				"Preguntas:", "Puntuaci\u00F3n"
+				"Preguntas:"
 			}
 		));
 		table_3.getColumnModel().getColumn(0).setPreferredWidth(609);
@@ -246,26 +246,32 @@ public class AutoEvNarrativa extends JFrame {
 		contentPane.add(lblNewLabel_6_1_1_5);
 		
 		JSpinner spinner9 = new JSpinner();
+		spinner9.setModel(new SpinnerNumberModel(0, -1, 4, 1));
 		spinner9.setBounds(722, 285, 30, 20);
 		contentPane.add(spinner9);
 		
 		JSpinner spinner10 = new JSpinner();
+		spinner10.setModel(new SpinnerNumberModel(0, -1, 3, 1));
 		spinner10.setBounds(722, 305, 30, 20);
 		contentPane.add(spinner10);
 		
 		JSpinner spinner11 = new JSpinner();
+		spinner11.setModel(new SpinnerNumberModel(0, -1, 3, 1));
 		spinner11.setBounds(722, 326, 30, 20);
 		contentPane.add(spinner11);
 		
 		JSpinner spinner12 = new JSpinner();
+		spinner12.setModel(new SpinnerNumberModel(0, -1, 3, 1));
 		spinner12.setBounds(722, 347, 30, 20);
 		contentPane.add(spinner12);
 		
 		JSpinner spinner13 = new JSpinner();
+		spinner13.setModel(new SpinnerNumberModel(0, -1, 3, 1));
 		spinner13.setBounds(722, 369, 30, 20);
 		contentPane.add(spinner13);
 		
 		JSpinner spinner14 = new JSpinner();
+		spinner14.setModel(new SpinnerNumberModel(0, -1, 3, 1));
 		spinner14.setBounds(722, 390, 30, 20);
 		contentPane.add(spinner14);
 		
@@ -338,6 +344,63 @@ public class AutoEvNarrativa extends JFrame {
 		});
 		btnNewButton.setBounds(397, 690, 89, 23);
 		contentPane.add(btnNewButton);
+		
+		JSpinner spinner15 = new JSpinner();
+		spinner15.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner15.setBounds(722, 464, 30, 20);
+		contentPane.add(spinner15);
+		
+		JLabel lblNewLabel_6_2_1 = new JLabel("a");
+		lblNewLabel_6_2_1.setBounds(762, 471, 46, 14);
+		contentPane.add(lblNewLabel_6_2_1);
+		
+		JSpinner spinner16 = new JSpinner();
+		spinner16.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner16.setBounds(722, 484, 30, 20);
+		contentPane.add(spinner16);
+		
+		JLabel lblNewLabel_6_1_2_1 = new JLabel("b");
+		lblNewLabel_6_1_2_1.setBounds(762, 487, 46, 14);
+		contentPane.add(lblNewLabel_6_1_2_1);
+		
+		JSpinner spinner9_1 = new JSpinner();
+		spinner9_1.setBounds(722, 540, 30, 20);
+		contentPane.add(spinner9_1);
+		
+		JSpinner spinner10_1 = new JSpinner();
+		spinner10_1.setBounds(722, 560, 30, 20);
+		contentPane.add(spinner10_1);
+		
+		JLabel lblNewLabel_6_1_2_2 = new JLabel("b");
+		lblNewLabel_6_1_2_2.setBounds(762, 563, 46, 14);
+		contentPane.add(lblNewLabel_6_1_2_2);
+		
+		JLabel lblNewLabel_6_2_2 = new JLabel("a");
+		lblNewLabel_6_2_2.setBounds(762, 547, 46, 14);
+		contentPane.add(lblNewLabel_6_2_2);
+		
+		JSpinner spinner11_1 = new JSpinner();
+		spinner11_1.setBounds(722, 581, 30, 20);
+		contentPane.add(spinner11_1);
+		
+		JLabel lblNewLabel_6_1_1_6_1 = new JLabel("c");
+		lblNewLabel_6_1_1_6_1.setBounds(762, 584, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_6_1);
+		
+		JSpinner spinner12_1 = new JSpinner();
+		spinner12_1.setBounds(722, 602, 30, 20);
+		contentPane.add(spinner12_1);
+		
+		JLabel lblNewLabel_6_1_1_1_1_1 = new JLabel("d");
+		lblNewLabel_6_1_1_1_1_1.setBounds(762, 605, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_1_1_1);
+		
+		JSpinner spinner13_1 = new JSpinner();
+		spinner13_1.setBounds(722, 624, 30, 20);
+		contentPane.add(spinner13_1);
+		
+		JLabel lblNewLabel_6_1_1_2_1_1 = new JLabel("e");
+		lblNewLabel_6_1_1_2_1_1.setBounds(762, 627, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_2_1_1);
 	}
-	
 }
