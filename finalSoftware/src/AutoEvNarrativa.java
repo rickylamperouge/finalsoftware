@@ -297,6 +297,70 @@ public class AutoEvNarrativa extends JFrame {
 		JLabel lblNewLabel_6_1_1_3_1 = new JLabel("f");
 		lblNewLabel_6_1_1_3_1.setBounds(762, 393, 46, 14);
 		contentPane.add(lblNewLabel_6_1_1_3_1);
+	
+		
+		JSpinner spinner15 = new JSpinner();
+		spinner15.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner15.setBounds(722, 464, 30, 20);
+		contentPane.add(spinner15);
+		
+		JLabel lblNewLabel_6_2_1 = new JLabel("a");
+		lblNewLabel_6_2_1.setBounds(762, 471, 46, 14);
+		contentPane.add(lblNewLabel_6_2_1);
+		
+		JSpinner spinner16 = new JSpinner();
+		spinner16.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner16.setBounds(722, 484, 30, 20);
+		contentPane.add(spinner16);
+		
+		JLabel lblNewLabel_6_1_2_1 = new JLabel("b");
+		lblNewLabel_6_1_2_1.setBounds(762, 487, 46, 14);
+		contentPane.add(lblNewLabel_6_1_2_1);
+		
+		JSpinner spinner17 = new JSpinner();
+		spinner17.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner17.setBounds(722, 540, 30, 20);
+		contentPane.add(spinner17);
+		
+		JSpinner spinner18 = new JSpinner();
+		spinner18.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner18.setBounds(722, 560, 30, 20);
+		contentPane.add(spinner18);
+		
+		JLabel lblNewLabel_6_1_2_2 = new JLabel("b");
+		lblNewLabel_6_1_2_2.setBounds(762, 563, 46, 14);
+		contentPane.add(lblNewLabel_6_1_2_2);
+		
+		JLabel lblNewLabel_6_2_2 = new JLabel("a");
+		lblNewLabel_6_2_2.setBounds(762, 547, 46, 14);
+		contentPane.add(lblNewLabel_6_2_2);
+		
+		JSpinner spinner19 = new JSpinner();
+		spinner19.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner19.setBounds(722, 581, 30, 20);
+		contentPane.add(spinner19);
+		
+		JLabel lblNewLabel_6_1_1_6_1 = new JLabel("c");
+		lblNewLabel_6_1_1_6_1.setBounds(762, 584, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_6_1);
+		
+		JSpinner spinner20 = new JSpinner();
+		spinner20.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner20.setBounds(722, 602, 30, 20);
+		contentPane.add(spinner20);
+		
+		JLabel lblNewLabel_6_1_1_1_1_1 = new JLabel("d");
+		lblNewLabel_6_1_1_1_1_1.setBounds(762, 605, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_1_1_1);
+		
+		JSpinner spinner21 = new JSpinner();
+		spinner21.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner21.setBounds(722, 624, 30, 20);
+		contentPane.add(spinner21);
+		
+		JLabel lblNewLabel_6_1_1_2_1_1 = new JLabel("e");
+		lblNewLabel_6_1_1_2_1_1.setBounds(762, 627, 46, 14);
+		contentPane.add(lblNewLabel_6_1_1_2_1_1);
 		
 		JButton btnNewButton = new JButton("Continuar");
 		btnNewButton.addActionListener(new ActionListener() {
@@ -335,6 +399,28 @@ public class AutoEvNarrativa extends JFrame {
 				System.out.println(servicioF);
 				int totalServicio = servicioA + servicioB + servicioC + servicioD + servicioE + calidadF;
 				System.out.println(totalServicio);
+				//Servicio a la comunidad
+				int comunidadA = (int) spinner15.getValue();
+				System.out.println(comunidadA);
+				int comunidadB = (int) spinner16.getValue();
+				System.out.println(comunidadB);
+				int totalComunidad = comunidadA + comunidadB;
+				System.out.println(totalCalidad);
+				//Investigacion Panel
+				int investigacionA = (int) spinner16.getValue();
+				System.out.println(investigacionA);
+				int investigacionB = (int) spinner17.getValue();
+				System.out.println(investigacionB);
+				int investigacionC = (int) spinner18.getValue();
+				System.out.println(investigacionC);
+				int investigacionD = (int) spinner19.getValue();
+				System.out.println(investigacionD);
+				int investigacionE = (int) spinner20.getValue();
+				System.out.println(investigacionE);
+				int totalInvestigacion = investigacionA + investigacionB + investigacionC + investigacionD + investigacionE;
+				System.out.println(totalInvestigacion);
+				
+				
 				
 				
 				
@@ -343,63 +429,5 @@ public class AutoEvNarrativa extends JFrame {
 		});
 		btnNewButton.setBounds(397, 690, 89, 23);
 		contentPane.add(btnNewButton);
-		
-		JSpinner spinner15 = new JSpinner();
-		spinner15.setModel(new SpinnerNumberModel(0, -1, 3, 1));
-		spinner15.setBounds(722, 464, 30, 20);
-		contentPane.add(spinner15);
-		
-		JLabel lblNewLabel_6_2_1 = new JLabel("a");
-		lblNewLabel_6_2_1.setBounds(762, 471, 46, 14);
-		contentPane.add(lblNewLabel_6_2_1);
-		
-		JSpinner spinner16 = new JSpinner();
-		spinner16.setModel(new SpinnerNumberModel(0, -1, 3, 1));
-		spinner16.setBounds(722, 484, 30, 20);
-		contentPane.add(spinner16);
-		
-		JLabel lblNewLabel_6_1_2_1 = new JLabel("b");
-		lblNewLabel_6_1_2_1.setBounds(762, 487, 46, 14);
-		contentPane.add(lblNewLabel_6_1_2_1);
-		
-		JSpinner spinner9_1 = new JSpinner();
-		spinner9_1.setBounds(722, 540, 30, 20);
-		contentPane.add(spinner9_1);
-		
-		JSpinner spinner10_1 = new JSpinner();
-		spinner10_1.setBounds(722, 560, 30, 20);
-		contentPane.add(spinner10_1);
-		
-		JLabel lblNewLabel_6_1_2_2 = new JLabel("b");
-		lblNewLabel_6_1_2_2.setBounds(762, 563, 46, 14);
-		contentPane.add(lblNewLabel_6_1_2_2);
-		
-		JLabel lblNewLabel_6_2_2 = new JLabel("a");
-		lblNewLabel_6_2_2.setBounds(762, 547, 46, 14);
-		contentPane.add(lblNewLabel_6_2_2);
-		
-		JSpinner spinner11_1 = new JSpinner();
-		spinner11_1.setBounds(722, 581, 30, 20);
-		contentPane.add(spinner11_1);
-		
-		JLabel lblNewLabel_6_1_1_6_1 = new JLabel("c");
-		lblNewLabel_6_1_1_6_1.setBounds(762, 584, 46, 14);
-		contentPane.add(lblNewLabel_6_1_1_6_1);
-		
-		JSpinner spinner12_1 = new JSpinner();
-		spinner12_1.setBounds(722, 602, 30, 20);
-		contentPane.add(spinner12_1);
-		
-		JLabel lblNewLabel_6_1_1_1_1_1 = new JLabel("d");
-		lblNewLabel_6_1_1_1_1_1.setBounds(762, 605, 46, 14);
-		contentPane.add(lblNewLabel_6_1_1_1_1_1);
-		
-		JSpinner spinner13_1 = new JSpinner();
-		spinner13_1.setBounds(722, 624, 30, 20);
-		contentPane.add(spinner13_1);
-		
-		JLabel lblNewLabel_6_1_1_2_1_1 = new JLabel("e");
-		lblNewLabel_6_1_1_2_1_1.setBounds(762, 627, 46, 14);
-		contentPane.add(lblNewLabel_6_1_1_2_1_1);
 	}
 }

@@ -17,13 +17,9 @@ public class Cont__Inst3 extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
-	private JTextField textField_1;
 	private JTextField textField_2;
-	private JTextField textField_3;
 	private JTextField textField_4;
-	private JTextField textField_5;
 	private JTextField textField_6;
-	private JTextField textField_7;
 
 	/**
 	 * Launch the application.
@@ -78,11 +74,6 @@ public class Cont__Inst3 extends JFrame {
 		textField.setBounds(118, 34, 486, 76);
 		contentPane_1.add(textField);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(737, 42, 96, 19);
-		contentPane_1.add(textField_1);
-		
 		JLabel lblNewLabel_1_1 = new JLabel("6. Incorpora en la clase las nuevas tendencias de disciplina.");
 		lblNewLabel_1_1.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel_1_1.setBounds(20, 154, 382, 14);
@@ -97,11 +88,6 @@ public class Cont__Inst3 extends JFrame {
 		textField_2.setColumns(10);
 		textField_2.setBounds(118, 178, 486, 76);
 		contentPane_1.add(textField_2);
-		
-		textField_3 = new JTextField();
-		textField_3.setColumns(10);
-		textField_3.setBounds(737, 175, 96, 19);
-		contentPane_1.add(textField_3);
 		
 		JLabel lblNewLabel_3_1 = new JLabel("Puntuacion");
 		lblNewLabel_3_1.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -128,11 +114,6 @@ public class Cont__Inst3 extends JFrame {
 		lblNewLabel_3_1_1.setBounds(658, 351, 69, 13);
 		contentPane_1.add(lblNewLabel_3_1_1);
 		
-		textField_5 = new JTextField();
-		textField_5.setColumns(10);
-		textField_5.setBounds(737, 348, 96, 19);
-		contentPane_1.add(textField_5);
-		
 		JLabel lblNewLabel_1_1_1_1 = new JLabel("8. Utiliza el vocabulario propio de la materia.");
 		lblNewLabel_1_1_1_1.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel_1_1_1_1.setBounds(20, 499, 446, 14);
@@ -153,11 +134,6 @@ public class Cont__Inst3 extends JFrame {
 		lblNewLabel_3_1_1_1.setBounds(658, 523, 69, 13);
 		contentPane_1.add(lblNewLabel_3_1_1_1);
 		
-		textField_7 = new JTextField();
-		textField_7.setColumns(10);
-		textField_7.setBounds(737, 520, 96, 19);
-		contentPane_1.add(textField_7);
-		
 		JButton btnNewButton = new JButton("Continuar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -174,7 +150,22 @@ public class Cont__Inst3 extends JFrame {
 		
 		JSpinner spinner = new JSpinner();
 		spinner.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner.setBounds(747, 71, 30, 20);
+		spinner.setBounds(737, 62, 30, 20);
 		contentPane_1.add(spinner);
+		
+		JSpinner spinner_1 = new JSpinner();
+		spinner_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner_1.setBounds(737, 206, 30, 20);
+		contentPane_1.add(spinner_1);
+		
+		JSpinner spinner_2 = new JSpinner();
+		spinner_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner_2.setBounds(737, 379, 30, 20);
+		contentPane_1.add(spinner_2);
+		
+		JSpinner spinner_3 = new JSpinner();
+		spinner_3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner_3.setBounds(737, 551, 30, 20);
+		contentPane_1.add(spinner_3);
 	}
 }
