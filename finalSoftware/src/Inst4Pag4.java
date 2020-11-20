@@ -7,20 +7,18 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
+import javax.swing.SpinnerNumberModel;
 import javax.swing.JButton;
 import java.awt.Color;
+import javax.swing.JSpinner;
 
 public class Inst4Pag4 extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
-	private JTextField textField_1;
 	private JTextField textField_2;
-	private JTextField textField_3;
 	private JTextField textField_4;
-	private JTextField textField_5;
 	private JTextField textField_6;
-	private JTextField textField_7;
 
 	/**
 	 * Launch the application.
@@ -75,11 +73,6 @@ public class Inst4Pag4 extends JFrame {
 		lblNewLabel_3.setBounds(675, 68, 88, 13);
 		contentPane_1.add(lblNewLabel_3);
 		
-		textField_1 = new JTextField();
-		textField_1.setColumns(10);
-		textField_1.setBounds(773, 68, 96, 19);
-		contentPane_1.add(textField_1);
-		
 		JLabel lblNewLabel_4 = new JLabel("14. Mantiene un clima de respeto con los estudiantes. ");
 		lblNewLabel_4.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel_4.setBounds(10, 200, 770, 13);
@@ -100,11 +93,6 @@ public class Inst4Pag4 extends JFrame {
 		lblNewLabel_6.setBounds(675, 223, 88, 13);
 		contentPane_1.add(lblNewLabel_6);
 		
-		textField_3 = new JTextField();
-		textField_3.setColumns(10);
-		textField_3.setBounds(773, 223, 96, 19);
-		contentPane_1.add(textField_3);
-		
 		JLabel lblNewLabel_7 = new JLabel("15. Contribuye al enriquecimiento de los recursos del Centro de Acceso a la\r\nInformaci\u00F3n.");
 		lblNewLabel_7.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel_7.setBounds(10, 441, 770, 13);
@@ -124,11 +112,6 @@ public class Inst4Pag4 extends JFrame {
 		lblNewLabel_9.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel_9.setBounds(675, 464, 88, 13);
 		contentPane_1.add(lblNewLabel_9);
-		
-		textField_5 = new JTextField();
-		textField_5.setColumns(10);
-		textField_5.setBounds(773, 464, 96, 19);
-		contentPane_1.add(textField_5);
 		
 		JButton btnNewButton = new JButton("Continuar");
 		btnNewButton.setBounds(365, 752, 113, 21);
@@ -154,16 +137,31 @@ public class Inst4Pag4 extends JFrame {
 		lblNewLabel_9_1.setBounds(675, 611, 88, 13);
 		contentPane_1.add(lblNewLabel_9_1);
 		
-		textField_7 = new JTextField();
-		textField_7.setColumns(10);
-		textField_7.setBounds(773, 611, 96, 19);
-		contentPane_1.add(textField_7);
-		
 		JLabel lblIiTareasAcademicas = new JLabel("II. TAREAS ACADEMICAS");
 		lblIiTareasAcademicas.setForeground(Color.BLACK);
 		lblIiTareasAcademicas.setFont(new Font("Arial", Font.BOLD, 14));
 		lblIiTareasAcademicas.setBounds(10, 346, 427, 31);
 		contentPane_1.add(lblIiTareasAcademicas);
+		
+		JSpinner spinner = new JSpinner();
+		spinner.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner.setBounds(773, 69, 30, 20);
+		contentPane_1.add(spinner);
+		
+		JSpinner spinner_1 = new JSpinner();
+		spinner_1.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner_1.setBounds(773, 224, 30, 20);
+		contentPane_1.add(spinner_1);
+		
+		JSpinner spinner_2 = new JSpinner();
+		spinner_2.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner_2.setBounds(773, 465, 30, 20);
+		contentPane_1.add(spinner_2);
+		
+		JSpinner spinner_3 = new JSpinner();
+		spinner_3.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner_3.setBounds(773, 612, 30, 20);
+		contentPane_1.add(spinner_3);
 	}
 
 }
