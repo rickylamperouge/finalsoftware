@@ -8,7 +8,9 @@ import javax.swing.JLabel;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.JTextField;
+import javax.swing.SpinnerNumberModel;
 import javax.swing.JButton;
+import javax.swing.JSpinner;
 
 public class Inst4Pag1 extends JFrame {
 
@@ -16,17 +18,14 @@ public class Inst4Pag1 extends JFrame {
 	private JTextField textField;
 	private JLabel lblNewLabel_2;
 	private JLabel lblNewLabel_3;
-	private JTextField textField_1;
 	private JLabel lblNewLabel_4;
 	private JLabel lblNewLabel_5;
 	private JTextField textField_2;
 	private JLabel lblNewLabel_6;
-	private JTextField textField_3;
 	private JLabel lblNewLabel_7;
 	private JLabel lblNewLabel_8;
 	private JTextField textField_4;
 	private JLabel lblNewLabel_9;
-	private JTextField textField_5;
 
 	/**
 	 * Launch the application.
@@ -78,13 +77,8 @@ public class Inst4Pag1 extends JFrame {
 		
 		lblNewLabel_3 = new JLabel("Puntuacion:");
 		lblNewLabel_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_3.setBounds(675, 138, 88, 13);
+		lblNewLabel_3.setBounds(675, 126, 88, 13);
 		contentPane.add(lblNewLabel_3);
-		
-		textField_1 = new JTextField();
-		textField_1.setBounds(773, 135, 96, 19);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
 		
 		lblNewLabel_4 = new JLabel("2. Presenta evidencia sobre las diferentes formas en la que cumple con la consejeria academica ofrecida a sus estudiantes, segun definida en el Manual de la Facultad.");
 		lblNewLabel_4.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -103,13 +97,8 @@ public class Inst4Pag1 extends JFrame {
 		
 		lblNewLabel_6 = new JLabel("Puntuacion:");
 		lblNewLabel_6.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_6.setBounds(675, 288, 88, 13);
+		lblNewLabel_6.setBounds(675, 289, 88, 13);
 		contentPane.add(lblNewLabel_6);
-		
-		textField_3 = new JTextField();
-		textField_3.setColumns(10);
-		textField_3.setBounds(773, 285, 96, 19);
-		contentPane.add(textField_3);
 		
 		lblNewLabel_7 = new JLabel("3. Informa al Director del Departamento sobre sus ausencias.");
 		lblNewLabel_7.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -131,13 +120,23 @@ public class Inst4Pag1 extends JFrame {
 		lblNewLabel_9.setBounds(675, 448, 88, 13);
 		contentPane.add(lblNewLabel_9);
 		
-		textField_5 = new JTextField();
-		textField_5.setColumns(10);
-		textField_5.setBounds(773, 445, 96, 19);
-		contentPane.add(textField_5);
-		
 		JButton btnNewButton = new JButton("Continuar");
 		btnNewButton.setBounds(364, 701, 113, 21);
 		contentPane.add(btnNewButton);
+		
+		JSpinner spinner = new JSpinner();
+		spinner.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner.setBounds(773, 126, 30, 20);
+		contentPane.add(spinner);
+		
+		JSpinner spinner_1 = new JSpinner();
+		spinner_1.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner_1.setBounds(773, 289, 30, 20);
+		contentPane.add(spinner_1);
+		
+		JSpinner spinner_2 = new JSpinner();
+		spinner_2.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner_2.setBounds(773, 444, 30, 20);
+		contentPane.add(spinner_2);
 	}
 }
