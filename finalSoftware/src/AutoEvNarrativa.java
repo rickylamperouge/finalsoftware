@@ -50,7 +50,7 @@ public class AutoEvNarrativa extends JFrame {
 		contentPane.setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 73, 702, 176);
+		scrollPane.setBounds(10, 73, 702, 150);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
