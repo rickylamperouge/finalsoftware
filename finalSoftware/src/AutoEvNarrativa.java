@@ -417,7 +417,7 @@ public class AutoEvNarrativa extends JFrame {
 				System.out.println(investigacionD);
 				int investigacionE = (int) spinner20.getValue();
 				System.out.println(investigacionE);
-				int totalInvestigacion = investigacionA + investigacionB;
+				int totalInvestigacion = investigacionA + investigacionB + investigacionC + investigacionD + investigacionE;
 				System.out.println(totalInvestigacion);
 				
 				
