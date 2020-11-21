@@ -99,7 +99,7 @@ public class instrumento1 extends JFrame {
 		scrollPane_1.setViewportView(table_1);
 		
 		JLabel lblNewLabel_2_1_1 = new JLabel("Desarrollo de la Clase");
-		lblNewLabel_2_1_1.setBounds(270, 272, 134, 14);
+		lblNewLabel_2_1_1.setBounds(303, 272, 134, 14);
 		contentPane.add(lblNewLabel_2_1_1);
 		
 		JScrollPane scrollPane_2 = new JScrollPane();
