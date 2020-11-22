@@ -114,7 +114,7 @@ public class Cont__Inst3 extends JFrame {
 		lblNewLabel_3_1_1.setBounds(658, 351, 69, 13);
 		contentPane_1.add(lblNewLabel_3_1_1);
 		
-		JLabel lblNewLabel_1_1_1_1 = new JLabel("8. Utiliza el vocabulario propio de la materia.");
+		JLabel lblNewLabel_1_1_1_1 = new JLabel("8. Utiliza el vocabulario propio de la materia. bruh");
 		lblNewLabel_1_1_1_1.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel_1_1_1_1.setBounds(20, 499, 446, 14);
 		contentPane_1.add(lblNewLabel_1_1_1_1);
