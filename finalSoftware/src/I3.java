@@ -85,7 +85,7 @@ public class I3 {
 		contentPane.setForeground(Color.GREEN);
 		contentPane.setLayout(null);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		tabbedPane.addTab("New tab", null, contentPane, null);
+		tabbedPane.addTab("Pagina 1", null, contentPane, null);
 		
 		JLabel lblNewLabel_1_6 = new JLabel("Rubrica para evalucaion.");
 		lblNewLabel_1_6.setFont(new Font("Arial", Font.BOLD, 14));
@@ -136,7 +136,7 @@ public class I3 {
 		
 		
 		JPanel panel = new JPanel();
-		tabbedPane.addTab("New tab", null, panel, null);
+		tabbedPane.addTab("Pagina 2", null, panel, null);
 		panel.setLayout(null);
 		
 		JPanel contentPane_1 = new JPanel();
@@ -257,7 +257,7 @@ public class I3 {
 		contentPane_1.add(spinner_3);
 		
 		JPanel panel_1 = new JPanel();
-		tabbedPane.addTab("New tab", null, panel_1, null);
+		tabbedPane.addTab("Pagina 3", null, panel_1, null);
 		panel_1.setLayout(null);
 		
 		JPanel contentPane_1_1 = new JPanel();
@@ -381,7 +381,7 @@ public class I3 {
 		contentPane_1_1.add(spinner_3_1);
 		
 		JPanel panel_2 = new JPanel();
-		tabbedPane.addTab("New tab", null, panel_2, null);
+		tabbedPane.addTab("Pagina 4", null, panel_2, null);
 		panel_2.setLayout(null);
 		
 		JPanel contentPane_1_2 = new JPanel();
@@ -525,7 +525,7 @@ public class I3 {
 		contentPane_1_2.add(spinner_5_1_1_1_1);
 		
 		JPanel panel_3 = new JPanel();
-		tabbedPane.addTab("New tab", null, panel_3, null);
+		tabbedPane.addTab("Pagina 5", null, panel_3, null);
 		panel_3.setLayout(null);
 		
 		JPanel contentPane_1_3 = new JPanel();
@@ -670,7 +670,7 @@ public class I3 {
 		contentPane_1_3.add(spinner_5_2_1_1_1_1);
 		
 		JPanel panel_4 = new JPanel();
-		tabbedPane.addTab("New tab", null, panel_4, null);
+		tabbedPane.addTab("Pagina 6", null, panel_4, null);
 		panel_4.setLayout(null);
 		
 		JPanel contentPane_1_4 = new JPanel();
