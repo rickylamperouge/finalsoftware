@@ -148,22 +148,22 @@ public class Inst4Pag4 extends JFrame {
 		contentPane_1.add(lblIiTareasAcademicas);
 		
 		JSpinner spinner = new JSpinner();
-		spinner.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner.setBounds(773, 69, 30, 20);
 		contentPane_1.add(spinner);
 		
 		JSpinner spinner_1 = new JSpinner();
-		spinner_1.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_1.setBounds(773, 224, 30, 20);
 		contentPane_1.add(spinner_1);
 		
 		JSpinner spinner_2 = new JSpinner();
-		spinner_2.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_2.setBounds(773, 465, 30, 20);
 		contentPane_1.add(spinner_2);
 		
 		JSpinner spinner_3 = new JSpinner();
-		spinner_3.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner_3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_3.setBounds(773, 612, 30, 20);
 		contentPane_1.add(spinner_3);
 	}

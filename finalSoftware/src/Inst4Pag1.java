@@ -128,17 +128,17 @@ public class Inst4Pag1 extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JSpinner spinner = new JSpinner();
-		spinner.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner.setBounds(773, 126, 30, 20);
 		contentPane.add(spinner);
 		
 		JSpinner spinner_1 = new JSpinner();
-		spinner_1.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_1.setBounds(773, 289, 30, 20);
 		contentPane.add(spinner_1);
 		
 		JSpinner spinner_2 = new JSpinner();
-		spinner_2.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_2.setBounds(773, 444, 30, 20);
 		contentPane.add(spinner_2);
 	}
