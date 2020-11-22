@@ -14,6 +14,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JScrollPane;
 import javax.swing.SwingConstants;
+import javax.swing.SpinnerNumberModel;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+import java.awt.Color;
 
 public class I3 {
 
@@ -39,6 +43,7 @@ public class I3 {
 	private JTextField textField_28;
 	private JTextField textField_30;
 	private JTextField textField_32;
+	private JTable table;
 
 	/**
 	 * Launch the application.
@@ -77,16 +82,22 @@ public class I3 {
 		frame.getContentPane().add(tabbedPane);
 		
 		JPanel contentPane = new JPanel();
+		contentPane.setForeground(Color.GREEN);
 		contentPane.setLayout(null);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		tabbedPane.addTab("New tab", null, contentPane, null);
 		
 		JLabel lblNewLabel_1_6 = new JLabel("Rubrica para evalucaion.");
-		lblNewLabel_1_6.setFont(new Font("Arial", Font.BOLD, 12));
-		lblNewLabel_1_6.setBounds(39, 80, 146, 13);
+		lblNewLabel_1_6.setFont(new Font("Arial", Font.BOLD, 14));
+		lblNewLabel_1_6.setBounds(39, 80, 194, 21);
 		contentPane.add(lblNewLabel_1_6);
 		
 		JButton btnNewButton_5 = new JButton("Iniciar");
+		btnNewButton_5.setFont(new Font("Arial", Font.PLAIN, 12));
+		btnNewButton_5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnNewButton_5.setBounds(394, 315, 85, 21);
 		contentPane.add(btnNewButton_5);
 		
@@ -96,9 +107,31 @@ public class I3 {
 		lblNewLabel_3_6.setBounds(292, 10, 233, 53);
 		contentPane.add(lblNewLabel_3_6);
 		
-		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(39, 128, 881, 123);
-		contentPane.add(scrollPane);
+		table = new JTable();
+		table.setFont(new Font("Arial", Font.PLAIN, 12));
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+				{"4", "El profesor demuestra que cumple totalmente con el criterio y no requiere recomendaciones correctivas."},
+				{"3", "El profesor demuestra que cumple mayormente con el criterio aunque requiere de alguna recomendacion correctiva menor para que cumpla totalmente."},
+				{"2", "El profesor demuestra que cumple satisfactoriamente con el criterio y requiere varias recomendaciones correctivas para que cumpla totalmente."},
+				{"1", "El profesor cumple deficientemente con el criterio y requiere recomendaciones correctivas sustanciales."},
+				{"0", "El profesor no cumple con el criterio y requiere recomdaciones correctivas sustanciales."},
+				{"N/A", "No se puede evaluar porque el criterio no aplica a la clase visitada."},
+			},
+			new String[] {
+				"Puntuacion", "Descripcion"
+			}
+		) {
+			Class[] columnTypes = new Class[] {
+				String.class, String.class
+			};
+			public Class getColumnClass(int columnIndex) {
+				return columnTypes[columnIndex];
+			}
+		});
+		table.getColumnModel().getColumn(1).setPreferredWidth(710);
+		table.setBounds(39, 139, 777, 96);
+		contentPane.add(table);
 		
 		
 		
@@ -193,7 +226,9 @@ public class I3 {
 		contentPane_1.add(lblNewLabel_3_1_1_1);
 		
 		JButton btnNewButton = new JButton("Continuar");
-		btnNewButton.setBounds(386, 734, 100, 21);
+		btnNewButton.setFont(new Font("Arial", Font.PLAIN, 12));
+		btnNewButton.setForeground(new Color(0, 0, 0));
+		btnNewButton.setBounds(378, 690, 100, 21);
 		contentPane_1.add(btnNewButton);
 		
 		JLabel lblCriterioIiOrganizacion = new JLabel("CRITERIO I. DOMINIO DE LA DISCIPLINA");
@@ -202,18 +237,22 @@ public class I3 {
 		contentPane_1.add(lblCriterioIiOrganizacion);
 		
 		JSpinner spinner = new JSpinner();
+		spinner.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner.setBounds(737, 65, 30, 20);
 		contentPane_1.add(spinner);
 		
 		JSpinner spinner_1 = new JSpinner();
+		spinner_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_1.setBounds(737, 261, 30, 20);
 		contentPane_1.add(spinner_1);
 		
 		JSpinner spinner_2 = new JSpinner();
+		spinner_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_2.setBounds(737, 419, 30, 20);
 		contentPane_1.add(spinner_2);
 		
 		JSpinner spinner_3 = new JSpinner();
+		spinner_3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_3.setBounds(737, 579, 30, 20);
 		contentPane_1.add(spinner_3);
 		
@@ -308,6 +347,7 @@ public class I3 {
 		contentPane_1_1.add(lblNewLabel_3_1_1_1_1);
 		
 		JButton btnNewButton_1 = new JButton("Continuar");
+		btnNewButton_1.setFont(new Font("Arial", Font.PLAIN, 12));
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -321,18 +361,22 @@ public class I3 {
 		contentPane_1_1.add(lblCriterioIiOrganizacion_1);
 		
 		JSpinner spinner_4 = new JSpinner();
+		spinner_4.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_4.setBounds(737, 62, 30, 20);
 		contentPane_1_1.add(spinner_4);
 		
 		JSpinner spinner_1_1 = new JSpinner();
+		spinner_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_1_1.setBounds(737, 206, 30, 20);
 		contentPane_1_1.add(spinner_1_1);
 		
 		JSpinner spinner_2_1 = new JSpinner();
+		spinner_2_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_2_1.setBounds(737, 379, 30, 20);
 		contentPane_1_1.add(spinner_2_1);
 		
 		JSpinner spinner_3_1 = new JSpinner();
+		spinner_3_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_3_1.setBounds(737, 551, 30, 20);
 		contentPane_1_1.add(spinner_3_1);
 		
@@ -456,22 +500,27 @@ public class I3 {
 		contentPane_1_2.add(lblNewLabel_3_1_1_1_1_1);
 		
 		JSpinner spinner_5 = new JSpinner();
+		spinner_5.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_5.setBounds(737, 62, 30, 20);
 		contentPane_1_2.add(spinner_5);
 		
 		JSpinner spinner_5_1 = new JSpinner();
+		spinner_5_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_5_1.setBounds(737, 182, 30, 20);
 		contentPane_1_2.add(spinner_5_1);
 		
 		JSpinner spinner_5_1_1 = new JSpinner();
+		spinner_5_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_5_1_1.setBounds(737, 304, 30, 20);
 		contentPane_1_2.add(spinner_5_1_1);
 		
 		JSpinner spinner_5_1_1_1 = new JSpinner();
+		spinner_5_1_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_5_1_1_1.setBounds(737, 496, 30, 20);
 		contentPane_1_2.add(spinner_5_1_1_1);
 		
 		JSpinner spinner_5_1_1_1_1 = new JSpinner();
+		spinner_5_1_1_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_5_1_1_1_1.setBounds(737, 633, 30, 20);
 		contentPane_1_2.add(spinner_5_1_1_1_1);
 		
@@ -566,6 +615,7 @@ public class I3 {
 		contentPane_1_3.add(lblNewLabel_3_1_1_1_3);
 		
 		JButton btnNewButton_3 = new JButton("Continuar");
+		btnNewButton_3.setFont(new Font("Arial", Font.PLAIN, 12));
 		btnNewButton_3.setBounds(377, 709, 122, 21);
 		contentPane_1_3.add(btnNewButton_3);
 		
@@ -595,22 +645,27 @@ public class I3 {
 		contentPane_1_3.add(lblNewLabel_3_1_1_1_1_2);
 		
 		JSpinner spinner_5_2 = new JSpinner();
+		spinner_5_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_5_2.setBounds(737, 62, 30, 20);
 		contentPane_1_3.add(spinner_5_2);
 		
 		JSpinner spinner_5_2_1 = new JSpinner();
+		spinner_5_2_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_5_2_1.setBounds(737, 171, 30, 20);
 		contentPane_1_3.add(spinner_5_2_1);
 		
 		JSpinner spinner_5_2_1_1 = new JSpinner();
+		spinner_5_2_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_5_2_1_1.setBounds(737, 304, 30, 20);
 		contentPane_1_3.add(spinner_5_2_1_1);
 		
 		JSpinner spinner_5_2_1_1_1 = new JSpinner();
+		spinner_5_2_1_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_5_2_1_1_1.setBounds(737, 496, 30, 20);
 		contentPane_1_3.add(spinner_5_2_1_1_1);
 		
 		JSpinner spinner_5_2_1_1_1_1 = new JSpinner();
+		spinner_5_2_1_1_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_5_2_1_1_1_1.setBounds(737, 633, 30, 20);
 		contentPane_1_3.add(spinner_5_2_1_1_1_1);
 		
@@ -665,6 +720,11 @@ public class I3 {
 		contentPane_1_4.add(lblNewLabel_3_1_5);
 		
 		JButton btnNewButton_4 = new JButton("Guardar y Someter");
+		btnNewButton_4.setFont(new Font("Arial", Font.PLAIN, 12));
+		btnNewButton_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnNewButton_4.setBounds(294, 378, 158, 21);
 		contentPane_1_4.add(btnNewButton_4);
 		
@@ -679,10 +739,12 @@ public class I3 {
 		contentPane_1_4.add(textField_32);
 		
 		JSpinner spinner_5_2_2 = new JSpinner();
+		spinner_5_2_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_5_2_2.setBounds(737, 62, 30, 20);
 		contentPane_1_4.add(spinner_5_2_2);
 		
 		JSpinner spinner_5_2_2_1 = new JSpinner();
+		spinner_5_2_2_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_5_2_2_1.setBounds(737, 168, 30, 20);
 		contentPane_1_4.add(spinner_5_2_2_1);
 	}
