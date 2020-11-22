@@ -141,17 +141,17 @@ public class Inst4Pag3 extends JFrame {
 		contentPane_1.add(lblNewLabel_9_1);
 		
 		JSpinner spinner = new JSpinner();
-		spinner.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner.setBounds(773, 69, 30, 20);
 		contentPane_1.add(spinner);
 		
 		JSpinner spinner_1 = new JSpinner();
-		spinner_1.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_1.setBounds(773, 224, 30, 20);
 		contentPane_1.add(spinner_1);
 		
 		JSpinner spinner_2 = new JSpinner();
-		spinner_2.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_2.setBounds(773, 395, 30, 20);
 		contentPane_1.add(spinner_2);
 		
