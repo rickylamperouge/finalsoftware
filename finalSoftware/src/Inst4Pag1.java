@@ -68,6 +68,7 @@ public class Inst4Pag1 extends JFrame {
 		textField = new JTextField();
 		textField.setBounds(108, 126, 526, 97);
 		contentPane.add(textField);
+		textField.getText();
 		textField.setColumns(10);
 		
 		lblNewLabel_2 = new JLabel("Comentarios:");
@@ -93,6 +94,7 @@ public class Inst4Pag1 extends JFrame {
 		textField_2 = new JTextField();
 		textField_2.setColumns(10);
 		textField_2.setBounds(108, 288, 526, 97);
+		textField_2.getText();
 		contentPane.add(textField_2);
 		
 		lblNewLabel_6 = new JLabel("Puntuacion:");
@@ -113,6 +115,7 @@ public class Inst4Pag1 extends JFrame {
 		textField_4 = new JTextField();
 		textField_4.setColumns(10);
 		textField_4.setBounds(108, 448, 526, 97);
+		textField_4.getText();
 		contentPane.add(textField_4);
 		
 		lblNewLabel_9 = new JLabel("Puntuacion:");
