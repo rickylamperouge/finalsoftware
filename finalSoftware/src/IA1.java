@@ -13,6 +13,8 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import java.awt.Color;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class IA1 {
 
@@ -131,13 +133,13 @@ public class IA1 {
 		lblNunca.setBounds(82, 545, 240, 21);
 		panel.add(lblNunca);
 		
-		JSpinner spinner_4 = new JSpinner();
-		spinner_4.setBounds(703, 242, 30, 20);
-		panel.add(spinner_4);
+		JSpinner spinner = new JSpinner();
+		spinner.setBounds(703, 242, 30, 20);
+		panel.add(spinner);
 		
-		JSpinner spinner_4_1 = new JSpinner();
-		spinner_4_1.setBounds(703, 389, 30, 20);
-		panel.add(spinner_4_1);
+		JSpinner spinner2 = new JSpinner();
+		spinner2.setBounds(703, 389, 30, 20);
+		panel.add(spinner2);
 		
 		JPanel panel_1 = new JPanel();
 		tabbedPane.addTab("Pagina 2", null, panel_1, null);
@@ -158,20 +160,20 @@ public class IA1 {
 		lblDuranteLa.setBounds(10, 85, 528, 31);
 		panel_1.add(lblDuranteLa);
 		
-		JSpinner spinner = new JSpinner();
-		spinner.setModel(new SpinnerNumberModel(new Integer(0), null, null, new Integer(1)));
-		spinner.setBounds(804, 91, 30, 20);
-		panel_1.add(spinner);
+		JSpinner spinner3 = new JSpinner();
+		spinner3.setModel(new SpinnerNumberModel(new Integer(0), null, null, new Integer(1)));
+		spinner3.setBounds(804, 91, 30, 20);
+		panel_1.add(spinner3);
 		
 		JLabel lblElProfesor = new JLabel("4. El profesor aclarar mis dudas con respecto al contenido del prontuario.");
 		lblElProfesor.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblElProfesor.setBounds(10, 126, 528, 31);
 		panel_1.add(lblElProfesor);
 		
-		JSpinner spinner_1 = new JSpinner();
-		spinner_1.setModel(new SpinnerNumberModel(new Integer(0), null, null, new Integer(1)));
-		spinner_1.setBounds(804, 132, 30, 20);
-		panel_1.add(spinner_1);
+		JSpinner spinner4 = new JSpinner();
+		spinner4.setModel(new SpinnerNumberModel(new Integer(0), null, null, new Integer(1)));
+		spinner4.setBounds(804, 132, 30, 20);
+		panel_1.add(spinner4);
 		
 		JLabel lblNewLabel_1_1_2 = new JLabel("PARTE III. Desarrollo de las clases en linea. Conteste las preguntas 5-13.");
 		lblNewLabel_1_1_2.setFont(new Font("Arial", Font.BOLD, 14));
@@ -248,41 +250,41 @@ public class IA1 {
 		lblElProfesor_1_1_2_1_2_2.setBounds(10, 643, 557, 31);
 		panel_1.add(lblElProfesor_1_1_2_1_2_2);
 		
-		JSpinner spinner_2 = new JSpinner();
-		spinner_2.setBounds(804, 321, 30, 20);
-		panel_1.add(spinner_2);
+		JSpinner spinner5 = new JSpinner();
+		spinner5.setBounds(804, 321, 30, 20);
+		panel_1.add(spinner5);
 		
-		JSpinner spinner_2_1 = new JSpinner();
-		spinner_2_1.setBounds(804, 362, 30, 20);
-		panel_1.add(spinner_2_1);
+		JSpinner spinner6 = new JSpinner();
+		spinner6.setBounds(804, 362, 30, 20);
+		panel_1.add(spinner6);
 		
-		JSpinner spinner_2_2 = new JSpinner();
-		spinner_2_2.setBounds(804, 403, 30, 20);
-		panel_1.add(spinner_2_2);
+		JSpinner spinner7 = new JSpinner();
+		spinner7.setBounds(804, 403, 30, 20);
+		panel_1.add(spinner7);
 		
-		JSpinner spinner_2_3 = new JSpinner();
-		spinner_2_3.setBounds(804, 444, 30, 20);
-		panel_1.add(spinner_2_3);
+		JSpinner spinner8 = new JSpinner();
+		spinner8.setBounds(804, 444, 30, 20);
+		panel_1.add(spinner8);
 		
-		JSpinner spinner_2_4 = new JSpinner();
-		spinner_2_4.setBounds(804, 485, 30, 20);
-		panel_1.add(spinner_2_4);
+		JSpinner spinner9 = new JSpinner();
+		spinner9.setBounds(804, 485, 30, 20);
+		panel_1.add(spinner9);
 		
-		JSpinner spinner_2_5 = new JSpinner();
-		spinner_2_5.setBounds(804, 526, 30, 20);
-		panel_1.add(spinner_2_5);
+		JSpinner spinner10 = new JSpinner();
+		spinner10.setBounds(804, 526, 30, 20);
+		panel_1.add(spinner10);
 		
-		JSpinner spinner_2_6 = new JSpinner();
-		spinner_2_6.setBounds(804, 567, 30, 20);
-		panel_1.add(spinner_2_6);
+		JSpinner spinner11 = new JSpinner();
+		spinner11.setBounds(804, 567, 30, 20);
+		panel_1.add(spinner11);
 		
-		JSpinner spinner_2_7 = new JSpinner();
-		spinner_2_7.setBounds(804, 608, 30, 20);
-		panel_1.add(spinner_2_7);
+		JSpinner spinner12 = new JSpinner();
+		spinner12.setBounds(804, 608, 30, 20);
+		panel_1.add(spinner12);
 		
-		JSpinner spinner_2_8 = new JSpinner();
-		spinner_2_8.setBounds(804, 649, 30, 20);
-		panel_1.add(spinner_2_8);
+		JSpinner spinner13 = new JSpinner();
+		spinner13.setBounds(804, 649, 30, 20);
+		panel_1.add(spinner13);
 		
 		JPanel panel_2 = new JPanel();
 		tabbedPane.addTab("Pagina 3", null, panel_2, null);
@@ -394,49 +396,49 @@ public class IA1 {
 		lblElProfesor_1_2_1_1_1_1_1_1_2.setBounds(10, 688, 681, 31);
 		panel_2.add(lblElProfesor_1_2_1_1_1_1_1_1_2);
 		
-		JSpinner spinner_3 = new JSpinner();
-		spinner_3.setBounds(776, 219, 30, 20);
-		panel_2.add(spinner_3);
+		JSpinner spinner14 = new JSpinner();
+		spinner14.setBounds(776, 219, 30, 20);
+		panel_2.add(spinner14);
 		
-		JSpinner spinner_3_1 = new JSpinner();
-		spinner_3_1.setBounds(776, 260, 30, 20);
-		panel_2.add(spinner_3_1);
+		JSpinner spinner15 = new JSpinner();
+		spinner15.setBounds(776, 260, 30, 20);
+		panel_2.add(spinner15);
 		
-		JSpinner spinner_3_2 = new JSpinner();
-		spinner_3_2.setBounds(776, 301, 30, 20);
-		panel_2.add(spinner_3_2);
+		JSpinner spinner16 = new JSpinner();
+		spinner16.setBounds(776, 301, 30, 20);
+		panel_2.add(spinner16);
 		
-		JSpinner spinner_3_3 = new JSpinner();
-		spinner_3_3.setBounds(776, 342, 30, 20);
-		panel_2.add(spinner_3_3);
+		JSpinner spinner17 = new JSpinner();
+		spinner17.setBounds(776, 342, 30, 20);
+		panel_2.add(spinner17);
 		
-		JSpinner spinner_3_4 = new JSpinner();
-		spinner_3_4.setBounds(776, 383, 30, 20);
-		panel_2.add(spinner_3_4);
+		JSpinner spinner18 = new JSpinner();
+		spinner18.setBounds(776, 383, 30, 20);
+		panel_2.add(spinner18);
 		
-		JSpinner spinner_3_5 = new JSpinner();
-		spinner_3_5.setBounds(776, 424, 30, 20);
-		panel_2.add(spinner_3_5);
+		JSpinner spinner19 = new JSpinner();
+		spinner19.setBounds(776, 424, 30, 20);
+		panel_2.add(spinner19);
 		
-		JSpinner spinner_3_6 = new JSpinner();
-		spinner_3_6.setBounds(776, 465, 30, 20);
-		panel_2.add(spinner_3_6);
+		JSpinner spinner20 = new JSpinner();
+		spinner20.setBounds(776, 465, 30, 20);
+		panel_2.add(spinner20);
 		
-		JSpinner spinner_3_7 = new JSpinner();
-		spinner_3_7.setBounds(776, 529, 30, 20);
-		panel_2.add(spinner_3_7);
+		JSpinner spinner21 = new JSpinner();
+		spinner21.setBounds(776, 529, 30, 20);
+		panel_2.add(spinner21);
 		
-		JSpinner spinner_3_8 = new JSpinner();
-		spinner_3_8.setBounds(776, 591, 30, 20);
-		panel_2.add(spinner_3_8);
+		JSpinner spinner22 = new JSpinner();
+		spinner22.setBounds(776, 591, 30, 20);
+		panel_2.add(spinner22);
 		
-		JSpinner spinner_3_9 = new JSpinner();
-		spinner_3_9.setBounds(776, 653, 30, 20);
-		panel_2.add(spinner_3_9);
+		JSpinner spinner23 = new JSpinner();
+		spinner23.setBounds(776, 653, 30, 20);
+		panel_2.add(spinner23);
 		
-		JSpinner spinner_3_10 = new JSpinner();
-		spinner_3_10.setBounds(776, 694, 30, 20);
-		panel_2.add(spinner_3_10);
+		JSpinner spinner24 = new JSpinner();
+		spinner24.setBounds(776, 694, 30, 20);
+		panel_2.add(spinner24);
 		
 		JPanel panel_3 = new JPanel();
 		tabbedPane.addTab("Pagina 4", null, panel_3, null);
@@ -485,6 +487,48 @@ public class IA1 {
 		panel_3.add(textArea_1_1_1);
 		
 		JButton btnNewButton = new JButton("Finalizar");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				int[] instrumentoIA;
+				instrumentoIA = new int[30];
+				//Perfil del estudiante
+				instrumentoIA[0] = (int) spinner.getValue();
+				instrumentoIA[1] = (int) spinner2.getValue();
+				instrumentoIA[2] = (int) spinner3.getValue();
+				//El prontuario del curso
+				instrumentoIA[3] = (int) spinner4.getValue();
+				instrumentoIA[4] = (int) spinner5.getValue();
+				//Desarrollo de la clase en linea
+				instrumentoIA[5] = (int) spinner6.getValue();
+				instrumentoIA[6] = (int) spinner7.getValue();
+				instrumentoIA[7] = (int) spinner8.getValue();
+				instrumentoIA[8] = (int) spinner9.getValue();
+				instrumentoIA[9] = (int) spinner10.getValue();
+				instrumentoIA[10] = (int) spinner11.getValue();
+				instrumentoIA[11] = (int) spinner12.getValue();
+				instrumentoIA[12] = (int) spinner13.getValue();
+				//Gerencia del proceso de enseñanza aprendizaje
+				instrumentoIA[13] = (int) spinner14.getValue();
+				instrumentoIA[14] = (int) spinner15.getValue();
+				instrumentoIA[15] = (int) spinner16.getValue();
+				instrumentoIA[16] = (int) spinner17.getValue();
+				instrumentoIA[17] = (int) spinner18.getValue();
+				instrumentoIA[18] = (int) spinner19.getValue();
+				instrumentoIA[19] = (int) spinner20.getValue();
+				instrumentoIA[20] = (int) spinner21.getValue();
+				instrumentoIA[21] = (int) spinner22.getValue();
+				instrumentoIA[21] = (int) spinner23.getValue();
+				instrumentoIA[22] = (int) spinner24.getValue();
+				int totalIA = 0;
+				for(int i = 0; i < 23;i++)
+				{
+					totalIA = instrumentoIA[i] + totalIA;
+				}
+				System.out.println(totalIA);
+				frame.dispose();
+				
+			}
+		});
 		btnNewButton.setFont(new Font("Arial", Font.PLAIN, 12));
 		btnNewButton.setBounds(364, 713, 152, 33);
 		panel_3.add(btnNewButton);
