@@ -76,60 +76,68 @@ public class IA1 {
 		lblNewLabel_1.setBounds(72, 200, 493, 26);
 		panel.add(lblNewLabel_1);
 		
-		JRadioButton rdbtnNewRadioButton = new JRadioButton("Mas de 5 horas a la semana.");
-		rdbtnNewRadioButton.setFont(new Font("Arial", Font.PLAIN, 12));
-		rdbtnNewRadioButton.setBounds(72, 272, 402, 21);
-		panel.add(rdbtnNewRadioButton);
-		
 		JLabel lblIndicaEl = new JLabel("1. Indica el numero de horas a la semana que dedicas a trabajar en el curso en linea:");
 		lblIndicaEl.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblIndicaEl.setBounds(72, 236, 515, 31);
 		panel.add(lblIndicaEl);
-		
-		JRadioButton rdbtnDeA = new JRadioButton("De 3 a 5 horas a la semana.");
-		rdbtnDeA.setFont(new Font("Arial", Font.PLAIN, 12));
-		rdbtnDeA.setBounds(72, 295, 402, 21);
-		panel.add(rdbtnDeA);
-		
-		JRadioButton rdbtnDeA_1 = new JRadioButton("De 1 a 3 horas a la semana.");
-		rdbtnDeA_1.setFont(new Font("Arial", Font.PLAIN, 12));
-		rdbtnDeA_1.setBounds(72, 318, 402, 21);
-		panel.add(rdbtnDeA_1);
-		
-		JRadioButton rdbtnMenisDe = new JRadioButton("Menos de 1 hora a la semana.");
-		rdbtnMenisDe.setFont(new Font("Arial", Font.PLAIN, 12));
-		rdbtnMenisDe.setBounds(72, 341, 402, 21);
-		panel.add(rdbtnMenisDe);
 		
 		JLabel lblcuantasVeces = new JLabel("2. \u00BFCuantas veces te comunicas con tu profesor a traves de los medios provistos por la institucion?");
 		lblcuantasVeces.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblcuantasVeces.setBounds(72, 385, 661, 26);
 		panel.add(lblcuantasVeces);
 		
-		JRadioButton rdbtnTresVecesO = new JRadioButton("Tres veces, o mas, a la semana.");
-		rdbtnTresVecesO.setFont(new Font("Arial", Font.PLAIN, 12));
-		rdbtnTresVecesO.setBounds(72, 417, 402, 21);
-		panel.add(rdbtnTresVecesO);
+		JLabel lblMasDe = new JLabel("1. Mas de 5 horas a la semana.");
+		lblMasDe.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblMasDe.setBounds(82, 264, 240, 21);
+		panel.add(lblMasDe);
 		
-		JRadioButton rdbtnUnaVezA = new JRadioButton("Una vez a al semana.");
-		rdbtnUnaVezA.setFont(new Font("Arial", Font.PLAIN, 12));
-		rdbtnUnaVezA.setBounds(72, 440, 402, 21);
-		panel.add(rdbtnUnaVezA);
+		JLabel lblDeA = new JLabel("2. De 3 a 5 horas a la semana.");
+		lblDeA.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblDeA.setBounds(82, 295, 240, 21);
+		panel.add(lblDeA);
 		
-		JRadioButton rdbtnUnaVezAl = new JRadioButton("Una vez al mes.");
-		rdbtnUnaVezAl.setFont(new Font("Arial", Font.PLAIN, 12));
-		rdbtnUnaVezAl.setBounds(72, 463, 402, 21);
-		panel.add(rdbtnUnaVezAl);
+		JLabel lblMenosDe = new JLabel("3. Menos de 1 hora a la semana.");
+		lblMenosDe.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblMenosDe.setBounds(82, 326, 240, 21);
+		panel.add(lblMenosDe);
 		
-		JRadioButton rdbtnDeUnaA = new JRadioButton("De una a tres veces, durante el termino academico.");
-		rdbtnDeUnaA.setFont(new Font("Arial", Font.PLAIN, 12));
-		rdbtnDeUnaA.setBounds(72, 488, 402, 21);
-		panel.add(rdbtnDeUnaA);
+		JLabel lblDe = new JLabel("4. De 1 a 3 horas a la semana.");
+		lblDe.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblDe.setBounds(82, 357, 240, 21);
+		panel.add(lblDe);
 		
-		JRadioButton rdbtnNunca = new JRadioButton("Nunca.");
-		rdbtnNunca.setFont(new Font("Arial", Font.PLAIN, 12));
-		rdbtnNunca.setBounds(72, 511, 402, 21);
-		panel.add(rdbtnNunca);
+		JLabel lblMasDe_1 = new JLabel("1. Tres veces, o mas, a la semana.");
+		lblMasDe_1.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblMasDe_1.setBounds(82, 421, 240, 21);
+		panel.add(lblMasDe_1);
+		
+		JLabel lblMasDe_2 = new JLabel("2. Una vez a la semana.");
+		lblMasDe_2.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblMasDe_2.setBounds(82, 452, 240, 21);
+		panel.add(lblMasDe_2);
+		
+		JLabel lblMasDe_3 = new JLabel("3. Una vez al mes.");
+		lblMasDe_3.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblMasDe_3.setBounds(82, 483, 240, 21);
+		panel.add(lblMasDe_3);
+		
+		JLabel lblMasDe_4 = new JLabel("4. De una a tres veces, durante el termino academico.");
+		lblMasDe_4.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblMasDe_4.setBounds(82, 514, 333, 21);
+		panel.add(lblMasDe_4);
+		
+		JLabel lblNunca = new JLabel("5. Nunca.");
+		lblNunca.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblNunca.setBounds(82, 545, 240, 21);
+		panel.add(lblNunca);
+		
+		JSpinner spinner_4 = new JSpinner();
+		spinner_4.setBounds(703, 242, 30, 20);
+		panel.add(spinner_4);
+		
+		JSpinner spinner_4_1 = new JSpinner();
+		spinner_4_1.setBounds(703, 389, 30, 20);
+		panel.add(spinner_4_1);
 		
 		JPanel panel_1 = new JPanel();
 		tabbedPane.addTab("Pagina 2", null, panel_1, null);
