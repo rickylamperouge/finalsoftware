@@ -1,5 +1,3 @@
-package finalSoftware;
-
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -425,6 +423,7 @@ public class I4 {
 		textField_12.setColumns(10);
 		textField_12.setBounds(108, 223, 526, 97);
 		contentPane_1_2.add(textField_12);
+		
 		
 		JLabel lblNewLabel_6_3 = new JLabel("Puntuacion:");
 		lblNewLabel_6_3.setFont(new Font("Arial", Font.PLAIN, 12));
