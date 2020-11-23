@@ -65,11 +65,7 @@ public class Inst4Pag1 extends JFrame {
 		lblNewLabel_1.setBounds(10, 88, 313, 13);
 		contentPane.add(lblNewLabel_1);
 		
-		textField = new JTextField();
-		textField.setBounds(108, 126, 526, 97);
-		contentPane.add(textField);
-		textField.getText();
-		textField.setColumns(10);
+
 		
 		lblNewLabel_2 = new JLabel("Comentarios:");
 		lblNewLabel_2.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -91,11 +87,7 @@ public class Inst4Pag1 extends JFrame {
 		lblNewLabel_5.setBounds(10, 288, 88, 13);
 		contentPane.add(lblNewLabel_5);
 		
-		textField_2 = new JTextField();
-		textField_2.setColumns(10);
-		textField_2.setBounds(108, 288, 526, 97);
-		textField_2.getText();
-		contentPane.add(textField_2);
+
 		
 		lblNewLabel_6 = new JLabel("Puntuacion:");
 		lblNewLabel_6.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -111,6 +103,18 @@ public class Inst4Pag1 extends JFrame {
 		lblNewLabel_8.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel_8.setBounds(10, 448, 88, 13);
 		contentPane.add(lblNewLabel_8);
+		
+		textField = new JTextField();
+		textField.setBounds(108, 126, 526, 97);
+		contentPane.add(textField);
+		textField.getText();
+		textField.setColumns(10);
+		
+		textField_2 = new JTextField();
+		textField_2.setColumns(10);
+		textField_2.setBounds(108, 288, 526, 97);
+		textField_2.getText();
+		contentPane.add(textField_2);
 		
 		textField_4 = new JTextField();
 		textField_4.setColumns(10);
