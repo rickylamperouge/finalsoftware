@@ -12,6 +12,7 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import java.awt.Color;
+import javax.swing.JButton;
 
 public class IA1 {
 
@@ -52,7 +53,7 @@ public class IA1 {
 		frame.getContentPane().add(tabbedPane, BorderLayout.CENTER);
 		
 		JPanel panel = new JPanel();
-		tabbedPane.addTab("New tab", null, panel, null);
+		tabbedPane.addTab("Pagina 1", null, panel, null);
 		panel.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Instrumento I-A");
@@ -131,7 +132,7 @@ public class IA1 {
 		panel.add(rdbtnNunca);
 		
 		JPanel panel_1 = new JPanel();
-		tabbedPane.addTab("New tab", null, panel_1, null);
+		tabbedPane.addTab("Pagina 2", null, panel_1, null);
 		panel_1.setLayout(null);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("PARTE II. El prontuario del curso. Utiliza la calve para las preguntas 3 y 4:");
@@ -206,7 +207,7 @@ public class IA1 {
 		
 		JLabel lblElProfesor_1_1_1 = new JLabel("7. La forma en que el profesor presenta el contenido del curso en linea, contribuye a aumentar mi entendimineto de esta materia.");
 		lblElProfesor_1_1_1.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblElProfesor_1_1_1.setBounds(10, 397, 706, 31);
+		lblElProfesor_1_1_1.setBounds(10, 397, 751, 31);
 		panel_1.add(lblElProfesor_1_1_1);
 		
 		JLabel lblElProfesor_1_1_2 = new JLabel("8. Haste el presente, se han logrado los objetivos del curso conforme al prontuario.");
@@ -276,7 +277,7 @@ public class IA1 {
 		panel_1.add(spinner_2_8);
 		
 		JPanel panel_2 = new JPanel();
-		tabbedPane.addTab("New tab", null, panel_2, null);
+		tabbedPane.addTab("Pagina 3", null, panel_2, null);
 		panel_2.setLayout(null);
 		
 		JLabel lblNewLabel_1_1_2_1 = new JLabel("PARTE IV. Gerencia del procesos de ense\u00F1anza aprendizaje. Conteste las");
@@ -430,7 +431,54 @@ public class IA1 {
 		panel_2.add(spinner_3_10);
 		
 		JPanel panel_3 = new JPanel();
-		tabbedPane.addTab("New tab", null, panel_3, null);
+		tabbedPane.addTab("Pagina 4", null, panel_3, null);
 		panel_3.setLayout(null);
+		
+		JLabel lblNewLabel_1_1_2_1_2 = new JLabel("PARTE V. Otras Apreciaciones del Estudiante. Conteste las siguientes preguntas.");
+		lblNewLabel_1_1_2_1_2.setForeground(Color.BLACK);
+		lblNewLabel_1_1_2_1_2.setFont(new Font("Arial", Font.BOLD, 14));
+		lblNewLabel_1_1_2_1_2.setBounds(10, 10, 589, 26);
+		panel_3.add(lblNewLabel_1_1_2_1_2);
+		
+		JLabel lblqueFue = new JLabel("25. \u00BFQue fue lo que mas te gusto del curso?");
+		lblqueFue.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblqueFue.setBounds(10, 46, 268, 26);
+		panel_3.add(lblqueFue);
+		
+		JTextArea textArea = new JTextArea();
+		textArea.setBounds(10, 82, 589, 95);
+		panel_3.add(textArea);
+		
+		JLabel lblqueFue_2 = new JLabel("26. \u00BFQue fue lo que menos te gusto del curso?");
+		lblqueFue_2.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblqueFue_2.setBounds(10, 201, 290, 26);
+		panel_3.add(lblqueFue_2);
+		
+		JTextArea textArea_1 = new JTextArea();
+		textArea_1.setBounds(10, 237, 589, 95);
+		panel_3.add(textArea_1);
+		
+		JLabel lblqueFue_1_1 = new JLabel("27. \u00BFTomarias otro curso en linea con el mismo profesor o lo recomendarias a un compa\u00F1ero? Explica.");
+		lblqueFue_1_1.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblqueFue_1_1.setBounds(10, 356, 589, 26);
+		panel_3.add(lblqueFue_1_1);
+		
+		JTextArea textArea_1_1 = new JTextArea();
+		textArea_1_1.setBounds(10, 392, 589, 95);
+		panel_3.add(textArea_1_1);
+		
+		JLabel lblqueFue_1_1_1 = new JLabel("28. \u00BFQue sugerencias harias para que el profesor mejore su ense\u00F1anza y participe mas en tu aprendizaje en esta modalidad?");
+		lblqueFue_1_1_1.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblqueFue_1_1_1.setBounds(10, 512, 704, 26);
+		panel_3.add(lblqueFue_1_1_1);
+		
+		JTextArea textArea_1_1_1 = new JTextArea();
+		textArea_1_1_1.setBounds(10, 548, 589, 95);
+		panel_3.add(textArea_1_1_1);
+		
+		JButton btnNewButton = new JButton("Finalizar");
+		btnNewButton.setFont(new Font("Arial", Font.PLAIN, 12));
+		btnNewButton.setBounds(364, 713, 152, 33);
+		panel_3.add(btnNewButton);
 	}
 }
