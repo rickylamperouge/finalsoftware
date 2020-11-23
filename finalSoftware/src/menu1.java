@@ -96,5 +96,6 @@ public class menu1 extends JFrame {
 		btnInstrumento_2.setFont(new Font("Arial", Font.BOLD, 12));
 		btnInstrumento_2.setBounds(118, 216, 266, 21);
 		contentPane.add(btnInstrumento_2);
+		
 	}
 }
