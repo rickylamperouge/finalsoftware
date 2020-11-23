@@ -52,7 +52,7 @@ public class AutoEvNarrativa extends JFrame {
 		contentPane.setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 73, 702, 150);
+		scrollPane.setBounds(10, 73, 702, 143);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
@@ -61,7 +61,7 @@ public class AutoEvNarrativa extends JFrame {
 			new Object[][] {
 				{"a. Dominio de la disciplina que ense\u00F1a"},
 				{"b. Habilidad para organizar el contenido y presentarlo en forma clara, l\u00F3gica e imaginativa"},
-				{"c. . Conocimiento de los desarrollos actuales de la disciplina "},
+				{"c. Conocimiento de los desarrollos actuales de la disciplina "},
 				{"d. Habilidad para relacionar la disciplina con otras esferas del conocimiento"},
 				{"e. Habilidad para promover y ampliar el inter\u00E9s del estudiante en la disciplina"},
 				{"f. Habilidad para desarrollar y utilizar m\u00E9todos y estrategias adecuadas, incluyendo \u201Cassessment\u201D para una ense\u00F1anza efectiva"},
@@ -84,6 +84,7 @@ public class AutoEvNarrativa extends JFrame {
 		scrollPane.setViewportView(table);
 		
 		JLabel lblNewLabel = new JLabel("Instrumento II");
+		lblNewLabel.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel.setBounds(0, 11, 916, 30);
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		contentPane.add(lblNewLabel);
@@ -153,6 +154,7 @@ public class AutoEvNarrativa extends JFrame {
 		contentPane.add(scrollPane_3);
 		
 		table_3 = new JTable();
+		table_3.setFont(new Font("Arial", Font.PLAIN, 12));
 		table_3.setModel(new DefaultTableModel(
 			new Object[][] {
 				{"a. Publicaciones "},
@@ -169,6 +171,7 @@ public class AutoEvNarrativa extends JFrame {
 		scrollPane_3.setViewportView(table_3);
 		
 		JLabel lblNewLabel_5 = new JLabel("Puntuaci\u00F3n");
+		lblNewLabel_5.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel_5.setBounds(783, 52, 97, 14);
 		contentPane.add(lblNewLabel_5);
 		
@@ -429,5 +432,20 @@ public class AutoEvNarrativa extends JFrame {
 		});
 		btnNewButton.setBounds(397, 690, 89, 23);
 		contentPane.add(btnNewButton);
+		
+		JLabel lblNewLabel_5_1 = new JLabel("Puntuaci\u00F3n");
+		lblNewLabel_5_1.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblNewLabel_5_1.setBounds(783, 243, 97, 14);
+		contentPane.add(lblNewLabel_5_1);
+		
+		JLabel lblNewLabel_5_2 = new JLabel("Puntuaci\u00F3n");
+		lblNewLabel_5_2.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblNewLabel_5_2.setBounds(762, 420, 97, 14);
+		contentPane.add(lblNewLabel_5_2);
+		
+		JLabel lblNewLabel_5_3 = new JLabel("Puntuaci\u00F3n");
+		lblNewLabel_5_3.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblNewLabel_5_3.setBounds(762, 529, 97, 14);
+		contentPane.add(lblNewLabel_5_3);
 	}
 }
