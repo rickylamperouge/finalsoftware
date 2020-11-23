@@ -488,5 +488,6 @@ public class IA1 {
 		btnNewButton.setFont(new Font("Arial", Font.PLAIN, 12));
 		btnNewButton.setBounds(364, 713, 152, 33);
 		panel_3.add(btnNewButton);
+		
 	}
 }
