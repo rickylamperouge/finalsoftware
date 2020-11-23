@@ -14,6 +14,8 @@ import javax.swing.JSpinner;
 import javax.swing.JButton;
 import javax.swing.JTable;
 import javax.swing.SpinnerNumberModel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class I2 {
 
@@ -418,59 +420,134 @@ public class I2 {
 		lblNewLabel_5_1.setBounds(649, 68, 97, 14);
 		panel_1.add(lblNewLabel_5_1);
 		
-		JSpinner spinner_2 = new JSpinner();
-		spinner_2.setModel(new SpinnerNumberModel(0, -1, 3, 1));
-		spinner_2.setBounds(588, 89, 30, 20);
-		panel_1.add(spinner_2);
+		JSpinner spinner22 = new JSpinner();
+		spinner22.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner22.setBounds(588, 89, 30, 20);
+		panel_1.add(spinner22);
 		
 		JLabel lblNewLabel_6_3 = new JLabel("a");
 		lblNewLabel_6_3.setBounds(628, 96, 46, 14);
 		panel_1.add(lblNewLabel_6_3);
 		
-		JSpinner spinner_1_2 = new JSpinner();
-		spinner_1_2.setModel(new SpinnerNumberModel(0, -1, 3, 1));
-		spinner_1_2.setBounds(588, 109, 30, 20);
-		panel_1.add(spinner_1_2);
+		JSpinner spinner23 = new JSpinner();
+		spinner23.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner23.setBounds(588, 109, 30, 20);
+		panel_1.add(spinner23);
 		
 		JLabel lblNewLabel_6_1_3 = new JLabel("b");
 		lblNewLabel_6_1_3.setBounds(628, 112, 46, 14);
 		panel_1.add(lblNewLabel_6_1_3);
 		
-		JSpinner spinner_1_1_2 = new JSpinner();
-		spinner_1_1_2.setModel(new SpinnerNumberModel(0, -1, 3, 1));
-		spinner_1_1_2.setBounds(588, 130, 30, 20);
-		panel_1.add(spinner_1_1_2);
+		JSpinner spinner24 = new JSpinner();
+		spinner24.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner24.setBounds(588, 130, 30, 20);
+		panel_1.add(spinner24);
 		
 		JLabel lblNewLabel_6_1_1_7 = new JLabel("c");
 		lblNewLabel_6_1_1_7.setBounds(628, 133, 46, 14);
 		panel_1.add(lblNewLabel_6_1_1_7);
 		
-		JSpinner spinner_1_1_1_2 = new JSpinner();
-		spinner_1_1_1_2.setModel(new SpinnerNumberModel(0, -1, 3, 1));
-		spinner_1_1_1_2.setBounds(588, 151, 30, 20);
-		panel_1.add(spinner_1_1_1_2);
+		JSpinner spinner25 = new JSpinner();
+		spinner25.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner25.setBounds(588, 151, 30, 20);
+		panel_1.add(spinner25);
 		
 		JLabel lblNewLabel_6_1_1_1_2 = new JLabel("d");
 		lblNewLabel_6_1_1_1_2.setBounds(628, 154, 46, 14);
 		panel_1.add(lblNewLabel_6_1_1_1_2);
 		
-		JSpinner spinner_1_1_1_1_4 = new JSpinner();
-		spinner_1_1_1_1_4.setModel(new SpinnerNumberModel(0, -1, 3, 1));
-		spinner_1_1_1_1_4.setBounds(588, 173, 30, 20);
-		panel_1.add(spinner_1_1_1_1_4);
+		JSpinner spinner26 = new JSpinner();
+		spinner26.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner26.setBounds(588, 173, 30, 20);
+		panel_1.add(spinner26);
 		
 		JLabel lblNewLabel_6_1_1_2_2 = new JLabel("e");
 		lblNewLabel_6_1_1_2_2.setBounds(628, 176, 46, 14);
 		panel_1.add(lblNewLabel_6_1_1_2_2);
 		
-		JSpinner spinner_1_1_1_1_1_1 = new JSpinner();
-		spinner_1_1_1_1_1_1.setModel(new SpinnerNumberModel(0, -1, 3, 1));
-		spinner_1_1_1_1_1_1.setBounds(588, 194, 30, 20);
-		panel_1.add(spinner_1_1_1_1_1_1);
+		JSpinner spinner27 = new JSpinner();
+		spinner27.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner27.setBounds(588, 194, 30, 20);
+		panel_1.add(spinner27);
 		
 		JLabel lblNewLabel_6_1_1_3_2 = new JLabel("f");
 		lblNewLabel_6_1_1_3_2.setBounds(628, 197, 46, 14);
 		panel_1.add(lblNewLabel_6_1_1_3_2);
+		
+		JButton btnNewButton = new JButton("Finalizar");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				int[] instrumentoII;
+				instrumentoII = new int[30];
+				//Calidad Panel
+				instrumentoII[0] = (int) spinner.getValue();
+				
+				instrumentoII[1] = (int) spinner_1.getValue();
+				
+				instrumentoII[2] = (int) spinner_1_1.getValue();
+				
+				instrumentoII[3] = (int) spinner_1_1_1.getValue();
+				
+				instrumentoII[4] = (int) spinner_1_1_1_1.getValue();
+				
+				instrumentoII[5] = (int) spinner_1_1_1_1_1.getValue();
+				
+				instrumentoII[6] = (int) spinner_1_1_1_1_2.getValue();
+				
+				instrumentoII[7] = (int) spinner_1_1_1_1_3.getValue();
+				
+				
+				
+				//Servicio panel
+				instrumentoII[8] = (int) spinner9.getValue();
+				
+				instrumentoII[9] = (int) spinner10.getValue();
+				
+				instrumentoII[10] = (int) spinner11.getValue();
+				
+				instrumentoII[11] = (int) spinner12.getValue();
+				
+				instrumentoII[12] = (int) spinner13.getValue();
+				
+				instrumentoII[13] = (int) spinner14.getValue();
+				
+				
+				
+				//Servicio a la comunidad
+				instrumentoII[14] = (int) spinner15.getValue();
+				
+				instrumentoII[15] = (int) spinner16.getValue();
+				
+				
+				
+				//Investigacion Panel
+				instrumentoII[16] = (int) spinner17.getValue();
+				
+				instrumentoII[17] = (int) spinner18.getValue();
+				
+				instrumentoII[18] = (int) spinner19.getValue();
+				
+				instrumentoII[19] = (int) spinner20.getValue();
+				
+				instrumentoII[20] = (int) spinner21.getValue();
+				instrumentoII[21] = (int) spinner22.getValue();
+				instrumentoII[21] = (int) spinner23.getValue();
+				instrumentoII[22] = (int) spinner24.getValue();
+				instrumentoII[23] = (int) spinner25.getValue();
+				instrumentoII[24] = (int) spinner26.getValue();
+				instrumentoII[25] = (int) spinner27.getValue();
+				
+				int totalI2 = 0;
+				for(int i = 0; i < 26;i++)
+				{
+					totalI2 = instrumentoII[i] + totalI2;
+				}
+				System.out.println(totalI2);
+				frame.dispose();
+			}
+		});
+		btnNewButton.setBounds(397, 631, 89, 23);
+		panel_1.add(btnNewButton);
 	}
 
 }
