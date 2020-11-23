@@ -14,6 +14,7 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JTextArea;
 
 public class I4 {
 
@@ -43,6 +44,7 @@ public class I4 {
 	private JTextField textField_18;
 	private JTextField textField_19;
 	private JTextField textField_20;
+	private JTextField textField_21;
 
 	/**
 	 * Launch the application.
@@ -107,29 +109,24 @@ public class I4 {
 		lblNewLabel_3.setBounds(675, 126, 88, 13);
 		contentPane.add(lblNewLabel_3);
 		
-		JLabel lblNewLabel_4 = new JLabel("2. Presenta evidencia sobre las diferentes formas en la que cumple con la consejeria academica ofrecida a sus estudiantes, segun definida en el Manual de la Facultad.");
-		lblNewLabel_4.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_4.setBounds(10, 265, 994, 13);
-		contentPane.add(lblNewLabel_4);
-		
 		JLabel lblNewLabel_5 = new JLabel("Comentarios:");
 		lblNewLabel_5.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_5.setBounds(10, 288, 88, 13);
+		lblNewLabel_5.setBounds(10, 308, 88, 13);
 		contentPane.add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_6 = new JLabel("Puntuacion:");
 		lblNewLabel_6.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_6.setBounds(675, 289, 88, 13);
+		lblNewLabel_6.setBounds(675, 308, 88, 13);
 		contentPane.add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_7 = new JLabel("3. Informa al Director del Departamento sobre sus ausencias.");
 		lblNewLabel_7.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_7.setBounds(10, 425, 427, 13);
+		lblNewLabel_7.setBounds(10, 483, 427, 13);
 		contentPane.add(lblNewLabel_7);
 		
 		JLabel lblNewLabel_8 = new JLabel("Comentarios:");
 		lblNewLabel_8.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_8.setBounds(10, 448, 88, 13);
+		lblNewLabel_8.setBounds(10, 507, 88, 13);
 		contentPane.add(lblNewLabel_8);
 		
 		textField = new JTextField();
@@ -139,17 +136,17 @@ public class I4 {
 		
 		textField_1 = new JTextField();
 		textField_1.setColumns(10);
-		textField_1.setBounds(108, 288, 526, 97);
+		textField_1.setBounds(108, 308, 526, 97);
 		contentPane.add(textField_1);
 		
 		textField_2 = new JTextField();
 		textField_2.setColumns(10);
-		textField_2.setBounds(108, 448, 526, 97);
+		textField_2.setBounds(108, 507, 526, 97);
 		contentPane.add(textField_2);
 		
 		JLabel lblNewLabel_9 = new JLabel("Puntuacion:");
 		lblNewLabel_9.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_9.setBounds(675, 448, 88, 13);
+		lblNewLabel_9.setBounds(675, 507, 88, 13);
 		contentPane.add(lblNewLabel_9);
 		
 		JButton btnNewButton = new JButton("Continuar");
@@ -164,13 +161,19 @@ public class I4 {
 		
 		JSpinner spinner2 = new JSpinner();
 		spinner2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner2.setBounds(773, 289, 30, 20);
+		spinner2.setBounds(773, 308, 30, 20);
 		contentPane.add(spinner2);
 		
 		JSpinner spinner3 = new JSpinner();
 		spinner3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner3.setBounds(773, 444, 30, 20);
+		spinner3.setBounds(773, 503, 30, 20);
 		contentPane.add(spinner3);
+		
+		JTextArea txtrPresentaEvidencia = new JTextArea();
+		txtrPresentaEvidencia.setText("2. Presenta evidencia sobre las diferentes formas en la que cumple con la consejer\u00EDa\r\nacad\u00E9mica ofrecida a sus estudiantes, seg\u00FAn definida en el Manual de la Facultad.\r");
+		txtrPresentaEvidencia.setFont(new Font("Arial", Font.PLAIN, 12));
+		txtrPresentaEvidencia.setBounds(10, 254, 891, 43);
+		contentPane.add(txtrPresentaEvidencia);
 		tabbedPane.addTab("Pag. 3", null, contentPane_1, null);
 		contentPane_1.setLayout(null);
 		contentPane_1.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -215,7 +218,7 @@ public class I4 {
 		lblNewLabel_6_1.setBounds(675, 223, 88, 13);
 		contentPane_1.add(lblNewLabel_6_1);
 		
-		JLabel lblNewLabel_7_1 = new JLabel("6. Colabora en las actividades que desarrolla el Departamento");
+		JLabel lblNewLabel_7_1 = new JLabel("6. Colabora en las actividades que desarrolla el Departamento.");
 		lblNewLabel_7_1.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel_7_1.setBounds(10, 363, 427, 13);
 		contentPane_1.add(lblNewLabel_7_1);
@@ -239,24 +242,19 @@ public class I4 {
 		btnNewButton_1.setBounds(364, 701, 113, 21);
 		contentPane_1.add(btnNewButton_1);
 		
-		JLabel lblNewLabel_7_1_1 = new JLabel("7. Cumple con las normas y procedimientos de la Instituci\u00F3n. Somete dentro del\r\ntiempo establecido por la Universidad y la unidad acad\u00E9mica, los siguientes\r\ndocumentos: el cotejo de listas, el informe de estudiantes que nunca han asistido,\r\nlas calificaciones finales, la remoci\u00F3n de incompletos, la notificaci\u00F3n de extramuros,\r\nlos horarios de clase, entre otros, y sigue el calendario acad\u00E9mico.");
-		lblNewLabel_7_1_1.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_7_1_1.setBounds(10, 527, 427, 13);
-		contentPane_1.add(lblNewLabel_7_1_1);
-		
 		textField_6 = new JTextField();
 		textField_6.setColumns(10);
-		textField_6.setBounds(108, 550, 526, 97);
+		textField_6.setBounds(108, 593, 526, 97);
 		contentPane_1.add(textField_6);
 		
 		JLabel lblNewLabel_8_1_1 = new JLabel("Comentarios:");
 		lblNewLabel_8_1_1.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_8_1_1.setBounds(10, 550, 88, 13);
+		lblNewLabel_8_1_1.setBounds(10, 593, 88, 13);
 		contentPane_1.add(lblNewLabel_8_1_1);
 		
 		JLabel lblNewLabel_9_1_1 = new JLabel("Puntuacion:");
 		lblNewLabel_9_1_1.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_9_1_1.setBounds(675, 550, 88, 13);
+		lblNewLabel_9_1_1.setBounds(675, 593, 88, 13);
 		contentPane_1.add(lblNewLabel_9_1_1);
 		
 		JSpinner spinner4 = new JSpinner();
@@ -276,8 +274,15 @@ public class I4 {
 		
 		JSpinner spinner7 = new JSpinner();
 		spinner7.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner7.setBounds(773, 550, 30, 20);
+		spinner7.setBounds(773, 593, 30, 20);
 		contentPane_1.add(spinner7);
+		
+		JTextArea txtrCumpleCon = new JTextArea();
+		txtrCumpleCon.setFont(new Font("Arial", Font.PLAIN, 12));
+		txtrCumpleCon.setText("7. Cumple con las normas y procedimientos de la Instituci\u00F3n. Somete dentro del\r\ntiempo establecido por la Universidad y la unidad acad\u00E9mica, los siguientes\r\ndocumentos: el cotejo de listas, el informe de estudiantes que nunca han asistido,\r\nlas calificaciones finales, la remoci\u00F3n de incompletos, la notificaci\u00F3n de extramuros,\r\nlos horarios de clase, entre otros, y sigue el calendario acad\u00E9mico.");
+		txtrCumpleCon.setLineWrap(true);
+		txtrCumpleCon.setBounds(10, 498, 891, 84);
+		contentPane_1.add(txtrCumpleCon);
 		tabbedPane.addTab("Pag. 4", null, contentPane_1_1, null);
 		contentPane_1_1.setLayout(null);
 		contentPane_1_1.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -322,7 +327,7 @@ public class I4 {
 		lblNewLabel_6_2.setBounds(675, 223, 88, 13);
 		contentPane_1_1.add(lblNewLabel_6_2);
 		
-		JLabel lblNewLabel_7_2 = new JLabel("10. Participa en comit\u00E9s departamentales, de la unidad acad\u00E9mica, institucional o en\r\norganismos universitarios cuando as\u00ED se le solicita");
+		JLabel lblNewLabel_7_2 = new JLabel("10. Participa en comit\u00E9s departamentales, de la unidad acad\u00E9mica, institucional o en\r\norganismos universitarios cuando as\u00ED se le solicita.");
 		lblNewLabel_7_2.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel_7_2.setBounds(10, 363, 770, 13);
 		contentPane_1_1.add(lblNewLabel_7_2);
@@ -346,24 +351,19 @@ public class I4 {
 		btnNewButton_2.setBounds(364, 701, 113, 21);
 		contentPane_1_1.add(btnNewButton_2);
 		
-		JLabel lblNewLabel_7_1_2 = new JLabel("11. Asiste a las convocatorias de facultad, tales como actividades de reconocimientos\r\nacad\u00E9micos a estudiantes, el Servicio de Graduaci\u00F3n, la Graduaci\u00F3n, entre otros.");
-		lblNewLabel_7_1_2.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_7_1_2.setBounds(10, 527, 970, 13);
-		contentPane_1_1.add(lblNewLabel_7_1_2);
-		
 		textField_10 = new JTextField();
 		textField_10.setColumns(10);
-		textField_10.setBounds(108, 550, 526, 97);
+		textField_10.setBounds(108, 578, 526, 97);
 		contentPane_1_1.add(textField_10);
 		
 		JLabel lblNewLabel_8_1_2 = new JLabel("Comentarios:");
 		lblNewLabel_8_1_2.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_8_1_2.setBounds(10, 550, 88, 13);
+		lblNewLabel_8_1_2.setBounds(10, 578, 88, 13);
 		contentPane_1_1.add(lblNewLabel_8_1_2);
 		
 		JLabel lblNewLabel_9_1_2 = new JLabel("Puntuacion:");
 		lblNewLabel_9_1_2.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_9_1_2.setBounds(675, 550, 88, 13);
+		lblNewLabel_9_1_2.setBounds(675, 578, 88, 13);
 		contentPane_1_1.add(lblNewLabel_9_1_2);
 		
 		JSpinner spinner8 = new JSpinner();
@@ -383,8 +383,14 @@ public class I4 {
 		
 		JSpinner spinner11 = new JSpinner();
 		spinner11.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner11.setBounds(773, 551, 30, 20);
+		spinner11.setBounds(773, 578, 30, 20);
 		contentPane_1_1.add(spinner11);
+		
+		JTextArea txtrAsisteA = new JTextArea();
+		txtrAsisteA.setFont(new Font("Arial", Font.PLAIN, 12));
+		txtrAsisteA.setText("11. Asiste a las convocatorias de facultad, tales como actividades de reconocimientos\r\nacad\u00E9micos a estudiantes, el Servicio de Graduaci\u00F3n, la Graduaci\u00F3n, entre otros. ");
+		txtrAsisteA.setBounds(10, 501, 891, 46);
+		contentPane_1_1.add(txtrAsisteA);
 		
 		JPanel contentPane_1_2 = new JPanel();
 		tabbedPane.addTab("Pag. 5", null, contentPane_1_2, null);
@@ -393,121 +399,145 @@ public class I4 {
 		
 		JLabel lblNewLabel_1_3 = new JLabel("13. Mantiene un clima de respeto con los colegas y con los compa\u00F1eros de trabajo.");
 		lblNewLabel_1_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_1_3.setBounds(10, 45, 770, 13);
+		lblNewLabel_1_3.setBounds(10, 157, 770, 13);
 		contentPane_1_2.add(lblNewLabel_1_3);
 		
 		textField_11 = new JTextField();
 		textField_11.setColumns(10);
-		textField_11.setBounds(108, 68, 526, 97);
+		textField_11.setBounds(108, 181, 526, 97);
 		contentPane_1_2.add(textField_11);
 		
 		JLabel lblNewLabel_2_3 = new JLabel("Comentarios:");
 		lblNewLabel_2_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_2_3.setBounds(10, 68, 88, 13);
+		lblNewLabel_2_3.setBounds(10, 181, 88, 13);
 		contentPane_1_2.add(lblNewLabel_2_3);
 		
 		JLabel lblNewLabel_3_3 = new JLabel("Puntuacion:");
 		lblNewLabel_3_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_3_3.setBounds(675, 68, 88, 13);
+		lblNewLabel_3_3.setBounds(675, 181, 88, 13);
 		contentPane_1_2.add(lblNewLabel_3_3);
 		
 		JLabel lblNewLabel_4_3 = new JLabel("14. Mantiene un clima de respeto con los estudiantes. ");
 		lblNewLabel_4_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_4_3.setBounds(10, 200, 770, 13);
+		lblNewLabel_4_3.setBounds(10, 289, 770, 13);
 		contentPane_1_2.add(lblNewLabel_4_3);
 		
 		JLabel lblNewLabel_5_3 = new JLabel("Comentarios:");
 		lblNewLabel_5_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_5_3.setBounds(10, 223, 88, 13);
+		lblNewLabel_5_3.setBounds(10, 313, 88, 13);
 		contentPane_1_2.add(lblNewLabel_5_3);
 		
 		textField_12 = new JTextField();
 		textField_12.setColumns(10);
-		textField_12.setBounds(108, 223, 526, 97);
+		textField_12.setBounds(108, 313, 526, 97);
 		contentPane_1_2.add(textField_12);
 		
 		JLabel lblNewLabel_6_3 = new JLabel("Puntuacion:");
 		lblNewLabel_6_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_6_3.setBounds(675, 223, 88, 13);
+		lblNewLabel_6_3.setBounds(675, 313, 88, 13);
 		contentPane_1_2.add(lblNewLabel_6_3);
 		
 		JLabel lblNewLabel_7_3 = new JLabel("15. Contribuye al enriquecimiento de los recursos del Centro de Acceso a la\r\nInformaci\u00F3n.");
 		lblNewLabel_7_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_7_3.setBounds(10, 441, 770, 13);
+		lblNewLabel_7_3.setBounds(10, 463, 770, 13);
 		contentPane_1_2.add(lblNewLabel_7_3);
 		
 		JLabel lblNewLabel_8_3 = new JLabel("Comentarios:");
 		lblNewLabel_8_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_8_3.setBounds(10, 464, 88, 13);
+		lblNewLabel_8_3.setBounds(10, 487, 88, 13);
 		contentPane_1_2.add(lblNewLabel_8_3);
 		
 		textField_13 = new JTextField();
 		textField_13.setColumns(10);
-		textField_13.setBounds(108, 464, 526, 97);
+		textField_13.setBounds(108, 487, 526, 97);
 		contentPane_1_2.add(textField_13);
 		
 		JLabel lblNewLabel_9_3 = new JLabel("Puntuacion:");
 		lblNewLabel_9_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_9_3.setBounds(675, 464, 88, 13);
+		lblNewLabel_9_3.setBounds(675, 487, 88, 13);
 		contentPane_1_2.add(lblNewLabel_9_3);
 		
 		JButton btnNewButton_3 = new JButton("Continuar");
 		btnNewButton_3.setBounds(365, 752, 113, 21);
 		contentPane_1_2.add(btnNewButton_3);
 		
-		JLabel lblNewLabel_7_1_3 = new JLabel("16. Contribuye al mejoramiento y actualizaci\u00F3n de su disciplina o de la materia que\r\nense\u00F1a, a trav\u00E9s del dise\u00F1o de cursos nuevos, la preparaci\u00F3n de materiales\r\neducativos o de prontuarios, proyectos innovadores, entre otros.\r");
-		lblNewLabel_7_1_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_7_1_3.setBounds(10, 588, 970, 13);
-		contentPane_1_2.add(lblNewLabel_7_1_3);
-		
 		textField_14 = new JTextField();
 		textField_14.setColumns(10);
-		textField_14.setBounds(108, 611, 526, 97);
+		textField_14.setBounds(108, 644, 526, 97);
 		contentPane_1_2.add(textField_14);
 		
 		JLabel lblNewLabel_8_1_3 = new JLabel("Comentarios:");
 		lblNewLabel_8_1_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_8_1_3.setBounds(10, 611, 88, 13);
+		lblNewLabel_8_1_3.setBounds(10, 644, 88, 13);
 		contentPane_1_2.add(lblNewLabel_8_1_3);
 		
 		JLabel lblNewLabel_9_1_3 = new JLabel("Puntuacion:");
 		lblNewLabel_9_1_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_9_1_3.setBounds(675, 611, 88, 13);
+		lblNewLabel_9_1_3.setBounds(675, 644, 88, 13);
 		contentPane_1_2.add(lblNewLabel_9_1_3);
 		
 		JLabel lblIiTareasAcademicas = new JLabel("II. TAREAS ACADEMICAS");
 		lblIiTareasAcademicas.setForeground(Color.BLACK);
 		lblIiTareasAcademicas.setFont(new Font("Arial", Font.BOLD, 14));
-		lblIiTareasAcademicas.setBounds(10, 346, 427, 31);
+		lblIiTareasAcademicas.setBounds(10, 421, 427, 31);
 		contentPane_1_2.add(lblIiTareasAcademicas);
 		
 		JSpinner spinner13 = new JSpinner();
 		spinner13.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner13.setBounds(773, 69, 30, 20);
+		spinner13.setBounds(773, 181, 30, 20);
 		contentPane_1_2.add(spinner13);
 		
 		JSpinner spinner14 = new JSpinner();
 		spinner14.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner14.setBounds(773, 224, 30, 20);
+		spinner14.setBounds(773, 309, 30, 20);
 		contentPane_1_2.add(spinner14);
 		
 		JSpinner spinner15 = new JSpinner();
 		spinner15.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner15.setBounds(773, 465, 30, 20);
+		spinner15.setBounds(773, 483, 30, 20);
 		contentPane_1_2.add(spinner15);
 		
 		JSpinner spinner16 = new JSpinner();
 		spinner16.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner16.setBounds(773, 612, 30, 20);
+		spinner16.setBounds(773, 644, 30, 20);
 		contentPane_1_2.add(spinner16);
+		
+		JTextArea txtrContribuyeAl = new JTextArea();
+		txtrContribuyeAl.setFont(new Font("Arial", Font.PLAIN, 12));
+		txtrContribuyeAl.setLineWrap(true);
+		txtrContribuyeAl.setText("16. Contribuye al mejoramiento y actualizaci\u00F3n de su disciplina o de la materia que ense\u00F1a, a trav\u00E9s del dise\u00F1o de cursos nuevos, la preparaci\u00F3n de materiales  \r\neducativos o de prontuarios, proyectos innovadores, entre otros.\r");
+		txtrContribuyeAl.setBounds(10, 595, 891, 38);
+		contentPane_1_2.add(txtrContribuyeAl);
+		
+		textField_21 = new JTextField();
+		textField_21.setColumns(10);
+		textField_21.setBounds(108, 55, 526, 97);
+		contentPane_1_2.add(textField_21);
+		
+		JLabel lblNewLabel_2_3_1 = new JLabel("Comentarios:");
+		lblNewLabel_2_3_1.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblNewLabel_2_3_1.setBounds(10, 55, 88, 13);
+		contentPane_1_2.add(lblNewLabel_2_3_1);
+		
+		JLabel lblNewLabel_3_3_1 = new JLabel("Puntuacion:");
+		lblNewLabel_3_3_1.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblNewLabel_3_3_1.setBounds(675, 55, 88, 13);
+		contentPane_1_2.add(lblNewLabel_3_3_1);
+		
+		JSpinner spinner12 = new JSpinner();
+		spinner12.setBounds(773, 55, 30, 20);
+		contentPane_1_2.add(spinner12);
+		
+		JTextArea txtrAsisteA_1 = new JTextArea();
+		txtrAsisteA_1.setFont(new Font("Arial", Font.PLAIN, 12));
+		txtrAsisteA_1.setText("12. Asiste a actividades de desarrollo profesional como congresos, seminarios, cursos\r\nde educaci\u00F3n continuada, entre otros.");
+		txtrAsisteA_1.setEditable(false);
+		txtrAsisteA_1.setLineWrap(true);
+		txtrAsisteA_1.setBounds(10, 11, 891, 31);
+		contentPane_1_2.add(txtrAsisteA_1);
 		tabbedPane.addTab("Pag. 6", null, contentPane_1_3, null);
 		contentPane_1_3.setLayout(null);
 		contentPane_1_3.setBorder(new EmptyBorder(5, 5, 5, 5));
-		
-		JLabel lblNewLabel_1_4 = new JLabel("17. Est\u00E1 disponible para ense\u00F1ar cursos en diferentes modalidades de estudio (por\r\nejemplo, estudio independiente, contrato, cursos en l\u00EDnea, combinados, entre\r\notros).");
-		lblNewLabel_1_4.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_1_4.setBounds(10, 45, 898, 13);
-		contentPane_1_3.add(lblNewLabel_1_4);
 		
 		textField_15 = new JTextField();
 		textField_15.setColumns(10);
@@ -544,11 +574,6 @@ public class I4 {
 		lblNewLabel_6_4.setBounds(675, 223, 88, 13);
 		contentPane_1_3.add(lblNewLabel_6_4);
 		
-		JLabel lblNewLabel_7_4 = new JLabel("19. Evidencia en sus cursos el uso de los resultados del \u201Cassessment\u201D de los cursos y\r\ndel programa para el mejoramiento de los logros en el aprendizaje de los\r\nestudiantes. ");
-		lblNewLabel_7_4.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_7_4.setBounds(10, 363, 898, 13);
-		contentPane_1_3.add(lblNewLabel_7_4);
-		
 		JLabel lblNewLabel_8_4 = new JLabel("Comentarios:");
 		lblNewLabel_8_4.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel_8_4.setBounds(10, 386, 88, 13);
@@ -567,11 +592,6 @@ public class I4 {
 		JButton btnGuardarYSometer = new JButton("Guardar y Someter");
 		btnGuardarYSometer.setBounds(364, 752, 173, 21);
 		contentPane_1_3.add(btnGuardarYSometer);
-		
-		JLabel lblNewLabel_7_1_4 = new JLabel("20. Colabora con el fortalecimiento de los programas acad\u00E9micos, tales como\r\n\u201Cassessment\u201D o acreditaci\u00F3n de los programas acad\u00E9micos, revisi\u00F3n de los\r\nprontuarios, revisi\u00F3n curricular de los programas acad\u00E9micos, entre otras tareas");
-		lblNewLabel_7_1_4.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_7_1_4.setBounds(10, 527, 859, 13);
-		contentPane_1_3.add(lblNewLabel_7_1_4);
 		
 		textField_18 = new JTextField();
 		textField_18.setColumns(10);
@@ -664,6 +684,29 @@ public class I4 {
 		});
 		btnNewButton_4.setBounds(388, 677, 89, 23);
 		contentPane_1_3.add(btnNewButton_4);
+		
+		JTextArea txtrEstDisponible = new JTextArea();
+		txtrEstDisponible.setFont(new Font("Arial", Font.PLAIN, 12));
+		txtrEstDisponible.setText("17. Est\u00E1 disponible para ense\u00F1ar cursos en diferentes modalidades de estudio (por\r\nejemplo, estudio independiente, contrato, cursos en l\u00EDnea, combinados, entre\r\notros).");
+		txtrEstDisponible.setEditable(false);
+		txtrEstDisponible.setLineWrap(true);
+		txtrEstDisponible.setBounds(10, 11, 891, 48);
+		contentPane_1_3.add(txtrEstDisponible);
+		
+		JTextArea txtrEvidenciaEn = new JTextArea();
+		txtrEvidenciaEn.setFont(new Font("Arial", Font.PLAIN, 12));
+		txtrEvidenciaEn.setText("19. Evidencia en sus cursos el uso de los resultados del \u201Cassessment\u201D de los cursos y\r\ndel programa para el mejoramiento de los logros en el aprendizaje de los\r\nestudiantes. ");
+		txtrEvidenciaEn.setLineWrap(true);
+		txtrEvidenciaEn.setEditable(false);
+		txtrEvidenciaEn.setBounds(10, 327, 891, 48);
+		contentPane_1_3.add(txtrEvidenciaEn);
+		
+		JTextArea txtrColaboraCon = new JTextArea();
+		txtrColaboraCon.setText("20. Colabora con el fortalecimiento de los programas acad\u00E9micos, tales como\r\n\u201Cassessment\u201D o acreditaci\u00F3n de los programas acad\u00E9micos, revisi\u00F3n de los\r\nprontuarios, revisi\u00F3n curricular de los programas acad\u00E9micos, entre otras tareas");
+		txtrColaboraCon.setEditable(false);
+		txtrColaboraCon.setLineWrap(true);
+		txtrColaboraCon.setFont(new Font("Arial", Font.PLAIN, 12));
+		txtrColaboraCon.setBounds(10, 503, 891, 42);
+		contentPane_1_3.add(txtrColaboraCon);
 	}
-
 }
