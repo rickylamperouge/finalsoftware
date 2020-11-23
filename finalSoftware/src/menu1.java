@@ -13,11 +13,11 @@ import java.awt.Font;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+import java.awt.Color;
 
 public class menu1 extends JFrame {
 
 	private JPanel contentPane;
-	private JTable table;
 
 	/**
 	 * Launch the application.
@@ -39,61 +39,62 @@ public class menu1 extends JFrame {
 	 * Create the frame.
 	 */
 	public menu1() {
+		setForeground(Color.BLACK);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 932, 820);
+		setBounds(100, 100, 500, 350);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel_1 = new JLabel("Rubrica para evalucaion.");
-		lblNewLabel_1.setFont(new Font("Arial", Font.BOLD, 12));
-		lblNewLabel_1.setBounds(39, 80, 146, 13);
-		contentPane.add(lblNewLabel_1);
+		JLabel lblNewLabel = new JLabel("Seleccione una opcion:");
+		lblNewLabel.setForeground(Color.BLACK);
+		lblNewLabel.setFont(new Font("Arial", Font.BOLD, 14));
+		lblNewLabel.setBounds(150, 10, 205, 41);
+		contentPane.add(lblNewLabel);
 		
-		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(27, 156, 881, 123);
-		contentPane.add(scrollPane);
-		
-		table = new JTable();
-		table.setFont(new Font("Arial", Font.PLAIN, 12));
-		table.setModel(new DefaultTableModel(
-			new Object[][] {
-				{"4", "El profesor demuestra que cumple totalmente con el criterio y no requiere recomendaciones correctivas."},
-				{"3", "El profesor demuestra que cumple mayormente con el criterio aunque requiere de alguna recomendaci\u00F3n correctiva menor para que cumpla totalmente. "},
-				{"2", "El profesor demuestra que cumple satisfactoriamente con el criterio y requiere varias recomendaciones correctivas para que cumpla totalmente. "},
-				{"1", "El profesor cumple deficientemente con el criterio y requiere recomendaciones correctivas sustanciales. "},
-				{"0", "El profesor no cumple con el criterio y requiere recomendaciones correctivas extraordinarias."},
-				{"N/A", "No se puede evaluar porque el criterio no aplica a la clase visitada."},
-			},
-			new String[] {
-				"Puntuacion", "Descripcion"
-			}
-		) {
-			Class[] columnTypes = new Class[] {
-				String.class, String.class
-			};
-			public Class getColumnClass(int columnIndex) {
-				return columnTypes[columnIndex];
-			}
-		});
-		table.getColumnModel().getColumn(1).setPreferredWidth(1250);
-		scrollPane.setViewportView(table);
-		
-		JButton btnNewButton = new JButton("Iniciar");
+		JButton btnNewButton = new JButton("Instrumento 1");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new menu2().setVisible(true);
-				menu1.this.dispose();
 			}
 		});
-		btnNewButton.setBounds(394, 315, 85, 21);
+		btnNewButton.setForeground(Color.DARK_GRAY);
+		btnNewButton.setFont(new Font("Arial", Font.BOLD, 12));
+		btnNewButton.setBounds(118, 61, 266, 21);
 		contentPane.add(btnNewButton);
 		
-		JLabel lblNewLabel_3 = new JLabel("Instrumento III");
-		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_3.setFont(new Font("Arial", Font.PLAIN, 14));
-		lblNewLabel_3.setBounds(292, 10, 233, 53);
-		contentPane.add(lblNewLabel_3);
+		JButton btnInstrumentoa = new JButton("Instrumento 1-A");
+		btnInstrumentoa.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnInstrumentoa.setForeground(Color.DARK_GRAY);
+		btnInstrumentoa.setFont(new Font("Arial", Font.BOLD, 12));
+		btnInstrumentoa.setBounds(118, 92, 266, 21);
+		contentPane.add(btnInstrumentoa);
+		
+		JButton btnInstrumento = new JButton("Instrumento 2");
+		btnInstrumento.setForeground(Color.DARK_GRAY);
+		btnInstrumento.setFont(new Font("Arial", Font.BOLD, 12));
+		btnInstrumento.setBounds(118, 123, 266, 21);
+		contentPane.add(btnInstrumento);
+		
+		JButton btnInstrumento_1 = new JButton("Instrumento 3");
+		btnInstrumento_1.setForeground(Color.DARK_GRAY);
+		btnInstrumento_1.setFont(new Font("Arial", Font.BOLD, 12));
+		btnInstrumento_1.setBounds(118, 154, 266, 21);
+		contentPane.add(btnInstrumento_1);
+		
+		JButton btnInstrumentoa_1 = new JButton("Instrumento 3-A");
+		btnInstrumentoa_1.setForeground(Color.DARK_GRAY);
+		btnInstrumentoa_1.setFont(new Font("Arial", Font.BOLD, 12));
+		btnInstrumentoa_1.setBounds(118, 185, 266, 21);
+		contentPane.add(btnInstrumentoa_1);
+		
+		JButton btnInstrumento_2 = new JButton("Instrumento 4");
+		btnInstrumento_2.setForeground(Color.DARK_GRAY);
+		btnInstrumento_2.setFont(new Font("Arial", Font.BOLD, 12));
+		btnInstrumento_2.setBounds(118, 216, 266, 21);
+		contentPane.add(btnInstrumento_2);
 	}
 }
