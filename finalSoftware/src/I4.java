@@ -424,7 +424,6 @@ public class I4 {
 		textField_12.setBounds(108, 223, 526, 97);
 		contentPane_1_2.add(textField_12);
 		
-		
 		JLabel lblNewLabel_6_3 = new JLabel("Puntuacion:");
 		lblNewLabel_6_3.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel_6_3.setBounds(675, 223, 88, 13);
