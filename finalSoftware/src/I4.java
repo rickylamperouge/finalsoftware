@@ -663,7 +663,8 @@ public class I4 {
 				instrumentoIV[7] = (int) spinner8.getValue();
 				instrumentoIV[8] = (int) spinner9.getValue();
 				instrumentoIV[9] = (int) spinner10.getValue();
-				instrumentoIV[10] = (int) spinner11.getValue();			
+				instrumentoIV[10] = (int) spinner11.getValue();		
+				instrumentoIV[11] = (int) spinner12.getValue();
 				instrumentoIV[12] = (int) spinner13.getValue();
 				instrumentoIV[13] = (int) spinner14.getValue();
 				instrumentoIV[14] = (int) spinner15.getValue();
