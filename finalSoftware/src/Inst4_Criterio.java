@@ -10,12 +10,12 @@ import javax.swing.SwingConstants;
 import java.awt.Color;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.ListSelectionModel;
 
 public class Inst4_Criterio extends JFrame {
 
 	private JPanel contentPane;
 	private JTable table;
-	private JLabel lblNewLabel;
 
 	/**
 	 * Launch the application.
@@ -52,27 +52,35 @@ public class Inst4_Criterio extends JFrame {
 		contentPane.add(lblNewLabel_3);
 		
 		table = new JTable();
+		table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
-				{null, null},
-				{null, null},
-				{null, null},
-				{null, null},
-				{null, null},
-				{null, null},
+				{"4", "El profesor demuestra que cumple totalmente con el criterio y no requiere recomendaciones"},
+				{"3", "El profesor demuestra que cumple mayormente con el criterio y requiere algina recomendacin menor."},
+				{"2", "El profesor demuestra que cumple satisfactoriamente con el criterio y requiere varias recomendaciones."},
+				{"1", "El profesor cumple deficientemente con el criterio y requiere recomendaciones sustanciales."},
+				{"0", "El profesor no cumple con el criterio y requiere recomendaciones extraordinarias."},
+				{"N/A", "No se puede evaluar porque el criterio no aplica."},
 			},
 			new String[] {
-				"New column", "New column"
+				"puntuacion", "Descripcion"
 			}
-		));
-		table.getColumnModel().getColumn(0).setPreferredWidth(81);
-		table.getColumnModel().getColumn(1).setPreferredWidth(674);
-		table.setBounds(123, 136, 708, 96);
+		) {
+			Class[] columnTypes = new Class[] {
+				String.class, String.class
+			};
+			public Class getColumnClass(int columnIndex) {
+				return columnTypes[columnIndex];
+			}
+		});
+		table.getColumnModel().getColumn(1).setPreferredWidth(650);
+		table.setFont(new Font("Arial", Font.PLAIN, 12));
+		table.setBounds(97, 127, 719, 96);
 		contentPane.add(table);
 		
-		lblNewLabel = new JLabel("<html>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</html>");
-		lblNewLabel.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel.setBounds(139, 291, 708, 211);
+		JLabel lblNewLabel = new JLabel("Rubrica\r\n");
+		lblNewLabel.setFont(new Font("Arial", Font.BOLD, 14));
+		lblNewLabel.setBounds(97, 71, 136, 30);
 		contentPane.add(lblNewLabel);
 	}
 }
