@@ -63,15 +63,15 @@ public class AutoEvNarrativa2 {
 		table = new JTable();
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
-				{"a. Obtenci\u00F3n de premios, ayudas y becas ", null},
-				{"b. Nombramiento como asesor/a en agencias del gobierno estatal o federal", null},
-				{"c. Participaci\u00F3n activa en organizaciones profesionales ", null},
-				{"d. Recurso en conferencias y charlas", null},
-				{"e. Participaci\u00F3n en conferencias, congresos o institutos ", null},
-				{"f. Educaci\u00F3n post doctoral, educaci\u00F3n continua", null},
+				{"a. Obtenci\u00F3n de premios, ayudas y becas "},
+				{"b. Nombramiento como asesor/a en agencias del gobierno estatal o federal"},
+				{"c. Participaci\u00F3n activa en organizaciones profesionales "},
+				{"d. Recurso en conferencias y charlas"},
+				{"e. Participaci\u00F3n en conferencias, congresos o institutos "},
+				{"f. Educaci\u00F3n post doctoral, educaci\u00F3n continua"},
 			},
 			new String[] {
-				"Preguntas:", "Puntuaci\u00F3n"
+				"Preguntas:"
 			}
 		));
 		table.getColumnModel().getColumn(0).setPreferredWidth(609);
