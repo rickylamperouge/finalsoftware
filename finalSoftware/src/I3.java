@@ -92,15 +92,6 @@ public class I3 {
 		lblNewLabel_1_6.setBounds(39, 80, 194, 21);
 		contentPane.add(lblNewLabel_1_6);
 		
-		JButton btnNewButton_5 = new JButton("Iniciar");
-		btnNewButton_5.setFont(new Font("Arial", Font.PLAIN, 12));
-		btnNewButton_5.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
-		btnNewButton_5.setBounds(394, 315, 85, 21);
-		contentPane.add(btnNewButton_5);
-		
 		JLabel lblNewLabel_3_6 = new JLabel("Instrumento III");
 		lblNewLabel_3_6.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_3_6.setFont(new Font("Arial", Font.PLAIN, 14));
@@ -225,12 +216,6 @@ public class I3 {
 		lblNewLabel_3_1_1_1.setBounds(658, 554, 69, 13);
 		contentPane_1.add(lblNewLabel_3_1_1_1);
 		
-		JButton btnNewButton = new JButton("Continuar");
-		btnNewButton.setFont(new Font("Arial", Font.PLAIN, 12));
-		btnNewButton.setForeground(new Color(0, 0, 0));
-		btnNewButton.setBounds(378, 690, 100, 21);
-		contentPane_1.add(btnNewButton);
-		
 		JLabel lblCriterioIiOrganizacion = new JLabel("CRITERIO I. DOMINIO DE LA DISCIPLINA");
 		lblCriterioIiOrganizacion.setFont(new Font("Arial", Font.BOLD, 14));
 		lblCriterioIiOrganizacion.setBounds(20, 0, 476, 33);
@@ -241,20 +226,20 @@ public class I3 {
 		spinner.setBounds(737, 65, 30, 20);
 		contentPane_1.add(spinner);
 		
-		JSpinner spinner_1 = new JSpinner();
-		spinner_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_1.setBounds(737, 261, 30, 20);
-		contentPane_1.add(spinner_1);
+		JSpinner spinner2 = new JSpinner();
+		spinner2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner2.setBounds(737, 261, 30, 20);
+		contentPane_1.add(spinner2);
 		
-		JSpinner spinner_2 = new JSpinner();
-		spinner_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_2.setBounds(737, 419, 30, 20);
-		contentPane_1.add(spinner_2);
+		JSpinner spinner3 = new JSpinner();
+		spinner3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner3.setBounds(737, 419, 30, 20);
+		contentPane_1.add(spinner3);
 		
-		JSpinner spinner_3 = new JSpinner();
-		spinner_3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_3.setBounds(737, 579, 30, 20);
-		contentPane_1.add(spinner_3);
+		JSpinner spinner4 = new JSpinner();
+		spinner4.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner4.setBounds(737, 579, 30, 20);
+		contentPane_1.add(spinner4);
 		
 		JPanel panel_1 = new JPanel();
 		tabbedPane.addTab("Pagina 3", null, panel_1, null);
@@ -346,39 +331,30 @@ public class I3 {
 		lblNewLabel_3_1_1_1_1.setBounds(658, 523, 69, 13);
 		contentPane_1_1.add(lblNewLabel_3_1_1_1_1);
 		
-		JButton btnNewButton_1 = new JButton("Continuar");
-		btnNewButton_1.setFont(new Font("Arial", Font.PLAIN, 12));
-		btnNewButton_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
-		btnNewButton_1.setBounds(380, 694, 100, 21);
-		contentPane_1_1.add(btnNewButton_1);
-		
 		JLabel lblCriterioIiOrganizacion_1 = new JLabel("CRITERIO II. ORGANIZACION Y PRESENTACION DEL CONTENIDO");
 		lblCriterioIiOrganizacion_1.setFont(new Font("Arial", Font.BOLD, 14));
 		lblCriterioIiOrganizacion_1.setBounds(10, 284, 476, 33);
 		contentPane_1_1.add(lblCriterioIiOrganizacion_1);
 		
-		JSpinner spinner_4 = new JSpinner();
-		spinner_4.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_4.setBounds(737, 62, 30, 20);
-		contentPane_1_1.add(spinner_4);
+		JSpinner spinner5 = new JSpinner();
+		spinner5.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner5.setBounds(737, 62, 30, 20);
+		contentPane_1_1.add(spinner5);
 		
-		JSpinner spinner_1_1 = new JSpinner();
-		spinner_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_1_1.setBounds(737, 206, 30, 20);
-		contentPane_1_1.add(spinner_1_1);
+		JSpinner spinner6 = new JSpinner();
+		spinner6.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner6.setBounds(737, 206, 30, 20);
+		contentPane_1_1.add(spinner6);
 		
-		JSpinner spinner_2_1 = new JSpinner();
-		spinner_2_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_2_1.setBounds(737, 379, 30, 20);
-		contentPane_1_1.add(spinner_2_1);
+		JSpinner spinner7 = new JSpinner();
+		spinner7.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner7.setBounds(737, 379, 30, 20);
+		contentPane_1_1.add(spinner7);
 		
-		JSpinner spinner_3_1 = new JSpinner();
-		spinner_3_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_3_1.setBounds(737, 551, 30, 20);
-		contentPane_1_1.add(spinner_3_1);
+		JSpinner spinner8 = new JSpinner();
+		spinner8.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner8.setBounds(737, 551, 30, 20);
+		contentPane_1_1.add(spinner8);
 		
 		JPanel panel_2 = new JPanel();
 		tabbedPane.addTab("Pagina 4", null, panel_2, null);
@@ -470,10 +446,6 @@ public class I3 {
 		lblNewLabel_3_1_1_1_2.setBounds(658, 468, 69, 13);
 		contentPane_1_2.add(lblNewLabel_3_1_1_1_2);
 		
-		JButton btnNewButton_2 = new JButton("Continuar");
-		btnNewButton_2.setBounds(392, 706, 122, 21);
-		contentPane_1_2.add(btnNewButton_2);
-		
 		JLabel lblCriterioIiiPromocion = new JLabel("CRITERIO III. PROMOCION DEL INTERES DEL ESTUDIANTE");
 		lblCriterioIiiPromocion.setFont(new Font("Arial", Font.BOLD, 14));
 		lblCriterioIiiPromocion.setBounds(10, 374, 468, 33);
@@ -499,30 +471,30 @@ public class I3 {
 		lblNewLabel_3_1_1_1_1_1.setBounds(658, 605, 69, 13);
 		contentPane_1_2.add(lblNewLabel_3_1_1_1_1_1);
 		
-		JSpinner spinner_5 = new JSpinner();
-		spinner_5.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5.setBounds(737, 62, 30, 20);
-		contentPane_1_2.add(spinner_5);
+		JSpinner spinner9 = new JSpinner();
+		spinner9.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner9.setBounds(737, 62, 30, 20);
+		contentPane_1_2.add(spinner9);
 		
-		JSpinner spinner_5_1 = new JSpinner();
-		spinner_5_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5_1.setBounds(737, 182, 30, 20);
-		contentPane_1_2.add(spinner_5_1);
+		JSpinner spinner10 = new JSpinner();
+		spinner10.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner10.setBounds(737, 182, 30, 20);
+		contentPane_1_2.add(spinner10);
 		
-		JSpinner spinner_5_1_1 = new JSpinner();
-		spinner_5_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5_1_1.setBounds(737, 304, 30, 20);
-		contentPane_1_2.add(spinner_5_1_1);
+		JSpinner spinner11 = new JSpinner();
+		spinner11.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner11.setBounds(737, 304, 30, 20);
+		contentPane_1_2.add(spinner11);
 		
-		JSpinner spinner_5_1_1_1 = new JSpinner();
-		spinner_5_1_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5_1_1_1.setBounds(737, 496, 30, 20);
-		contentPane_1_2.add(spinner_5_1_1_1);
+		JSpinner spinner12 = new JSpinner();
+		spinner12.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner12.setBounds(737, 496, 30, 20);
+		contentPane_1_2.add(spinner12);
 		
-		JSpinner spinner_5_1_1_1_1 = new JSpinner();
-		spinner_5_1_1_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5_1_1_1_1.setBounds(737, 633, 30, 20);
-		contentPane_1_2.add(spinner_5_1_1_1_1);
+		JSpinner spinner13 = new JSpinner();
+		spinner13.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner13.setBounds(737, 633, 30, 20);
+		contentPane_1_2.add(spinner13);
 		
 		JPanel panel_3 = new JPanel();
 		tabbedPane.addTab("Pagina 5", null, panel_3, null);
@@ -614,11 +586,6 @@ public class I3 {
 		lblNewLabel_3_1_1_1_3.setBounds(658, 468, 69, 13);
 		contentPane_1_3.add(lblNewLabel_3_1_1_1_3);
 		
-		JButton btnNewButton_3 = new JButton("Continuar");
-		btnNewButton_3.setFont(new Font("Arial", Font.PLAIN, 12));
-		btnNewButton_3.setBounds(377, 709, 122, 21);
-		contentPane_1_3.add(btnNewButton_3);
-		
 		JLabel lblCriterioIiiPromocion_1 = new JLabel("CRITERIO IV. USO DE METODOS Y ESTRATEGIAS DE APOYO A LA ENSENANZA");
 		lblCriterioIiiPromocion_1.setFont(new Font("Arial", Font.BOLD, 14));
 		lblCriterioIiiPromocion_1.setBounds(10, 374, 594, 33);
@@ -644,30 +611,30 @@ public class I3 {
 		lblNewLabel_3_1_1_1_1_2.setBounds(658, 605, 69, 13);
 		contentPane_1_3.add(lblNewLabel_3_1_1_1_1_2);
 		
-		JSpinner spinner_5_2 = new JSpinner();
-		spinner_5_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5_2.setBounds(737, 62, 30, 20);
-		contentPane_1_3.add(spinner_5_2);
+		JSpinner spinner14 = new JSpinner();
+		spinner14.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner14.setBounds(737, 62, 30, 20);
+		contentPane_1_3.add(spinner14);
 		
-		JSpinner spinner_5_2_1 = new JSpinner();
-		spinner_5_2_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5_2_1.setBounds(737, 171, 30, 20);
-		contentPane_1_3.add(spinner_5_2_1);
+		JSpinner spinner15 = new JSpinner();
+		spinner15.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner15.setBounds(737, 171, 30, 20);
+		contentPane_1_3.add(spinner15);
 		
-		JSpinner spinner_5_2_1_1 = new JSpinner();
-		spinner_5_2_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5_2_1_1.setBounds(737, 304, 30, 20);
-		contentPane_1_3.add(spinner_5_2_1_1);
+		JSpinner spinner16 = new JSpinner();
+		spinner16.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner16.setBounds(737, 304, 30, 20);
+		contentPane_1_3.add(spinner16);
 		
-		JSpinner spinner_5_2_1_1_1 = new JSpinner();
-		spinner_5_2_1_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5_2_1_1_1.setBounds(737, 496, 30, 20);
-		contentPane_1_3.add(spinner_5_2_1_1_1);
+		JSpinner spinner17 = new JSpinner();
+		spinner17.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner17.setBounds(737, 496, 30, 20);
+		contentPane_1_3.add(spinner17);
 		
-		JSpinner spinner_5_2_1_1_1_1 = new JSpinner();
-		spinner_5_2_1_1_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5_2_1_1_1_1.setBounds(737, 633, 30, 20);
-		contentPane_1_3.add(spinner_5_2_1_1_1_1);
+		JSpinner spinner18 = new JSpinner();
+		spinner18.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner18.setBounds(737, 633, 30, 20);
+		contentPane_1_3.add(spinner18);
 		
 		JPanel panel_4 = new JPanel();
 		tabbedPane.addTab("Pagina 6", null, panel_4, null);
@@ -719,15 +686,6 @@ public class I3 {
 		lblNewLabel_3_1_5.setBounds(658, 154, 69, 13);
 		contentPane_1_4.add(lblNewLabel_3_1_5);
 		
-		JButton btnNewButton_4 = new JButton("Guardar y Someter");
-		btnNewButton_4.setFont(new Font("Arial", Font.PLAIN, 12));
-		btnNewButton_4.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
-		btnNewButton_4.setBounds(294, 378, 158, 21);
-		contentPane_1_4.add(btnNewButton_4);
-		
 		JLabel lblNewLabel_3_1_1_1_1_3 = new JLabel("Promedio General");
 		lblNewLabel_3_1_1_1_1_3.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblNewLabel_3_1_1_1_1_3.setBounds(615, 314, 112, 13);
@@ -738,14 +696,59 @@ public class I3 {
 		textField_32.setBounds(737, 311, 96, 19);
 		contentPane_1_4.add(textField_32);
 		
-		JSpinner spinner_5_2_2 = new JSpinner();
-		spinner_5_2_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5_2_2.setBounds(737, 62, 30, 20);
-		contentPane_1_4.add(spinner_5_2_2);
+		JSpinner spinner19 = new JSpinner();
+		spinner19.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner19.setBounds(737, 62, 30, 20);
+		contentPane_1_4.add(spinner19);
 		
-		JSpinner spinner_5_2_2_1 = new JSpinner();
-		spinner_5_2_2_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5_2_2_1.setBounds(737, 168, 30, 20);
-		contentPane_1_4.add(spinner_5_2_2_1);
+		JSpinner spinner20 = new JSpinner();
+		spinner20.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner20.setBounds(737, 168, 30, 20);
+		contentPane_1_4.add(spinner20);
+		
+		JButton btnNewButton = new JButton("Finalizar");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				int[] instrumentoIII;
+				instrumentoIII = new int[30];
+				//Dominio de la disciplina
+				instrumentoIII[0] = (int) spinner.getValue();
+				instrumentoIII[1] = (int) spinner2.getValue();
+				instrumentoIII[2] = (int) spinner3.getValue();
+				instrumentoIII[3] = (int) spinner4.getValue();
+				instrumentoIII[4] = (int) spinner5.getValue();
+				instrumentoIII[5] = (int) spinner6.getValue();
+				//Organizacion y presentacion del contenido
+				instrumentoIII[6] = (int) spinner7.getValue();
+				instrumentoIII[7] = (int) spinner8.getValue();
+				instrumentoIII[8] = (int) spinner9.getValue();
+				instrumentoIII[9] = (int) spinner10.getValue();
+				instrumentoIII[10] = (int) spinner11.getValue();
+				//Promocion del interes del estudiante
+				instrumentoIII[11] = (int) spinner12.getValue();
+				instrumentoIII[12] = (int) spinner13.getValue();
+				instrumentoIII[13] = (int) spinner14.getValue();
+				instrumentoIII[14] = (int) spinner15.getValue();
+				instrumentoIII[15] = (int) spinner16.getValue();
+				//Uso de metodos y estrategias de apoyo a la enseñanza
+				instrumentoIII[16] = (int) spinner17.getValue();
+				instrumentoIII[17] = (int) spinner18.getValue();
+				instrumentoIII[18] = (int) spinner19.getValue();
+				instrumentoIII[19] = (int) spinner20.getValue();
+				
+				int totalI3 = 0;
+				for(int i = 0; i < 26;i++)
+				{
+					totalI3 = instrumentoIII[i] + totalI3;
+				}
+				System.out.println(totalI3);
+				frame.dispose();
+				
+			
+				
+			}
+		});
+		btnNewButton.setBounds(370, 471, 89, 23);
+		contentPane_1_4.add(btnNewButton);
 	}
 }
