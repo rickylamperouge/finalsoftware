@@ -12,6 +12,8 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class I4 {
 
@@ -160,15 +162,15 @@ public class I4 {
 		spinner.setBounds(773, 126, 30, 20);
 		contentPane.add(spinner);
 		
-		JSpinner spinner_1 = new JSpinner();
-		spinner_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_1.setBounds(773, 289, 30, 20);
-		contentPane.add(spinner_1);
+		JSpinner spinner2 = new JSpinner();
+		spinner2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner2.setBounds(773, 289, 30, 20);
+		contentPane.add(spinner2);
 		
-		JSpinner spinner_2 = new JSpinner();
-		spinner_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_2.setBounds(773, 444, 30, 20);
-		contentPane.add(spinner_2);
+		JSpinner spinner3 = new JSpinner();
+		spinner3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner3.setBounds(773, 444, 30, 20);
+		contentPane.add(spinner3);
 		tabbedPane.addTab("Pag. 3", null, contentPane_1, null);
 		contentPane_1.setLayout(null);
 		contentPane_1.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -257,25 +259,25 @@ public class I4 {
 		lblNewLabel_9_1_1.setBounds(675, 550, 88, 13);
 		contentPane_1.add(lblNewLabel_9_1_1);
 		
-		JSpinner spinner_3 = new JSpinner();
-		spinner_3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_3.setBounds(773, 68, 30, 20);
-		contentPane_1.add(spinner_3);
+		JSpinner spinner4 = new JSpinner();
+		spinner4.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner4.setBounds(773, 68, 30, 20);
+		contentPane_1.add(spinner4);
 		
-		JSpinner spinner_1_1 = new JSpinner();
-		spinner_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_1_1.setBounds(773, 223, 30, 20);
-		contentPane_1.add(spinner_1_1);
+		JSpinner spinner5 = new JSpinner();
+		spinner5.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner5.setBounds(773, 223, 30, 20);
+		contentPane_1.add(spinner5);
 		
-		JSpinner spinner_2_1 = new JSpinner();
-		spinner_2_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_2_1.setBounds(773, 395, 30, 20);
-		contentPane_1.add(spinner_2_1);
+		JSpinner spinner6 = new JSpinner();
+		spinner6.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner6.setBounds(773, 395, 30, 20);
+		contentPane_1.add(spinner6);
 		
-		JSpinner spinner_3_1 = new JSpinner();
-		spinner_3_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_3_1.setBounds(773, 550, 30, 20);
-		contentPane_1.add(spinner_3_1);
+		JSpinner spinner7 = new JSpinner();
+		spinner7.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner7.setBounds(773, 550, 30, 20);
+		contentPane_1.add(spinner7);
 		tabbedPane.addTab("Pag. 4", null, contentPane_1_1, null);
 		contentPane_1_1.setLayout(null);
 		contentPane_1_1.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -364,25 +366,25 @@ public class I4 {
 		lblNewLabel_9_1_2.setBounds(675, 550, 88, 13);
 		contentPane_1_1.add(lblNewLabel_9_1_2);
 		
-		JSpinner spinner_4 = new JSpinner();
-		spinner_4.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_4.setBounds(773, 69, 30, 20);
-		contentPane_1_1.add(spinner_4);
+		JSpinner spinner8 = new JSpinner();
+		spinner8.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner8.setBounds(773, 69, 30, 20);
+		contentPane_1_1.add(spinner8);
 		
-		JSpinner spinner_1_2 = new JSpinner();
-		spinner_1_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_1_2.setBounds(773, 224, 30, 20);
-		contentPane_1_1.add(spinner_1_2);
+		JSpinner spinner9 = new JSpinner();
+		spinner9.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner9.setBounds(773, 224, 30, 20);
+		contentPane_1_1.add(spinner9);
 		
-		JSpinner spinner_2_2 = new JSpinner();
-		spinner_2_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_2_2.setBounds(773, 395, 30, 20);
-		contentPane_1_1.add(spinner_2_2);
+		JSpinner spinner10 = new JSpinner();
+		spinner10.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner10.setBounds(773, 395, 30, 20);
+		contentPane_1_1.add(spinner10);
 		
-		JSpinner spinner_3_2 = new JSpinner();
-		spinner_3_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_3_2.setBounds(773, 551, 30, 20);
-		contentPane_1_1.add(spinner_3_2);
+		JSpinner spinner11 = new JSpinner();
+		spinner11.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner11.setBounds(773, 551, 30, 20);
+		contentPane_1_1.add(spinner11);
 		
 		JPanel contentPane_1_2 = new JPanel();
 		tabbedPane.addTab("Pag. 5", null, contentPane_1_2, null);
@@ -479,25 +481,25 @@ public class I4 {
 		lblIiTareasAcademicas.setBounds(10, 346, 427, 31);
 		contentPane_1_2.add(lblIiTareasAcademicas);
 		
-		JSpinner spinner_5 = new JSpinner();
-		spinner_5.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5.setBounds(773, 69, 30, 20);
-		contentPane_1_2.add(spinner_5);
+		JSpinner spinner13 = new JSpinner();
+		spinner13.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner13.setBounds(773, 69, 30, 20);
+		contentPane_1_2.add(spinner13);
 		
-		JSpinner spinner_1_3 = new JSpinner();
-		spinner_1_3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_1_3.setBounds(773, 224, 30, 20);
-		contentPane_1_2.add(spinner_1_3);
+		JSpinner spinner14 = new JSpinner();
+		spinner14.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner14.setBounds(773, 224, 30, 20);
+		contentPane_1_2.add(spinner14);
 		
-		JSpinner spinner_2_3 = new JSpinner();
-		spinner_2_3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_2_3.setBounds(773, 465, 30, 20);
-		contentPane_1_2.add(spinner_2_3);
+		JSpinner spinner15 = new JSpinner();
+		spinner15.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner15.setBounds(773, 465, 30, 20);
+		contentPane_1_2.add(spinner15);
 		
-		JSpinner spinner_3_3 = new JSpinner();
-		spinner_3_3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_3_3.setBounds(773, 612, 30, 20);
-		contentPane_1_2.add(spinner_3_3);
+		JSpinner spinner16 = new JSpinner();
+		spinner16.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner16.setBounds(773, 612, 30, 20);
+		contentPane_1_2.add(spinner16);
 		tabbedPane.addTab("Pag. 6", null, contentPane_1_3, null);
 		contentPane_1_3.setLayout(null);
 		contentPane_1_3.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -606,25 +608,62 @@ public class I4 {
 		textField_20.setBounds(773, 679, 96, 19);
 		contentPane_1_3.add(textField_20);
 		
-		JSpinner spinner_6 = new JSpinner();
-		spinner_6.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_6.setBounds(773, 69, 30, 20);
-		contentPane_1_3.add(spinner_6);
+		JSpinner spinner17 = new JSpinner();
+		spinner17.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner17.setBounds(773, 69, 30, 20);
+		contentPane_1_3.add(spinner17);
 		
-		JSpinner spinner_1_4 = new JSpinner();
-		spinner_1_4.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_1_4.setBounds(773, 223, 30, 20);
-		contentPane_1_3.add(spinner_1_4);
+		JSpinner spinner18 = new JSpinner();
+		spinner18.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner18.setBounds(773, 223, 30, 20);
+		contentPane_1_3.add(spinner18);
 		
-		JSpinner spinner_2_4 = new JSpinner();
-		spinner_2_4.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_2_4.setBounds(773, 395, 30, 20);
-		contentPane_1_3.add(spinner_2_4);
+		JSpinner spinner19 = new JSpinner();
+		spinner19.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner19.setBounds(773, 395, 30, 20);
+		contentPane_1_3.add(spinner19);
 		
-		JSpinner spinner_3_4 = new JSpinner();
-		spinner_3_4.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_3_4.setBounds(773, 551, 30, 20);
-		contentPane_1_3.add(spinner_3_4);
+		JSpinner spinner20 = new JSpinner();
+		spinner20.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner20.setBounds(773, 551, 30, 20);
+		contentPane_1_3.add(spinner20);
+		
+		JButton btnNewButton_4 = new JButton("Finalizar");
+		btnNewButton_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				int[] instrumentoIV;
+				instrumentoIV = new int[30];
+				instrumentoIV[0] = (int) spinner.getValue();
+				instrumentoIV[1] = (int) spinner2.getValue();
+				instrumentoIV[2] = (int) spinner3.getValue();
+				instrumentoIV[3] = (int) spinner4.getValue();
+				instrumentoIV[4] = (int) spinner5.getValue();
+				instrumentoIV[5] = (int) spinner6.getValue();
+				instrumentoIV[6] = (int) spinner7.getValue();
+				instrumentoIV[7] = (int) spinner8.getValue();
+				instrumentoIV[8] = (int) spinner9.getValue();
+				instrumentoIV[9] = (int) spinner10.getValue();
+				instrumentoIV[10] = (int) spinner11.getValue();			
+				instrumentoIV[12] = (int) spinner13.getValue();
+				instrumentoIV[13] = (int) spinner14.getValue();
+				instrumentoIV[14] = (int) spinner15.getValue();
+				instrumentoIV[15] = (int) spinner16.getValue();
+				instrumentoIV[16] = (int) spinner17.getValue();
+				instrumentoIV[17] = (int) spinner18.getValue();
+				instrumentoIV[18] = (int) spinner19.getValue();
+				instrumentoIV[19] = (int) spinner20.getValue();
+				
+				int totalI4 = 0;
+				for(int i = 0; i < 26;i++)
+				{
+					totalI4 = instrumentoIV[i] + totalI4;
+				}
+				System.out.println(totalI4);
+				frame.dispose();
+			}
+		});
+		btnNewButton_4.setBounds(388, 677, 89, 23);
+		contentPane_1_3.add(btnNewButton_4);
 	}
 
 }
