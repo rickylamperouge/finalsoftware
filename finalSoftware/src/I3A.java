@@ -16,6 +16,8 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingConstants;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class I3A {
 
@@ -706,7 +708,44 @@ public class I3A {
 		panel_1.add(textField_20);
 		
 		JButton btnNewButton = new JButton("Finalizar");
-		btnNewButton.setBounds(389, 655, 89, 23);
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				int[] instrumentoIIIA;
+				instrumentoIIIA = new int[30];
+				//Dominio de la disciplina y su relacion con otras esferas del conocimiento
+				instrumentoIIIA[0] = (int) spinner.getValue();
+				instrumentoIIIA[1] = (int) spinner_2.getValue();
+				instrumentoIIIA[2] = (int) spinner_3.getValue();
+				instrumentoIIIA[3] = (int) spinner_4.getValue();
+				//Gestion de la docencia
+				instrumentoIIIA[4] = (int) spinner_5.getValue();
+				instrumentoIIIA[5] = (int) spinner_6.getValue();
+				instrumentoIIIA[6] = (int) spinner_7.getValue();
+				instrumentoIIIA[7] = (int) spinner_8.getValue();
+				instrumentoIIIA[8] = (int) spinner_9.getValue();
+				instrumentoIIIA[9] = (int) spinner_10.getValue();
+				instrumentoIIIA[10] = (int) spinner_11.getValue();
+				instrumentoIIIA[11] = (int) spinner_12.getValue();
+				instrumentoIIIA[12] = (int) spinner_13.getValue();
+				instrumentoIIIA[13] = (int) spinner_14.getValue();
+				//Promocion del interes del estudiante por la asignatura
+				instrumentoIIIA[14] = (int) spinner_15.getValue();
+				instrumentoIIIA[15] = (int) spinner_16.getValue();
+				instrumentoIIIA[16] = (int) spinner_17.getValue();
+				//DESARROLLO Y USO DE MÉTODOS Y ESTRATEGIAS DE ENSEÑANZA
+				instrumentoIIIA[17] = (int) spinner_18.getValue();
+				instrumentoIIIA[18] = (int) spinner_19.getValue();
+				
+				int totalI3A = 0;
+				for(int i = 0; i < 20;i++)
+				{
+					totalI3A = instrumentoIIIA[i] + totalI3A;
+				}
+				System.out.println(totalI3A);
+				frame.dispose();
+			}
+		});
+		btnNewButton.setBounds(384, 534, 89, 23);
 		panel_1.add(btnNewButton);
 	}
 }
