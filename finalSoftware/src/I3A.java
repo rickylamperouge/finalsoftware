@@ -706,7 +706,7 @@ public class I3A {
 		panel_1.add(textField_20);
 		
 		JButton btnNewButton = new JButton("Finalizar");
-		btnNewButton.setBounds(409, 654, 89, 23);
+		btnNewButton.setBounds(389, 655, 89, 23);
 		panel_1.add(btnNewButton);
 	}
 }
