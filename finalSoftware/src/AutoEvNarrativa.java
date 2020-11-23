@@ -8,6 +8,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import java.awt.Font;
+import java.awt.Window;
+
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JButton;
@@ -52,7 +54,7 @@ public class AutoEvNarrativa extends JFrame {
 		contentPane.setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 73, 702, 150);
+		scrollPane.setBounds(10, 69, 702, 158);
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
@@ -365,6 +367,7 @@ public class AutoEvNarrativa extends JFrame {
 		JButton btnNewButton = new JButton("Continuar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
 				//Calidad Panel
 				int calidadA = (int) spinner.getValue();
 				System.out.println(calidadA);
@@ -419,6 +422,11 @@ public class AutoEvNarrativa extends JFrame {
 				System.out.println(investigacionE);
 				int totalInvestigacion = investigacionA + investigacionB + investigacionC + investigacionD + investigacionE;
 				System.out.println(totalInvestigacion);
+				
+
+				
+				
+				
 				
 				
 				

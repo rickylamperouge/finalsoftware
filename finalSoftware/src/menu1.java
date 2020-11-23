@@ -83,7 +83,8 @@ public class menu1 extends JFrame {
 		JButton btnNewButton = new JButton("Iniciar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("Hola");
+				new menu2().setVisible(true);
+				menu1.this.dispose();
 			}
 		});
 		btnNewButton.setBounds(394, 315, 85, 21);
