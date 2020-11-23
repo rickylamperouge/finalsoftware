@@ -145,15 +145,15 @@ public class I3A {
 		spinner.setBounds(772, 155, 30, 20);
 		contentPane.add(spinner);
 		
-		JSpinner spinner_1 = new JSpinner();
-		spinner_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_1.setBounds(772, 397, 30, 20);
-		contentPane.add(spinner_1);
-		
 		JSpinner spinner_2 = new JSpinner();
 		spinner_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_2.setBounds(762, 629, 30, 20);
+		spinner_2.setBounds(772, 397, 30, 20);
 		contentPane.add(spinner_2);
+		
+		JSpinner spinner_3 = new JSpinner();
+		spinner_3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner_3.setBounds(762, 629, 30, 20);
+		contentPane.add(spinner_3);
 		
 		JTextArea txtrMedianteLaInteraccin = new JTextArea();
 		txtrMedianteLaInteraccin.setEditable(false);
@@ -232,20 +232,20 @@ public class I3A {
 		lblNewLabel_9_1.setBounds(675, 594, 88, 13);
 		contentPane_1.add(lblNewLabel_9_1);
 		
-		JSpinner spinner_3 = new JSpinner();
-		spinner_3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_3.setBounds(773, 119, 30, 20);
-		contentPane_1.add(spinner_3);
-		
 		JSpinner spinner_4 = new JSpinner();
 		spinner_4.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_4.setBounds(773, 378, 30, 20);
+		spinner_4.setBounds(773, 119, 30, 20);
 		contentPane_1.add(spinner_4);
 		
 		JSpinner spinner_5 = new JSpinner();
 		spinner_5.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_5.setBounds(773, 590, 30, 20);
+		spinner_5.setBounds(773, 378, 30, 20);
 		contentPane_1.add(spinner_5);
+		
+		JSpinner spinner_6 = new JSpinner();
+		spinner_6.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner_6.setBounds(773, 590, 30, 20);
+		contentPane_1.add(spinner_6);
 		
 		JScrollPane scrollPane_3 = new JScrollPane();
 		scrollPane_3.setBounds(28, 11, 816, 97);
@@ -318,20 +318,20 @@ public class I3A {
 		lblNewLabel_9_1_2.setBounds(675, 550, 88, 13);
 		contentPane_1_1.add(lblNewLabel_9_1_2);
 		
-		JSpinner spinner_11 = new JSpinner();
-		spinner_11.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_11.setBounds(767, 119, 30, 20);
-		contentPane_1_1.add(spinner_11);
+		JSpinner spinner_7 = new JSpinner();
+		spinner_7.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner_7.setBounds(767, 119, 30, 20);
+		contentPane_1_1.add(spinner_7);
 		
-		JSpinner spinner_12 = new JSpinner();
-		spinner_12.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_12.setBounds(767, 334, 30, 20);
-		contentPane_1_1.add(spinner_12);
+		JSpinner spinner_8 = new JSpinner();
+		spinner_8.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner_8.setBounds(767, 334, 30, 20);
+		contentPane_1_1.add(spinner_8);
 		
-		JSpinner spinner_14 = new JSpinner();
-		spinner_14.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_14.setBounds(773, 546, 30, 20);
-		contentPane_1_1.add(spinner_14);
+		JSpinner spinner_9 = new JSpinner();
+		spinner_9.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner_9.setBounds(773, 546, 30, 20);
+		contentPane_1_1.add(spinner_9);
 		
 		JTextArea txtrElProfesor_3 = new JTextArea();
 		txtrElProfesor_3.setEditable(false);
@@ -399,15 +399,15 @@ public class I3A {
 		btnNewButton_3.setBounds(365, 752, 113, 21);
 		contentPane_1_2.add(btnNewButton_3);
 		
-		JSpinner spinner_15 = new JSpinner();
-		spinner_15.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_15.setBounds(773, 114, 30, 20);
-		contentPane_1_2.add(spinner_15);
+		JSpinner spinner_10 = new JSpinner();
+		spinner_10.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner_10.setBounds(773, 114, 30, 20);
+		contentPane_1_2.add(spinner_10);
 		
-		JSpinner spinner_16 = new JSpinner();
-		spinner_16.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_16.setBounds(773, 334, 30, 20);
-		contentPane_1_2.add(spinner_16);
+		JSpinner spinner_11 = new JSpinner();
+		spinner_11.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner_11.setBounds(773, 334, 30, 20);
+		contentPane_1_2.add(spinner_11);
 		
 		JTextArea txtrElProfesor_3_3 = new JTextArea();
 		txtrElProfesor_3_3.setEditable(false);
@@ -458,9 +458,9 @@ public class I3A {
 		lblNewLabel_9_3_1.setBounds(675, 550, 88, 13);
 		contentPane_1_2.add(lblNewLabel_9_3_1);
 		
-		JSpinner spinner_16_1 = new JSpinner();
-		spinner_16_1.setBounds(765, 550, 30, 20);
-		contentPane_1_2.add(spinner_16_1);
+		JSpinner spinner_12 = new JSpinner();
+		spinner_12.setBounds(765, 550, 30, 20);
+		contentPane_1_2.add(spinner_12);
 		
 		JPanel panel = new JPanel();
 		tabbedPane.addTab("Pag. 6", null, panel, null);
@@ -489,9 +489,9 @@ public class I3A {
 		lblNewLabel_3_3_1.setBounds(659, 119, 88, 13);
 		panel.add(lblNewLabel_3_3_1);
 		
-		JSpinner spinner_15_1 = new JSpinner();
-		spinner_15_1.setBounds(757, 119, 30, 20);
-		panel.add(spinner_15_1);
+		JSpinner spinner_13 = new JSpinner();
+		spinner_13.setBounds(757, 119, 30, 20);
+		panel.add(spinner_13);
 		
 		JLabel lblNewLabel_2_3_2_1 = new JLabel("Comentarios:");
 		lblNewLabel_2_3_2_1.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -508,9 +508,9 @@ public class I3A {
 		lblNewLabel_3_3_1_1.setBounds(659, 335, 88, 13);
 		panel.add(lblNewLabel_3_3_1_1);
 		
-		JSpinner spinner_15_1_1 = new JSpinner();
-		spinner_15_1_1.setBounds(757, 335, 30, 20);
-		panel.add(spinner_15_1_1);
+		JSpinner spinner_14 = new JSpinner();
+		spinner_14.setBounds(757, 335, 30, 20);
+		panel.add(spinner_14);
 		
 		JScrollPane scrollPane_4 = new JScrollPane();
 		scrollPane_4.setBounds(56, 227, 770, 97);
@@ -552,9 +552,9 @@ public class I3A {
 		lblNewLabel_3_3_1_1_1.setBounds(659, 593, 88, 13);
 		panel.add(lblNewLabel_3_3_1_1_1);
 		
-		JSpinner spinner_15_1_1_1 = new JSpinner();
-		spinner_15_1_1_1.setBounds(757, 593, 30, 20);
-		panel.add(spinner_15_1_1_1);
+		JSpinner spinner_15 = new JSpinner();
+		spinner_15.setBounds(757, 593, 30, 20);
+		panel.add(spinner_15);
 		tabbedPane.addTab("Pag. 7", null, contentPane_1_3, null);
 		contentPane_1_3.setLayout(null);
 		contentPane_1_3.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -578,10 +578,10 @@ public class I3A {
 		btnGuardarYSometer.setBounds(364, 752, 173, 21);
 		contentPane_1_3.add(btnGuardarYSometer);
 		
-		JSpinner spinner_19 = new JSpinner();
-		spinner_19.setModel(new SpinnerNumberModel(0, 0, 4, 1));
-		spinner_19.setBounds(773, 119, 30, 20);
-		contentPane_1_3.add(spinner_19);
+		JSpinner spinner_16 = new JSpinner();
+		spinner_16.setModel(new SpinnerNumberModel(0, 0, 4, 1));
+		spinner_16.setBounds(773, 119, 30, 20);
+		contentPane_1_3.add(spinner_16);
 		
 		JScrollPane scrollPane_5 = new JScrollPane();
 		scrollPane_5.setBounds(37, 11, 770, 97);
@@ -617,9 +617,9 @@ public class I3A {
 		lblNewLabel_3_4_1.setBounds(675, 335, 88, 13);
 		contentPane_1_3.add(lblNewLabel_3_4_1);
 		
-		JSpinner spinner_19_1 = new JSpinner();
-		spinner_19_1.setBounds(773, 335, 30, 20);
-		contentPane_1_3.add(spinner_19_1);
+		JSpinner spinner_17 = new JSpinner();
+		spinner_17.setBounds(773, 335, 30, 20);
+		contentPane_1_3.add(spinner_17);
 		
 		JLabel lblCriterioIvDesarrollo = new JLabel("CRITERIO IV. DESARROLLO Y USO DE M\u00C9TODOS Y ESTRATEGIAS DE ENSE\u00D1ANZA\r");
 		lblCriterioIvDesarrollo.setForeground(Color.BLACK);
@@ -650,9 +650,9 @@ public class I3A {
 		lblNewLabel_3_4_1_1.setBounds(675, 593, 88, 13);
 		contentPane_1_3.add(lblNewLabel_3_4_1_1);
 		
-		JSpinner spinner_19_1_1 = new JSpinner();
-		spinner_19_1_1.setBounds(773, 593, 30, 20);
-		contentPane_1_3.add(spinner_19_1_1);
+		JSpinner spinner_18 = new JSpinner();
+		spinner_18.setBounds(773, 593, 30, 20);
+		contentPane_1_3.add(spinner_18);
 		
 		JPanel panel_1 = new JPanel();
 		tabbedPane.addTab("Pag. 8", null, panel_1, null);
@@ -681,9 +681,9 @@ public class I3A {
 		lblNewLabel_3_4_2.setBounds(702, 119, 88, 13);
 		panel_1.add(lblNewLabel_3_4_2);
 		
-		JSpinner spinner_19_2 = new JSpinner();
-		spinner_19_2.setBounds(800, 119, 30, 20);
-		panel_1.add(spinner_19_2);
+		JSpinner spinner_19 = new JSpinner();
+		spinner_19.setBounds(800, 119, 30, 20);
+		panel_1.add(spinner_19);
 		
 		JLabel lblNewLabel_9_1_1_1 = new JLabel("Promedio de la Evaluacion:");
 		lblNewLabel_9_1_1_1.setFont(new Font("Arial", Font.PLAIN, 12));
