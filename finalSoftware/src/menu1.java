@@ -98,12 +98,23 @@ public class menu1 extends JFrame {
 		contentPane.add(btnInstrumento_1);
 		
 		JButton btnInstrumentoa_1 = new JButton("Instrumento 3-A");
+		btnInstrumentoa_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new I33A().setVisible(true);
+				
+			}
+		});
 		btnInstrumentoa_1.setForeground(Color.DARK_GRAY);
 		btnInstrumentoa_1.setFont(new Font("Arial", Font.BOLD, 12));
 		btnInstrumentoa_1.setBounds(118, 185, 266, 21);
 		contentPane.add(btnInstrumentoa_1);
 		
 		JButton btnInstrumento_2 = new JButton("Instrumento 4");
+		btnInstrumento_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new I44().setVisible(true);
+			}
+		});
 		btnInstrumento_2.setForeground(Color.DARK_GRAY);
 		btnInstrumento_2.setFont(new Font("Arial", Font.BOLD, 12));
 		btnInstrumento_2.setBounds(118, 216, 266, 21);
