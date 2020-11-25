@@ -662,7 +662,29 @@ public class I44 extends I33A {
 				instrumentoIV[18] = (int) spinner19.getValue();
 				instrumentoIV[19] = (int) spinner20.getValue();
 				
-				
+				String[] instrumentoIVtxt = new String[21];
+				instrumentoIVtxt[0] = textField.getText();
+				instrumentoIVtxt[1] = textField_1.getText();
+				instrumentoIVtxt[2] = textField_2.getText();
+				instrumentoIVtxt[3] = textField_3.getText();
+				instrumentoIVtxt[4] = textField_4.getText();
+				instrumentoIVtxt[5] = textField_5.getText();
+				instrumentoIVtxt[6] = textField_6.getText();
+				instrumentoIVtxt[7] = textField_7.getText();
+				instrumentoIVtxt[8] = textField_8.getText();
+				instrumentoIVtxt[9] = textField_9.getText();
+				instrumentoIVtxt[10] = textField_10.getText();
+				instrumentoIVtxt[11] = textField_21.getText();
+				instrumentoIVtxt[12] = textField_11.getText();
+				instrumentoIVtxt[13] = textField_12.getText();
+				instrumentoIVtxt[14] = textField_13.getText();
+				instrumentoIVtxt[15] = textField_14.getText();
+				instrumentoIVtxt[16] = textField_15.getText();
+				instrumentoIVtxt[17] = textField_16.getText();
+				instrumentoIVtxt[18] = textField_17.getText();
+				instrumentoIVtxt[19] = textField_18.getText();
+				instrumentoIVtxt[20] = textField_19.getText();
+				instrumentoIVtxt[21] = textField_20.getText();
 				for(int i = 0; i < 26;i++)
 				{
 					totalI4 = instrumentoIV[i] + totalI4;
