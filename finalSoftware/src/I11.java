@@ -562,12 +562,12 @@ public class I11 extends menu1 {
 				 instrumentoI[26] = (int) spinner27.getValue();
 				 instrumentoI[27] = (int) spinner28.getValue();
 				 instrumentoI[28] = (int) spinner_1_1_3_1_1.getValue();
-				int totalInstrumentoI = 0;
-				for(int i = 0; i < 29; i++)
+				
+				for(int i = 0; i < 23;i++)
 				{
-					 totalInstrumentoI = instrumentoI[i] + totalInstrumentoI;
+					totalI = instrumentoI[i] + totalI;
 				}
-				System.out.println(totalInstrumentoI);
+				System.out.println(totalI);
 				dispose();
 				
 				

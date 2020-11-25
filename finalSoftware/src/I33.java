@@ -729,7 +729,7 @@ public class I33 extends I22 {
 		JButton btnNewButton = new JButton("Finalizar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				int[] instrumentoIII;
+				
 				instrumentoIII = new int[30];
 				//Dominio de la disciplina
 				instrumentoIII[0] = (int) spinner.getValue();
@@ -756,7 +756,7 @@ public class I33 extends I22 {
 				instrumentoIII[18] = (int) spinner19.getValue();
 				instrumentoIII[19] = (int) spinner20.getValue();
 				
-				int totalI3 = 0;
+				
 				for(int i = 0; i < 26;i++)
 				{
 					totalI3 = instrumentoIII[i] + totalI3;

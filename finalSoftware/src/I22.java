@@ -483,7 +483,7 @@ public class I22 extends I11A {
 		JButton btnNewButton = new JButton("Finalizar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				int[] instrumentoII;
+				
 				instrumentoII = new int[30];
 				//Calidad Panel
 				instrumentoII[0] = (int) spinner.getValue();
@@ -543,7 +543,7 @@ public class I22 extends I11A {
 				instrumentoII[24] = (int) spinner26.getValue();
 				instrumentoII[25] = (int) spinner27.getValue();
 				
-				int totalI2 = 0;
+				
 				for(int i = 0; i < 26;i++)
 				{
 					totalI2 = instrumentoII[i] + totalI2;

@@ -514,7 +514,7 @@ public class I11A extends I11 {
 				instrumentoIA[21] = (int) spinner22.getValue();
 				instrumentoIA[21] = (int) spinner23.getValue();
 				instrumentoIA[22] = (int) spinner24.getValue();
-				int totalIA = 0;
+				
 				for(int i = 0; i < 23;i++)
 				{
 					totalIA = instrumentoIA[i] + totalIA;

@@ -689,7 +689,6 @@ public class I33A extends I33 {
 		JButton btnNewButton = new JButton("Finalizar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				int[] instrumentoIIIA;
 				instrumentoIIIA = new int[30];
 				//Dominio de la disciplina y su relacion con otras esferas del conocimiento
 				instrumentoIIIA[0] = (int) spinner.getValue();
@@ -716,7 +715,7 @@ public class I33A extends I33 {
 				instrumentoIIIA[17] = (int) spinner_18.getValue();
 				instrumentoIIIA[18] = (int) spinner_19.getValue();
 				
-				int totalI3A = 0;
+				
 				for(int i = 0; i < 20;i++)
 				{
 					totalI3A = instrumentoIIIA[i] + totalI3A;
@@ -736,6 +735,7 @@ public class I33A extends I33 {
 			public void actionPerformed(ActionEvent arg0) {
 				new menu1().setVisible(true);
 				dispose();
+				
 			}
 		});
 		btnMenu.setBounds(480, 535, 89, 23);

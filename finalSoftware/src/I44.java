@@ -640,7 +640,6 @@ public class I44 extends I33A {
 		JButton btnNewButton = new JButton("Finalizar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				int[] instrumentoIV;
 				instrumentoIV = new int[30];
 				instrumentoIV[0] = (int) spinner.getValue();
 				instrumentoIV[1] = (int) spinner2.getValue();
@@ -663,13 +662,14 @@ public class I44 extends I33A {
 				instrumentoIV[18] = (int) spinner19.getValue();
 				instrumentoIV[19] = (int) spinner20.getValue();
 				
-				int totalI4 = 0;
+				
 				for(int i = 0; i < 26;i++)
 				{
 					totalI4 = instrumentoIV[i] + totalI4;
 				}
-				System.out.println(totalI4);	
-				System.out.println(totalI4);	
+				System.out.println(totalI4);
+				
+					
 				
 				dispose();
 			}
@@ -682,8 +682,7 @@ public class I44 extends I33A {
 			public void actionPerformed(ActionEvent arg0) {
 				new menu1().setVisible(true);
 				dispose();
-				promedio = 5;
-				System.out.println(promedio);
+				
 			}
 		});
 		btnNewButton_1.setBounds(416, 695, 89, 23);
