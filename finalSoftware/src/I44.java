@@ -662,7 +662,7 @@ public class I44 extends I33A {
 				instrumentoIV[18] = (int) spinner19.getValue();
 				instrumentoIV[19] = (int) spinner20.getValue();
 				
-				String[] instrumentoIVtxt = new String[21];
+				instrumentoIVtxt = new String[21];
 				instrumentoIVtxt[0] = textField.getText();
 				instrumentoIVtxt[1] = textField_1.getText();
 				instrumentoIVtxt[2] = textField_2.getText();
