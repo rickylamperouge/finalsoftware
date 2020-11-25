@@ -68,6 +68,9 @@ public class menu1 extends JFrame {
 		JButton btnInstrumentoa = new JButton("Instrumento 1-A");
 		btnInstrumentoa.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
+				new I11A().setVisible(true);
+				
 			}
 		});
 		btnInstrumentoa.setForeground(Color.DARK_GRAY);
