@@ -19,10 +19,16 @@ import java.awt.Color;
 public class menu1 extends JFrame {
 	public static int promedio = 22;
 	int[] instrumentoI;
+	int[] instrumentoIA;
 	int[] instrumentoII;
 	int[] instrumentoIII;
 	int[] instrumentoIIIA;
 	int[] instrumentoIV;
+	
+	String[] instrumentoIIItxt;
+	String[] instrumentoIIIAtxt;
+	String[] instrumentoIAtxt;
+	String[] instrumentoIVtxt;
 	
 	int totalI = 0;
 	int totalIA = 0;

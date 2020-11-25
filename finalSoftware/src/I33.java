@@ -33,21 +33,21 @@ public class I33 extends I22 {
 	private JTextField textField_7;
 	private JTextField textField_8;
 
-	private JTextField textField_10;
+	private JTextField textField_9;
 	
+	private JTextField textField_10;
+
+	private JTextField textField_11;
+
 	private JTextField textField_12;
 
+	private JTextField textField_13;
 	private JTextField textField_14;
-
+	private JTextField textField_15;
 	private JTextField textField_16;
-
+	private JTextField textField_17;
 	private JTextField textField_18;
-	private JTextField textField_20;
-	private JTextField textField_22;
-	private JTextField textField_24;
-	private JTextField textField_26;
-	private JTextField textField_28;
-	private JTextField textField_30;
+	private JTextField textField_19;
 
 	/**
 	 * Launch the application.
@@ -407,10 +407,10 @@ public class I33 extends I22 {
 		lblNewLabel_2_1_3.setBounds(20, 154, 95, 13);
 		contentPane_1_2.add(lblNewLabel_2_1_3);
 		
-		textField_10 = new JTextField();
-		textField_10.setColumns(10);
-		textField_10.setBounds(118, 154, 486, 76);
-		contentPane_1_2.add(textField_10);
+		textField_9 = new JTextField();
+		textField_9.setColumns(10);
+		textField_9.setBounds(118, 154, 486, 76);
+		contentPane_1_2.add(textField_9);
 		
 		JLabel lblNewLabel_3_1_3 = new JLabel("Puntuacion");
 		lblNewLabel_3_1_3.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -427,10 +427,10 @@ public class I33 extends I22 {
 		lblNewLabel_2_1_1_3.setBounds(20, 276, 95, 13);
 		contentPane_1_2.add(lblNewLabel_2_1_1_3);
 		
-		textField_12 = new JTextField();
-		textField_12.setColumns(10);
-		textField_12.setBounds(118, 276, 486, 76);
-		contentPane_1_2.add(textField_12);
+		textField_10 = new JTextField();
+		textField_10.setColumns(10);
+		textField_10.setBounds(118, 276, 486, 76);
+		contentPane_1_2.add(textField_10);
 		
 		JLabel lblNewLabel_3_1_1_3 = new JLabel("Puntuacion");
 		lblNewLabel_3_1_1_3.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -447,10 +447,10 @@ public class I33 extends I22 {
 		lblNewLabel_2_1_1_1_2.setBounds(20, 468, 95, 13);
 		contentPane_1_2.add(lblNewLabel_2_1_1_1_2);
 		
-		textField_14 = new JTextField();
-		textField_14.setColumns(10);
-		textField_14.setBounds(118, 468, 486, 76);
-		contentPane_1_2.add(textField_14);
+		textField_11 = new JTextField();
+		textField_11.setColumns(10);
+		textField_11.setBounds(118, 468, 486, 76);
+		contentPane_1_2.add(textField_11);
 		
 		JLabel lblNewLabel_3_1_1_1_2 = new JLabel("Puntuacion");
 		lblNewLabel_3_1_1_1_2.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -472,10 +472,10 @@ public class I33 extends I22 {
 		lblNewLabel_2_1_1_1_1_1.setBounds(20, 605, 95, 13);
 		contentPane_1_2.add(lblNewLabel_2_1_1_1_1_1);
 		
-		textField_16 = new JTextField();
-		textField_16.setColumns(10);
-		textField_16.setBounds(118, 605, 486, 76);
-		contentPane_1_2.add(textField_16);
+		textField_12 = new JTextField();
+		textField_12.setColumns(10);
+		textField_12.setBounds(118, 605, 486, 76);
+		contentPane_1_2.add(textField_12);
 		
 		JLabel lblNewLabel_3_1_1_1_1_1 = new JLabel("Puntuacion");
 		lblNewLabel_3_1_1_1_1_1.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -536,10 +536,10 @@ public class I33 extends I22 {
 		lblNewLabel_3_4.setBounds(658, 45, 69, 13);
 		contentPane_1_3.add(lblNewLabel_3_4);
 		
-		textField_18 = new JTextField();
-		textField_18.setColumns(10);
-		textField_18.setBounds(118, 34, 486, 76);
-		contentPane_1_3.add(textField_18);
+		textField_13 = new JTextField();
+		textField_13.setColumns(10);
+		textField_13.setBounds(118, 34, 486, 76);
+		contentPane_1_3.add(textField_13);
 		
 		JLabel lblNewLabel_1_1_4 = new JLabel("15. Promueve la discusion para complementar, aclarar o enriquecer la clase.");
 		lblNewLabel_1_1_4.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -551,10 +551,10 @@ public class I33 extends I22 {
 		lblNewLabel_2_1_4.setBounds(20, 154, 95, 13);
 		contentPane_1_3.add(lblNewLabel_2_1_4);
 		
-		textField_20 = new JTextField();
-		textField_20.setColumns(10);
-		textField_20.setBounds(118, 154, 486, 76);
-		contentPane_1_3.add(textField_20);
+		textField_14 = new JTextField();
+		textField_14.setColumns(10);
+		textField_14.setBounds(118, 154, 486, 76);
+		contentPane_1_3.add(textField_14);
 		
 		JLabel lblNewLabel_3_1_4 = new JLabel("Puntuacion");
 		lblNewLabel_3_1_4.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -571,10 +571,10 @@ public class I33 extends I22 {
 		lblNewLabel_2_1_1_4.setBounds(20, 276, 95, 13);
 		contentPane_1_3.add(lblNewLabel_2_1_1_4);
 		
-		textField_22 = new JTextField();
-		textField_22.setColumns(10);
-		textField_22.setBounds(118, 276, 486, 76);
-		contentPane_1_3.add(textField_22);
+		textField_15 = new JTextField();
+		textField_15.setColumns(10);
+		textField_15.setBounds(118, 276, 486, 76);
+		contentPane_1_3.add(textField_15);
 		
 		JLabel lblNewLabel_3_1_1_4 = new JLabel("Puntuacion");
 		lblNewLabel_3_1_1_4.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -591,10 +591,10 @@ public class I33 extends I22 {
 		lblNewLabel_2_1_1_1_3.setBounds(20, 468, 95, 13);
 		contentPane_1_3.add(lblNewLabel_2_1_1_1_3);
 		
-		textField_24 = new JTextField();
-		textField_24.setColumns(10);
-		textField_24.setBounds(118, 468, 486, 76);
-		contentPane_1_3.add(textField_24);
+		textField_16 = new JTextField();
+		textField_16.setColumns(10);
+		textField_16.setBounds(118, 468, 486, 76);
+		contentPane_1_3.add(textField_16);
 		
 		JLabel lblNewLabel_3_1_1_1_3 = new JLabel("Puntuacion");
 		lblNewLabel_3_1_1_1_3.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -616,10 +616,10 @@ public class I33 extends I22 {
 		lblNewLabel_2_1_1_1_1_2.setBounds(20, 605, 95, 13);
 		contentPane_1_3.add(lblNewLabel_2_1_1_1_1_2);
 		
-		textField_26 = new JTextField();
-		textField_26.setColumns(10);
-		textField_26.setBounds(118, 605, 486, 76);
-		contentPane_1_3.add(textField_26);
+		textField_17 = new JTextField();
+		textField_17.setColumns(10);
+		textField_17.setBounds(118, 605, 486, 76);
+		contentPane_1_3.add(textField_17);
 		
 		JLabel lblNewLabel_3_1_1_1_1_2 = new JLabel("Puntuacion");
 		lblNewLabel_3_1_1_1_1_2.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -684,10 +684,10 @@ public class I33 extends I22 {
 		lblNewLabel_3_5.setBounds(658, 45, 69, 13);
 		contentPane_1_4.add(lblNewLabel_3_5);
 		
-		textField_28 = new JTextField();
-		textField_28.setColumns(10);
-		textField_28.setBounds(118, 34, 486, 76);
-		contentPane_1_4.add(textField_28);
+		textField_18 = new JTextField();
+		textField_18.setColumns(10);
+		textField_18.setBounds(118, 34, 486, 76);
+		contentPane_1_4.add(textField_18);
 		
 		JLabel lblNewLabel_1_1_5 = new JLabel("20. Utiliza estrategias para verificar si los estudiantes entienden el material durante el transcurso de la clase.");
 		lblNewLabel_1_1_5.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -699,10 +699,10 @@ public class I33 extends I22 {
 		lblNewLabel_2_1_5.setBounds(20, 154, 95, 13);
 		contentPane_1_4.add(lblNewLabel_2_1_5);
 		
-		textField_30 = new JTextField();
-		textField_30.setColumns(10);
-		textField_30.setBounds(118, 154, 486, 76);
-		contentPane_1_4.add(textField_30);
+		textField_19 = new JTextField();
+		textField_19.setColumns(10);
+		textField_19.setBounds(118, 154, 486, 76);
+		contentPane_1_4.add(textField_19);
 		
 		JLabel lblNewLabel_3_1_5 = new JLabel("Puntuacion");
 		lblNewLabel_3_1_5.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -755,6 +755,29 @@ public class I33 extends I22 {
 				instrumentoIII[17] = (int) spinner18.getValue();
 				instrumentoIII[18] = (int) spinner19.getValue();
 				instrumentoIII[19] = (int) spinner20.getValue();
+				//Texto
+				instrumentoIIItxt = new String[30];
+				instrumentoIIItxt[0] = textField.getText();
+				instrumentoIIItxt[1] = textField_1.getText();
+				instrumentoIIItxt[2] = textField_2.getText();
+				instrumentoIIItxt[3] = textField_3.getText();
+				instrumentoIIItxt[4] = textField_4.getText();
+				instrumentoIIItxt[5] = textField_5.getText();
+				instrumentoIIItxt[6] = textField_6.getText();
+				instrumentoIIItxt[7] = textField_7.getText();
+				instrumentoIIItxt[8] = textField_8.getText();
+				instrumentoIIItxt[9] = textField_9.getText();
+				instrumentoIIItxt[10] = textField_10.getText();
+				instrumentoIIItxt[1] = textField_11.getText();
+				instrumentoIIItxt[12] = textField_12.getText();
+				instrumentoIIItxt[13] = textField_13.getText();
+				instrumentoIIItxt[14] = textField_14.getText();
+				instrumentoIIItxt[15] = textField_15.getText();
+				instrumentoIIItxt[16] = textField_16.getText();
+				instrumentoIIItxt[17] = textField_17.getText();
+				instrumentoIIItxt[18] = textField_18.getText();
+				instrumentoIIItxt[19] = textField_19.getText();
+				
 				
 				
 				for(int i = 0; i < 26;i++)

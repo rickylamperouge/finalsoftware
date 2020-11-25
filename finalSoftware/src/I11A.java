@@ -459,32 +459,32 @@ public class I11A extends I11 {
 		lblqueFue_2.setBounds(10, 201, 290, 26);
 		panel_3.add(lblqueFue_2);
 		
-		JTextArea textArea_1 = new JTextArea();
-		textArea_1.setBounds(10, 237, 589, 95);
-		panel_3.add(textArea_1);
+		JTextArea textArea2 = new JTextArea();
+		textArea2.setBounds(10, 237, 589, 95);
+		panel_3.add(textArea2);
 		
 		JLabel lblqueFue_1_1 = new JLabel("27. \u00BFTomarias otro curso en linea con el mismo profesor o lo recomendarias a un compa\u00F1ero? Explica.");
 		lblqueFue_1_1.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblqueFue_1_1.setBounds(10, 356, 589, 26);
 		panel_3.add(lblqueFue_1_1);
 		
-		JTextArea textArea_1_1 = new JTextArea();
-		textArea_1_1.setBounds(10, 392, 589, 95);
-		panel_3.add(textArea_1_1);
+		JTextArea textArea3 = new JTextArea();
+		textArea3.setBounds(10, 392, 589, 95);
+		panel_3.add(textArea3);
 		
 		JLabel lblqueFue_1_1_1 = new JLabel("28. \u00BFQue sugerencias harias para que el profesor mejore su ense\u00F1anza y participe mas en tu aprendizaje en esta modalidad?");
 		lblqueFue_1_1_1.setFont(new Font("Arial", Font.PLAIN, 12));
 		lblqueFue_1_1_1.setBounds(10, 512, 704, 26);
 		panel_3.add(lblqueFue_1_1_1);
 		
-		JTextArea textArea_1_1_1 = new JTextArea();
-		textArea_1_1_1.setBounds(10, 548, 589, 95);
-		panel_3.add(textArea_1_1_1);
+		JTextArea textArea4 = new JTextArea();
+		textArea4.setBounds(10, 548, 589, 95);
+		panel_3.add(textArea4);
 		
 		JButton btnNewButton = new JButton("Finalizar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				int[] instrumentoIA;
+				
 				instrumentoIA = new int[30];
 				//Perfil del estudiante
 				instrumentoIA[0] = (int) spinner.getValue();
@@ -514,6 +514,15 @@ public class I11A extends I11 {
 				instrumentoIA[21] = (int) spinner22.getValue();
 				instrumentoIA[21] = (int) spinner23.getValue();
 				instrumentoIA[22] = (int) spinner24.getValue();
+				//Texto
+				instrumentoIAtxt = new String[30];
+				instrumentoIAtxt[0] = textArea.getText();
+				instrumentoIAtxt[1] = textArea2.getText();
+				instrumentoIAtxt[2] = textArea3.getText();
+				instrumentoIAtxt[3] = textArea4.getText();
+				
+				
+				
 				
 				for(int i = 0; i < 23;i++)
 				{

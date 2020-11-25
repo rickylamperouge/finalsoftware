@@ -714,6 +714,31 @@ public class I33A extends I33 {
 				//DESARROLLO Y USO DE MÉTODOS Y ESTRATEGIAS DE ENSEÑANZA
 				instrumentoIIIA[17] = (int) spinner_18.getValue();
 				instrumentoIIIA[18] = (int) spinner_19.getValue();
+				//Texto
+				instrumentoIIIAtxt = new String[30];
+				instrumentoIIIAtxt[0] = textField.getText();
+				instrumentoIIIAtxt[1] = textField_1.getText();
+				instrumentoIIIAtxt[2] = textField_2.getText();
+				instrumentoIIIAtxt[3] = textField_3.getText();
+				instrumentoIIIAtxt[4] = textField_4.getText();
+				instrumentoIIIAtxt[5] = textField_5.getText();
+				instrumentoIIIAtxt[6] = textField_6.getText();
+				instrumentoIIIAtxt[7] = textField_7.getText();
+				instrumentoIIIAtxt[8] = textField_8.getText();
+				instrumentoIIIAtxt[9] = textField_9.getText();
+				instrumentoIIIAtxt[10] = textField_10.getText();
+				instrumentoIIIAtxt[1] = textField_11.getText();
+				instrumentoIIIAtxt[12] = textField_12.getText();
+				instrumentoIIIAtxt[13] = textField_13.getText();
+				instrumentoIIIAtxt[14] = textField_14.getText();
+				instrumentoIIIAtxt[15] = textField_15.getText();
+				instrumentoIIIAtxt[16] = textField_16.getText();
+				instrumentoIIIAtxt[17] = textField_17.getText();
+				instrumentoIIIAtxt[18] = textField_18.getText();
+				instrumentoIIIAtxt[19] = textField_19.getText();
+				instrumentoIIIAtxt[20] = textField_20.getText();
+				
+				
 				
 				
 				for(int i = 0; i < 20;i++)
