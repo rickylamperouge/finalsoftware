@@ -641,6 +641,7 @@ public class I44 extends I33A {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				instrumentoIV = new int[30];
+				//RESPONSABILIDADES Y DEBERES COMO FACULTAD
 				instrumentoIV[0] = (int) spinner.getValue();
 				instrumentoIV[1] = (int) spinner2.getValue();
 				instrumentoIV[2] = (int) spinner3.getValue();
@@ -655,6 +656,7 @@ public class I44 extends I33A {
 				instrumentoIV[11] = (int) spinner12.getValue();
 				instrumentoIV[12] = (int) spinner13.getValue();
 				instrumentoIV[13] = (int) spinner14.getValue();
+				//TAREAS ACADEMICAS
 				instrumentoIV[14] = (int) spinner15.getValue();
 				instrumentoIV[15] = (int) spinner16.getValue();
 				instrumentoIV[16] = (int) spinner17.getValue();
@@ -663,6 +665,8 @@ public class I44 extends I33A {
 				instrumentoIV[19] = (int) spinner20.getValue();
 				
 				instrumentoIVtxt = new String[21];
+				//TEXTO
+				//RESPONSABILIDADES Y DEBERES COMO FACULTAD
 				instrumentoIVtxt[0] = textField.getText();
 				instrumentoIVtxt[1] = textField_1.getText();
 				instrumentoIVtxt[2] = textField_2.getText();
@@ -677,12 +681,14 @@ public class I44 extends I33A {
 				instrumentoIVtxt[11] = textField_21.getText();
 				instrumentoIVtxt[12] = textField_11.getText();
 				instrumentoIVtxt[13] = textField_12.getText();
+				//TAREAS ACADEMICAS
 				instrumentoIVtxt[14] = textField_13.getText();
 				instrumentoIVtxt[15] = textField_14.getText();
 				instrumentoIVtxt[16] = textField_15.getText();
 				instrumentoIVtxt[17] = textField_16.getText();
 				instrumentoIVtxt[18] = textField_17.getText();
 				instrumentoIVtxt[19] = textField_18.getText();
+				//PROMEDIO Y PUNTUACION FINAL
 				instrumentoIVtxt[20] = textField_19.getText();
 				instrumentoIVtxt[21] = textField_20.getText();
 				for(int i = 0; i < 26;i++)
