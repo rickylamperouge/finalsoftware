@@ -524,12 +524,18 @@ public class I11A extends I11 {
 				
 				
 				
-				
+				//Imprimir total
 				for(int i = 0; i < 23;i++)
 				{
 					totalIA = instrumentoIA[i] + totalIA;
 				}
 				System.out.println(totalIA);
+				//Imprimir texto
+				for(int i = 0; i < 4;i++)
+				{
+					System.out.println(instrumentoIAtxt[i]);
+				}
+				
 				dispose();
 				
 			}

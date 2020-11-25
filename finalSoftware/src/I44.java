@@ -699,7 +699,7 @@ public class I44 extends I33A {
 		btnNewButton.setBounds(129, 695, 89, 23);
 		contentPane_1_3.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("Finalizar");
+		JButton btnNewButton_1 = new JButton("Menu");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				new menu1().setVisible(true);
