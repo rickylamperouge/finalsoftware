@@ -17,7 +17,7 @@ import javax.swing.JTable;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingConstants;
 
-public class I22 extends JFrame {
+public class I22 extends I11A {
 
 	private JPanel contentPane;
 	private JTable table;

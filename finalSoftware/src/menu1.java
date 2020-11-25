@@ -15,7 +15,9 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import java.awt.Color;
 
+
 public class menu1 extends JFrame {
+	public static int promedio;
 
 	private JPanel contentPane;
 

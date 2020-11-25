@@ -15,7 +15,7 @@ import javax.swing.JTextArea;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class I44 extends JFrame {
+public class I44 extends I33A {
 
 	private JPanel contentPane;
 	private JTextField textField;
@@ -669,6 +669,8 @@ public class I44 extends JFrame {
 					totalI4 = instrumentoIV[i] + totalI4;
 				}
 				System.out.println(totalI4);	
+				System.out.println(totalI4);	
+				
 				dispose();
 			}
 		});
@@ -680,6 +682,8 @@ public class I44 extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				new menu1().setVisible(true);
 				dispose();
+				promedio = 5;
+				System.out.println(promedio);
 			}
 		});
 		btnNewButton_1.setBounds(416, 695, 89, 23);

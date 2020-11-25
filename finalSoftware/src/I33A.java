@@ -16,7 +16,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class I33A extends JFrame {
+public class I33A extends I33 {
 
 	private JPanel contentPane;
 	private JTextField textField;

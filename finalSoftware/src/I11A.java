@@ -15,7 +15,7 @@ import javax.swing.JTabbedPane;
 import javax.swing.JTextArea;
 import javax.swing.SpinnerNumberModel;
 
-public class I11A extends JFrame {
+public class I11A extends I11 {
 
 	private JPanel contentPane;
 

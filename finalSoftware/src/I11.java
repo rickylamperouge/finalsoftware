@@ -15,7 +15,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.SpinnerNumberModel;
 
-public class I11 extends JFrame {
+public class I11 extends menu1 {
 
 	private JPanel contentPane;
 	private JTable table;

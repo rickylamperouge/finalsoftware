@@ -19,7 +19,7 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingConstants;
 import javax.swing.JTextArea;
 
-public class I33 extends JFrame {
+public class I33 extends I22 {
 
 	private JPanel contentPane;
 	private JTable table;
