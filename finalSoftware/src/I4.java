@@ -169,11 +169,11 @@ public class I4 {
 		spinner3.setBounds(773, 503, 30, 20);
 		contentPane.add(spinner3);
 		
-		JTextArea txtrPresentaEvidencia = new JTextArea();
-		txtrPresentaEvidencia.setText("2. Presenta evidencia sobre las diferentes formas en la que cumple con la consejer\u00EDa\r\nacad\u00E9mica ofrecida a sus estudiantes, seg\u00FAn definida en el Manual de la Facultad.\r");
-		txtrPresentaEvidencia.setFont(new Font("Arial", Font.PLAIN, 12));
-		txtrPresentaEvidencia.setBounds(10, 254, 891, 43);
-		contentPane.add(txtrPresentaEvidencia);
+		JTextArea textarea1 = new JTextArea();
+		textarea1.setText("2. Presenta evidencia sobre las diferentes formas en la que cumple con la consejer\u00EDa\r\nacad\u00E9mica ofrecida a sus estudiantes, seg\u00FAn definida en el Manual de la Facultad.\r");
+		textarea1.setFont(new Font("Arial", Font.PLAIN, 12));
+		textarea1.setBounds(10, 254, 891, 43);
+		contentPane.add(textarea1);
 		tabbedPane.addTab("Pag. 3", null, contentPane_1, null);
 		contentPane_1.setLayout(null);
 		contentPane_1.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -674,6 +674,30 @@ public class I4 {
 				instrumentoIV[18] = (int) spinner19.getValue();
 				instrumentoIV[19] = (int) spinner20.getValue();
 				
+				String[] instrumentoIVtxt = new String[21];
+				instrumentoIVtxt[0] = textField.getText();
+				instrumentoIVtxt[1] = textField_1.getText();
+				instrumentoIVtxt[2] = textField_2.getText();
+				instrumentoIVtxt[3] = textField_3.getText();
+				instrumentoIVtxt[4] = textField_4.getText();
+				instrumentoIVtxt[5] = textField_5.getText();
+				instrumentoIVtxt[6] = textField_6.getText();
+				instrumentoIVtxt[7] = textField_7.getText();
+				instrumentoIVtxt[8] = textField_8.getText();
+				instrumentoIVtxt[9] = textField_9.getText();
+				instrumentoIVtxt[10] = textField_10.getText();
+				instrumentoIVtxt[11] = textField_21.getText();
+				instrumentoIVtxt[12] = textField_11.getText();
+				instrumentoIVtxt[13] = textField_12.getText();
+				instrumentoIVtxt[14] = textField_13.getText();
+				instrumentoIVtxt[15] = textField_14.getText();
+				instrumentoIVtxt[16] = textField_15.getText();
+				instrumentoIVtxt[17] = textField_16.getText();
+				instrumentoIVtxt[18] = textField_17.getText();
+				instrumentoIVtxt[19] = textField_18.getText();
+				instrumentoIVtxt[20] = textField_19.getText();
+				instrumentoIVtxt[21] = textField_20.getText();
+				
 				int totalI4 = 0;
 				for(int i = 0; i < 26;i++)
 				{
@@ -709,5 +733,7 @@ public class I4 {
 		txtrColaboraCon.setFont(new Font("Arial", Font.PLAIN, 12));
 		txtrColaboraCon.setBounds(10, 503, 891, 42);
 		contentPane_1_3.add(txtrColaboraCon);
+		
+		
 	}
 }
