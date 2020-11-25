@@ -87,6 +87,11 @@ public class menu1 extends JFrame {
 		contentPane.add(btnInstrumento);
 		
 		JButton btnInstrumento_1 = new JButton("Instrumento 3");
+		btnInstrumento_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new I33().setVisible(true);
+			}
+		});
 		btnInstrumento_1.setForeground(Color.DARK_GRAY);
 		btnInstrumento_1.setFont(new Font("Arial", Font.BOLD, 12));
 		btnInstrumento_1.setBounds(118, 154, 266, 21);
