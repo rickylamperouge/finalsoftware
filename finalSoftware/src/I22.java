@@ -549,11 +549,22 @@ public class I22 extends JFrame {
 					totalI2 = instrumentoII[i] + totalI2;
 				}
 				System.out.println(totalI2);
+				dispose();
 				
 			}
 		});
 		btnNewButton.setBounds(397, 631, 89, 23);
 		panel_1.add(btnNewButton);
+		
+		JButton btnMenu = new JButton("Menu");
+		btnMenu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new menu1().setVisible(true);
+				dispose();
+			}
+		});
+		btnMenu.setBounds(515, 631, 89, 23);
+		panel_1.add(btnMenu);
 	}
 
 }

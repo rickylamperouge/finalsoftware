@@ -722,14 +722,26 @@ public class I33A extends JFrame {
 					totalI3A = instrumentoIIIA[i] + totalI3A;
 				}
 				System.out.println(totalI3A);
-				
+				dispose();
 				
 				
 				
 			}
 		});
-		btnNewButton.setBounds(384, 534, 89, 23);
+		btnNewButton.setBounds(240, 535, 89, 23);
 		panel_1.add(btnNewButton);
+		
+		JButton btnMenu = new JButton("Menu");
+		btnMenu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new menu1().setVisible(true);
+				dispose();
+			}
+		});
+		btnMenu.setBounds(480, 535, 89, 23);
+		panel_1.add(btnMenu);
+		
+		
 	}
 
 }

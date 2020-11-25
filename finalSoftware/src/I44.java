@@ -669,10 +669,21 @@ public class I44 extends JFrame {
 					totalI4 = instrumentoIV[i] + totalI4;
 				}
 				System.out.println(totalI4);	
+				dispose();
 			}
 		});
-		btnNewButton.setBounds(364, 695, 89, 23);
+		btnNewButton.setBounds(129, 695, 89, 23);
 		contentPane_1_3.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("Finalizar");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new menu1().setVisible(true);
+				dispose();
+			}
+		});
+		btnNewButton_1.setBounds(416, 695, 89, 23);
+		contentPane_1_3.add(btnNewButton_1);
 		
 		
 		

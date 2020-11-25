@@ -520,13 +520,23 @@ public class I11A extends JFrame {
 					totalIA = instrumentoIA[i] + totalIA;
 				}
 				System.out.println(totalIA);
-				
+				dispose();
 				
 			}
 		});
 		btnNewButton.setFont(new Font("Arial", Font.PLAIN, 12));
-		btnNewButton.setBounds(364, 713, 152, 33);
+		btnNewButton.setBounds(364, 699, 152, 33);
 		panel_3.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("Menu");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new menu1().setVisible(true);
+				dispose();
+			}
+		});
+		btnNewButton_1.setBounds(549, 699, 123, 33);
+		panel_3.add(btnNewButton_1);
 	}
 
 }

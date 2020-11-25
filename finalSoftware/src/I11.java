@@ -568,6 +568,7 @@ public class I11 extends JFrame {
 					 totalInstrumentoI = instrumentoI[i] + totalInstrumentoI;
 				}
 				System.out.println(totalInstrumentoI);
+				dispose();
 				
 				
 				
@@ -576,9 +577,11 @@ public class I11 extends JFrame {
 		btnNewButton.setBounds(373, 662, 89, 23);
 		spinner29.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("Instrumento II");
+		JButton btnNewButton_1 = new JButton("Menu");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				new menu1().setVisible(true);
+				dispose();
 				
 			}
 		});

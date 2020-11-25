@@ -57,6 +57,7 @@ public class menu1 extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new I11().setVisible(true);
+				dispose();
 				
 			}
 		});
@@ -70,7 +71,7 @@ public class menu1 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				new I11A().setVisible(true);
-				
+				dispose();
 			}
 		});
 		btnInstrumentoa.setForeground(Color.DARK_GRAY);
@@ -82,6 +83,7 @@ public class menu1 extends JFrame {
 		btnInstrumento.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				new I22().setVisible(true);
+				dispose();
 			}
 		});
 		btnInstrumento.setForeground(Color.DARK_GRAY);
@@ -93,6 +95,7 @@ public class menu1 extends JFrame {
 		btnInstrumento_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				new I33().setVisible(true);
+				dispose();
 			}
 		});
 		btnInstrumento_1.setForeground(Color.DARK_GRAY);
@@ -104,6 +107,7 @@ public class menu1 extends JFrame {
 		btnInstrumentoa_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				new I33A().setVisible(true);
+				dispose();
 				
 			}
 		});
@@ -116,6 +120,7 @@ public class menu1 extends JFrame {
 		btnInstrumento_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				new I44().setVisible(true);
+				dispose();
 			}
 		});
 		btnInstrumento_2.setForeground(Color.DARK_GRAY);
