@@ -56,6 +56,8 @@ public class menu1 extends JFrame {
 		JButton btnNewButton = new JButton("Instrumento 1");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				new I11().setVisible(true);
+				
 			}
 		});
 		btnNewButton.setForeground(Color.DARK_GRAY);
@@ -74,6 +76,11 @@ public class menu1 extends JFrame {
 		contentPane.add(btnInstrumentoa);
 		
 		JButton btnInstrumento = new JButton("Instrumento 2");
+		btnInstrumento.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new I22().setVisible(true);
+			}
+		});
 		btnInstrumento.setForeground(Color.DARK_GRAY);
 		btnInstrumento.setFont(new Font("Arial", Font.BOLD, 12));
 		btnInstrumento.setBounds(118, 123, 266, 21);

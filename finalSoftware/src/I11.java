@@ -15,13 +15,12 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.SpinnerNumberModel;
 
-public class I1 extends JFrame{
+public class I11 extends JFrame {
 
-	private JFrame frame;
+	private JPanel contentPane;
 	private JTable table;
 	private JTable table_1;
 	private JTable table_2;
-	private JTable table_4;
 	private JTable table_3;
 
 	/**
@@ -31,8 +30,8 @@ public class I1 extends JFrame{
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					I1 window = new I1();
-					window.frame.setVisible(true);
+					I11 frame = new I11();
+					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -41,24 +40,18 @@ public class I1 extends JFrame{
 	}
 
 	/**
-	 * Create the application.
+	 * Create the frame.
 	 */
-	public I1() {
-		initialize();
-	}
-
-	/**
-	 * Initialize the contents of the frame.
-	 */
-	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 932, 820);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	public I11() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 932, 820);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
 		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-		frame.getContentPane().add(tabbedPane, BorderLayout.CENTER);
-		
-		
+		contentPane.add(tabbedPane, BorderLayout.CENTER);
 		
 		JPanel panel_1 = new JPanel();
 		tabbedPane.addTab("Pagina 1", null, panel_1, null);
@@ -109,7 +102,6 @@ public class I1 extends JFrame{
 		contentPane.add(scrollPane_1);
 		
 		table_1 = new JTable();
-		table.setRowHeight(20);
 		table_1.setModel(new DefaultTableModel(
 			new Object[][] {
 				{"3. Al inicio del curso en o antes de las primeras dos reuniones de cada t\u00E9rmino acad\u00E9mico"},
@@ -123,6 +115,7 @@ public class I1 extends JFrame{
 		table_1.getColumnModel().getColumn(0).setPreferredWidth(470);
 		scrollPane_1.setViewportView(table_1);
 		
+		
 		JLabel lblNewLabel_2_1_1 = new JLabel("Desarrollo de la Clase");
 		lblNewLabel_2_1_1.setBounds(303, 323, 134, 14);
 		contentPane.add(lblNewLabel_2_1_1);
@@ -132,7 +125,6 @@ public class I1 extends JFrame{
 		contentPane.add(scrollPane_2);
 		
 		table_2 = new JTable();
-		table.setRowHeight(20);
 		table_2.setModel(new DefaultTableModel(
 			new Object[][] {
 				{"5. La forma en que se desarrolla la clase me mantiene interesado. "},
@@ -472,9 +464,7 @@ public class I1 extends JFrame{
 		lblNewLabel_3.setBounds(432, 11, 145, 14);
 		spinner29.add(lblNewLabel_3);
 		
-		table_4 = new JTable();
-		table_4.setBounds(153, 190, 1, 1);
-		spinner29.add(table_4);
+
 		
 		JScrollPane scrollPane_3 = new JScrollPane();
 		scrollPane_3.setBounds(90, 245, 605, 256);
@@ -503,6 +493,8 @@ public class I1 extends JFrame{
 				}
 			));
 		scrollPane_3.setViewportView(table_3);
+		
+		
 		
 		JLabel lblNewLabel_4 = new JLabel("Gerencia del proceso de ense\u00F1anza aprendizaje");
 		lblNewLabel_4.setBounds(153, 78, 432, 14);
@@ -576,7 +568,7 @@ public class I1 extends JFrame{
 					 totalInstrumentoI = instrumentoI[i] + totalInstrumentoI;
 				}
 				System.out.println(totalInstrumentoI);
-				frame.dispose();
+				
 				
 				
 			}
@@ -592,7 +584,5 @@ public class I1 extends JFrame{
 		});
 		btnNewButton_1.setBounds(508, 662, 136, 23);
 		spinner29.add(btnNewButton_1);
-		
-		
 	}
 }
