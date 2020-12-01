@@ -14,6 +14,7 @@ import java.util.Scanner;
 import java.awt.event.ActionEvent;
 
 public class menuFinal extends JFrame {
+	
 
 	private JPanel contentPane;
 	private JTextField userText;

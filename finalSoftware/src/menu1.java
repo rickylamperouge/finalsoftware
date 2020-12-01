@@ -80,6 +80,7 @@ public class menu1 extends menuFinal {
 				new I11().setVisible(true);
 				dispose();
 				
+				
 			}
 		});
 		btnNewButton.setForeground(Color.DARK_GRAY);
