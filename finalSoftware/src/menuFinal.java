@@ -109,6 +109,7 @@ public class menuFinal extends JFrame {
 							new menu1().setVisible(true);
 							mensaje = false;
 							
+							
 						}
 						
 							
@@ -116,11 +117,11 @@ public class menuFinal extends JFrame {
 						
 					
 				}
-				//if(mensaje = true)
-				//{
-				//	System.out.println("Try again");
+				if(mensaje)
+				{
+					System.out.println("Try again");
 					
-				//}
+				}
 				
 				
 				
