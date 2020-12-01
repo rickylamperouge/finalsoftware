@@ -24,6 +24,7 @@ public class menu2 extends JFrame {
 			}
 		});
 	}
+	
 
 	/**
 	 * Create the frame.
