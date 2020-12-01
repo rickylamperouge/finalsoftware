@@ -19,8 +19,7 @@ import javax.swing.JTextField;
 
 
 	public class loginMenu implements ActionListener {
-		String username;
-		String password;
+		
 		
 		
 
@@ -56,8 +55,9 @@ import javax.swing.JTextField;
 			JButton button= new JButton("Login");
 			button.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent arg0) {
-					
-					VerifyLogin();
+				String username = userText.getText();
+				String password = passwordText.getText();
+					VerifyLogin(username , password);
 				}
 			});
 			button.setBounds(10, 80, 80, 25);
@@ -75,8 +75,7 @@ import javax.swing.JTextField;
 			
 			
 			
-			//Class Execution
-			VerifyLogin();
+			
 			
 		
 	}
@@ -84,15 +83,15 @@ import javax.swing.JTextField;
 
 
 
-	public static boolean VerifyLogin() {
+	public static boolean VerifyLogin(String username, String password) {
 			boolean isAuthenticated = false;
 			
 			
 			Scanner input = new Scanner(System.in);
-			System.out.println("What is your username: ");
-			String username = input.nextLine();
-			System.out.println("What is your password: ");
-			String password = input.nextLine();
+			//System.out.println("What is your username: ");
+			//String username = input.nextLine();
+			//.out.println("What is your password: ");
+			//String password = input.nextLine();
 		
 		
 			String pathway = "C:\\Users\\ricar\\git\\finalsoftware\\finalSoftware\\src\\login.txt"; 
@@ -113,6 +112,7 @@ import javax.swing.JTextField;
 							}
 						
 					}
+					
 					System.out.println("Login Succesful");
 					
 				}catch (FileNotFoundException fe) {

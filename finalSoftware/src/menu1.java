@@ -16,7 +16,7 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.Color;
 
 
-public class menu1 extends JFrame {
+public class menu1 extends menuFinal {
 	public static int promedio = 22;
 	int[] instrumentoI;
 	int[] instrumentoIA;
