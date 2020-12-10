@@ -745,7 +745,8 @@ public class I33A extends I33 {
 				{
 					totalI3A = instrumentoIIIA[i] + totalI3A;
 				}
-				System.out.println(totalI3A);
+				new I44().setVisible(true);
+				//System.out.println(totalI3A);
 				dispose();
 				
 				

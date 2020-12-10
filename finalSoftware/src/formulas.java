@@ -4,8 +4,11 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
-public class formulas extends  I44 {
+public class formulas extends I44 {
 
 	private JPanel contentPane;
 
@@ -36,15 +39,18 @@ public class formulas extends  I44 {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		
+		
 		//rango catedratico asociado
 		//calidad docente formula  a
-		int m = 0;
-		int n = 0;
+		int m = 1;
+		int n = 1;
 		int CDa = 15;
 		int CDb = 10;
 		int Cdc = 6;
 		int CDd = 6;
 		int CDe = 7;
+		int CDf = 9;
 		double i1a = m/((m+n)*(valenciaCalApromI1)) + n/((m+n)*(valenciaCalAI1Aprom));
 		puntuacionCalA = (A*i1a) + (B*totalI2) + (C*valenciaCalApromI3)+(D*instrumentoIV[15])*3/4*(CDa/3);
 		//termina calidad docente formula  a
@@ -72,9 +78,31 @@ public class formulas extends  I44 {
 		
 		//termina calidad docente fomula e
 		
+		//calidad docente fomula f
+		double i1f = m/((m+n)*(valenciaCalFpromI1)) + n/((m+n)*(valenciaCalFI1Aprom));
+		puntuacionCalF = (A*i1f+B*totalI2+C*valenciaCalFpromI3+D*valenciaCalFpromI4)*(CDf/3);
 		
+		//termina calidad docente fomula f
+		
+		
+		
+		JButton btnNewButton = new JButton("Finalizar");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				System.out.println(puntuacionCalA);
+				System.out.println(puntuacionCalB);
+				System.out.println(puntuacionCalC);
+				System.out.println(puntuacionCalD);
+				System.out.println(puntuacionCalF);
+				
+				
+				
+			}
+		});
+		btnNewButton.setBounds(169, 106, 89, 23);
+		contentPane.add(btnNewButton);
 		
 		
 	}
-
 }

@@ -594,12 +594,22 @@ public class I11 extends menu1 {
 				//termina calidad docente e
 				
 				
+				// calidad docente f
+				for(int i = 9; i<14;i++)
+				{
+					valenciaCalFI1 = (instrumentoI[i] + valenciaCalFI1);
+				}
+				valenciaCalFpromI1 = (valenciaCalFI1+instrumentoI[24]/6)-1;
+				
+				//termina calidad docente f
 				
 				
 				
 				
 				
 				
+				
+				new I11A().setVisible(true);
 				dispose();
 				
 				

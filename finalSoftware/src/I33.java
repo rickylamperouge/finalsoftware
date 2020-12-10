@@ -800,7 +800,7 @@ public class I33 extends I22 {
 				valenciaCalBpromI3 = (valenciaCalBI3) * (3/4);
 				
 				
-				//termina clidad docente b
+				//termina calidad docente b
 				
 				
 				
@@ -812,10 +812,26 @@ public class I33 extends I22 {
 				valenciaCalEpromI3 = (valenciaCalEI3) * (3/4);
 				
 				
-				//termina clidad docente e
+				//termina calidad docente e
 				
 				
-				System.out.println(totalI3);
+				//calidad docente f
+				for(int i = 16; i < 20; i++)
+				{
+					valenciaCalFI3 = instrumentoIII[i] + valenciaCalFI3;
+				}
+				valenciaCalFpromI3 = (valenciaCalFI3) * (3/4);
+				
+				//termina calidad docente f
+				
+				
+				
+				
+				
+				
+				
+				new I33A().setVisible(true);
+				//System.out.println(totalI3);
 				dispose();
 				
 				

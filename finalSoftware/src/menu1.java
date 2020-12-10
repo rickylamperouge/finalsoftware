@@ -78,6 +78,18 @@ public class menu1 extends menuFinal {
 	double valenciaCalEpromI3 = 0;
 	//termina calidad docente e
 	
+	//calidad docente f
+	double valenciaCalFI1 = 0;
+	double valenciaCalFI1A = 0;
+	double valenciaCalFpromI1 = 0;
+	double valenciaCalFI1Aprom = 0;
+	double puntuacionCalF = 0;
+	double valenciaCalFI3 = 0;
+	double valenciaCalFpromI3 = 0;	
+	double valenciaCalFI4 = 0;
+	double valenciaCalFpromI4 = 0;
+	
+	//termina calidad docente f
 	
 	
 	
