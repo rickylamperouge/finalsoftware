@@ -544,9 +544,18 @@ public class I11A extends I11 {
 				}
 				
 				
-				//calidad docente b
+				//calidad docente e
+				valenciaCalEI1A = (instrumentoIA[6] + instrumentoIA[9] + instrumentoIA[12] + instrumentoIA[13]);
+				valenciaCalEI1Aprom = (valenciaCalEI1A/4)-1;
 				
-				//termina calidad docente b
+				//termina calidad docente e
+				
+				// calidad docente f
+				
+				valenciaCalFI1Aprom = ((instrumentoIA[12]+ instrumentoIA[16]+ instrumentoIA[17]+ instrumentoIA[22])/4)-1;
+				
+				//termina calidad docente f
+
 				
 				
 				
@@ -554,7 +563,7 @@ public class I11A extends I11 {
 				
 				
 				
-				
+				new I22().setVisible(true);
 				dispose();
 				
 			}

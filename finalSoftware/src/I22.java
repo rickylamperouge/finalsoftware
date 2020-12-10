@@ -550,6 +550,9 @@ public class I22 extends I11A {
 				}
 				System.out.println(totalI2);
 				
+				
+				
+				new I33().setVisible(true);
 				dispose();
 				
 			}

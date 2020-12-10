@@ -61,6 +61,38 @@ public class menu1 extends menuFinal {
 	
 	//termina calidad docente b
 	
+	//Calidad docente c
+	double puntuacionCalC = 0;
+	//termina calidad docente c
+	//calidad docente d
+	double puntuacionCalD = 0;
+	//termina calidad docente d
+	
+	//calidad docente e
+	double valenciaCalEI1 = 0;
+	double puntuacionCalE = 0;
+	double valenciaCalEpromI1 = 0;
+	double valenciaCalEI1A = 0;
+	double valenciaCalEI1Aprom = 0;
+	double valenciaCalEI3 = 0;
+	double valenciaCalEpromI3 = 0;
+	//termina calidad docente e
+	
+	//calidad docente f
+	double valenciaCalFI1 = 0;
+	double valenciaCalFI1A = 0;
+	double valenciaCalFpromI1 = 0;
+	double valenciaCalFI1Aprom = 0;
+	double puntuacionCalF = 0;
+	double valenciaCalFI3 = 0;
+	double valenciaCalFpromI3 = 0;	
+	double valenciaCalFI4 = 0;
+	double valenciaCalFpromI4 = 0;
+	
+	//termina calidad docente f
+	
+	
+	
 
 	private JPanel contentPane;
 

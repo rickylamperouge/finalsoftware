@@ -61,6 +61,7 @@ public class I44 extends I33A {
 	 * Create the frame.
 	 */
 	public I44() {
+		System.out.println(totalI3A);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 932, 820);
 		contentPane = new JPanel();
@@ -691,8 +692,12 @@ public class I44 extends I33A {
 				}
 				System.out.println(totalI4);
 				
-					
 				
+				valenciaCalFpromI4 = ((instrumentoIV[16] + instrumentoIV[19] + instrumentoIV[20])/3) * (3/4);
+				//termina calidad docente f
+				
+					
+				new formulas().setVisible(true);
 				dispose();
 			}
 		});
