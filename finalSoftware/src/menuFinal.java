@@ -92,7 +92,7 @@ public class menuFinal extends JFrame {
 		//String password = input.nextLine();
 	
 	
-		String pathway = "C:\\Users\\ricar\\git\\finalsoftware\\finalSoftware\\src\\login.txt"; 
+		String pathway = "C:\\Users\\jonat\\git\\finalsoftware\\finalSoftware\\src\\login.txt"; 
 		File file = new File(pathway);
 		
 			try {
