@@ -584,6 +584,15 @@ public class I11 extends menu1 {
 				
 				//termina calidad docente b
 				
+				// calidad docente e
+				
+				
+				valenciaCalEI1 = (instrumentoI[5] + instrumentoI[7] + instrumentoI[15] + instrumentoI[17]);
+				valenciaCalEpromI1 = (valenciaCalEI1/4)-1;
+				
+				
+				//termina calidad docente e
+				
 				
 				
 				

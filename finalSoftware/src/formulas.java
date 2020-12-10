@@ -42,6 +42,9 @@ public class formulas extends  I44 {
 		int n = 0;
 		int CDa = 15;
 		int CDb = 10;
+		int Cdc = 6;
+		int CDd = 6;
+		int CDe = 7;
 		double i1a = m/((m+n)*(valenciaCalApromI1)) + n/((m+n)*(valenciaCalAI1Aprom));
 		puntuacionCalA = (A*i1a) + (B*totalI2) + (C*valenciaCalApromI3)+(D*instrumentoIV[15])*3/4*(CDa/3);
 		//termina calidad docente formula  a
@@ -53,6 +56,24 @@ public class formulas extends  I44 {
 		
 		
 		//termina calidad docente formula  b
+		
+		//calidad docente formula c
+		puntuacionCalC = ((B*totalI2 + C*((instrumentoIII[6]+instrumentoIII[7])/2)*3/4+D*instrumentoIV[17]*(3/4)))*(Cdc/3)/(1-A);
+		
+		//termina calidad docente formula c
+		
+		//calidad docente formula d***********
+		puntuacionCalD = (A*(instrumentoI[16]-1)*(CDd/3)+B*totalI2+(C*(instrumentoIII[4]+instrumentoIII[5])*(3/4))*(CDd/3))/(1-D);
+		//termina calidad docente fomula d
+		
+		//calidad docente fomula e
+		double i1e = m/((m+n)*(valenciaCalEpromI1)) + n/((m+n)*(valenciaCalEI1Aprom));
+		puntuacionCalE = (A*i1e+B*totalI2+(C*valenciaCalEpromI3)+(D*instrumentoIV[15]*(3/4)))*(CDe/3);
+		
+		//termina calidad docente fomula e
+		
+		
+		
 		
 	}
 
