@@ -784,6 +784,7 @@ public class I33 extends I22 {
 				{
 					totalI3 = instrumentoIII[i] + totalI3;
 				}
+				
 				//calidad docente a
 				for(int i = 0; i < 6; i++)
 				{

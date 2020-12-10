@@ -18,76 +18,76 @@ import java.awt.Color;
 
 public class menu1 extends menuFinal {
 	public static int promedio = 22;
-	int[] instrumentoI;
-	int[] instrumentoIA;
-	int[] instrumentoII;
-	int[] instrumentoIII;
-	int[] instrumentoIIIA;
-	int[] instrumentoIV;
+	static int[] instrumentoI;
+	static int[] instrumentoIA;
+	static int[] instrumentoII;
+	static int[] instrumentoIII;
+	static int[] instrumentoIIIA;
+	static int[] instrumentoIV;
 
 	
-	String[] instrumentoIIItxt;
-	String[] instrumentoIIIAtxt;
-	String[] instrumentoIAtxt;
-	String[] instrumentoIVtxt;
-	double A = 0.25;
-	double B = 0.25;
-	double C = 0.25;
-	double D = 0.25;
-	int totalI = 0;
-	int totalIA = 0;
-	int totalI2 = 0;
-	int totalI3 = 0;
-	int totalI3A = 0;
+	static String[] instrumentoIIItxt;
+	static String[] instrumentoIIIAtxt;
+	static String[] instrumentoIAtxt;
+	static String[] instrumentoIVtxt;
+	static double A = 0.25;
+	static double B = 0.25;
+	static double C = 0.25;
+	static double D = 0.25;
+	static int totalI = 0;
+	static int totalIA = 0;
+	static int totalI2 = 0;
+	static int totalI3 = 0;
+	static int totalI3A = 0;
 	int totalI4 = 0;
 	//Calidad docente a
-	double valenciaCalAI1 = 0;
-	double valenciaCalApromI1 = 0;
-	double puntuacionCalA = 0;
-	double valenciaCalAI3 = 0;
-	double valenciaCalApromI3 = 0;
-	double valenciaCalAI1A = 0;
-	double valenciaCalAI1Aprom = 0;
+	static double valenciaCalAI1 = 0;
+	static double valenciaCalApromI1 = 0;
+	static double puntuacionCalA = 0;
+	static double valenciaCalAI3 = 0;
+	static double valenciaCalApromI3 = 0;
+	static double valenciaCalAI1A = 0;
+	static double valenciaCalAI1Aprom = 0;
 	//termina calidad docente a
 	
 	//Calidad docente b
-	double valenciaCalBI1 = 0;
-	double valenciaCalBpromI1 = 0;
-	double valenciaCalBI1A = 0;
-	double valenciaCalBI1Aprom = 0;
-	double valenciaCalBI3 = 0;
-	double valenciaCalBpromI3 = 0;
-	double puntuacionCalB = 0;
+	static double valenciaCalBI1 = 0;
+	static double valenciaCalBpromI1 = 0;
+	static double valenciaCalBI1A = 0;
+	static double valenciaCalBI1Aprom = 0;
+	static double valenciaCalBI3 = 0;
+	static double valenciaCalBpromI3 = 0;
+	static double puntuacionCalB = 0;
 	
 	//termina calidad docente b
 	
 	//Calidad docente c
-	double puntuacionCalC = 0;
+	static double puntuacionCalC = 0;
 	//termina calidad docente c
 	//calidad docente d
-	double puntuacionCalD = 0;
+	static double puntuacionCalD = 0;
 	//termina calidad docente d
 	
 	//calidad docente e
-	double valenciaCalEI1 = 0;
-	double puntuacionCalE = 0;
-	double valenciaCalEpromI1 = 0;
-	double valenciaCalEI1A = 0;
-	double valenciaCalEI1Aprom = 0;
-	double valenciaCalEI3 = 0;
-	double valenciaCalEpromI3 = 0;
+	static double valenciaCalEI1 = 0;
+	static double puntuacionCalE = 0;
+	static double valenciaCalEpromI1 = 0;
+	static double valenciaCalEI1A = 0;
+	static double valenciaCalEI1Aprom = 0;
+	static double valenciaCalEI3 = 0;
+	static double valenciaCalEpromI3 = 0;
 	//termina calidad docente e
 	
 	//calidad docente f
-	double valenciaCalFI1 = 0;
-	double valenciaCalFI1A = 0;
-	double valenciaCalFpromI1 = 0;
-	double valenciaCalFI1Aprom = 0;
-	double puntuacionCalF = 0;
-	double valenciaCalFI3 = 0;
-	double valenciaCalFpromI3 = 0;	
-	double valenciaCalFI4 = 0;
-	double valenciaCalFpromI4 = 0;
+	static double valenciaCalFI1 = 0;
+	static double valenciaCalFI1A = 0;
+	static double valenciaCalFpromI1 = 0;
+	static double valenciaCalFI1Aprom = 0;
+	static double puntuacionCalF = 0;
+	static double valenciaCalFI3 = 0;
+	static double valenciaCalFpromI3 = 0;	
+	static double valenciaCalFI4 = 0;
+	static double valenciaCalFpromI4 = 0;
 	
 	//termina calidad docente f
 	

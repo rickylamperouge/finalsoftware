@@ -61,7 +61,7 @@ public class I44 extends I33A {
 	 * Create the frame.
 	 */
 	public I44() {
-		System.out.println(totalI3A);
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 932, 820);
 		contentPane = new JPanel();
