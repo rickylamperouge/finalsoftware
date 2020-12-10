@@ -780,10 +780,17 @@ public class I33 extends I22 {
 				
 				
 				
-				for(int i = 0; i < 26;i++)
+				for(int i = 0; i < 20;i++)
 				{
 					totalI3 = instrumentoIII[i] + totalI3;
 				}
+				for(int i = 0; i < 6; i++)
+				{
+					valenciaCalAI3 = instrumentoIII[i] + valenciaCalAI3;
+				}
+				valenciaCalApromI3 = valenciaCalAI3 * (3/4);
+				
+				
 				System.out.println(totalI3);
 				dispose();
 				

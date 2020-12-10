@@ -530,11 +530,30 @@ public class I11A extends I11 {
 					totalIA = instrumentoIA[i] + totalIA;
 				}
 				System.out.println(totalIA);
+				//calidad docente a
+				for(int i = 5; i<12;i++)
+				{
+					valenciaCalAI1A = instrumentoIA[i] + valenciaCalAI1A;
+				}
+				valenciaCalAI1Aprom = (valenciaCalAI1A/7)-1;
+				//termina calidad docente a
 				//Imprimir texto
 				for(int i = 0; i < 4;i++)
 				{
 					System.out.println(instrumentoIAtxt[i]);
 				}
+				
+				
+				//calidad docente b
+				
+				//termina calidad docente b
+				
+				
+				
+				
+				
+				
+				
 				
 				dispose();
 				

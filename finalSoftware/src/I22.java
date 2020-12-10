@@ -549,6 +549,7 @@ public class I22 extends I11A {
 					totalI2 = instrumentoII[i] + totalI2;
 				}
 				System.out.println(totalI2);
+				
 				dispose();
 				
 			}

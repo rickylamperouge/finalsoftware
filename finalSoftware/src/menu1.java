@@ -24,18 +24,42 @@ public class menu1 extends menuFinal {
 	int[] instrumentoIII;
 	int[] instrumentoIIIA;
 	int[] instrumentoIV;
+
 	
 	String[] instrumentoIIItxt;
 	String[] instrumentoIIIAtxt;
 	String[] instrumentoIAtxt;
 	String[] instrumentoIVtxt;
-	
+	double A = 0.25;
+	double B = 0.25;
+	double C = 0.25;
+	double D = 0.25;
 	int totalI = 0;
 	int totalIA = 0;
 	int totalI2 = 0;
 	int totalI3 = 0;
 	int totalI3A = 0;
 	int totalI4 = 0;
+	//Calidad docente a
+	double valenciaCalAI1 = 0;
+	double valenciaCalApromI1 = 0;
+	double puntuacionCalA = 0;
+	double valenciaCalAI3 = 0;
+	double valenciaCalApromI3 = 0;
+	double valenciaCalAI1A = 0;
+	double valenciaCalAI1Aprom = 0;
+	//termina calidad docente a
+	
+	//Calidad docente b
+	double valenciaCalBI1 = 0;
+	double valenciaCalBpromI1 = 0;
+	double valenciaCalBI1A = 0;
+	double valenciaCalBI1Aprom = 0;
+	double valenciaCalBI3 = 0;
+	double valenciaCalBpromI3 = 0;
+	double puntuacionCalB = 0;
+	
+	//termina calidad docente b
 	
 
 	private JPanel contentPane;

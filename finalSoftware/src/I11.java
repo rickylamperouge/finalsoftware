@@ -567,7 +567,30 @@ public class I11 extends menu1 {
 				{
 					totalI = instrumentoI[i] + totalI;
 				}
-				System.out.println(totalI);
+				//calidad docente a
+				for (int i = 6; i < 16; i++)
+				{
+					valenciaCalAI1 = (instrumentoI[i] + valenciaCalAI1);
+				}
+				valenciaCalApromI1 = (valenciaCalAI1/10)-1;
+				// termina calidad docente a
+				
+				//calidad docente b
+				for(int i = 7; i<12;i++)
+				{
+					valenciaCalBI1 = (instrumentoI[i] + valenciaCalBI1);
+				}
+				valenciaCalBpromI1 = (valenciaCalBI1+instrumentoI[18]+instrumentoI[19]/7)-1;
+				
+				//termina calidad docente b
+				
+				
+				
+				
+				
+				
+				
+				
 				dispose();
 				
 				
