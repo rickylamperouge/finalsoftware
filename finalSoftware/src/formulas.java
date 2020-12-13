@@ -84,6 +84,16 @@ public class formulas extends I44 {
 		
 		//termina calidad docente fomula f
 		
+		//calidad docente g y h
+		double i1g = m/((m+n)*(valenciaCalGpromI1)) + n/((m+n)*(valenciaCalGI1Aprom));
+		//double i1h = m/((m+n)*(valenciaCalHpromI1)) + n/((m+n)*(valenciaCalHI1Aprom));
+		
+		//termina calidad docente g y h
+		
+		//**********************************************************************************
+		//Criterio Servicio a la Institución 11%
+		
+		
 		
 		
 		JButton btnNewButton = new JButton("Finalizar");

@@ -603,6 +603,12 @@ public class I11 extends menu1 {
 				
 				//termina calidad docente f
 				
+				//calidad docente g
+				valenciaCalGpromI1 = ((instrumentoI[24] + instrumentoI[27] + instrumentoI[28])/3)-1;
+				
+				//termina calidad docente g
+				//**********************************************************************************
+
 				
 				
 				

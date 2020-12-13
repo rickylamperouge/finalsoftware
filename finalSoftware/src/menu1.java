@@ -34,12 +34,15 @@ public class menu1 extends menuFinal {
 	static double B = 0.25;
 	static double C = 0.25;
 	static double D = 0.25;
+	static double sB = 0.8;
+	static double sD = 0.2;
 	static int totalI = 0;
 	static int totalIA = 0;
 	static int totalI2 = 0;
 	static int totalI3 = 0;
 	static int totalI3A = 0;
 	int totalI4 = 0;
+	//**********************************************************************************
 	//Calidad docente a
 	static double valenciaCalAI1 = 0;
 	static double valenciaCalApromI1 = 0;
@@ -91,6 +94,12 @@ public class menu1 extends menuFinal {
 	
 	//termina calidad docente f
 	
+	//calidad docente g y h
+	static double valenciaCalGpromI1 = 0;
+	static double valenciaCalGI1Aprom = 0;
+	static double valenciaCalGI1A = 0;
+	//termina calidad docente g y h
+	//**********************************************************************************
 	
 	
 
