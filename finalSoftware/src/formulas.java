@@ -55,6 +55,17 @@ public class formulas extends I44 {
 		int SIbc = 3;
 		int SIde = 2;
 		int SIfg = 3;
+		int SCab = 2;
+		int ITa = 3;
+		int ITb = 4;
+		int ITcde = 5;
+		
+		int DPabc = 4;
+		int DPd = 3;
+		int DPef = 3;
+		double CDPB = .9;
+		double CDPD = .1;
+		    
 		double i1a = m/((m+n)*(valenciaCalApromI1)) + n/((m+n)*(valenciaCalAI1Aprom));
 		puntuacionCalA = (A*i1a) + (B*totalI2) + (C*valenciaCalApromI3)+(D*instrumentoIV[15])*3/4*(CDa/3);
 		//termina calidad docente formula  a
@@ -118,6 +129,26 @@ public class formulas extends I44 {
 		puntuacionSIFG = (totalI2)*(SIfg/3);
 		
 		//Termina Servicio a la institucion fg
+		
+		//Servicio a la comunidad 
+		puntuacionSCAB = 1*totalI2*(SCab/3);
+		
+		//Termina Servicio ala comunidad
+		
+		
+		
+		//Investigacion y trabajo creativo
+		puntuacionITa = totalI2*(ITa/3);
+		puntuacionITb = (iB*totalI2) + (iD*instrumentoIV[15])*(3/4);
+		puntuacionITcde = (totalI2)*(ITcde/3);
+		
+		//Termina Investigacion y trabajo creativo
+		
+		//Crecimiento y Sesarrollo Profesional 10%
+        puntuacionCDP1 = (totalI2)*(DPabc/3);
+        puntuacionCDP2 = (totalI2)*(DPd/3);
+        puntuacionCDP3 = ((CDPB)*(totalI2)+(CDPD*totalI4))*(DPef/3);
+        //Termina Crecimiento y Desarrollo Profesional
 		
 		JButton btnNewButton = new JButton("Finalizar");
 		btnNewButton.addActionListener(new ActionListener() {

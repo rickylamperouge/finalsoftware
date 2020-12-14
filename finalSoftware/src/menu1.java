@@ -36,6 +36,8 @@ public class menu1 extends menuFinal {
 	static double D = 0.25;
 	static double sB = 0.8;
 	static double sD = 0.2;
+	static double iB = .9;
+	static double iD = .1;
 	static int totalI = 0;
 	static int totalIA = 0;
 	static int totalI2 = 0;
@@ -114,9 +116,30 @@ public class menu1 extends menuFinal {
 	//Termina servicio a la institucion de
 	
 	//Servicio a la institucion fg
-	static double puntuacionSIFG;
+	static double puntuacionSIFG = 0;
 	//Termina servicio a la institucion fg
 	
+	//Servicio a la comunidad 
+	static double puntuacionSCAB = 0;
+	//Termina servicio a la comunidad
+	
+	//Investigacion y trabajo creativo 12%
+	static double puntuacionITa = 0;
+	static double puntuacionITb = 0;
+	static double puntuacionITcde = 0;
+	
+	
+	//Termina investigacion y trabajo creativo
+	
+	
+	
+	
+	//Crecimiento y desarrollo profesional
+	 static double puntuacionCDP1;
+	 static double puntuacionCDP2;
+	 static double puntuacionCDP3;
+	
+	//Termina Crecimiento y desarrollo profesional
 
 	private JPanel contentPane;
 
