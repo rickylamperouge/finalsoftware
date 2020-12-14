@@ -149,6 +149,94 @@ public class formulas extends I44 {
         puntuacionCDP2 = (totalI2)*(DPd/3);
         puntuacionCDP3 = ((CDPB)*(totalI2)+(CDPD*totalI4))*(DPef/3);
         //Termina Crecimiento y Desarrollo Profesional
+        //*************************************************************************************
+        
+        
+        //Empiezan formulas instrumento 2
+        //Calidad docente
+        int actividadA = 0;
+        int añosA = 0;
+        double CDaI2 = actividadA/añosA;
+        //***************************
+        double CDbI2;
+        //**********
+        int actividadC = 0;
+        int añosC = 0;
+        double CDcI2 = actividadC/añosC;
+        //*****************************
+        int comiteD = 0;
+        int añosD = 0;
+        double CDdI2 = comiteD/añosD;
+        //*******************************
+        int actividadE = 0;
+        int añosE = 0;
+        double CDeI2 = actividadE/añosE;
+        //********************************
+        int actividadF = 0;
+        int añosF = 0;
+        double CDfI2 = actividadF/añosF;
+        //********************************
+        int actividadGH = 0;
+        int añosGH = 0;
+        double CDgh = actividadGH/añosGH;
+        //Termina calidad docente
+        //*******************************
+        
+        //Servicio a la institucion I2
+        int comitesSIA = 0;
+        int añosSIA = 0;
+        double SIaI2 = comitesSIA/añosSIA;
+        //************************************
+        int comitesSIBC = 0;
+        int añosSIBC = 0;
+        double SIbcI2 = comitesSIBC/añosSIBC;
+        //*************************************
+        int actividadSIDE = 0;
+        int añosSIDE = 0;
+        double SIdeI2 = actividadSIDE/añosSIDE;
+        //*****************************
+        int designacionSIFG = 0;
+        int añosSIFG = 0;
+        double SIfgI2 = designacionSIFG/añosSIFG;
+        //Termina Servicio a la institucion I2
+        //***************************************
+        
+        //Comienza servicio a la comunidad I2
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //termina servicio a la comunidad I2
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 		
 		JButton btnNewButton = new JButton("Finalizar");
 		btnNewButton.addActionListener(new ActionListener() {
