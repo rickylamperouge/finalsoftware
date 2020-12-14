@@ -55,6 +55,17 @@ public class formulas extends I44 {
 		int SIbc = 3;
 		int SIde = 2;
 		int SIfg = 3;
+		int SCab = 2;
+		int ITa = 3;
+		int ITb = 4;
+		int ITcde = 5;
+		
+		int DPabc = 4;
+		int DPd = 3;
+		int DPef = 3;
+		double CDPB = .9;
+		double CDPD = .1;
+		    
 		double i1a = m/((m+n)*(valenciaCalApromI1)) + n/((m+n)*(valenciaCalAI1Aprom));
 		puntuacionCalA = (A*i1a) + (B*totalI2) + (C*valenciaCalApromI3)+(D*instrumentoIV[15])*3/4*(CDa/3);
 		//termina calidad docente formula  a
@@ -118,6 +129,114 @@ public class formulas extends I44 {
 		puntuacionSIFG = (totalI2)*(SIfg/3);
 		
 		//Termina Servicio a la institucion fg
+		
+		//Servicio a la comunidad 
+		puntuacionSCAB = 1*totalI2*(SCab/3);
+		
+		//Termina Servicio ala comunidad
+		
+		
+		
+		//Investigacion y trabajo creativo
+		puntuacionITa = totalI2*(ITa/3);
+		puntuacionITb = (iB*totalI2) + (iD*instrumentoIV[15])*(3/4);
+		puntuacionITcde = (totalI2)*(ITcde/3);
+		
+		//Termina Investigacion y trabajo creativo
+		
+		//Crecimiento y Sesarrollo Profesional 10%
+        puntuacionCDP1 = (totalI2)*(DPabc/3);
+        puntuacionCDP2 = (totalI2)*(DPd/3);
+        puntuacionCDP3 = ((CDPB)*(totalI2)+(CDPD*totalI4))*(DPef/3);
+        //Termina Crecimiento y Desarrollo Profesional
+        //*************************************************************************************
+        
+        
+        //Empiezan formulas instrumento 2
+        //Calidad docente
+        int actividadA = 0;
+        int añosA = 0;
+        double CDaI2 = actividadA/añosA;
+        //***************************
+        double CDbI2;
+        //**********
+        int actividadC = 0;
+        int añosC = 0;
+        double CDcI2 = actividadC/añosC;
+        //*****************************
+        int comiteD = 0;
+        int añosD = 0;
+        double CDdI2 = comiteD/añosD;
+        //*******************************
+        int actividadE = 0;
+        int añosE = 0;
+        double CDeI2 = actividadE/añosE;
+        //********************************
+        int actividadF = 0;
+        int añosF = 0;
+        double CDfI2 = actividadF/añosF;
+        //********************************
+        int actividadGH = 0;
+        int añosGH = 0;
+        double CDgh = actividadGH/añosGH;
+        //Termina calidad docente
+        //*******************************
+        
+        //Servicio a la institucion I2
+        int comitesSIA = 0;
+        int añosSIA = 0;
+        double SIaI2 = comitesSIA/añosSIA;
+        //************************************
+        int comitesSIBC = 0;
+        int añosSIBC = 0;
+        double SIbcI2 = comitesSIBC/añosSIBC;
+        //*************************************
+        int actividadSIDE = 0;
+        int añosSIDE = 0;
+        double SIdeI2 = actividadSIDE/añosSIDE;
+        //*****************************
+        int designacionSIFG = 0;
+        int añosSIFG = 0;
+        double SIfgI2 = designacionSIFG/añosSIFG;
+        //Termina Servicio a la institucion I2
+        //***************************************
+        
+        //Comienza servicio a la comunidad I2
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //termina servicio a la comunidad I2
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 		
 		JButton btnNewButton = new JButton("Finalizar");
 		btnNewButton.addActionListener(new ActionListener() {
