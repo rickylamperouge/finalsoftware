@@ -100,7 +100,22 @@ public class menu1 extends menuFinal {
 	static double valenciaCalGI1A = 0;
 	//termina calidad docente g y h
 	//**********************************************************************************
+	//Servicio a la institucion a
+	static double puntuacionSIA = 0;
+	static double valenciaSIApromI4 = 0;
+	//Termina servicio a la institucion a
 	
+	//Servicio a la institucion bc
+	static double puntuacionSIBC =0;
+	//Termina la institucion bc
+	
+	//Servicio a la institucion de
+	static double puntuacionSIDE = 0;
+	//Termina servicio a la institucion de
+	
+	//Servicio a la institucion fg
+	static double puntuacionSIFG;
+	//Termina servicio a la institucion fg
 	
 
 	private JPanel contentPane;
