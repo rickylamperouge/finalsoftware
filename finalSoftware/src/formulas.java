@@ -202,6 +202,46 @@ public class formulas extends I44 {
         //***************************************
         
         //Comienza servicio a la comunidad I2
+        int actividadSCAB = 0;
+        int añosSCAB = 0;
+        double SCabI2 = actividadSCAB/añosSCAB;
+        //Termina servicio a la comunidad I2
+        //****************************************
+        
+        //Comienza Investigacion y Trabajo Creativo
+        int publicacionITCa = 0;
+        int libroITCa = 0;
+        int tesisITCa = 0; //DUDA CON ASIGNACION DE PUNTOS. NO SE SI ES 1 PT POR TESIS/ARTICULOS O SI ES SOLO 1 PT SI HA HECHO ALGUNO DE ELLOS
+        int añosITCa = 0;
+        double ITCaI2 = (publicacionITCa + (libroITCa * 2) + tesisITCa)/añosITCa;
+        //****************************************
+        int presentacionITCb = 0;
+        int cursoITCb = 0;
+        int manualesITCb = 0;
+        int añosITCb = 0;
+        double ITCbI2 = (presentacionITCb + (cursoITCb * 2) + manualesITCb)/ añosITCb;
+        //****************************************
+        int propuesta1ITCcde = 0; //Se refiere a intento
+        int propuesta2ITCcde = 0; //Se refiere a propuesta o patente aprobada
+        int propuesta3ITCcde = 0; //Se refiere a propuesta o patente negada
+        int añosITCcde = 0;
+        double ITCcdeI2 = (propuesta1ITCcde + (propuesta2ITCcde * 2) + propuesta3ITCcde)/añosITCcde;
+        //Termina Investigacion y Trabajo Creativo
+        
+        //Comienza Crecimiento y Desarrollo Profesional
+        int conceptoCDPabc = 0;
+        int añosCDPabc = 0;
+        double CDPabcI2 = (conceptoCDPabc * 3)/añosCDPabc;
+        //****************************************
+        int conceptoCDPd = 0;
+        int añosCDPd = 0;
+        double CDPdI2 = (conceptoCDPd * 3)/añosCDPd;
+        //****************************************
+        int participacionCDPef = 0;
+        int educacionCDPef = 0; //DUDA CON ASIGNACION DE PUNTOS. NO SE SI ES 2 PT POR EDUCACION
+        int cursosCDPef = 0;
+        double CDPefI2 = 0;
+        
         
         
         
