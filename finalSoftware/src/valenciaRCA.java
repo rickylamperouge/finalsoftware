@@ -641,6 +641,7 @@ public class valenciaRCA extends JFrame {
 		tabbedPane.addTab("Pagina 4", null, panel_3, null);
 		panel_3.setLayout(null);
 		
+		
 		JLabel lblRecomendacion = new JLabel("RECOMENDACION:");
 		lblRecomendacion.setHorizontalAlignment(SwingConstants.LEFT);
 		lblRecomendacion.setForeground(Color.BLACK);

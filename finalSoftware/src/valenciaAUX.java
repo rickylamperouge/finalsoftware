@@ -732,6 +732,7 @@ public class valenciaAUX extends JFrame {
 		lblNewLabel_3_7_1_5_1.setBounds(340, 207, 45, 13);
 		panel_3_1.add(lblNewLabel_3_7_1_5_1);
 		
+		
 		JLabel lblNewLabel_3_7_1_5_2 = new JLabel("2%");
 		lblNewLabel_3_7_1_5_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_3_7_1_5_2.setForeground(Color.BLACK);
