@@ -34,12 +34,17 @@ public class menu1 extends menuFinal {
 	static double B = 0.25;
 	static double C = 0.25;
 	static double D = 0.25;
+	static double sB = 0.8;
+	static double sD = 0.2;
+	static double iB = .9;
+	static double iD = .1;
 	static int totalI = 0;
 	static int totalIA = 0;
 	static int totalI2 = 0;
 	static int totalI3 = 0;
 	static int totalI3A = 0;
 	int totalI4 = 0;
+	//**********************************************************************************
 	//Calidad docente a
 	static double valenciaCalAI1 = 0;
 	static double valenciaCalApromI1 = 0;
@@ -91,8 +96,50 @@ public class menu1 extends menuFinal {
 	
 	//termina calidad docente f
 	
+	//calidad docente g y h
+	static double valenciaCalGpromI1 = 0;
+	static double valenciaCalGI1Aprom = 0;
+	static double valenciaCalGI1A = 0;
+	//termina calidad docente g y h
+	//**********************************************************************************
+	//Servicio a la institucion a
+	static double puntuacionSIA = 0;
+	static double valenciaSIApromI4 = 0;
+	//Termina servicio a la institucion a
+	
+	//Servicio a la institucion bc
+	static double puntuacionSIBC =0;
+	//Termina la institucion bc
+	
+	//Servicio a la institucion de
+	static double puntuacionSIDE = 0;
+	//Termina servicio a la institucion de
+	
+	//Servicio a la institucion fg
+	static double puntuacionSIFG = 0;
+	//Termina servicio a la institucion fg
+	
+	//Servicio a la comunidad 
+	static double puntuacionSCAB = 0;
+	//Termina servicio a la comunidad
+	
+	//Investigacion y trabajo creativo 12%
+	static double puntuacionITa = 0;
+	static double puntuacionITb = 0;
+	static double puntuacionITcde = 0;
 	
 	
+	//Termina investigacion y trabajo creativo
+	
+	
+	
+	
+	//Crecimiento y desarrollo profesional
+	 static double puntuacionCDP1;
+	 static double puntuacionCDP2;
+	 static double puntuacionCDP3;
+	
+	//Termina Crecimiento y desarrollo profesional
 
 	private JPanel contentPane;
 

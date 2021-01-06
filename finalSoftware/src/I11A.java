@@ -555,9 +555,16 @@ public class I11A extends I11 {
 				valenciaCalFI1Aprom = ((instrumentoIA[12]+ instrumentoIA[16]+ instrumentoIA[17]+ instrumentoIA[22])/4)-1;
 				
 				//termina calidad docente f
+				
+				// calidad docente g
+				for(int i = 12; i<15;i++)
+				{
+					valenciaCalGI1A = (instrumentoIA[i] + valenciaCalGI1A);
+				}
+				valenciaCalGI1Aprom = (valenciaCalGI1A+instrumentoIA[20]/6)-1;
+				//termina calidad docente g
+				//**********************************************************************************
 
-				
-				
 				
 				
 				
