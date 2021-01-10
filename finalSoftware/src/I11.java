@@ -12,6 +12,9 @@ import javax.swing.JSpinner;
 import javax.swing.JButton;
 import javax.swing.JTable;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.awt.event.ActionEvent;
 import javax.swing.SpinnerNumberModel;
 
@@ -614,7 +617,28 @@ public class I11 extends menu1 {
 				
 				
 				
-				
+		        try{
+		        	for(int i = 0; i < 29; i++) {
+		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://BaseDeDatos.accdb");//Establishing Connection
+		            System.out.println("Connected Successfully");
+
+		           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1 values(?,?)");
+		            //Setting values for Each Parameter
+		           
+		        	preparedStatement.setInt(1,1);
+		            preparedStatement.setInt(2,instrumentoI[i]);
+		          
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		            
+		        }
+		        }
+		        catch(Exception e){
+		            System.out.println("Error in connection");
+
+		        }
 				
 				new I11A().setVisible(true);
 				dispose();
