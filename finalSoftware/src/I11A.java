@@ -520,10 +520,10 @@ public class I11A extends I11 {
 				instrumentoIA[22] = (int) spinner24.getValue();
 				//Texto
 				instrumentoIAtxt = new String[30];
-				instrumentoIAtxt[0] = textArea.getText();
-				instrumentoIAtxt[1] = textArea2.getText();
-				instrumentoIAtxt[2] = textArea3.getText();
-				instrumentoIAtxt[3] = textArea4.getText();
+				instrumentoIAtxt[23] = textArea.getText();
+				instrumentoIAtxt[24] = textArea2.getText();
+				instrumentoIAtxt[25] = textArea3.getText();
+				instrumentoIAtxt[26] = textArea4.getText();
 				
 				
 				
@@ -569,37 +569,37 @@ public class I11A extends I11 {
 				//**********************************************************************************
 
 		        try{
-		        	for(int i = 0; i < 23; i++) {
+		        	for(int i = 0; i < 27; i++) {
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
 		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
 
-		           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1A values(?,?)");
+		           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1A values(?,?,?)");
 		            //Setting values for Each Parameter
-		           
+
 		        	preparedStatement.setInt(1,1);
 		            preparedStatement.setInt(2,instrumentoIA[i]);
-		          
+		            preparedStatement.setString(3,instrumentoIAtxt[i]);
 		            //Executing Query
 		            preparedStatement.executeUpdate();
 		            System.out.println("data inserted successfully");
 		            
 		        	}
-		        	for(int n = 0; n < 4; n++) {
-		        		Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-			            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
-			            System.out.println("Connected Successfully");
-
-			           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1A values(?,?)");
-			            //Setting values for Each Parameter
-			           	String S = instrumentoIAtxt[n];
-			        	preparedStatement.setInt(1,1);
-			            preparedStatement.setString(3,S);
-			          
-			            //Executing Query
-			            preparedStatement.executeUpdate();
-			            System.out.println("data inserted successfully");
-		        	}
+//		        	for(int n = 0; n < 4; n++) {
+//		        		Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+//			            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
+//			            System.out.println("Connected Successfully");
+//
+//			           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1A values(?,?)");
+//			            //Setting values for Each Parameter
+//			           	String S = instrumentoIAtxt[n];
+//			        	preparedStatement.setInt(1,1);
+//			            preparedStatement.setString(3,S);
+//			          
+//			            //Executing Query
+//			            preparedStatement.executeUpdate();
+//			            System.out.println("data inserted successfully");
+//		        	}
 		        }
 		        catch(Exception e){
 		            System.out.println("Error in connection");
