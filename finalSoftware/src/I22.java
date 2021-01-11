@@ -3,6 +3,9 @@ import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -550,7 +553,28 @@ public class I22 extends I11A {
 				}
 				System.out.println(totalI2);
 				
-				
+		        try{
+		        	for(int i = 0; i < 26; i++) {
+		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
+		            System.out.println("Connected Successfully");
+
+		           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento2 values(?,?)");
+		            //Setting values for Each Parameter
+
+		        	preparedStatement.setInt(1,1);
+		            preparedStatement.setInt(2,instrumentoII[i]);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		            
+		            
+		        	}
+		        }
+		        catch(Exception e){
+		            System.out.println("Error in connection");
+
+		        }
 				
 				new I33().setVisible(true);
 				dispose();

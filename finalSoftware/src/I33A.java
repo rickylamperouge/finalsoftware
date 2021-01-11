@@ -14,6 +14,9 @@ import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.awt.event.ActionEvent;
 
 public class I33A extends I33 {
@@ -741,10 +744,34 @@ public class I33A extends I33 {
 				
 				
 				
-				for(int i = 0; i < 20;i++)
+				for(int i = 0; i < 21;i++)
 				{
 					totalI3A = instrumentoIIIA[i] + totalI3A;
 				}
+				
+		        try{
+		        	for(int i = 0; i < 26; i++) {
+		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
+		            System.out.println("Connected Successfully");
+
+		           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento3A values(?,?,?)");
+		            //Setting values for Each Parameter
+
+		        	preparedStatement.setInt(1,1);
+		            preparedStatement.setInt(2,instrumentoIIIA[i]);
+		            preparedStatement.setString(3, instrumentoIIIAtxt[i]);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		            
+		            
+		        	}
+		        }
+		        catch(Exception e){
+		            System.out.println("Error in connection");
+
+		        }
 				
 				new I44().setVisible(true);
 				//System.out.println(totalI3A);

@@ -13,6 +13,9 @@ import javax.swing.JButton;
 import javax.swing.JSpinner;
 import javax.swing.JTextArea;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.awt.event.ActionEvent;
 
 public class I44 extends I33A {
@@ -699,6 +702,30 @@ public class I44 extends I33A {
 				valenciaSIApromI4 = (instrumentoIV[9] + instrumentoIV[17])*(3/4);
 				
 					
+		        try{
+		        	for(int i = 0; i < 22; i++) {
+		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
+		            System.out.println("Connected Successfully");
+
+		           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento4 values(?,?,?)");
+		            //Setting values for Each Parameter
+
+		        	preparedStatement.setInt(1,1);
+		            preparedStatement.setInt(2,instrumentoIV[i]);
+		            preparedStatement.setString(3, instrumentoIVtxt[i]);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		            
+		            
+		        	}
+		        }
+		        catch(Exception e){
+		            System.out.println("Error in connection");
+
+		        }
+				
 				new formulas().setVisible(true);
 				dispose();
 			}
