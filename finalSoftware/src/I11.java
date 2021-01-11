@@ -620,14 +620,14 @@ public class I11 extends menu1 {
 		        try{
 		        	for(int i = 0; i < 29; i++) {
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://BaseDeDatos.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
 
 		           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1 values(?,?)");
 		            //Setting values for Each Parameter
 		           
-		        	preparedStatement.setInt(1,1);
-		            preparedStatement.setInt(2,instrumentoI[i]);
+		        	preparedStatement.setInt(2,1);
+		            preparedStatement.setInt(1,instrumentoI[i]);
 		          
 		            //Executing Query
 		            preparedStatement.executeUpdate();

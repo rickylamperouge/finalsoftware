@@ -4,6 +4,9 @@ import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -565,7 +568,43 @@ public class I11A extends I11 {
 				//termina calidad docente g
 				//**********************************************************************************
 
-				
+		        try{
+		        	for(int i = 0; i < 23; i++) {
+		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
+		            System.out.println("Connected Successfully");
+
+		           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1A values(?,?)");
+		            //Setting values for Each Parameter
+		           
+		        	preparedStatement.setInt(1,1);
+		            preparedStatement.setInt(2,instrumentoIA[i]);
+		          
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		            
+		        	}
+		        	for(int n = 0; n < 4; n++) {
+		        		Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+			            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
+			            System.out.println("Connected Successfully");
+
+			           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1A values(?,?)");
+			            //Setting values for Each Parameter
+			           	String S = instrumentoIAtxt[n];
+			        	preparedStatement.setInt(1,1);
+			            preparedStatement.setString(3,S);
+			          
+			            //Executing Query
+			            preparedStatement.executeUpdate();
+			            System.out.println("data inserted successfully");
+		        	}
+		        }
+		        catch(Exception e){
+		            System.out.println("Error in connection");
+
+		        }
 				
 				
 				
