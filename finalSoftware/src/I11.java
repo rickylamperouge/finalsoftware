@@ -633,6 +633,7 @@ public class I11 extends menu1 {
 		            preparedStatement.executeUpdate();
 		            System.out.println("data inserted successfully");
 		            
+		            
 		        }
 		        }
 		        catch(Exception e){
