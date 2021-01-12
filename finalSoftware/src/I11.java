@@ -623,7 +623,7 @@ public class I11 extends menu1 {
 		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
 
-		           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1 values(?,?)");
+		            PreparedStatement preparedStatement = connection.prepareStatement("insert into Instrumento1 values(?,?)");
 		            //Setting values for Each Parameter
 		           
 		        	preparedStatement.setInt(2,1);

@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+import java.sql.*;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -569,12 +570,18 @@ public class I11A extends I11 {
 				//**********************************************************************************
 
 		        try{
-		        	for(int i = 0; i < 27; i++) {
+		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://D://DatabaseProject1.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
-
-		           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1A values(?,?,?)");
+		            
+		            Statement stmt = null;
+		            stmt = connection.createStatement();
+		            String query = "Delete * from Instrumento1A";
+		            stmt.executeUpdate(query);
+		            
+		            for(int i = 0; i < 27; i++) {
+		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1A values(?,?,?)");
 		            //Setting values for Each Parameter
 
 		        	preparedStatement.setInt(1,1);
@@ -586,21 +593,7 @@ public class I11A extends I11 {
 		            
 		            
 		        	}
-//		        	for(int n = 0; n < 4; n++) {
-//		        		Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-//			            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
-//			            System.out.println("Connected Successfully");
-//
-//			           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1A values(?,?)");
-//			            //Setting values for Each Parameter
-//			           	String S = instrumentoIAtxt[n];
-//			        	preparedStatement.setInt(1,1);
-//			            preparedStatement.setString(3,S);
-//			          
-//			            //Executing Query
-//			            preparedStatement.executeUpdate();
-//			            System.out.println("data inserted successfully");
-//		        	}
+
 		        }
 		        catch(Exception e){
 		            System.out.println("Error in connection");
