@@ -41,6 +41,8 @@ public class formulas extends I44 {
 		
 		
 		
+		
+		
 		//rango catedratico asociado
 		//calidad docente formula  a
 		int m = 1;

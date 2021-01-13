@@ -529,7 +529,7 @@ public class I11A extends I11 {
 				
 				
 				//Imprimir total
-				for(int i = 0; i < 23;i++)
+				for(int i = 0; i < 24;i++)
 				{
 					totalIA = instrumentoIA[i] + totalIA;
 				}
@@ -572,7 +572,7 @@ public class I11A extends I11 {
 		        try{
 		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://D://DatabaseProject1.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
 		            
 		            Statement stmt = null;
@@ -580,20 +580,42 @@ public class I11A extends I11 {
 		            String query = "Delete * from Instrumento1A";
 		            stmt.executeUpdate(query);
 		            
-		            for(int i = 0; i < 27; i++) {
-		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1A values(?,?,?)");
+		            
+		            
+		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1A(ID,Respuesta) values(?,?)");
 		            //Setting values for Each Parameter
-
+		            //Linea 1
 		        	preparedStatement.setInt(1,1);
-		            preparedStatement.setInt(2,instrumentoIA[i]);
-		            preparedStatement.setString(3,instrumentoIAtxt[i]);
+		            preparedStatement.setInt(2,totalIA);
+		            preparedStatement.executeUpdate();
+		            
+		            //Linea 2
+		            preparedStatement.setInt(1,2);
+		            preparedStatement.setDouble(2,valenciaCalAI1Aprom);
+		            
+		            preparedStatement.executeUpdate();
+		            
+		            //Linea 3
+		            preparedStatement.setInt(1,3);
+		            preparedStatement.setDouble(2,valenciaCalEI1Aprom);
+		            
+		            preparedStatement.executeUpdate();
+		            //Linea 4
+		            preparedStatement.setInt(1,4);
+		            preparedStatement.setDouble(2,valenciaCalFI1Aprom);
+		            
+		            preparedStatement.executeUpdate();
+		            //Linea 5
+		            preparedStatement.setInt(1,5);
+		            preparedStatement.setDouble(2,valenciaCalGI1Aprom);
 		            //Executing Query
 		            preparedStatement.executeUpdate();
 		            System.out.println("data inserted successfully");
+		           
 		            
 		            
 		            
-		        	}
+		        	
 
 		        }
 		        catch(Exception e){

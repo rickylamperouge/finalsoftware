@@ -16,6 +16,7 @@ import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.Statement;
 import java.awt.event.ActionEvent;
 
 public class I44 extends I33A {
@@ -702,31 +703,44 @@ public class I44 extends I33A {
 				valenciaSIApromI4 = (instrumentoIV[9] + instrumentoIV[17])*(3/4);
 				
 					
-		        try{
-		        	for(int i = 0; i < 22; i++) {
+try{
+		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
-
-		           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento4 values(?,?,?)");
+		            
+		            Statement stmt = null;
+		            stmt = connection.createStatement();
+		            String query = "Delete * from Instrumento4";
+		            stmt.executeUpdate(query);
+		            System.out.println("Datos anteriores borrados");
+		            
+		            
+		            
+		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento4(ID,Respuesta) values(?,?)");
 		            //Setting values for Each Parameter
-
+		            //Linea 1
 		        	preparedStatement.setInt(1,1);
-		            preparedStatement.setInt(2,instrumentoIV[i]);
-		            preparedStatement.setString(3, instrumentoIVtxt[i]);
-		            //Executing Query
+		            preparedStatement.setInt(2,totalI4);
+		            preparedStatement.executeUpdate();
+		            
+		            //Linea 2
+		            preparedStatement.setInt(1,2);
+		            preparedStatement.setDouble(2,valenciaCalFpromI4);
+		            preparedStatement.executeUpdate();
+		            
+		            //Linea 3
+		            preparedStatement.setInt(1,3);
+		            preparedStatement.setDouble(2,valenciaSIApromI4);
 		            preparedStatement.executeUpdate();
 		            System.out.println("data inserted successfully");
-		            
-		            
-		        	}
 		        }
 		        catch(Exception e){
 		            System.out.println("Error in connection");
 
 		        }
 				
-				new formulas().setVisible(true);
+				//new formulas().setVisible(true);
 				dispose();
 			}
 		});

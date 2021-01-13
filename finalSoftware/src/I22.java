@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.Statement;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -553,23 +554,28 @@ public class I22 extends I11A {
 				}
 				System.out.println(totalI2);
 				
-		        try{
-		        	for(int i = 0; i < 26; i++) {
+try{
+		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
-
-		           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento2 values(?,?)");
+		            
+		            Statement stmt = null;
+		            stmt = connection.createStatement();
+		            String query = "Delete * from Instrumento2";
+		            stmt.executeUpdate(query);
+		            
+		            
+		            
+		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento2(ID,Respuesta) values(?,?)");
 		            //Setting values for Each Parameter
-
+		            //Linea 1
 		        	preparedStatement.setInt(1,1);
-		            preparedStatement.setInt(2,instrumentoII[i]);
-		            //Executing Query
+		            preparedStatement.setInt(2,totalI2);
 		            preparedStatement.executeUpdate();
 		            System.out.println("data inserted successfully");
-		            
-		            
-		        	}
+
+
 		        }
 		        catch(Exception e){
 		            System.out.println("Error in connection");

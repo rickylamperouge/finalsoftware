@@ -17,6 +17,7 @@ import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.Statement;
 import java.awt.event.ActionEvent;
 
 public class I33A extends I33 {
@@ -749,24 +750,29 @@ public class I33A extends I33 {
 					totalI3A = instrumentoIIIA[i] + totalI3A;
 				}
 				
-		        try{
-		        	for(int i = 0; i < 26; i++) {
+try{
+		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
-
-		           PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento3A values(?,?,?)");
+		            
+		            Statement stmt = null;
+		            stmt = connection.createStatement();
+		            String query = "Delete * from Instrumento3A";
+		            stmt.executeUpdate(query);
+		            
+		            
+		            
+		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento3A(ID,Respuesta) values(?,?)");
 		            //Setting values for Each Parameter
-
+		            //Linea 1
 		        	preparedStatement.setInt(1,1);
-		            preparedStatement.setInt(2,instrumentoIIIA[i]);
-		            preparedStatement.setString(3, instrumentoIIIAtxt[i]);
-		            //Executing Query
+		            preparedStatement.setInt(2,totalI3A);
 		            preparedStatement.executeUpdate();
-		            System.out.println("data inserted successfully");
+		            System.out.println("Data inserted succesfully");
 		            
-		            
-		        	}
+		        	
+
 		        }
 		        catch(Exception e){
 		            System.out.println("Error in connection");

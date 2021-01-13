@@ -15,6 +15,7 @@ import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.Statement;
 import java.awt.event.ActionEvent;
 import javax.swing.SpinnerNumberModel;
 
@@ -567,10 +568,11 @@ public class I11 extends menu1 {
 				 instrumentoI[27] = (int) spinner28.getValue();
 				 instrumentoI[28] = (int) spinner_1_1_3_1_1.getValue();
 				
-				for(int i = 0; i < 23;i++)
+				for(int i = 0; i < 29;i++)
 				{
 					totalI = instrumentoI[i] + totalI;
 				}
+				System.out.println(totalI);
 				//calidad docente a
 				for (int i = 6; i < 16; i++)
 				{
@@ -619,23 +621,57 @@ public class I11 extends menu1 {
 				
 				
 		        try{
-		        	for(int i = 0; i < 29; i++) {
+		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://DatabaseProject.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
-
-		            PreparedStatement preparedStatement = connection.prepareStatement("insert into Instrumento1 values(?,?)");
+		            
+		            Statement stmt = null;
+		            stmt = connection.createStatement();
+		            String query = "Delete * from Instrumento1";
+		            stmt.executeUpdate(query);
+		            
+		            
+		            
+		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1(ID,Respuesta) values(?,?)");
 		            //Setting values for Each Parameter
-		           
-		        	preparedStatement.setInt(2,1);
-		            preparedStatement.setInt(1,instrumentoI[i]);
-		          
+		            //Linea 1
+		        	preparedStatement.setInt(1,1);
+		            preparedStatement.setInt(2,totalI);
+		            preparedStatement.executeUpdate();
+		            
+		            //Linea 2
+		            preparedStatement.setInt(1,2);
+		            preparedStatement.setDouble(2,valenciaCalApromI1);
+		            
+		            preparedStatement.executeUpdate();
+		            
+		            //Linea 3
+		            preparedStatement.setInt(1,3);
+		            preparedStatement.setDouble(2,valenciaCalBpromI1);
+		            
+		            preparedStatement.executeUpdate();
+		            //Linea 4
+		            preparedStatement.setInt(1,4);
+		            preparedStatement.setDouble(2,valenciaCalEpromI1);
+		            
+		            preparedStatement.executeUpdate();
+		            //Linea 5
+		            preparedStatement.setInt(1,5);
+		            preparedStatement.setDouble(2,valenciaCalFpromI1);
+		            preparedStatement.executeUpdate();
+		            //Linea 6
+		            preparedStatement.setInt(1, 6);
+		            preparedStatement.setDouble(2,valenciaCalGpromI1);
 		            //Executing Query
 		            preparedStatement.executeUpdate();
 		            System.out.println("data inserted successfully");
+		           
 		            
 		            
-		        }
+		            
+		        	
+
 		        }
 		        catch(Exception e){
 		            System.out.println("Error in connection");
