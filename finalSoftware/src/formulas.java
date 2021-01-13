@@ -6,6 +6,10 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.awt.event.ActionEvent;
 
 public class formulas extends I44 {
@@ -39,11 +43,92 @@ public class formulas extends I44 {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		try{
+            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+            System.out.println("Connected Successfully");
+            Statement s = connection.createStatement();
+    		  ResultSet rs = s.executeQuery("Select ID,Respuesta from Instrumento1 order by ID ASC");
+    		  while(rs.next())
+    		  {
+    			  totalI = rs.getInt("respuesta");
+    			  rs.next();
+    			  valenciaCalApromI1 = rs.getDouble("respuesta");
+    			  rs.next();
+    			  valenciaCalBpromI1 = rs.getDouble("respuesta");
+    			  rs.next();
+    			  valenciaCalEpromI1 = rs.getDouble("respuesta");
+    			  rs.next();
+    			  valenciaCalFpromI1 = rs.getDouble("respuesta");
+    			  rs.next();
+    			  valenciaCalGpromI1 = rs.getDouble("respuesta");
+    			  
+    			  
+    			  
+    		  }
+
+
+    		  
+
+    		
+
+        }catch(Exception e){
+            System.out.println("Error in connection");
+
+        }
+		
+		
+		try{
+            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+            System.out.println("Connected Successfully");
+            Statement s = connection.createStatement();
+    		  ResultSet rs2 = s.executeQuery("Select ID,Respuesta from Instrumento1A order by ID ASC");
+    		  while(rs2.next())
+    		  {
+    			  totalIA = rs2.getInt("respuesta");
+    			  rs2.next();
+    			  valenciaCalAI1Aprom = rs2.getDouble("respuesta");
+    			  rs2.next();
+    			  valenciaCalEI1Aprom = rs2.getDouble("respuesta");
+    			  rs2.next();
+    			  valenciaCalFI1Aprom = rs2.getDouble("respuesta");
+    			  rs2.next();
+    			  valenciaCalGI1Aprom = rs2.getDouble("respuesta");
+    			  
+    			  
+    			  
+    			  
+    		  }
+    		  //Instrumento 1
+    		  System.out.println(totalI);
+    		  System.out.println(valenciaCalApromI1);
+    		  System.out.println(valenciaCalBpromI1);
+    		  System.out.println(valenciaCalEpromI1);
+    		  System.out.println(valenciaCalFpromI1);
+    		  System.out.println(valenciaCalGpromI1);
+    		  
+    		  //Instrumento 1A
+    		  System.out.println(totalIA);
+    		  System.out.println(valenciaCalAI1Aprom);
+    		  System.out.println(valenciaCalEI1Aprom);
+    		  System.out.println(valenciaCalFI1Aprom);
+    		  System.out.println(valenciaCalGI1Aprom);
+    		  //Instrumento 2
+    		  
+
+    		  
+
+    		
+
+        }catch(Exception e){
+            System.out.println("Error in connection");
+
+        }
 		
 		
 		
-		
-		//rango catedratico asociado
+	/*	//rango catedratico asociado
 		//calidad docente formula  a
 		int m = 1;
 		int n = 1;
@@ -242,7 +327,7 @@ public class formulas extends I44 {
         int participacionCDPef = 0;
         int educacionCDPef = 0; //DUDA CON ASIGNACION DE PUNTOS. NO SE SI ES 2 PT POR EDUCACION
         int cursosCDPef = 0;
-        double CDPefI2 = 0;
+        double CDPefI2 = 0; */
         
         
         
@@ -284,11 +369,11 @@ public class formulas extends I44 {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				System.out.println(puntuacionCalA);
-				System.out.println(puntuacionCalB);
-				System.out.println(puntuacionCalC);
-				System.out.println(puntuacionCalD);
-				System.out.println(puntuacionCalF);
+				//System.out.println(puntuacionCalA);
+				//System.out.println(puntuacionCalB);
+				//.out.println(puntuacionCalC);
+				//System.out.println(puntuacionCalD);
+				//System.out.println(puntuacionCalF);
 				
 				
 				
