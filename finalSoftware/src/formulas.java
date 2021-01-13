@@ -138,8 +138,72 @@ public class formulas extends I44 {
 		  //Instrumento 2
 		  System.out.println(totalI2);
 		
-		
-		
+			try{
+	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+	            System.out.println("Connected Successfully");
+	            Statement s = connection.createStatement();
+	    		  ResultSet rs4 = s.executeQuery("Select ID,Respuesta from Instrumento3 order by ID ASC");
+	    		  while(rs4.next())
+	    		  {
+	    			  totalI3 = rs4.getInt("respuesta");
+	    			  valenciaCalApromI3 = rs4.getDouble("respuesta");
+	    			  rs4.next();
+	    			  valenciaCalBpromI3 = rs4.getDouble("respuesta");
+	    			  rs4.next();
+	    			  valenciaCalEpromI3 = rs4.getDouble("respuesta");
+	    			  rs4.next();
+	    			  valenciaCalFpromI3 = rs4.getDouble("respuesta");  
+	    			  
+	    		  }
+
+	        }catch(Exception e){
+	            System.out.println("Error in connection");
+
+	        }
+			//Instrumento 3
+			System.out.println(totalI3);
+			System.out.println(valenciaCalApromI3);
+			System.out.println(valenciaCalBpromI3);
+			System.out.println(valenciaCalEpromI3);
+			System.out.println(valenciaCalFpromI3);
+			
+			
+			try{
+	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+	            System.out.println("Connected Successfully");
+	            Statement s = connection.createStatement();
+	    		  ResultSet rs5 = s.executeQuery("Select ID,Respuesta from Instrumento3A order by ID ASC");
+	    		  while(rs5.next())
+	    		  {
+	    			  totalI3A = rs5.getInt("respuesta");
+	    		  }
+
+	        }catch(Exception e){
+	            System.out.println("Error in connection");
+	        }
+			//Instrumento 4
+			System.out.println(totalI3A);
+			
+			
+			try{
+	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+	            System.out.println("Connected Successfully");
+	            Statement s = connection.createStatement();
+	    		  ResultSet rs6 = s.executeQuery("Select ID,Respuesta from Instrumento4 order by ID ASC");
+	    		  while(rs6.next())
+	    		  {
+	    			  totalI4 = rs6.getInt("respuesta");
+	    		  }
+
+	        }catch(Exception e){
+	            System.out.println("Error in connection");
+	        }
+			//Instrumento 4
+			System.out.println(totalI4);
+			
 	/*	//rango catedratico asociado
 		//calidad docente formula  a
 		int m = 1;
