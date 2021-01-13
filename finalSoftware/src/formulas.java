@@ -100,31 +100,43 @@ public class formulas extends I44 {
     			  
     			  
     		  }
-    		  //Instrumento 1
-    		  System.out.println(totalI);
-    		  System.out.println(valenciaCalApromI1);
-    		  System.out.println(valenciaCalBpromI1);
-    		  System.out.println(valenciaCalEpromI1);
-    		  System.out.println(valenciaCalFpromI1);
-    		  System.out.println(valenciaCalGpromI1);
-    		  
-    		  //Instrumento 1A
-    		  System.out.println(totalIA);
-    		  System.out.println(valenciaCalAI1Aprom);
-    		  System.out.println(valenciaCalEI1Aprom);
-    		  System.out.println(valenciaCalFI1Aprom);
-    		  System.out.println(valenciaCalGI1Aprom);
-    		  //Instrumento 2
-    		  
-
-    		  
-
-    		
 
         }catch(Exception e){
             System.out.println("Error in connection");
 
         }
+		
+		try{
+            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+            System.out.println("Connected Successfully");
+            Statement s = connection.createStatement();
+    		  ResultSet rs3 = s.executeQuery("Select ID,Respuesta from Instrumento2 order by ID ASC");
+    		  while(rs3.next())
+    		  {
+    			  totalI2 = rs3.getInt("respuesta"); 
+    		  }
+
+        }catch(Exception e){
+            System.out.println("Error in connection");
+
+        }
+		  //Instrumento 1
+		  System.out.println(totalI);
+		  System.out.println(valenciaCalApromI1);
+		  System.out.println(valenciaCalBpromI1);
+		  System.out.println(valenciaCalEpromI1);
+		  System.out.println(valenciaCalFpromI1);
+		  System.out.println(valenciaCalGpromI1);
+		  
+		  //Instrumento 1A
+		  System.out.println(totalIA);
+		  System.out.println(valenciaCalAI1Aprom);
+		  System.out.println(valenciaCalEI1Aprom);
+		  System.out.println(valenciaCalFI1Aprom);
+		  System.out.println(valenciaCalGI1Aprom);
+		  //Instrumento 2
+		  System.out.println(totalI2);
 		
 		
 		
