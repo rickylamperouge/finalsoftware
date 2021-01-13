@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+import java.sql.*;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -10,6 +11,10 @@ import javax.swing.JLabel;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.Scanner;
 import java.awt.event.ActionEvent;
 
@@ -52,7 +57,35 @@ public class menuFinal extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				String username = userText.getText();
 				String password = passwordText.getText();
-					VerifyLogin(username , password);
+				String usernameDB;
+				String passwordDB;
+				try{
+		              Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+		              Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+		              System.out.println("Connected Successfully");
+		              Statement s = connection.createStatement();
+		      		  ResultSet rs = s.executeQuery("Select username,password from login");
+		      		  while(rs.next())
+		      		  {
+		      			  usernameDB = rs.getString("username");
+		      			  passwordDB = rs.getString("password");
+		      			  
+		      			  if (username.equals(usernameDB) && password.equals(passwordDB))
+		      			  {
+		      				  System.out.println("Login Successful");
+		      				  new menu1().setVisible(true);
+		      				  dispose();
+		      			  }
+		      			  else
+		      				  System.out.println("Wrong username or password");
+		      		  }
+
+		      		
+		 
+		          }catch(Exception e){
+		              System.out.println("Error in connection");
+		 
+		          }
 			}
 		});
 		btnNewButton.setBounds(166, 174, 89, 23);
@@ -75,64 +108,16 @@ public class menuFinal extends JFrame {
 		JLabel lblNewLabel_1 = new JLabel("Password");
 		lblNewLabel_1.setBounds(28, 131, 89, 14);
 		contentPane.add(lblNewLabel_1);
-	}
-	
-	
-	
-	
-	public static boolean VerifyLogin(String username, String password) {
-		boolean isAuthenticated = false;
-		boolean mensaje = true;
 		
-		
-		Scanner input = new Scanner(System.in);
-		//System.out.println("What is your username: ");
-		//String username = input.nextLine();
-		//.out.println("What is your password: ");
-		//String password = input.nextLine();
-	
-	
-		String pathway = "C:\\Users\\jonat\\git\\finalsoftware\\finalSoftware\\src\\login.txt"; 
-		File file = new File(pathway);
-		
-			try {
-				@SuppressWarnings("resource")
-				Scanner inputBuffer = new Scanner(file);
-					
-				while(inputBuffer.hasNext() && !isAuthenticated) {
-					String line = inputBuffer.nextLine();
-					String [] values = line.split("\t");
-					
-						if(values[0].equals(username) && values[1].equals(password)) {
-							isAuthenticated = true;		
-							System.out.println("Login Successful");
-							new menu1().setVisible(true);
-							mensaje = false;
-							
-							
-						}
-						
-							
-							
-						
-					
-				}
-				if(mensaje)
-				{
-					System.out.println("Try again");
-					
-				}
-				
-				
-				
-			}catch (FileNotFoundException fe) {
-				
-				fe.printStackTrace();
-				
+		JButton btnRegister = new JButton("Register");
+		btnRegister.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new registrar().setVisible(true);
 			}
-	input.close();
-	return isAuthenticated;
-   }
+		});
+		btnRegister.setBounds(267, 174, 89, 23);
+		contentPane.add(btnRegister);
+	}
 }
 
 
