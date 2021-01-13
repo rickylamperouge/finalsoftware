@@ -83,12 +83,15 @@ try{
 		            PreparedStatement preparedStatement=connection.prepareStatement("insert into login(username,password) values(?,?)");
 		            //Setting values for Each Parameter
 		            //Linea 1
+		            if(username != null && !username.isEmpty() && password != null && !password.isEmpty())
+		            {
 		        	preparedStatement.setString(1,username);
 		            preparedStatement.setString(2,password);
 		            preparedStatement.executeUpdate();
 		            System.out.println("Registrado");
 		            new menuFinal().setVisible(true);
 					dispose();
+		            }
 
 
 		        }

@@ -702,7 +702,9 @@ public class I44 extends I33A {
 				//**********************************************************************************
 				valenciaSIApromI4 = (instrumentoIV[9] + instrumentoIV[17])*(3/4);
 				
-					
+				
+				
+				
 try{
 		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
@@ -742,6 +744,9 @@ try{
 				
 				//new formulas().setVisible(true);
 				dispose();
+				
+					
+
 			}
 		});
 		btnNewButton.setBounds(129, 695, 89, 23);

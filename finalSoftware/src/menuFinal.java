@@ -113,6 +113,7 @@ public class menuFinal extends JFrame {
 		btnRegister.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				new registrar().setVisible(true);
+				dispose();
 			}
 		});
 		btnRegister.setBounds(267, 174, 89, 23);
