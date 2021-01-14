@@ -554,6 +554,38 @@ public class I22 extends I11A {
 				}
 				System.out.println(totalI2);
 				
+				
+				try{
+
+				    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+				    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+				    System.out.println("Connected Successfully");
+
+				    Statement stmt = null;
+				    stmt = connection.createStatement();
+				    String query = "Delete * from Instrumento2Spinners";
+				    stmt.executeUpdate(query);
+
+
+				    PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento2Spinners(Pregunta,Respuesta) values(?,?)");
+				    //Setting values for Each Parameter
+				    //Linea 1
+				    for(int i = 0; i < 26; i++) {
+				    preparedStatement.setInt(1,1);
+				    preparedStatement.setInt(2,instrumentoII[i]);
+				    preparedStatement.executeUpdate();
+
+				    }
+				System.out.println("data inserted successfully");
+				}
+				catch(Exception e){
+				    System.out.println("Error in connection");
+
+				}
+				
+				
+				
+				
 try{
 		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver

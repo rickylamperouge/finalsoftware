@@ -10,6 +10,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.awt.event.ActionEvent;
 
 public class formulas extends I44 {
@@ -43,7 +44,9 @@ public class formulas extends I44 {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		
 		try{
+			
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
             Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
             System.out.println("Connected Successfully");
@@ -190,26 +193,184 @@ public class formulas extends I44 {
 	        }
 			
 			try{
+				
 	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
 	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
-	    		  ResultSet rs7 = s.executeQuery("Select Pregunta,Respuesta from Instrumento1Spinners order by Pregunta ASC");
-	    		  for(int i = 0; rs7.next(); i++)
+	    		ResultSet rs7 = s.executeQuery("Select * from Instrumento1Spinners order by Pregunta ASC");
+	    		  
+	    		  while(rs7.next())
 	    		  {
-	    			  instrumentoI[i] = rs7.getInt("Respuesta");
-	    		  }
-	    		  for(int i = 0; i<29;i++)
-	    		  {
-	    			  System.out.println(instrumentoI[i]);
+	    			   arra = rs7.getInt("Respuesta");
+	    			   instrumentoIList.add(arra);
+
 	    		  }
 
+
 	        }catch(Exception e){
-	            System.out.println("Error in connection");
+	            System.out.println("Error in connection 1 spinners");
 	        }
-	        
+			
+			try{
+							
+				            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+				            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+				            System.out.println("Connected Successfully");
+				            Statement s = connection.createStatement();
+				    		ResultSet rs8 = s.executeQuery("Select * from Instrumento1ASpinners order by Pregunta ASC");
+				    		  
+				    		  while(rs8.next())
+				    		  {
+				    			   arrayB = rs8.getInt("Respuesta");
+				    			   instrumentoIAList.add(arrayB);
+			
+				    		  }
 			
 			
+				        }catch(Exception e){
+				            System.out.println("Error in connection 2 spinners");
+				        }
+
+
+
+
+			try{
+				
+			    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+			    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+			    System.out.println("Connected Successfully");
+			    Statement s = connection.createStatement();
+				ResultSet rs8 = s.executeQuery("Select * from Instrumento2Spinners order by Pregunta ASC");
+				  
+				  while(rs8.next())
+				  {
+					   arrayC = rs8.getInt("Respuesta");
+					   instrumentoIIList.add(arrayC);
+			
+				  }
+			
+			
+			}catch(Exception e){
+			    System.out.println("Error in connection 2 spinners");
+			    
+			}
+			
+			
+			try{
+							
+						    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+						    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+						    System.out.println("Connected Successfully");
+						    Statement s = connection.createStatement();
+							ResultSet rs9 = s.executeQuery("Select * from Instrumento3Spinners order by Pregunta ASC");
+							  
+							  while(rs9.next())
+							  {
+								   arrayD = rs9.getInt("Respuesta");
+								   instrumentoIIIList.add(arrayD);
+						
+							  }
+						
+						
+						}catch(Exception e){
+						    System.out.println("Error in connection 3 spinners");
+						}
+			
+			try{
+				
+			    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+			    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+			    System.out.println("Connected Successfully");
+			    Statement s = connection.createStatement();
+				ResultSet rs10 = s.executeQuery("Select * from Instrumento3ASpinners order by Pregunta ASC");
+				  
+				  while(rs10.next())
+				  {
+					   arrayE = rs10.getInt("Respuesta");
+					   instrumentoIIIAList.add(arrayE);
+			
+				  }
+			
+			
+			}catch(Exception e){
+			    System.out.println("Error in connection 4 spinners");
+			}
+			
+			
+			
+			
+			
+			
+			try{
+							
+						    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+						    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+						    System.out.println("Connected Successfully");
+						    Statement s = connection.createStatement();
+							ResultSet rs11 = s.executeQuery("Select * from Instrumento4Spinners order by Pregunta ASC");
+							  
+							  while(rs11.next())
+							  {
+								   arrayF = rs11.getInt("Respuesta");
+								   instrumentoIVList.add(arrayF);
+						
+							  }
+						
+						
+						}catch(Exception e){
+						    System.out.println("Error in connection 5 spinners");
+						}
+			
+			
+			
+			
+			
+	        //Iguala los valores del ArrayList al array instrumentoI
+			instrumentoI = new int[30];
+			for(int i = 0; i<29; i++)
+			{
+				instrumentoI[i] = (int) instrumentoIList.get(i);
+				System.out.println(instrumentoI[i]);
+			}
+			
+			//Iguala los valores del ArrayList al array instrumentoIA
+			instrumentoIA = new int[30];
+			for(int i = 0; i<23; i++)
+			{
+				instrumentoIA[i] = (int) instrumentoIAList.get(i);
+				System.out.println(instrumentoIA[i]);
+			}
+			
+			//Iguala los valores del ArrayList al array instrumentoII
+			instrumentoII = new int[30];
+			for(int i = 0; i<26; i++)
+			{
+				instrumentoII[i] = (int) instrumentoIIList.get(i);
+			
+			}
+			
+			//Iguala los valores del ArrayList al array instrumentoIII
+			instrumentoIII = new int[30];
+			for(int i = 0; i<20; i++)
+			{
+				instrumentoIII[i] = (int) instrumentoIIIList.get(i);
+			
+			}
+			//Iguala los valores del ArrayList al array instrumentoIIIA
+			instrumentoIIIA = new int[30];
+			for(int i = 0; i<19; i++)
+			{
+				instrumentoIIIA[i] = (int) instrumentoIIIAList.get(i);
+			
+			}
+			instrumentoIV = new int[30];
+			//Iguala los valores del ArrayList al array instrumentoIV
+			for(int i = 0; i<20; i++)
+			{
+				instrumentoIV[i] = (int) instrumentoIVList.get(i);
+			
+			}
 			
 			
 			
@@ -242,6 +403,33 @@ public class formulas extends I44 {
 			  System.out.println(totalI4);
 			  System.out.println(valenciaCalFpromI4);
 			  System.out.println(valenciaSIApromI4);
+			  for(int i = 0; i<29; i++)
+				{
+					
+					System.out.println(instrumentoI[i]);
+				}
+			  for(int i = 0; i<23; i++)
+				{
+					
+					System.out.println(instrumentoIA[i]);
+				}
+			  
+				for(int i = 0; i<26; i++)
+				{
+					System.out.println(instrumentoII[i]);
+				}
+				for(int i = 0; i<20; i++)
+				{
+					System.out.println(instrumentoIII[i]);
+				}
+				for(int i = 0; i<19; i++)
+				{
+					System.out.println(instrumentoIIIA[i]);
+				}
+				for(int i = 0; i<20; i++)
+				{
+					System.out.println(instrumentoIV[i]);
+				}
 	/*		
 		//rango catedratico asociado
 		//calidad docente formula  a

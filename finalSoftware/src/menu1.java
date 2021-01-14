@@ -1,6 +1,6 @@
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
-
+import java.util.ArrayList;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -17,116 +17,129 @@ import java.awt.Color;
 
 
 public class menu1 extends menuFinal {
-	public static int promedio = 22;
-	static int[] instrumentoI;
-	static int[] instrumentoIA;
-	static int[] instrumentoII;
-	static int[] instrumentoIII;
-	static int[] instrumentoIIIA;
-	static int[] instrumentoIV;
+	ArrayList instrumentoIList = new ArrayList();
+	ArrayList instrumentoIAList = new ArrayList();
+	ArrayList instrumentoIIList = new ArrayList();
+	ArrayList instrumentoIIIList = new ArrayList();
+	ArrayList instrumentoIIIAList = new ArrayList();
+	ArrayList instrumentoIVList = new ArrayList();
+	public int arra;
+	public int arrayB;
+	public int arrayC;
+	public int arrayD;
+	public int arrayE;
+	public int arrayF;
+	public int promedio = 22;
+	public int[] instrumentoI;
+	
+	public int[] instrumentoIA;
+	public int[] instrumentoII;
+	public int[] instrumentoIII;
+	public int[] instrumentoIIIA;
+	public int[] instrumentoIV;
 
 	
-	static String[] instrumentoIIItxt;
-	static String[] instrumentoIIIAtxt;
-	static String[] instrumentoIAtxt;
-	static String[] instrumentoIVtxt;
-	static double A = 0.25;
-	static double B = 0.25;
-	static double C = 0.25;
-	static double D = 0.25;
-	static double sB = 0.8;
-	static double sD = 0.2;
-	static double iB = .9;
-	static double iD = .1;
-	static int totalI = 0;
-	static int totalIA = 0;
-	static int totalI2 = 0;
-	static int totalI3 = 0;
-	static int totalI3A = 0;
+	public String[] instrumentoIIItxt;
+	public String[] instrumentoIIIAtxt;
+	public String[] instrumentoIAtxt;
+	public String[] instrumentoIVtxt;
+	public double A = 0.25;
+	public double B = 0.25;
+	public double C = 0.25;
+	public double D = 0.25;
+	public double sB = 0.8;
+	public double sD = 0.2;
+	public double iB = .9;
+	public double iD = .1;
+	public int totalI = 0;
+	public int totalIA = 0;
+	public int totalI2 = 0;
+	public int totalI3 = 0;
+	public int totalI3A = 0;
 	int totalI4 = 0;
 	//**********************************************************************************
 	//Calidad docente a
-	static double valenciaCalAI1 = 0;
-	static double valenciaCalApromI1 = 0;
-	static double puntuacionCalA = 0;
-	static double valenciaCalAI3 = 0;
-	static double valenciaCalApromI3 = 0;
-	static double valenciaCalAI1A = 0;
-	static double valenciaCalAI1Aprom = 0;
+	public double valenciaCalAI1 = 0;
+	public double valenciaCalApromI1 = 0;
+	public double puntuacionCalA = 0;
+	public double valenciaCalAI3 = 0;
+	public double valenciaCalApromI3 = 0;
+	public double valenciaCalAI1A = 0;
+	public double valenciaCalAI1Aprom = 0;
 	//termina calidad docente a
 	
 	//Calidad docente b
-	static double valenciaCalBI1 = 0;
-	static double valenciaCalBpromI1 = 0;
-	static double valenciaCalBI1A = 0;
-	static double valenciaCalBI1Aprom = 0;
-	static double valenciaCalBI3 = 0;
-	static double valenciaCalBpromI3 = 0;
-	static double puntuacionCalB = 0;
+	public double valenciaCalBI1 = 0;
+	public double valenciaCalBpromI1 = 0;
+	public double valenciaCalBI1A = 0;
+	public double valenciaCalBI1Aprom = 0;
+	public double valenciaCalBI3 = 0;
+	public double valenciaCalBpromI3 = 0;
+	public double puntuacionCalB = 0;
 	
 	//termina calidad docente b
 	
 	//Calidad docente c
-	static double puntuacionCalC = 0;
+	public double puntuacionCalC = 0;
 	//termina calidad docente c
 	//calidad docente d
-	static double puntuacionCalD = 0;
+	public double puntuacionCalD = 0;
 	//termina calidad docente d
 	
 	//calidad docente e
-	static double valenciaCalEI1 = 0;
-	static double puntuacionCalE = 0;
-	static double valenciaCalEpromI1 = 0;
-	static double valenciaCalEI1A = 0;
-	static double valenciaCalEI1Aprom = 0;
-	static double valenciaCalEI3 = 0;
-	static double valenciaCalEpromI3 = 0;
+	public double valenciaCalEI1 = 0;
+	public double puntuacionCalE = 0;
+	public double valenciaCalEpromI1 = 0;
+	public double valenciaCalEI1A = 0;
+	public double valenciaCalEI1Aprom = 0;
+	public double valenciaCalEI3 = 0;
+	public double valenciaCalEpromI3 = 0;
 	//termina calidad docente e
 	
 	//calidad docente f
-	static double valenciaCalFI1 = 0;
-	static double valenciaCalFI1A = 0;
-	static double valenciaCalFpromI1 = 0;
-	static double valenciaCalFI1Aprom = 0;
-	static double puntuacionCalF = 0;
-	static double valenciaCalFI3 = 0;
-	static double valenciaCalFpromI3 = 0;	
-	static double valenciaCalFI4 = 0;
-	static double valenciaCalFpromI4 = 0;
+	public double valenciaCalFI1 = 0;
+	public double valenciaCalFI1A = 0;
+	public double valenciaCalFpromI1 = 0;
+	public double valenciaCalFI1Aprom = 0;
+	public double puntuacionCalF = 0;
+	public double valenciaCalFI3 = 0;
+	public double valenciaCalFpromI3 = 0;	
+	public double valenciaCalFI4 = 0;
+	public double valenciaCalFpromI4 = 0;
 	
 	//termina calidad docente f
 	
 	//calidad docente g y h
-	static double valenciaCalGpromI1 = 0;
-	static double valenciaCalGI1Aprom = 0;
-	static double valenciaCalGI1A = 0;
+	public double valenciaCalGpromI1 = 0;
+	public double valenciaCalGI1Aprom = 0;
+	public double valenciaCalGI1A = 0;
 	//termina calidad docente g y h
 	//**********************************************************************************
 	//Servicio a la institucion a
-	static double puntuacionSIA = 0;
-	static double valenciaSIApromI4 = 0;
+	public double puntuacionSIA = 0;
+	public double valenciaSIApromI4 = 0;
 	//Termina servicio a la institucion a
 	
 	//Servicio a la institucion bc
-	static double puntuacionSIBC =0;
+	public double puntuacionSIBC =0;
 	//Termina la institucion bc
 	
 	//Servicio a la institucion de
-	static double puntuacionSIDE = 0;
+	public double puntuacionSIDE = 0;
 	//Termina servicio a la institucion de
 	
 	//Servicio a la institucion fg
-	static double puntuacionSIFG = 0;
+	public double puntuacionSIFG = 0;
 	//Termina servicio a la institucion fg
 	
 	//Servicio a la comunidad 
-	static double puntuacionSCAB = 0;
+	public double puntuacionSCAB = 0;
 	//Termina servicio a la comunidad
 	
 	//Investigacion y trabajo creativo 12%
-	static double puntuacionITa = 0;
-	static double puntuacionITb = 0;
-	static double puntuacionITcde = 0;
+	public double puntuacionITa = 0;
+	public double puntuacionITb = 0;
+	public double puntuacionITcde = 0;
 	
 	
 	//Termina investigacion y trabajo creativo
@@ -135,9 +148,9 @@ public class menu1 extends menuFinal {
 	
 	
 	//Crecimiento y desarrollo profesional
-	 static double puntuacionCDP1;
-	 static double puntuacionCDP2;
-	 static double puntuacionCDP3;
+	 public double puntuacionCDP1;
+	 public double puntuacionCDP2;
+	 public double puntuacionCDP3;
 	
 	//Termina Crecimiento y desarrollo profesional
 
