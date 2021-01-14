@@ -331,7 +331,7 @@ public class formulas extends I44 {
 			for(int i = 0; i<29; i++)
 			{
 				instrumentoI[i] = (int) instrumentoIList.get(i);
-				System.out.println(instrumentoI[i]);
+				
 			}
 			
 			//Iguala los valores del ArrayList al array instrumentoIA
@@ -339,7 +339,7 @@ public class formulas extends I44 {
 			for(int i = 0; i<23; i++)
 			{
 				instrumentoIA[i] = (int) instrumentoIAList.get(i);
-				System.out.println(instrumentoIA[i]);
+				
 			}
 			
 			//Iguala los valores del ArrayList al array instrumentoII
@@ -430,7 +430,7 @@ public class formulas extends I44 {
 				{
 					System.out.println(instrumentoIV[i]);
 				}
-	/*		
+		
 		//rango catedratico asociado
 		//calidad docente formula  a
 		int m = 1;
@@ -540,7 +540,7 @@ public class formulas extends I44 {
         puntuacionCDP3 = ((CDPB)*(totalI2)+(CDPD*totalI4))*(DPef/3);
         //Termina Crecimiento y Desarrollo Profesional
         //*************************************************************************************
-        
+        /*
         
         //Empiezan formulas instrumento 2
         //Calidad docente
@@ -633,10 +633,10 @@ public class formulas extends I44 {
         double CDPefI2 = 0; 
         
         
+        
+        
+        
         */
-        
-        
-        
         
         
         
@@ -671,12 +671,23 @@ public class formulas extends I44 {
 		JButton btnNewButton = new JButton("Finalizar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				
-				//System.out.println(puntuacionCalA);
-				//System.out.println(puntuacionCalB);
-				//.out.println(puntuacionCalC);
-				//System.out.println(puntuacionCalD);
-				//System.out.println(puntuacionCalF);
+				System.out.println("Contestacion de formulas finales");
+				System.out.println(puntuacionCalA);
+				System.out.println(puntuacionCalB);
+				System.out.println(puntuacionCalC);
+				System.out.println(puntuacionCalD);
+				System.out.println(puntuacionCalF);
+				System.out.println(puntuacionSIA);
+				System.out.println(puntuacionSIBC);
+				System.out.println(puntuacionSIDE);
+				System.out.println(puntuacionSIFG);
+				System.out.println(puntuacionSCAB);
+				System.out.println(puntuacionITa);
+				System.out.println(puntuacionITb);
+				System.out.println(puntuacionITcde);
+				System.out.println(puntuacionCDP1);
+				System.out.println(puntuacionCDP2);
+				System.out.println(puntuacionCDP3);
 				
 				
 				
