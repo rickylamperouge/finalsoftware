@@ -626,7 +626,7 @@ public class I11 extends menu1 {
 				    stmt.executeUpdate(query);
 
 
-				    PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1Spinners(ID,Respuesta) values(?,?)");
+				    PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1Spinners(Pregunta,Respuesta) values(?,?)");
 				    //Setting values for Each Parameter
 				    //Linea 1
 				    for(int i = 0; i < 29; i++) {

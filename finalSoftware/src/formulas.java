@@ -48,7 +48,7 @@ public class formulas extends I44 {
             Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
             System.out.println("Connected Successfully");
             Statement s = connection.createStatement();
-    		  ResultSet rs = s.executeQuery("Select ID,Respuesta from Instrumento1 order by ID ASC");
+    		  ResultSet rs = s.executeQuery("Select Pregunta,Respuesta from Instrumento1 order by Pregunta ASC");
     		  while(rs.next())
     		  {
     			  totalI = rs.getInt("respuesta");
@@ -83,18 +83,18 @@ public class formulas extends I44 {
             Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
             System.out.println("Connected Successfully");
             Statement s = connection.createStatement();
-    		  ResultSet rs2 = s.executeQuery("Select ID,Respuesta from Instrumento1A order by ID ASC");
+    		  ResultSet rs2 = s.executeQuery("Select Pregunta,Respuesta from Instrumento1A order by Pregunta ASC");
     		  while(rs2.next())
     		  {
     			  totalIA = rs2.getInt("respuesta");
     			  rs2.next();
-    			  valenciaCalAI1Aprom = rs2.getDouble("respuesta");
+    			  valenciaCalAI1Aprom = rs2.getDouble("Respuesta");
     			  rs2.next();
-    			  valenciaCalEI1Aprom = rs2.getDouble("respuesta");
+    			  valenciaCalEI1Aprom = rs2.getDouble("Respuesta");
     			  rs2.next();
-    			  valenciaCalFI1Aprom = rs2.getDouble("respuesta");
+    			  valenciaCalFI1Aprom = rs2.getDouble("Respuesta");
     			  rs2.next();
-    			  valenciaCalGI1Aprom = rs2.getDouble("respuesta");
+    			  valenciaCalGI1Aprom = rs2.getDouble("Respuesta");
     			  
     			  
     			  
@@ -111,10 +111,10 @@ public class formulas extends I44 {
             Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
             System.out.println("Connected Successfully");
             Statement s = connection.createStatement();
-    		  ResultSet rs3 = s.executeQuery("Select ID,Respuesta from Instrumento2 order by ID ASC");
+    		  ResultSet rs3 = s.executeQuery("Select Pregunta,Respuesta from Instrumento2 order by Pregunta ASC");
     		  while(rs3.next())
     		  {
-    			  totalI2 = rs3.getInt("respuesta"); 
+    			  totalI2 = rs3.getInt("Respuesta"); 
     		  }
 
         }catch(Exception e){
@@ -128,17 +128,18 @@ public class formulas extends I44 {
 	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
-	    		  ResultSet rs4 = s.executeQuery("Select ID,Respuesta from Instrumento3 order by ID ASC");
+	    		  ResultSet rs4 = s.executeQuery("Select Pregunta,Respuesta from Instrumento3 order by Pregunta ASC");
 	    		  while(rs4.next())
 	    		  {
 	    			  totalI3 = rs4.getInt("respuesta");
-	    			  valenciaCalApromI3 = rs4.getDouble("respuesta");
 	    			  rs4.next();
-	    			  valenciaCalBpromI3 = rs4.getDouble("respuesta");
+	    			  valenciaCalApromI3 = rs4.getDouble("Respuesta");
 	    			  rs4.next();
-	    			  valenciaCalEpromI3 = rs4.getDouble("respuesta");
+	    			  valenciaCalBpromI3 = rs4.getDouble("Respuesta");
 	    			  rs4.next();
-	    			  valenciaCalFpromI3 = rs4.getDouble("respuesta");  
+	    			  valenciaCalEpromI3 = rs4.getDouble("Respuesta");
+	    			  rs4.next();
+	    			  valenciaCalFpromI3 = rs4.getDouble("Respuesta");  
 	    			  
 	    		  }
 
@@ -154,10 +155,10 @@ public class formulas extends I44 {
 	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
-	    		  ResultSet rs5 = s.executeQuery("Select ID,Respuesta from Instrumento3A order by ID ASC");
+	    		  ResultSet rs5 = s.executeQuery("Select Pregunta,Respuesta from Instrumento3A order by Pregunta ASC");
 	    		  while(rs5.next())
 	    		  {
-	    			  totalI3A = rs5.getInt("respuesta");
+	    			  totalI3A = rs5.getInt("Respuesta");
 	    		  }
 
 	        }catch(Exception e){
@@ -171,15 +172,48 @@ public class formulas extends I44 {
 	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
-	    		  ResultSet rs6 = s.executeQuery("Select ID,Respuesta from Instrumento4 order by ID ASC");
+	    		  ResultSet rs6 = s.executeQuery("Select Pregunta,Respuesta from Instrumento4 order by Pregunta ASC");
 	    		  while(rs6.next())
 	    		  {
-	    			  totalI4 = rs6.getInt("respuesta");
+	    			  totalI4 = rs6.getInt("Respuesta");
+	    			  rs6.next();
+	    			  valenciaCalFpromI4 = rs6.getDouble("Respuesta");
+	    			  rs6.next();
+	    			  valenciaSIApromI4 = rs6.getDouble("Respuesta");
+	    			  
+	    			  
+	    			  
 	    		  }
 
 	        }catch(Exception e){
 	            System.out.println("Error in connection");
 	        }
+			
+			try{
+	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+	            System.out.println("Connected Successfully");
+	            Statement s = connection.createStatement();
+	    		  ResultSet rs7 = s.executeQuery("Select Pregunta,Respuesta from Instrumento1Spinners order by Pregunta ASC");
+	    		  for(int i = 0; rs7.next(); i++)
+	    		  {
+	    			  instrumentoI[i] = rs7.getInt("Respuesta");
+	    		  }
+	    		  for(int i = 0; i<29;i++)
+	    		  {
+	    			  System.out.println(instrumentoI[i]);
+	    		  }
+
+	        }catch(Exception e){
+	            System.out.println("Error in connection");
+	        }
+	        
+			
+			
+			
+			
+			
+			
 			//Instrumento 1
 			  System.out.println(totalI);
 			  System.out.println(valenciaCalApromI1);
@@ -206,7 +240,9 @@ public class formulas extends I44 {
 			  System.out.println(totalI3A);
 			  //Instrumento 4
 			  System.out.println(totalI4);
-			
+			  System.out.println(valenciaCalFpromI4);
+			  System.out.println(valenciaSIApromI4);
+	/*		
 		//rango catedratico asociado
 		//calidad docente formula  a
 		int m = 1;
@@ -409,7 +445,7 @@ public class formulas extends I44 {
         double CDPefI2 = 0; 
         
         
-        
+        */
         
         
         

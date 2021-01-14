@@ -577,7 +577,7 @@ public class I11A extends I11 {
 				    stmt.executeUpdate(query);
 
 
-				    PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1ASpinners(ID,Respuesta,Comentarios) values(?,?,?)");
+				    PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1ASpinners(Pregunta,Respuesta,Comentarios) values(?,?,?)");
 				    //Setting values for Each Parameter
 				    //Linea 1
 				    for(int i = 0; i < 27; i++) {
@@ -608,7 +608,7 @@ public class I11A extends I11 {
 		            
 		            
 		            
-		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1A(ID,Respuesta) values(?,?)");
+		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1A(Pregunta,Respuesta) values(?,?)");
 		            //Setting values for Each Parameter
 		            //Linea 1
 		        	preparedStatement.setInt(1,1);
