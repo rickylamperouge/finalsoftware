@@ -731,7 +731,7 @@ public class I33A extends I33 {
 				instrumentoIIIAtxt[8] = textField_8.getText();
 				instrumentoIIIAtxt[9] = textField_9.getText();
 				instrumentoIIIAtxt[10] = textField_10.getText();
-				instrumentoIIIAtxt[1] = textField_11.getText();
+				instrumentoIIIAtxt[11] = textField_11.getText();
 				instrumentoIIIAtxt[12] = textField_12.getText();
 				instrumentoIIIAtxt[13] = textField_13.getText();
 				instrumentoIIIAtxt[14] = textField_14.getText();
@@ -750,34 +750,94 @@ public class I33A extends I33 {
 					totalI3A = instrumentoIIIA[i] + totalI3A;
 				}
 				
-try{
-		        	
-		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
-		            System.out.println("Connected Successfully");
-		            
-		            Statement stmt = null;
-		            stmt = connection.createStatement();
-		            String query = "Delete * from Instrumento3A";
-		            stmt.executeUpdate(query);
-		            
-		            
-		            
-		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento3A(ID,Respuesta) values(?,?)");
-		            //Setting values for Each Parameter
-		            //Linea 1
-		        	preparedStatement.setInt(1,1);
-		            preparedStatement.setInt(2,totalI3A);
-		            preparedStatement.executeUpdate();
-		            System.out.println("Data inserted succesfully");
-		            
-		        	
+				try{
 
-		        }
-		        catch(Exception e){
-		            System.out.println("Error in connection");
+				    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+				    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+				    System.out.println("Connected Successfully");
 
-		        }
+				    Statement stmt = null;
+				    stmt = connection.createStatement();
+				    String query = "Delete * from Instrumento3ASpinners";
+				    stmt.executeUpdate(query);
+
+
+				    PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento3ASpinners(ID,Respuesta,Comentarios) values(?,?,?)");
+				    //Setting values for Each Parameter
+				    //Linea 1
+				    for(int i = 0; i < 21; i++) {
+				    preparedStatement.setInt(1,1);
+				    preparedStatement.setInt(2,instrumentoIIIA[i]);
+				    preparedStatement.setString(3,instrumentoIIIAtxt[i]);
+				    preparedStatement.executeUpdate();
+
+				    }
+				System.out.println("data inserted successfully");
+				}
+				catch(Exception e){
+				    System.out.println("Error in connection");
+
+				}
+				
+				try{
+
+				    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+				    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+				    System.out.println("Connected Successfully");
+
+				    Statement stmt = null;
+				    stmt = connection.createStatement();
+				    String query = "Delete * from Instrumento3ASpinners";
+				    stmt.executeUpdate(query);
+
+
+				    PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento3ASpinners(Pregunta,Respuesta,Comentarios) values(?,?,?)");
+				    //Setting values for Each Parameter
+				    //Linea 1
+				    for(int i = 0; i < 21; i++) {
+				    preparedStatement.setInt(1,1);
+				    preparedStatement.setInt(2,instrumentoIIIA[i]);
+				    preparedStatement.setString(3,instrumentoIIIAtxt[i]);
+				    preparedStatement.executeUpdate();
+
+				    }
+				System.out.println("data inserted successfully");
+				}
+				catch(Exception e){
+				    System.out.println("Error in connection");
+
+				}			
+				
+				
+				
+			try{
+					        	
+					            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+					            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+					            System.out.println("Connected Successfully");
+					            
+					            Statement stmt = null;
+					            stmt = connection.createStatement();
+					            String query = "Delete * from Instrumento3A";
+					            stmt.executeUpdate(query);
+					            
+					            
+					            
+					            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento3A(Pregunta,Respuesta) values(?,?)");
+					            //Setting values for Each Parameter
+					            //Linea 1
+					        	preparedStatement.setInt(1,1);
+					            preparedStatement.setInt(2,totalI3A);
+					            preparedStatement.executeUpdate();
+					            System.out.println("Data inserted succesfully");
+					            
+					        	
+			
+					        }
+					        catch(Exception e){
+					            System.out.println("Error in connection");
+			
+					        }
 				
 				new I44().setVisible(true);
 				//System.out.println(totalI3A);

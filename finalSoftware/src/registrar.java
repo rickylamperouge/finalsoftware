@@ -77,7 +77,7 @@ public class registrar extends JFrame {
 try{
 		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
 		            
 		            PreparedStatement preparedStatement=connection.prepareStatement("insert into login(username,password) values(?,?)");

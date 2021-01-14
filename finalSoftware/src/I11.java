@@ -614,7 +614,33 @@ public class I11 extends menu1 {
 				
 				//termina calidad docente g
 				//**********************************************************************************
-				
+				try{
+
+				    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+				    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+				    System.out.println("Connected Successfully");
+
+				    Statement stmt = null;
+				    stmt = connection.createStatement();
+				    String query = "Delete * from Instrumento1Spinners";
+				    stmt.executeUpdate(query);
+
+
+				    PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1Spinners(ID,Respuesta) values(?,?)");
+				    //Setting values for Each Parameter
+				    //Linea 1
+				    for(int i = 0; i < 29; i++) {
+				    preparedStatement.setInt(1,1);
+				    preparedStatement.setInt(2,instrumentoI[i]);
+				    preparedStatement.executeUpdate();
+
+				    }
+				System.out.println("data inserted successfully");
+				}
+				catch(Exception e){
+				    System.out.println("Error in connection");
+
+				}
 				
 				
 				
@@ -623,7 +649,7 @@ public class I11 extends menu1 {
 		        try{
 		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
 		            
 		            Statement stmt = null;
@@ -633,7 +659,7 @@ public class I11 extends menu1 {
 		            
 		            
 		            
-		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1(ID,Respuesta) values(?,?)");
+		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1(Pregunta,Respuesta) values(?,?)");
 		            //Setting values for Each Parameter
 		            //Linea 1
 		        	preparedStatement.setInt(1,1);

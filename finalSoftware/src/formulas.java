@@ -45,7 +45,7 @@ public class formulas extends I44 {
 		
 		try{
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
             System.out.println("Connected Successfully");
             Statement s = connection.createStatement();
     		  ResultSet rs = s.executeQuery("Select ID,Respuesta from Instrumento1 order by ID ASC");
@@ -80,7 +80,7 @@ public class formulas extends I44 {
 		
 		try{
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
             System.out.println("Connected Successfully");
             Statement s = connection.createStatement();
     		  ResultSet rs2 = s.executeQuery("Select ID,Respuesta from Instrumento1A order by ID ASC");
@@ -108,7 +108,7 @@ public class formulas extends I44 {
 		
 		try{
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
             System.out.println("Connected Successfully");
             Statement s = connection.createStatement();
     		  ResultSet rs3 = s.executeQuery("Select ID,Respuesta from Instrumento2 order by ID ASC");
@@ -121,26 +121,11 @@ public class formulas extends I44 {
             System.out.println("Error in connection");
 
         }
-		  //Instrumento 1
-		  System.out.println(totalI);
-		  System.out.println(valenciaCalApromI1);
-		  System.out.println(valenciaCalBpromI1);
-		  System.out.println(valenciaCalEpromI1);
-		  System.out.println(valenciaCalFpromI1);
-		  System.out.println(valenciaCalGpromI1);
 		  
-		  //Instrumento 1A
-		  System.out.println(totalIA);
-		  System.out.println(valenciaCalAI1Aprom);
-		  System.out.println(valenciaCalEI1Aprom);
-		  System.out.println(valenciaCalFI1Aprom);
-		  System.out.println(valenciaCalGI1Aprom);
-		  //Instrumento 2
-		  System.out.println(totalI2);
 		
 			try{
 	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
 	    		  ResultSet rs4 = s.executeQuery("Select ID,Respuesta from Instrumento3 order by ID ASC");
@@ -161,17 +146,12 @@ public class formulas extends I44 {
 	            System.out.println("Error in connection");
 
 	        }
-			//Instrumento 3
-			System.out.println(totalI3);
-			System.out.println(valenciaCalApromI3);
-			System.out.println(valenciaCalBpromI3);
-			System.out.println(valenciaCalEpromI3);
-			System.out.println(valenciaCalFpromI3);
+			
 			
 			
 			try{
 	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
 	    		  ResultSet rs5 = s.executeQuery("Select ID,Respuesta from Instrumento3A order by ID ASC");
@@ -183,13 +163,12 @@ public class formulas extends I44 {
 	        }catch(Exception e){
 	            System.out.println("Error in connection");
 	        }
-			//Instrumento 4
-			System.out.println(totalI3A);
+			
 			
 			
 			try{
 	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
 	    		  ResultSet rs6 = s.executeQuery("Select ID,Respuesta from Instrumento4 order by ID ASC");
@@ -201,10 +180,34 @@ public class formulas extends I44 {
 	        }catch(Exception e){
 	            System.out.println("Error in connection");
 	        }
-			//Instrumento 4
-			System.out.println(totalI4);
+			//Instrumento 1
+			  System.out.println(totalI);
+			  System.out.println(valenciaCalApromI1);
+			  System.out.println(valenciaCalBpromI1);
+			  System.out.println(valenciaCalEpromI1);
+			  System.out.println(valenciaCalFpromI1);
+			  System.out.println(valenciaCalGpromI1);
+			  
+			  //Instrumento 1A
+			  System.out.println(totalIA);
+			  System.out.println(valenciaCalAI1Aprom);
+			  System.out.println(valenciaCalEI1Aprom);
+			  System.out.println(valenciaCalFI1Aprom);
+			  System.out.println(valenciaCalGI1Aprom);
+			  //Instrumento 2
+			  System.out.println(totalI2);
+			  //Instrumento 3
+			  System.out.println(totalI3);
+			  System.out.println(valenciaCalApromI3);
+			  System.out.println(valenciaCalBpromI3);
+			  System.out.println(valenciaCalEpromI3);
+			  System.out.println(valenciaCalFpromI3);
+			  //Instrumento 3A
+			  System.out.println(totalI3A);
+			  //Instrumento 4
+			  System.out.println(totalI4);
 			
-	/*	//rango catedratico asociado
+		//rango catedratico asociado
 		//calidad docente formula  a
 		int m = 1;
 		int n = 1;
@@ -403,7 +406,7 @@ public class formulas extends I44 {
         int participacionCDPef = 0;
         int educacionCDPef = 0; //DUDA CON ASIGNACION DE PUNTOS. NO SE SI ES 2 PT POR EDUCACION
         int cursosCDPef = 0;
-        double CDPefI2 = 0; */
+        double CDPefI2 = 0; 
         
         
         

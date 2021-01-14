@@ -5,9 +5,6 @@ import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -568,11 +565,40 @@ public class I11A extends I11 {
 				valenciaCalGI1Aprom = (valenciaCalGI1A+instrumentoIA[20]/6)-1;
 				//termina calidad docente g
 				//**********************************************************************************
+				try{
 
+				    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+				    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+				    System.out.println("Connected Successfully");
+
+				    Statement stmt = null;
+				    stmt = connection.createStatement();
+				    String query = "Delete * from Instrumento1ASpinners";
+				    stmt.executeUpdate(query);
+
+
+				    PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento1ASpinners(ID,Respuesta,Comentarios) values(?,?,?)");
+				    //Setting values for Each Parameter
+				    //Linea 1
+				    for(int i = 0; i < 27; i++) {
+				    preparedStatement.setInt(1,1);
+				    preparedStatement.setInt(2,instrumentoIA[i]);
+				    preparedStatement.setString(3,instrumentoIAtxt[i]);
+				    preparedStatement.executeUpdate();
+
+				    }
+				System.out.println("data inserted successfully");
+				}
+				catch(Exception e){
+				    System.out.println("Error in connection");
+
+				}
+				
+				
 		        try{
 		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
 		            
 		            Statement stmt = null;

@@ -705,10 +705,50 @@ public class I44 extends I33A {
 				
 				
 				
+				
+				
+				
+				
+				try{
+
+				    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+				    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+				    System.out.println("Connected Successfully");
+
+				    Statement stmt = null;
+				    stmt = connection.createStatement();
+				    String query = "Delete * from Instrumento4Spinners";
+				    stmt.executeUpdate(query);
+
+
+				    PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento4Spinners(Pregunta,Respuesta,Comentarios) values(?,?,?)");
+				    //Setting values for Each Parameter
+				    //Linea 1
+				    for(int i = 0; i < 21; i++) {
+				    preparedStatement.setInt(1,1);
+				    preparedStatement.setInt(2,instrumentoIV[i]);
+				    preparedStatement.setString(3,instrumentoIVtxt[i]);
+				    preparedStatement.executeUpdate();
+
+				    }
+				System.out.println("data inserted successfully");
+				}
+				catch(Exception e){
+				    System.out.println("Error in connection");
+
+				}
+				
+				
+				
+				
+				
+				
+				
+				
 try{
 		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
 		            
 		            Statement stmt = null;
@@ -719,7 +759,7 @@ try{
 		            
 		            
 		            
-		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento4(ID,Respuesta) values(?,?)");
+		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento4(Pregunta,Respuesta) values(?,?)");
 		            //Setting values for Each Parameter
 		            //Linea 1
 		        	preparedStatement.setInt(1,1);

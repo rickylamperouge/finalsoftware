@@ -831,10 +831,42 @@ public class I33 extends I22 {
 				
 				//**********************************************************************************
 
+				try{
+
+				    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+				    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+				    System.out.println("Connected Successfully");
+
+				    Statement stmt = null;
+				    stmt = connection.createStatement();
+				    String query = "Delete * from Instrumento3Spinners";
+				    stmt.executeUpdate(query);
+
+
+				    PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento3Spinners(Pregunta,Respuesta,Comentarios) values(?,?,?)");
+				    //Setting values for Each Parameter
+				    //Linea 1
+				    for(int i = 0; i < 20; i++) {
+				    preparedStatement.setInt(1,1);
+				    preparedStatement.setInt(2,instrumentoIII[i]);
+				    preparedStatement.setString(3,instrumentoIIItxt[i]);
+				    preparedStatement.executeUpdate();
+
+				    }
+				System.out.println("data inserted successfully");
+				}
+				catch(Exception e){
+				    System.out.println("Error in connection");
+
+				}				
+				
+				
+				
+				
 		        try{
 		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto2.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
 		            
 		            Statement stmt = null;
@@ -844,7 +876,7 @@ public class I33 extends I22 {
 		            
 		            
 		            
-		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento3(ID,Respuesta) values(?,?)");
+		            PreparedStatement preparedStatement=connection.prepareStatement("insert into Instrumento3(Pregunta,Respuesta) values(?,?)");
 		            //Setting values for Each Parameter
 		            //Linea 1
 		        	preparedStatement.setInt(1,1);
@@ -875,8 +907,8 @@ public class I33 extends I22 {
 		            preparedStatement.setInt(1, 6);
 		            preparedStatement.setDouble(2,valenciaCalGpromI3);
 		            //Executing Query
-		            preparedStatement.executeUpdate();
-		            System.out.println("data inserted successfully"); */
+		            preparedStatement.executeUpdate(); */
+		            System.out.println("data inserted successfully");
 		           
 		            
 		            
