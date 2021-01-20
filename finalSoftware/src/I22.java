@@ -60,9 +60,6 @@ public class I22 extends I11A {
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		contentPane.add(tabbedPane, BorderLayout.CENTER);
 		
-		JPanel panel_2 = new JPanel();
-		tabbedPane.addTab("New tab", null, panel_2, null);
-		
 		JPanel panel = new JPanel();
 		tabbedPane.addTab("Pagina 1", null, panel, null);
 		panel.setLayout(null);
@@ -181,6 +178,7 @@ public class I22 extends I11A {
 		contentPane.add(scrollPane_3);
 		
 		table_3 = new JTable();
+		table_3.setFont(new Font("Arial", Font.PLAIN, 12));
 		table_3.setModel(new DefaultTableModel(
 			new Object[][] {
 				{"a. Publicaciones "},
@@ -634,5 +632,7 @@ try{
 		});
 		btnMenu.setBounds(515, 631, 89, 23);
 		panel_1.add(btnMenu);
+		
+		
 	}
 }

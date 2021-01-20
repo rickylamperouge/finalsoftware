@@ -19,6 +19,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.awt.event.ActionEvent;
+import javax.swing.SpinnerNumberModel;
 
 public class I33A extends I33 {
 
@@ -75,13 +76,12 @@ public class I33A extends I33 {
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		contentPane.add(tabbedPane, BorderLayout.CENTER);
 		
-		JPanel panel_2 = new JPanel();
-		tabbedPane.addTab("Pagina 1", null, panel_2, null);
+
 		
 		JPanel contentPane_1 = new JPanel();
 		contentPane_1.setLayout(null);
 		contentPane_1.setBorder(new EmptyBorder(5, 5, 5, 5));
-		tabbedPane.addTab("Pagina 2", null, contentPane_1, null);
+		tabbedPane.addTab("Pagina 1", null, contentPane_1, null);
 		
 		JLabel lblNewLabel = new JLabel("CRITERIO I.  DOMINIO DE LA DISCIPLINA Y SU RELACI\u00D3N CON OTRAS ESFERAS DEL\r\n CONOCIMIENTO\r");
 		lblNewLabel.setForeground(Color.BLACK);
@@ -135,14 +135,17 @@ public class I33A extends I33 {
 		contentPane_1.add(lblNewLabel_9);
 		
 		JSpinner spinner = new JSpinner();
+		spinner.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner.setBounds(772, 155, 30, 20);
 		contentPane_1.add(spinner);
 		
 		JSpinner spinner_2 = new JSpinner();
+		spinner_2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_2.setBounds(772, 397, 30, 20);
 		contentPane_1.add(spinner_2);
 		
 		JSpinner spinner_3 = new JSpinner();
+		spinner_3.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_3.setBounds(762, 629, 30, 20);
 		contentPane_1.add(spinner_3);
 		
@@ -175,7 +178,7 @@ public class I33A extends I33 {
 		JPanel contentPane_1_1 = new JPanel();
 		contentPane_1_1.setLayout(null);
 		contentPane_1_1.setBorder(new EmptyBorder(5, 5, 5, 5));
-		tabbedPane.addTab("Pagina 3", null, contentPane_1_1, null);
+		tabbedPane.addTab("Pagina 2", null, contentPane_1_1, null);
 		
 		textField_3 = new JTextField();
 		textField_3.setColumns(10);
@@ -223,14 +226,17 @@ public class I33A extends I33 {
 		contentPane_1_1.add(lblNewLabel_9_1);
 		
 		JSpinner spinner_4 = new JSpinner();
+		spinner_4.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_4.setBounds(773, 119, 30, 20);
 		contentPane_1_1.add(spinner_4);
 		
 		JSpinner spinner_5 = new JSpinner();
+		spinner_5.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_5.setBounds(773, 378, 30, 20);
 		contentPane_1_1.add(spinner_5);
 		
 		JSpinner spinner_6 = new JSpinner();
+		spinner_6.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_6.setBounds(773, 590, 30, 20);
 		contentPane_1_1.add(spinner_6);
 		
@@ -270,7 +276,7 @@ public class I33A extends I33 {
 		JPanel contentPane_1_1_1 = new JPanel();
 		contentPane_1_1_1.setLayout(null);
 		contentPane_1_1_1.setBorder(new EmptyBorder(5, 5, 5, 5));
-		tabbedPane.addTab("Pagina 4", null, contentPane_1_1_1, null);
+		tabbedPane.addTab("Pagina 3", null, contentPane_1_1_1, null);
 		
 		JLabel lblNewLabel_2_2 = new JLabel("Comentarios:");
 		lblNewLabel_2_2.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -308,14 +314,17 @@ public class I33A extends I33 {
 		contentPane_1_1_1.add(lblNewLabel_9_1_2);
 		
 		JSpinner spinner_7 = new JSpinner();
+		spinner_7.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_7.setBounds(767, 119, 30, 20);
 		contentPane_1_1_1.add(spinner_7);
 		
 		JSpinner spinner_8 = new JSpinner();
+		spinner_8.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_8.setBounds(767, 334, 30, 20);
 		contentPane_1_1_1.add(spinner_8);
 		
 		JSpinner spinner_9 = new JSpinner();
+		spinner_9.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_9.setBounds(773, 546, 30, 20);
 		contentPane_1_1_1.add(spinner_9);
 		
@@ -359,7 +368,7 @@ public class I33A extends I33 {
 		JPanel contentPane_1_2 = new JPanel();
 		contentPane_1_2.setLayout(null);
 		contentPane_1_2.setBorder(new EmptyBorder(5, 5, 5, 5));
-		tabbedPane.addTab("Pagina 5", null, contentPane_1_2, null);
+		tabbedPane.addTab("Pagina 4", null, contentPane_1_2, null);
 		
 		textField_9 = new JTextField();
 		textField_9.setColumns(10);
@@ -386,10 +395,12 @@ public class I33A extends I33 {
 		contentPane_1_2.add(btnNewButton_3);
 		
 		JSpinner spinner_10 = new JSpinner();
+		spinner_10.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_10.setBounds(773, 114, 30, 20);
 		contentPane_1_2.add(spinner_10);
 		
 		JSpinner spinner_11 = new JSpinner();
+		spinner_11.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_11.setBounds(773, 334, 30, 20);
 		contentPane_1_2.add(spinner_11);
 		
@@ -443,12 +454,13 @@ public class I33A extends I33 {
 		contentPane_1_2.add(lblNewLabel_9_3_1);
 		
 		JSpinner spinner_12 = new JSpinner();
+		spinner_12.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_12.setBounds(765, 550, 30, 20);
 		contentPane_1_2.add(spinner_12);
 		
 		JPanel panel = new JPanel();
 		panel.setLayout(null);
-		tabbedPane.addTab("Pagina 6", null, panel, null);
+		tabbedPane.addTab("Pagina 5", null, panel, null);
 		
 		JTextArea txtrElProfesor_3_3_2 = new JTextArea();
 		txtrElProfesor_3_3_2.setText("13. El profesor utiliz\u00F3 las herramientas disponibles en la plataforma y present\u00F3 el contenido\r\ndel curso en forma organizada y coherente.\r\n\r\nNota: Este criterio se evaluar\u00E1 independientemente del dise\u00F1o del curso. El profesor\r\ntiene libertad acad\u00E9mica (Art\u00EDculo 4.1 de la Parte IV del Manual de la Facultad) para\r\nreorganizar el curso de acuerdo a su experiencia y para el beneficio del estudiante.");
@@ -474,6 +486,7 @@ public class I33A extends I33 {
 		panel.add(lblNewLabel_3_3_1);
 		
 		JSpinner spinner_13 = new JSpinner();
+		spinner_13.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_13.setBounds(757, 119, 30, 20);
 		panel.add(spinner_13);
 		
@@ -493,6 +506,7 @@ public class I33A extends I33 {
 		panel.add(lblNewLabel_3_3_1_1);
 		
 		JSpinner spinner_14 = new JSpinner();
+		spinner_14.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_14.setBounds(757, 335, 30, 20);
 		panel.add(spinner_14);
 		
@@ -537,13 +551,14 @@ public class I33A extends I33 {
 		panel.add(lblNewLabel_3_3_1_1_1);
 		
 		JSpinner spinner_15 = new JSpinner();
+		spinner_15.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_15.setBounds(757, 593, 30, 20);
 		panel.add(spinner_15);
 		
 		JPanel contentPane_1_3 = new JPanel();
 		contentPane_1_3.setLayout(null);
 		contentPane_1_3.setBorder(new EmptyBorder(5, 5, 5, 5));
-		tabbedPane.addTab("Pagina 7", null, contentPane_1_3, null);
+		tabbedPane.addTab("Pagina 6", null, contentPane_1_3, null);
 		
 		textField_15 = new JTextField();
 		textField_15.setColumns(10);
@@ -565,6 +580,7 @@ public class I33A extends I33 {
 		contentPane_1_3.add(btnGuardarYSometer);
 		
 		JSpinner spinner_16 = new JSpinner();
+		spinner_16.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_16.setBounds(773, 119, 30, 20);
 		contentPane_1_3.add(spinner_16);
 		
@@ -603,6 +619,7 @@ public class I33A extends I33 {
 		contentPane_1_3.add(lblNewLabel_3_4_1);
 		
 		JSpinner spinner_17 = new JSpinner();
+		spinner_17.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_17.setBounds(773, 335, 30, 20);
 		contentPane_1_3.add(spinner_17);
 		
@@ -636,12 +653,13 @@ public class I33A extends I33 {
 		contentPane_1_3.add(lblNewLabel_3_4_1_1);
 		
 		JSpinner spinner_18 = new JSpinner();
+		spinner_18.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_18.setBounds(773, 593, 30, 20);
 		contentPane_1_3.add(spinner_18);
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setLayout(null);
-		tabbedPane.addTab("Pagina 8", null, panel_1, null);
+		tabbedPane.addTab("Pagina 7", null, panel_1, null);
 		
 		JTextArea txtrElProfesor_3_3_2_4_1_1 = new JTextArea();
 		txtrElProfesor_3_3_2_4_1_1.setText("19. El profesor utiliz\u00F3 diferentes recursos de ense\u00F1anza para facilitar el aprendizaje. Por\r\nejemplo: trabajo colaborativo, v\u00EDdeos, presentaciones, seminarios y conferencias a\r\ntrav\u00E9s de la web, entre otros.\r");
@@ -667,6 +685,7 @@ public class I33A extends I33 {
 		panel_1.add(lblNewLabel_3_4_2);
 		
 		JSpinner spinner_19 = new JSpinner();
+		spinner_19.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_19.setBounds(800, 119, 30, 20);
 		panel_1.add(spinner_19);
 		
