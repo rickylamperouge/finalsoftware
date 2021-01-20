@@ -18,6 +18,7 @@ import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.awt.event.ActionEvent;
 import javax.swing.SpinnerNumberModel;
+import java.awt.Font;
 
 public class I11 extends menu1 {
 
@@ -729,5 +730,14 @@ public class I11 extends menu1 {
 		JLabel lblNewLabel_1_1 = new JLabel("Puntuaci\u00F3n");
 		lblNewLabel_1_1.setBounds(705, 226, 78, 14);
 		spinner29.add(lblNewLabel_1_1);
+		
+		JLabel lblNewLabel_4_1 = new JLabel("Cantidad de evaluaciones realizadas:");
+		lblNewLabel_4_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		lblNewLabel_4_1.setBounds(153, 542, 192, 14);
+		spinner29.add(lblNewLabel_4_1);
+		
+		JSpinner spinner_1 = new JSpinner();
+		spinner_1.setBounds(344, 540, 30, 20);
+		spinner29.add(spinner_1);
 	}
 }

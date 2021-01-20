@@ -138,6 +138,15 @@ public class I11A extends I11 {
 		spinner2.setBounds(703, 389, 30, 20);
 		panel.add(spinner2);
 		
+		JLabel lblNewLabel_4_1 = new JLabel("Cantidad de evaluaciones realizadas:");
+		lblNewLabel_4_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		lblNewLabel_4_1.setBounds(72, 633, 192, 14);
+		panel.add(lblNewLabel_4_1);
+		
+		JSpinner spinner_1 = new JSpinner();
+		spinner_1.setBounds(282, 631, 30, 20);
+		panel.add(spinner_1);
+		
 		JPanel panel_1 = new JPanel();
 		tabbedPane.addTab("Pagina 2", null, panel_1, null);
 		panel_1.setLayout(null);
