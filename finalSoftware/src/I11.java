@@ -91,7 +91,7 @@ public class I11 extends menu1 {
 		scrollPane.setViewportView(table);
 		
 		JLabel lblNewLabel_1 = new JLabel("Puntuaci\u00F3n");
-		lblNewLabel_1.setBounds(747, 96, 78, 14);
+		lblNewLabel_1.setBounds(675, 60, 78, 14);
 		contentPane.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("1 - Casi\r\n");
@@ -154,7 +154,7 @@ public class I11 extends menu1 {
 		scrollPane_2.setViewportView(table_2);
 		
 		JSpinner spinner = new JSpinner();
-		spinner.setModel(new SpinnerNumberModel(1, 1, 4, 1));
+		spinner.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner.setBounds(675, 110, 30, 20);
 		contentPane.add(spinner);
 		
@@ -163,7 +163,7 @@ public class I11 extends menu1 {
 		contentPane.add(lblNewLabel_6);
 		
 		JSpinner spinner2 = new JSpinner();
-		spinner2.setModel(new SpinnerNumberModel(1, 1, 4, 1));
+		spinner2.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner2.setBounds(675, 127, 30, 20);
 		contentPane.add(spinner2);
 		
@@ -172,12 +172,12 @@ public class I11 extends menu1 {
 		contentPane.add(lblNewLabel_6_1);
 		
 		JSpinner spinner3 = new JSpinner();
-		spinner3.setModel(new SpinnerNumberModel(1, 1, 3, 1));
+		spinner3.setModel(new SpinnerNumberModel(0, 0, 3, 1));
 		spinner3.setBounds(675, 274, 30, 20);
 		contentPane.add(spinner3);
 		
 		JSpinner spinner4 = new JSpinner();
-		spinner4.setModel(new SpinnerNumberModel(1, 1, 3, 1));
+		spinner4.setModel(new SpinnerNumberModel(0, 0, 3, 1));
 		spinner4.setBounds(675, 291, 30, 20);
 		contentPane.add(spinner4);
 		
@@ -190,12 +190,12 @@ public class I11 extends menu1 {
 		contentPane.add(lblNewLabel_6_1_1);
 		
 		JSpinner spinner5 = new JSpinner();
-		spinner5.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner5.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner5.setBounds(675, 386, 30, 20);
 		contentPane.add(spinner5);
 		
 		JSpinner spinner6 = new JSpinner();
-		spinner6.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner6.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner6.setBounds(675, 403, 30, 20);
 		contentPane.add(spinner6);
 		
@@ -208,12 +208,12 @@ public class I11 extends menu1 {
 		contentPane.add(lblNewLabel_6_1_1_1);
 		
 		JSpinner spinner7 = new JSpinner();
-		spinner7.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner7.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner7.setBounds(675, 425, 30, 20);
 		contentPane.add(spinner7);
 		
 		JSpinner spinner8 = new JSpinner();
-		spinner8.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner8.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner8.setBounds(675, 442, 30, 20);
 		contentPane.add(spinner8);
 		
@@ -226,12 +226,12 @@ public class I11 extends menu1 {
 		contentPane.add(lblNewLabel_6_1_1_1_1);
 		
 		JSpinner spinner9 = new JSpinner();
-		spinner9.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner9.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner9.setBounds(675, 465, 30, 20);
 		contentPane.add(spinner9);
 		
 		JSpinner spinner10 = new JSpinner();
-		spinner10.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner10.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner10.setBounds(675, 482, 30, 20);
 		contentPane.add(spinner10);
 		
@@ -244,12 +244,12 @@ public class I11 extends menu1 {
 		contentPane.add(lblNewLabel_6_1_1_1_2);
 		
 		JSpinner spinner11 = new JSpinner();
-		spinner11.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner11.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner11.setBounds(675, 506, 30, 20);
 		contentPane.add(spinner11);
 		
 		JSpinner spinner12 = new JSpinner();
-		spinner12.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner12.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner12.setBounds(675, 523, 30, 20);
 		contentPane.add(spinner12);
 		
@@ -262,12 +262,12 @@ public class I11 extends menu1 {
 		contentPane.add(lblNewLabel_6_1_1_1_3);
 		
 		JSpinner spinner13 = new JSpinner();
-		spinner13.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner13.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner13.setBounds(675, 547, 30, 20);
 		contentPane.add(spinner13);
 		
 		JSpinner spinner14 = new JSpinner();
-		spinner14.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner14.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner14.setBounds(675, 564, 30, 20);
 		contentPane.add(spinner14);
 		
@@ -280,12 +280,12 @@ public class I11 extends menu1 {
 		contentPane.add(lblNewLabel_6_1_1_1_4);
 		
 		JSpinner spinner15 = new JSpinner();
-		spinner15.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner15.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner15.setBounds(675, 584, 30, 20);
 		contentPane.add(spinner15);
 		
 		JSpinner spinner16 = new JSpinner();
-		spinner16.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner16.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner16.setBounds(675, 601, 30, 20);
 		contentPane.add(spinner16);
 		
@@ -346,6 +346,7 @@ public class I11 extends menu1 {
 		contentPane.add(lblNewLabel_2_1_2);
 		
 		JSpinner spinner17 = new JSpinner();
+		spinner17.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner17.setBounds(675, 622, 30, 20);
 		contentPane.add(spinner17);
 		
@@ -358,7 +359,7 @@ public class I11 extends menu1 {
 		spinner29.setLayout(null);
 		
 		JSpinner spinner18 = new JSpinner();
-		spinner18.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner18.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner18.setBounds(705, 274, 30, 20);
 		spinner29.add(spinner18);
 		
@@ -367,7 +368,7 @@ public class I11 extends menu1 {
 		spinner29.add(lblNewLabel_6_3);
 		
 		JSpinner spinner19 = new JSpinner();
-		spinner19.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner19.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner19.setBounds(705, 291, 30, 20);
 		spinner29.add(spinner19);
 		
@@ -376,7 +377,7 @@ public class I11 extends menu1 {
 		spinner29.add(lblNewLabel_6_1_2);
 		
 		JSpinner spinner20 = new JSpinner();
-		spinner20.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner20.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner20.setBounds(705, 305, 30, 20);
 		spinner29.add(spinner20);
 		
@@ -385,7 +386,7 @@ public class I11 extends menu1 {
 		spinner29.add(lblNewLabel_6_2_2);
 		
 		JSpinner spinner21 = new JSpinner();
-		spinner21.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner21.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner21.setBounds(705, 322, 30, 20);
 		spinner29.add(spinner21);
 		
@@ -394,7 +395,7 @@ public class I11 extends menu1 {
 		spinner29.add(lblNewLabel_6_1_1_2);
 		
 		JSpinner spinner22 = new JSpinner();
-		spinner22.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner22.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner22.setBounds(705, 336, 30, 20);
 		spinner29.add(spinner22);
 		
@@ -403,7 +404,7 @@ public class I11 extends menu1 {
 		spinner29.add(lblNewLabel_6_2_1_5);
 		
 		JSpinner spinner23 = new JSpinner();
-		spinner23.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner23.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner23.setBounds(705, 353, 30, 20);
 		spinner29.add(spinner23);
 		
@@ -412,7 +413,7 @@ public class I11 extends menu1 {
 		spinner29.add(lblNewLabel_6_1_1_1_5);
 		
 		JSpinner spinner24 = new JSpinner();
-		spinner24.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner24.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner24.setBounds(705, 375, 30, 20);
 		spinner29.add(spinner24);
 		
@@ -421,7 +422,7 @@ public class I11 extends menu1 {
 		spinner29.add(lblNewLabel_6_2_1_1_1);
 		
 		JSpinner spinner25 = new JSpinner();
-		spinner25.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner25.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner25.setBounds(705, 392, 30, 20);
 		spinner29.add(spinner25);
 		
@@ -430,7 +431,7 @@ public class I11 extends menu1 {
 		spinner29.add(lblNewLabel_6_1_1_1_1_1);
 		
 		JSpinner spinner26 = new JSpinner();
-		spinner26.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner26.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner26.setBounds(705, 415, 30, 20);
 		spinner29.add(spinner26);
 		
@@ -439,7 +440,7 @@ public class I11 extends menu1 {
 		spinner29.add(lblNewLabel_6_2_1_2_1);
 		
 		JSpinner spinner27 = new JSpinner();
-		spinner27.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner27.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner27.setBounds(705, 432, 30, 20);
 		spinner29.add(spinner27);
 		
@@ -448,7 +449,7 @@ public class I11 extends menu1 {
 		spinner29.add(lblNewLabel_6_1_1_1_2_1);
 		
 		JSpinner spinner28 = new JSpinner();
-		spinner28.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner28.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner28.setBounds(705, 456, 30, 20);
 		spinner29.add(spinner28);
 		
@@ -457,7 +458,7 @@ public class I11 extends menu1 {
 		spinner29.add(lblNewLabel_6_2_1_3_1);
 		
 		JSpinner spinner_1_1_3_1_1 = new JSpinner();
-		spinner_1_1_3_1_1.setModel(new SpinnerNumberModel(0, -1, 4, 1));
+		spinner_1_1_3_1_1.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner_1_1_3_1_1.setBounds(705, 475, 30, 20);
 		spinner29.add(spinner_1_1_3_1_1);
 		
@@ -617,7 +618,7 @@ public class I11 extends menu1 {
 				try{
 
 				    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-				    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+				    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
 				    System.out.println("Connected Successfully");
 
 				    Statement stmt = null;
@@ -649,7 +650,7 @@ public class I11 extends menu1 {
 		        try{
 		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
 		            
 		            Statement stmt = null;
@@ -724,5 +725,9 @@ public class I11 extends menu1 {
 		});
 		btnNewButton_1.setBounds(508, 662, 136, 23);
 		spinner29.add(btnNewButton_1);
+		
+		JLabel lblNewLabel_1_1 = new JLabel("Puntuaci\u00F3n");
+		lblNewLabel_1_1.setBounds(705, 226, 78, 14);
+		spinner29.add(lblNewLabel_1_1);
 	}
 }

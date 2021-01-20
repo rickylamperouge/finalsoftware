@@ -111,7 +111,7 @@ public class formulas extends I44 {
 		
 		try{
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
             System.out.println("Connected Successfully");
             Statement s = connection.createStatement();
     		  ResultSet rs3 = s.executeQuery("Select Pregunta,Respuesta from Instrumento2 order by Pregunta ASC");
@@ -128,7 +128,7 @@ public class formulas extends I44 {
 		
 			try{
 	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+	            Connection connection = DriverManager.getConnection("jdbc://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
 	    		  ResultSet rs4 = s.executeQuery("Select Pregunta,Respuesta from Instrumento3 order by Pregunta ASC");
@@ -155,7 +155,7 @@ public class formulas extends I44 {
 			
 			try{
 	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
 	    		  ResultSet rs5 = s.executeQuery("Select Pregunta,Respuesta from Instrumento3A order by Pregunta ASC");
@@ -172,7 +172,7 @@ public class formulas extends I44 {
 			
 			try{
 	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
 	    		  ResultSet rs6 = s.executeQuery("Select Pregunta,Respuesta from Instrumento4 order by Pregunta ASC");
@@ -195,7 +195,7 @@ public class formulas extends I44 {
 			try{
 				
 	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
 	    		ResultSet rs7 = s.executeQuery("Select * from Instrumento1Spinners order by Pregunta ASC");
@@ -215,7 +215,7 @@ public class formulas extends I44 {
 			try{
 							
 				            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-				            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+				            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
 				            System.out.println("Connected Successfully");
 				            Statement s = connection.createStatement();
 				    		ResultSet rs8 = s.executeQuery("Select * from Instrumento1ASpinners order by Pregunta ASC");
@@ -238,7 +238,7 @@ public class formulas extends I44 {
 			try{
 				
 			    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-			    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+			    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
 			    System.out.println("Connected Successfully");
 			    Statement s = connection.createStatement();
 				ResultSet rs8 = s.executeQuery("Select * from Instrumento2Spinners order by Pregunta ASC");
@@ -260,7 +260,7 @@ public class formulas extends I44 {
 			try{
 							
 						    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-						    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+						    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
 						    System.out.println("Connected Successfully");
 						    Statement s = connection.createStatement();
 							ResultSet rs9 = s.executeQuery("Select * from Instrumento3Spinners order by Pregunta ASC");
@@ -280,7 +280,7 @@ public class formulas extends I44 {
 			try{
 				
 			    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-			    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+			    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
 			    System.out.println("Connected Successfully");
 			    Statement s = connection.createStatement();
 				ResultSet rs10 = s.executeQuery("Select * from Instrumento3ASpinners order by Pregunta ASC");
@@ -305,7 +305,7 @@ public class formulas extends I44 {
 			try{
 							
 						    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-						    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+						    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
 						    System.out.println("Connected Successfully");
 						    Statement s = connection.createStatement();
 							ResultSet rs11 = s.executeQuery("Select * from Instrumento4Spinners order by Pregunta ASC");

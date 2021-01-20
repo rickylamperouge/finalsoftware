@@ -558,7 +558,7 @@ public class I22 extends I11A {
 				try{
 
 				    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-				    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+				    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
 				    System.out.println("Connected Successfully");
 
 				    Statement stmt = null;
@@ -589,7 +589,7 @@ public class I22 extends I11A {
 try{
 		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
 		            
 		            Statement stmt = null;
