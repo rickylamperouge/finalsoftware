@@ -60,6 +60,9 @@ public class I22 extends I11A {
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 		contentPane.add(tabbedPane, BorderLayout.CENTER);
 		
+		JPanel panel_2 = new JPanel();
+		tabbedPane.addTab("New tab", null, panel_2, null);
+		
 		JPanel panel = new JPanel();
 		tabbedPane.addTab("Pagina 1", null, panel, null);
 		panel.setLayout(null);
@@ -80,7 +83,7 @@ public class I22 extends I11A {
 			new Object[][] {
 				{"a. Dominio de la disciplina que ense\u00F1a"},
 				{"b. Habilidad para organizar el contenido y presentarlo en forma clara, l\u00F3gica e imaginativa"},
-				{"c. . Conocimiento de los desarrollos actuales de la disciplina "},
+				{"c. Conocimiento de los desarrollos actuales de la disciplina "},
 				{"d. Habilidad para relacionar la disciplina con otras esferas del conocimiento"},
 				{"e. Habilidad para promover y ampliar el inter\u00E9s del estudiante en la disciplina"},
 				{"f. Habilidad para desarrollar y utilizar m\u00E9todos y estrategias adecuadas, incluyendo \u201Cassessment\u201D para una ense\u00F1anza efectiva"},
@@ -200,7 +203,7 @@ public class I22 extends I11A {
 		contentPane.add(lblNewLabel_5);
 		
 		JSpinner spinner = new JSpinner();
-		spinner.setModel(new SpinnerNumberModel(0, -1, 3, 1));
+		spinner.setModel(new SpinnerNumberModel(0, 0, 3, 1));
 		spinner.setBounds(722, 73, 30, 20);
 		contentPane.add(spinner);
 		
@@ -632,5 +635,4 @@ try{
 		btnMenu.setBounds(515, 631, 89, 23);
 		panel_1.add(btnMenu);
 	}
-
 }
