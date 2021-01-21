@@ -13,10 +13,15 @@ import javax.swing.JTextField;
 import java.awt.Color;
 import javax.swing.SwingConstants;
 import java.awt.SystemColor;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
 import javax.swing.JTextArea;
 import javax.swing.JButton;
 
-public class valenciaRCA extends JFrame {
+public class valenciaRCA extends menu1 {
 
 	private JPanel contentPane;
 	private JTextField textField;
@@ -72,6 +77,46 @@ public class valenciaRCA extends JFrame {
 	 * Create the frame.
 	 */
 	public valenciaRCA() {
+		
+		
+		try{
+			
+            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+            System.out.println("Connected Successfully");
+            Statement s = connection.createStatement();
+    		ResultSet rsRCA = s.executeQuery("Select * from formulas order by ID ASC");
+    		  
+    		  while(rsRCA.next())
+    		  {
+    			   arrayRCA = rsRCA.getInt("Respuesta");
+    			   valenciaRCAList.add(arrayRCA);
+
+    		  }
+
+
+        }catch(Exception e){
+            System.out.println("Error in connection valenciaRCA");
+        }
+		
+		
+		//Iguala los valores del ArrayList al array instrumentoI
+		valenciaRCA = new int[30];
+		valenciaRCAString = new String[30];
+		for(int i = 0; i<18; i++)
+		{
+			valenciaRCA[i] = (int) valenciaRCAList.get(i);	
+		}
+		for(int i = 0; i<18;i++)
+		{
+			System.out.println(valenciaRCA[i]);
+		}
+		
+		
+		
+		
+		
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 932, 820);
 		contentPane = new JPanel();
@@ -257,39 +302,50 @@ public class valenciaRCA extends JFrame {
 		panel.add(lblNewLabel_3_6);
 		
 		textField_3 = new JTextField();
+		textField_3.setEditable(false);
 		textField_3.setColumns(10);
 		textField_3.setBounds(744, 351, 112, 19);
 		panel.add(textField_3);
 		
 		textField_4 = new JTextField();
+		textField_4.setEditable(false);
 		textField_4.setColumns(10);
 		textField_4.setBounds(744, 385, 112, 19);
 		panel.add(textField_4);
 		
 		textField_5 = new JTextField();
+		textField_5.setEditable(false);
 		textField_5.setColumns(10);
 		textField_5.setBounds(744, 423, 112, 19);
 		panel.add(textField_5);
 		
 		textField_6 = new JTextField();
+		textField_6.setEditable(false);
 		textField_6.setColumns(10);
 		textField_6.setBounds(744, 461, 112, 19);
 		panel.add(textField_6);
 		
 		textField_7 = new JTextField();
+		textField_7.setEditable(false);
 		textField_7.setColumns(10);
 		textField_7.setBounds(744, 499, 112, 19);
 		panel.add(textField_7);
 		
 		textField_8 = new JTextField();
+		textField_8.setEditable(false);
 		textField_8.setColumns(10);
 		textField_8.setBounds(744, 537, 112, 19);
 		panel.add(textField_8);
 		
 		textField_9 = new JTextField();
+		textField_9.setEditable(false);
 		textField_9.setColumns(10);
 		textField_9.setBounds(744, 615, 112, 19);
 		panel.add(textField_9);
+		
+		
+		
+		
 		
 		JPanel panel_1 = new JPanel();
 		tabbedPane.addTab("Pagina 2", null, panel_1, null);
@@ -360,21 +416,25 @@ public class valenciaRCA extends JFrame {
 		panel_1.add(lblNewLabel_2_1_1_4_1);
 		
 		textField_10 = new JTextField();
+		textField_10.setEditable(false);
 		textField_10.setColumns(10);
 		textField_10.setBounds(732, 112, 112, 19);
 		panel_1.add(textField_10);
 		
 		textField_11 = new JTextField();
+		textField_11.setEditable(false);
 		textField_11.setColumns(10);
 		textField_11.setBounds(732, 157, 112, 19);
 		panel_1.add(textField_11);
 		
 		textField_12 = new JTextField();
+		textField_12.setEditable(false);
 		textField_12.setColumns(10);
 		textField_12.setBounds(732, 236, 112, 19);
 		panel_1.add(textField_12);
 		
 		textField_13 = new JTextField();
+		textField_13.setEditable(false);
 		textField_13.setColumns(10);
 		textField_13.setBounds(732, 327, 112, 19);
 		panel_1.add(textField_13);
@@ -454,6 +514,7 @@ public class valenciaRCA extends JFrame {
 		panel_1.add(lblNewLabel_3_9_1);
 		
 		textField_14 = new JTextField();
+		textField_14.setEditable(false);
 		textField_14.setColumns(10);
 		textField_14.setBounds(732, 532, 112, 19);
 		panel_1.add(textField_14);
@@ -499,6 +560,7 @@ public class valenciaRCA extends JFrame {
 		panel_2.add(lblNewLabel_3_7_1);
 		
 		textField_15 = new JTextField();
+		textField_15.setEditable(false);
 		textField_15.setColumns(10);
 		textField_15.setBounds(736, 82, 112, 19);
 		panel_2.add(textField_15);
@@ -578,8 +640,9 @@ public class valenciaRCA extends JFrame {
 		panel_2.add(lblNewLabel_2_1_1_1_1_10);
 		
 		textField_16 = new JTextField();
+		textField_16.setEditable(false);
 		textField_16.setColumns(10);
-		textField_16.setBounds(736, 383, 112, 19);
+		textField_16.setBounds(736, 123, 112, 19);
 		panel_2.add(textField_16);
 		
 		JLabel lblNewLabel_3_7_1_1 = new JLabel("4");
@@ -597,13 +660,15 @@ public class valenciaRCA extends JFrame {
 		panel_2.add(lblNewLabel_3_7_1_2);
 		
 		textField_17 = new JTextField();
+		textField_17.setEditable(false);
 		textField_17.setColumns(10);
-		textField_17.setBounds(736, 120, 112, 19);
+		textField_17.setBounds(736, 195, 112, 19);
 		panel_2.add(textField_17);
 		
 		textField_18 = new JTextField();
+		textField_18.setEditable(false);
 		textField_18.setColumns(10);
-		textField_18.setBounds(736, 196, 112, 19);
+		textField_18.setBounds(736, 382, 112, 19);
 		panel_2.add(textField_18);
 		
 		JLabel lblNewLabel_3_7_1_1_1 = new JLabel("4");
@@ -628,11 +693,13 @@ public class valenciaRCA extends JFrame {
 		panel_2.add(lblNewLabel_3_7_1_4);
 		
 		textField_19 = new JTextField();
+		textField_19.setEditable(false);
 		textField_19.setColumns(10);
 		textField_19.setBounds(736, 492, 112, 19);
 		panel_2.add(textField_19);
 		
 		textField_20 = new JTextField();
+		textField_20.setEditable(false);
 		textField_20.setColumns(10);
 		textField_20.setBounds(736, 535, 112, 19);
 		panel_2.add(textField_20);
@@ -875,6 +942,39 @@ public class valenciaRCA extends JFrame {
 		textField_31.setColumns(10);
 		textField_31.setBounds(602, 580, 283, 19);
 		panel_3.add(textField_31);
+		
+		//Print de numeros en formulas 
+				for(int i = 0; i < 18; i++)
+				{
+					valenciaRCAString[i] = Integer.toString(valenciaRCA[i]);
+				}
+				
+				textField_3.setText(valenciaRCAString[0]);
+				textField_4.setText(valenciaRCAString[1]);
+				textField_5.setText(valenciaRCAString[2]);
+				textField_6.setText(valenciaRCAString[3]);
+				textField_7.setText(valenciaRCAString[4]);
+				textField_8.setText(valenciaRCAString[5]);
+				textField_9.setText(valenciaRCAString[6]);
+				textField_10.setText(valenciaRCAString[7]);
+				textField_11.setText(valenciaRCAString[8]);
+				textField_12.setText(valenciaRCAString[9]);
+				textField_13.setText(valenciaRCAString[10]);
+				textField_14.setText(valenciaRCAString[11]);
+				textField_15.setText(valenciaRCAString[12]);
+				textField_16.setText(valenciaRCAString[13]);
+				textField_17.setText(valenciaRCAString[14]);
+				textField_18.setText(valenciaRCAString[15]);
+				textField_19.setText(valenciaRCAString[16]);
+				textField_20.setText(valenciaRCAString[17]);
+				
+				
+				
+				
+				
+				
+				//**********************************
+		
 		
 		JButton btnNewButton = new JButton("Finalizar");
 		btnNewButton.setFont(new Font("Arial", Font.BOLD, 14));

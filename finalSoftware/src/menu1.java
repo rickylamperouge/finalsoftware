@@ -23,12 +23,14 @@ public class menu1 extends menuFinal {
 	ArrayList instrumentoIIIList = new ArrayList();
 	ArrayList instrumentoIIIAList = new ArrayList();
 	ArrayList instrumentoIVList = new ArrayList();
+	ArrayList valenciaRCAList = new ArrayList();
 	public int arra;
 	public int arrayB;
 	public int arrayC;
 	public int arrayD;
 	public int arrayE;
 	public int arrayF;
+	public int arrayRCA;
 	public int promedio = 22;
 	public int[] instrumentoI;
 	
@@ -37,6 +39,8 @@ public class menu1 extends menuFinal {
 	public int[] instrumentoIII;
 	public int[] instrumentoIIIA;
 	public int[] instrumentoIV;
+	public int[] valenciaRCA;
+	public String[] valenciaRCAString;
 
 	
 	public String[] instrumentoIIItxt;

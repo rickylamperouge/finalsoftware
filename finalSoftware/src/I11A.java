@@ -82,7 +82,7 @@ public class I11A extends I11 {
 		
 		JLabel lblcuantasVeces = new JLabel("2. \u00BFCuantas veces te comunicas con tu profesor a traves de los medios provistos por la institucion?");
 		lblcuantasVeces.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblcuantasVeces.setBounds(72, 385, 661, 26);
+		lblcuantasVeces.setBounds(72, 385, 609, 26);
 		panel.add(lblcuantasVeces);
 		
 		JLabel lblMasDe = new JLabel("1. Mas de 5 horas a la semana.");
@@ -131,10 +131,12 @@ public class I11A extends I11 {
 		panel.add(lblNunca);
 		
 		JSpinner spinner = new JSpinner();
+		spinner.setModel(new SpinnerNumberModel(1, 1, 4, 1));
 		spinner.setBounds(703, 242, 30, 20);
 		panel.add(spinner);
 		
 		JSpinner spinner2 = new JSpinner();
+		spinner2.setModel(new SpinnerNumberModel(1, 1, 5, 1));
 		spinner2.setBounds(703, 389, 30, 20);
 		panel.add(spinner2);
 		
@@ -167,7 +169,7 @@ public class I11A extends I11 {
 		panel_1.add(lblDuranteLa);
 		
 		JSpinner spinner3 = new JSpinner();
-		spinner3.setModel(new SpinnerNumberModel(new Integer(0), null, null, new Integer(1)));
+		spinner3.setModel(new SpinnerNumberModel(1, 1, 3, 1));
 		spinner3.setBounds(804, 91, 30, 20);
 		panel_1.add(spinner3);
 		
@@ -177,7 +179,7 @@ public class I11A extends I11 {
 		panel_1.add(lblElProfesor);
 		
 		JSpinner spinner4 = new JSpinner();
-		spinner4.setModel(new SpinnerNumberModel(new Integer(0), null, null, new Integer(1)));
+		spinner4.setModel(new SpinnerNumberModel(1, 1, 3, 1));
 		spinner4.setBounds(804, 132, 30, 20);
 		panel_1.add(spinner4);
 		
@@ -257,38 +259,47 @@ public class I11A extends I11 {
 		panel_1.add(lblElProfesor_1_1_2_1_2_2);
 		
 		JSpinner spinner5 = new JSpinner();
+		spinner5.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner5.setBounds(804, 321, 30, 20);
 		panel_1.add(spinner5);
 		
 		JSpinner spinner6 = new JSpinner();
+		spinner6.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner6.setBounds(804, 362, 30, 20);
 		panel_1.add(spinner6);
 		
 		JSpinner spinner7 = new JSpinner();
+		spinner7.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner7.setBounds(804, 403, 30, 20);
 		panel_1.add(spinner7);
 		
 		JSpinner spinner8 = new JSpinner();
+		spinner8.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner8.setBounds(804, 444, 30, 20);
 		panel_1.add(spinner8);
 		
 		JSpinner spinner9 = new JSpinner();
+		spinner9.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner9.setBounds(804, 485, 30, 20);
 		panel_1.add(spinner9);
 		
 		JSpinner spinner10 = new JSpinner();
+		spinner10.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner10.setBounds(804, 526, 30, 20);
 		panel_1.add(spinner10);
 		
 		JSpinner spinner11 = new JSpinner();
+		spinner11.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner11.setBounds(804, 567, 30, 20);
 		panel_1.add(spinner11);
 		
 		JSpinner spinner12 = new JSpinner();
+		spinner12.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner12.setBounds(804, 608, 30, 20);
 		panel_1.add(spinner12);
 		
 		JSpinner spinner13 = new JSpinner();
+		spinner13.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner13.setBounds(804, 649, 30, 20);
 		panel_1.add(spinner13);
 		
@@ -403,46 +414,57 @@ public class I11A extends I11 {
 		panel_2.add(lblElProfesor_1_2_1_1_1_1_1_1_2);
 		
 		JSpinner spinner14 = new JSpinner();
+		spinner14.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner14.setBounds(776, 219, 30, 20);
 		panel_2.add(spinner14);
 		
 		JSpinner spinner15 = new JSpinner();
+		spinner15.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner15.setBounds(776, 260, 30, 20);
 		panel_2.add(spinner15);
 		
 		JSpinner spinner16 = new JSpinner();
+		spinner16.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner16.setBounds(776, 301, 30, 20);
 		panel_2.add(spinner16);
 		
 		JSpinner spinner17 = new JSpinner();
+		spinner17.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner17.setBounds(776, 342, 30, 20);
 		panel_2.add(spinner17);
 		
 		JSpinner spinner18 = new JSpinner();
+		spinner18.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner18.setBounds(776, 383, 30, 20);
 		panel_2.add(spinner18);
 		
 		JSpinner spinner19 = new JSpinner();
+		spinner19.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner19.setBounds(776, 424, 30, 20);
 		panel_2.add(spinner19);
 		
 		JSpinner spinner20 = new JSpinner();
+		spinner20.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner20.setBounds(776, 465, 30, 20);
 		panel_2.add(spinner20);
 		
 		JSpinner spinner21 = new JSpinner();
+		spinner21.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner21.setBounds(776, 529, 30, 20);
 		panel_2.add(spinner21);
 		
 		JSpinner spinner22 = new JSpinner();
+		spinner22.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner22.setBounds(776, 591, 30, 20);
 		panel_2.add(spinner22);
 		
 		JSpinner spinner23 = new JSpinner();
+		spinner23.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner23.setBounds(776, 653, 30, 20);
 		panel_2.add(spinner23);
 		
 		JSpinner spinner24 = new JSpinner();
+		spinner24.setModel(new SpinnerNumberModel(0, 0, 4, 1));
 		spinner24.setBounds(776, 694, 30, 20);
 		panel_2.add(spinner24);
 		
@@ -577,7 +599,7 @@ public class I11A extends I11 {
 				try{
 
 				    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-				    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+				    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 				    System.out.println("Connected Successfully");
 
 				    Statement stmt = null;
@@ -607,7 +629,7 @@ public class I11A extends I11 {
 		        try{
 		        	
 		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 		            System.out.println("Connected Successfully");
 		            
 		            Statement stmt = null;

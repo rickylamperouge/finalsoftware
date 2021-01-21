@@ -8,6 +8,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
@@ -111,7 +112,7 @@ public class formulas extends I44 {
 		
 		try{
             Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
             System.out.println("Connected Successfully");
             Statement s = connection.createStatement();
     		  ResultSet rs3 = s.executeQuery("Select Pregunta,Respuesta from Instrumento2 order by Pregunta ASC");
@@ -128,7 +129,7 @@ public class formulas extends I44 {
 		
 			try{
 	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-	            Connection connection = DriverManager.getConnection("jdbc://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
 	    		  ResultSet rs4 = s.executeQuery("Select Pregunta,Respuesta from Instrumento3 order by Pregunta ASC");
@@ -155,7 +156,7 @@ public class formulas extends I44 {
 			
 			try{
 	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
 	    		  ResultSet rs5 = s.executeQuery("Select Pregunta,Respuesta from Instrumento3A order by Pregunta ASC");
@@ -172,7 +173,7 @@ public class formulas extends I44 {
 			
 			try{
 	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
 	    		  ResultSet rs6 = s.executeQuery("Select Pregunta,Respuesta from Instrumento4 order by Pregunta ASC");
@@ -195,7 +196,7 @@ public class formulas extends I44 {
 			try{
 				
 	            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+	            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 	            System.out.println("Connected Successfully");
 	            Statement s = connection.createStatement();
 	    		ResultSet rs7 = s.executeQuery("Select * from Instrumento1Spinners order by Pregunta ASC");
@@ -215,7 +216,7 @@ public class formulas extends I44 {
 			try{
 							
 				            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-				            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+				            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 				            System.out.println("Connected Successfully");
 				            Statement s = connection.createStatement();
 				    		ResultSet rs8 = s.executeQuery("Select * from Instrumento1ASpinners order by Pregunta ASC");
@@ -238,7 +239,7 @@ public class formulas extends I44 {
 			try{
 				
 			    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-			    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+			    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 			    System.out.println("Connected Successfully");
 			    Statement s = connection.createStatement();
 				ResultSet rs8 = s.executeQuery("Select * from Instrumento2Spinners order by Pregunta ASC");
@@ -260,7 +261,7 @@ public class formulas extends I44 {
 			try{
 							
 						    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-						    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+						    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 						    System.out.println("Connected Successfully");
 						    Statement s = connection.createStatement();
 							ResultSet rs9 = s.executeQuery("Select * from Instrumento3Spinners order by Pregunta ASC");
@@ -280,7 +281,7 @@ public class formulas extends I44 {
 			try{
 				
 			    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-			    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+			    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 			    System.out.println("Connected Successfully");
 			    Statement s = connection.createStatement();
 				ResultSet rs10 = s.executeQuery("Select * from Instrumento3ASpinners order by Pregunta ASC");
@@ -305,7 +306,7 @@ public class formulas extends I44 {
 			try{
 							
 						    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-						    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+						    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 						    System.out.println("Connected Successfully");
 						    Statement s = connection.createStatement();
 							ResultSet rs11 = s.executeQuery("Select * from Instrumento4Spinners order by Pregunta ASC");
@@ -676,7 +677,9 @@ public class formulas extends I44 {
 				System.out.println(puntuacionCalB);
 				System.out.println(puntuacionCalC);
 				System.out.println(puntuacionCalD);
+				System.out.println(puntuacionCalE);
 				System.out.println(puntuacionCalF);
+				System.out.println(69);
 				System.out.println(puntuacionSIA);
 				System.out.println(puntuacionSIBC);
 				System.out.println(puntuacionSIDE);
@@ -688,6 +691,136 @@ public class formulas extends I44 {
 				System.out.println(puntuacionCDP1);
 				System.out.println(puntuacionCDP2);
 				System.out.println(puntuacionCDP3);
+				
+				
+				
+try{
+		        	
+		            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+		            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+		            System.out.println("Connected Successfully");
+		            
+		            Statement stmt = null;
+		            stmt = connection.createStatement();
+		            String query = "Delete * from formulas";
+		            stmt.executeUpdate(query);
+		            
+		            
+		            
+		            PreparedStatement preparedStatement=connection.prepareStatement("insert into formulas(ID,Respuesta) values(?,?)");
+		            //Setting values for Each Parameter
+		            //Linea 1
+		        	preparedStatement.setInt(1,1);
+		            preparedStatement.setDouble(2,puntuacionCalA);
+		            preparedStatement.executeUpdate();
+		            
+		            //Linea 2
+		            preparedStatement.setInt(1,2);
+		            preparedStatement.setDouble(2,puntuacionCalB);
+		            
+		            preparedStatement.executeUpdate();
+		            
+		            //Linea 3
+		            preparedStatement.setInt(1,3);
+		            preparedStatement.setDouble(2,puntuacionCalC);
+		            
+		            preparedStatement.executeUpdate();
+		            //Linea 4
+		            preparedStatement.setInt(1,4);
+		            preparedStatement.setDouble(2,puntuacionCalD);
+		            
+		            preparedStatement.executeUpdate();
+		            //Linea 5
+		            preparedStatement.setInt(1,5);
+		            preparedStatement.setDouble(2,puntuacionCalE);
+		            preparedStatement.executeUpdate();
+		            //Linea 6
+		            preparedStatement.setInt(1, 6);
+		            preparedStatement.setDouble(2,puntuacionCalF);
+		            preparedStatement.executeUpdate();
+		          //Linea 7
+		            preparedStatement.setInt(1, 7);
+		            preparedStatement.setDouble(2,69);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		          //Linea 8
+		            preparedStatement.setInt(1, 8);
+		            preparedStatement.setDouble(2,puntuacionSIA);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		          //Linea 9
+		            preparedStatement.setInt(1, 9);
+		            preparedStatement.setDouble(2,puntuacionSIBC);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		          //Linea 10
+		            preparedStatement.setInt(1, 10);
+		            preparedStatement.setDouble(2,puntuacionSIDE);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		          //Linea 11
+		            preparedStatement.setInt(1, 11);
+		            preparedStatement.setDouble(2,puntuacionSIFG);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		          //Linea 12
+		            preparedStatement.setInt(1, 12);
+		            preparedStatement.setDouble(2,puntuacionSCAB);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		          //Linea 13
+		            preparedStatement.setInt(1, 13);
+		            preparedStatement.setDouble(2,puntuacionITa);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		          //Linea 14
+		            preparedStatement.setInt(1, 14);
+		            preparedStatement.setDouble(2,puntuacionITb);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		          //Linea 15
+		            preparedStatement.setInt(1, 15);
+		            preparedStatement.setDouble(2,puntuacionITcde);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		          //Linea 16
+		            preparedStatement.setInt(1, 16);
+		            preparedStatement.setDouble(2,puntuacionCDP1);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		          //Linea 17
+		            preparedStatement.setInt(1, 17);
+		            preparedStatement.setDouble(2,puntuacionCDP2);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		          //Linea 18
+		            preparedStatement.setInt(1, 18);
+		            preparedStatement.setDouble(2,puntuacionCDP3);
+		            //Executing Query
+		            preparedStatement.executeUpdate();
+		            System.out.println("data inserted successfully");
+		           
+		            
+		            
+		            
+		        	
+
+		        }
+		        catch(Exception e){
+		            System.out.println("Error in connection");
+
+		        }
 				
 				
 				
