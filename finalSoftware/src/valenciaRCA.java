@@ -6,6 +6,15 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import com.itextpdf.text.Document;
+import com.itextpdf.text.Image;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.Phrase;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
+
 import javax.swing.JTabbedPane;
 import javax.swing.JLabel;
 import java.awt.Font;
@@ -20,6 +29,9 @@ import java.sql.Statement;
 
 import javax.swing.JTextArea;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.io.FileOutputStream;
+import java.awt.event.ActionEvent;
 
 public class valenciaRCA extends menu1 {
 
@@ -202,10 +214,10 @@ public class valenciaRCA extends menu1 {
 		lblNewLabel_1_3.setBounds(493, 284, 205, 28);
 		panel.add(lblNewLabel_1_3);
 		
-		JLabel lblNewLabel_2 = new JLabel("a. Dominio de la disciplina que ense\u00F1a");
-		lblNewLabel_2.setFont(new Font("Arial", Font.PLAIN, 12));
-		lblNewLabel_2.setBounds(23, 342, 345, 28);
-		panel.add(lblNewLabel_2);
+		JLabel lblNewLabel_2_0 = new JLabel("a. Dominio de la disciplina que ense\u00F1a");
+		lblNewLabel_2_0.setFont(new Font("Arial", Font.PLAIN, 12));
+		lblNewLabel_2_0.setBounds(23, 342, 345, 28);
+		panel.add(lblNewLabel_2_0);
 		
 		JLabel lblNewLabel_2_1 = new JLabel("b. Habilidad para organizar el contenido y presentarlo en\r\nforma clara, l\u00F3gica e imaginativa");
 		lblNewLabel_2_1.setFont(new Font("Arial", Font.PLAIN, 12));
@@ -977,6 +989,170 @@ public class valenciaRCA extends menu1 {
 		
 		
 		JButton btnNewButton = new JButton("Finalizar");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Document document = new Document();	
+			String profesor = textField.getText();	
+			String fecha = textField_1.getText();
+			String departamento = textField_2.getText();
+			try {
+				
+				
+				//codigo aqui
+				
+			
+				String file_name = "E:\\" + profesor + ".pdf";
+				
+				
+				
+				PdfWriter.getInstance(document, new FileOutputStream(file_name));
+				
+				
+				document.open();
+					
+				Paragraph a = new Paragraph("Profesor: " + profesor);
+				document.add(a);
+				Paragraph b = new Paragraph("Fecha: " + fecha);
+				document.add(b);
+				Paragraph c = new Paragraph("Departamento: " + departamento + "\n");
+				document.add(c);
+				
+				Paragraph d = new Paragraph("\n");
+				document.add(d);
+				
+				
+				
+				
+				PdfPTable table = new PdfPTable(3);
+				PdfPCell c1 = new PdfPCell(new Phrase(""));
+				table.addCell(c1);
+				
+				c1 = new PdfPCell(new Phrase(""));
+				table.addCell(c1);
+				
+				c1 = new PdfPCell(new Phrase(""));
+				table.addCell(c1);
+				table.setHeaderRows(1);
+				
+				table.addCell("I.Experiencia y Calidad Docente");
+				table.addCell("Catedratico Asociado Valencia 65%");
+				table.addCell("Puntuacion Obtenida");
+				
+				
+				table.addCell("a. Dominio de la disciplina que ensena");
+				table.addCell("15");
+				table.addCell(valenciaRCAString[0]);
+				
+				table.addCell("b. Habilidad para organizar el contenido y presentarlo en forma clara, logica e imaginativa");
+				table.addCell("10");
+				table.addCell(valenciaRCAString[1]);
+				
+				table.addCell("c. Conocimiento de los desarrollos actuales de la disciplina");
+				table.addCell("10");
+				table.addCell(valenciaRCAString[2]);
+				
+				table.addCell("d. Habilidad para relacionar la disciplina con otras esferas del conocimiento");
+				table.addCell("6");
+				table.addCell(valenciaRCAString[3]);
+				
+				table.addCell("e. Habilidad para promover y ampliar el interés del estudiante en la disciplina");
+				table.addCell("7");
+				table.addCell(valenciaRCAString[4]);
+				
+				table.addCell("f. Habilidad para desarrollar y utilizar metodos y estrategias adecuadas, incluyendo el assessment para una enseñanza efectiva");
+				table.addCell("9");
+				table.addCell(valenciaRCAString[5]);
+				
+				table.addCell("g. Disponibilidad y eficacia en la orientacion academica del estudiante \n h. Posesion de los atributos de integridad,laborisidad,"
+						       + " liberalidad y objetividad en la enseñanza");
+				table.addCell("8");
+				table.addCell(valenciaRCAString[6]);
+				
+				table.addCell("II. Servicio a la Institucion");
+				table.addCell("Catedratico asociado Valencia (11%)");
+				table.addCell("Puntuacion Obtenida");
+				
+				table.addCell("a. Trabajo en comites de facultad a nivel departamental.");
+				table.addCell("3");
+				table.addCell(valenciaRCAString[7]);
+			
+				table.addCell("b. Participacion y aportacion a reuniones de facultad y de comites a nivel de Recinto\n"
+								+ "c. Servicio en comites y en organizaciones a nivel institucional");
+				table.addCell("3");
+				table.addCell(valenciaRCAString[8]);
+				
+				table.addCell("d. Colaboracion en actividades estudiantiles\n"
+								+ "e. Asistencia a actos oficiales");
+				table.addCell("2");
+				table.addCell(valenciaRCAString[9]);
+				
+				table.addCell("f. Designacion como director/a de departamento, presidente comite y otras\n"
+						+ "g. Participacion en organismos de gobierno; tales como: el Senado y el Consejo Universitario");
+				table.addCell("2");
+				table.addCell(valenciaRCAString[10]);
+				
+				
+				table.addCell("III. Servicio a la Comunidad");
+				table.addCell("Catedratico asociado Valencia (2%)");
+				table.addCell("Puntuacion Obtenida");
+				
+				table.addCell("a. Servicio en el campo profesional del profesor como consultor o investigador\n"
+						+ "b. Servicio como recurso:conferenciante de grupos de la comunidad, participacion activa en gestiones politicas, religiosas o civicas");
+				table.addCell("2");
+				table.addCell(valenciaRCAString[11]);
+				
+				table.addCell("IV. Investigacion y Trabajo Creativo");
+				table.addCell("Catedratico asociado Valencia (12%)");
+				table.addCell("Puntuacion Obtenida");
+				
+				table.addCell("a. Publicaciones");
+				table.addCell("3");
+				table.addCell(valenciaRCAString[12]);
+				
+				table.addCell("b. Presentaciones y trabajos creativos relacionados con la disciplina que enseña");
+				table.addCell("4");
+				table.addCell(valenciaRCAString[13]);
+				
+				table.addCell("c. Propuestas diseñadas y presentadas\n"
+								+ "d. Concesion de ayudas para investigacion y proyectos."
+								+ "e. Invenciones, patentes,labor artistica y actuacion");
+				table.addCell("5");
+				table.addCell(valenciaRCAString[14]);
+				
+				table.addCell("V. Crecimiento y Desarrollo Profesional");
+				table.addCell("Catedratico asociado Valencia (10%)");
+				table.addCell("Puntuacion Obtenida");
+				
+				table.addCell("a. Obtencion de premios,ayudas y becas.\n"
+						+ "b. Nombramiento como asesor/a en agencias de gobierno."
+						+ "c. Participacion activa en organizaciones profesionales");
+				table.addCell("4");
+				table.addCell(valenciaRCAString[15]);
+				
+				table.addCell("d. Recurso en conferencias, congresos o institutos.");
+				table.addCell("3");
+				table.addCell(valenciaRCAString[16]);
+				
+				table.addCell("e. Participacion en conferencias, congresos o institutos\n."
+								+ "f. Educacion post doctoral, educacion continua.");
+				table.addCell("3");
+				table.addCell(valenciaRCAString[17]);
+				document.add(table);
+				
+				
+			
+				
+				document.close();
+				
+				
+				} catch (Exception e ) {
+					System.err.println(e);
+				
+				}
+				
+			}
+			
+		});
 		btnNewButton.setFont(new Font("Arial", Font.BOLD, 14));
 		btnNewButton.setBounds(614, 660, 214, 33);
 		panel_3.add(btnNewButton);
