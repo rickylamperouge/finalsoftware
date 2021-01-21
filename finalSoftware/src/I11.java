@@ -576,7 +576,7 @@ public class I11 extends menu1 {
 				}
 				System.out.println(totalI);
 				//calidad docente a
-				for (int i = 6; i < 16; i++)
+				for (int i = 5; i < 16; i++)
 				{
 					valenciaCalAI1 = (instrumentoI[i] + valenciaCalAI1);
 				}
@@ -595,7 +595,7 @@ public class I11 extends menu1 {
 				// calidad docente e
 				
 				
-				valenciaCalEI1 = (instrumentoI[5] + instrumentoI[7] + instrumentoI[15] + instrumentoI[17]);
+				valenciaCalEI1 = (instrumentoI[4] + instrumentoI[6] + instrumentoI[14] + instrumentoI[15] + instrumentoI[16]);
 				valenciaCalEpromI1 = (valenciaCalEI1/4)-1;
 				
 				
