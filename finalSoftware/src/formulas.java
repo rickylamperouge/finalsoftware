@@ -462,8 +462,8 @@ public class formulas extends I44 {
 		//termina calidad docente formula  a
 		
 		//calidad docente formula b
-		double i1b = m/((m+n)*(valenciaCalBpromI1)) + n/((m+n)*(((instrumentoIA[7] + instrumentoIA[9] + instrumentoIA[11] + instrumentoIA[12]
-				+ instrumentoIA[24])/5)-1));
+		double i1b = m/((m+n)*(valenciaCalBpromI1)) + n/((m+n)*(((instrumentoIA[6] + instrumentoIA[8] + instrumentoIA[10] + instrumentoIA[11]
+				+ instrumentoIA[23])/5)-1));
 		puntuacionCalB = ((A*i1b) + (B*totalI2) + (C*valenciaCalBpromI3)*(CDb/3))/(1-D);
 		
 		
@@ -475,7 +475,7 @@ public class formulas extends I44 {
 		//termina calidad docente formula c
 		
 		//calidad docente formula d***********
-		puntuacionCalD = (A*(instrumentoI[16]-1)*(CDd/3)+B*totalI2+(C*(instrumentoIII[4]+instrumentoIII[5])*(3/4))*(CDd/3))/(1-D);
+		puntuacionCalD = (A*(instrumentoI[16]-1)*(CDd/3)+B*totalI2+(C*(instrumentoIII[2]+instrumentoIII[3])*(3/4))*(CDd/3))/(1-D);
 		//termina calidad docente fomula d
 		
 		//calidad docente fomula e

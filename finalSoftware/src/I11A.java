@@ -545,8 +545,8 @@ public class I11A extends I11 {
 				instrumentoIA[19] = (int) spinner20.getValue();
 				instrumentoIA[20] = (int) spinner21.getValue();
 				instrumentoIA[21] = (int) spinner22.getValue();
-				instrumentoIA[21] = (int) spinner23.getValue();
-				instrumentoIA[22] = (int) spinner24.getValue();
+				instrumentoIA[22] = (int) spinner23.getValue();
+				instrumentoIA[23] = (int) spinner24.getValue();
 				//Texto
 				instrumentoIAtxt = new String[30];
 				instrumentoIAtxt[23] = textArea.getText();
@@ -563,7 +563,7 @@ public class I11A extends I11 {
 				}
 				System.out.println(totalIA);
 				//calidad docente a
-				for(int i = 5; i<12;i++)
+				for(int i = 4; i<11;i++)
 				{
 					valenciaCalAI1A = instrumentoIA[i] + valenciaCalAI1A;
 				}
@@ -577,14 +577,14 @@ public class I11A extends I11 {
 				
 				
 				//calidad docente e
-				valenciaCalEI1A = (instrumentoIA[6] + instrumentoIA[9] + instrumentoIA[12] + instrumentoIA[13]);
+				valenciaCalEI1A = (instrumentoIA[5] + instrumentoIA[8] + instrumentoIA[11] + instrumentoIA[12]);
 				valenciaCalEI1Aprom = (valenciaCalEI1A/4)-1;
 				
 				//termina calidad docente e
 				
 				// calidad docente f
 				
-				valenciaCalFI1Aprom = ((instrumentoIA[12]+ instrumentoIA[16]+ instrumentoIA[17]+ instrumentoIA[22])/4)-1;
+				valenciaCalFI1Aprom = ((instrumentoIA[11]+ instrumentoIA[15]+ instrumentoIA[16]+ instrumentoIA[21])/4)-1;
 				
 				//termina calidad docente f
 				

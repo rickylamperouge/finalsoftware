@@ -696,8 +696,8 @@ public class I44 extends I33A {
 				}
 				System.out.println(totalI4);
 				
-				
-				valenciaCalFpromI4 = ((instrumentoIV[16] + instrumentoIV[19] + instrumentoIV[20])/3) * (3/4);
+				//calidad docente f
+				valenciaCalFpromI4 = ((instrumentoIV[15] + instrumentoIV[18] + instrumentoIV[19])/3) * (3/4);
 				//termina calidad docente f
 				//**********************************************************************************
 				valenciaSIApromI4 = (instrumentoIV[9] + instrumentoIV[17])*(3/4);
