@@ -595,6 +595,7 @@ public class I11 extends menu1 {
 				// calidad docente e
 				
 				
+				
 				valenciaCalEI1 = (instrumentoI[4] + instrumentoI[6] + instrumentoI[14] + instrumentoI[15] + instrumentoI[16]);
 				valenciaCalEpromI1 = (valenciaCalEI1/4)-1;
 				

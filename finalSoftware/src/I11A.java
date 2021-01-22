@@ -580,6 +580,7 @@ public class I11A extends I11 {
 				valenciaCalEI1A = (instrumentoIA[5] + instrumentoIA[8] + instrumentoIA[11] + instrumentoIA[12]);
 				valenciaCalEI1Aprom = (valenciaCalEI1A/4)-1;
 				
+				
 				//termina calidad docente e
 				
 				// calidad docente f
