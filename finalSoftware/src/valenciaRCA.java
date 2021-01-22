@@ -992,7 +992,7 @@ public class valenciaRCA extends menu1 {
 		JButton btnNewButton = new JButton("Finalizar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Document document = new Document();	
+			Document document = new Document();	
 			String profesor = textField.getText();	
 			String fecha = textField_1.getText();
 			String departamento = textField_2.getText();
@@ -1002,7 +1002,7 @@ public class valenciaRCA extends menu1 {
 				//codigo aqui
 				
 			
-				String file_name = "E:\\" + profesor + ".pdf";
+				String file_name = "E:\\" + profesor + "Asociado" + ".pdf";
 				
 				
 				
