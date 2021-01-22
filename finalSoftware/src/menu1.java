@@ -53,6 +53,7 @@ public class menu1 extends menuFinal {
 	public int arrayE;
 	public int arrayF;
 	public int arrayRCA;
+	public double arrayRCB;
 	public int promedio = 22;
 	public int[] instrumentoI;
 	
@@ -62,6 +63,7 @@ public class menu1 extends menuFinal {
 	public int[] instrumentoIIIA;
 	public int[] instrumentoIV;
 	public int[] valenciaRCA;
+	public double[] valenciaRCB;
 	public String[] valenciaRCAString;
 
 	

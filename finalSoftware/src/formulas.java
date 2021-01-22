@@ -438,39 +438,56 @@ public class formulas extends I44 {
 		int n = 1;
 		int CDa = 15;
 		int CDaAuxiliar = 16;
+		int CDaCatedratico = 13;
 		int CDb = 10;
 		int CDbAuxiliar = 12;
+		int CDbCatedratico = 10;
 		int Cdc = 6;
 		int CDcAuxiliar = 8;
+		int CDcCatedratico = 12;
 		int CDd = 6;
 		int CDdAuxiliar = 6;
+		int CDdCatedratico = 6;
 		int CDe = 7;
 		int CDeAuxiliar = 6;
+		int CDeCatedratico = 5;
 		int CDf = 9;
 		int CDfAuxiliar = 9;
+		int CDfCatedratrico = 9;
 		int SIa = 3;
 		int SIaAuxiliar  = 3;
+		int SIaCatedratico = 2;
 		int SIbc = 3;
 		int SIbcAuxiliar  = 4;
+		int SIbcCatedratico = 2;
 		int SIde = 2;
 		int SIdeAuxiliar  = 2;
+		int SIdeCatedratico = 2;
 		int SIfg = 3;
 		int SIfgAuxiliar  = 3;
+		int SIfgCatedratico = 2;
 		int SCab = 2;
 		int SCabAuxiliar = 2;
+		int SCabCatedratico = 2;
 		int ITa = 3;
 		int ITaAuxiliar = 2;
+		int ITaCatedratico = 3;
 		int ITb = 4;
 		int ITbAuxiliar = 4;
+		int ITbCatedratico = 4;
 		int ITcde = 5;
 		int ITcdeAuxiliar = 4;
+		int ITcdeCatedratico = 5;
 		
 		int DPabc = 4;
 		int DPabcAuxiliar = 3;
+		int DPabcCatedratico = 4;
 		int DPd = 3;
 		int DPdAuxiliar = 3;
+		int DPdCatedratico = 3;
 		int DPef = 3;
 		int DPefAuxiliar = 3;
+		int DPefCatedratico = 3;
 		
 		double CDPB = .9;
 		double CDPD = .1;
@@ -478,6 +495,7 @@ public class formulas extends I44 {
 		double i1a = m/((m+n)*(valenciaCalApromI1)) + n/((m+n)*(valenciaCalAI1Aprom));
 		puntuacionCalA = (A*i1a) + (B*totalI2) + (C*valenciaCalApromI3)+(D*instrumentoIV[15])*3/4*(CDa/3);
 		double puntuacionCalAauxiliar = (A*i1a) + (B*totalI2) + (C*valenciaCalApromI3)+(D*instrumentoIV[15])*3/4*(CDaAuxiliar/3);
+		double puntuacionCalAcatedratico = (A*i1a) + (B*totalI2) + (C*valenciaCalApromI3)+(D*instrumentoIV[15])*3/4*(CDaCatedratico/3);
 		//termina calidad docente formula  a
 		
 		//calidad docente formula b
@@ -485,6 +503,7 @@ public class formulas extends I44 {
 				+ instrumentoIA[23])/5)-1));
 		puntuacionCalB = ((A*i1b) + (B*totalI2) + (C*valenciaCalBpromI3)*(CDb/3))/(1-D);
 		double puntuacionCalBauxiliar = ((A*i1b) + (B*totalI2) + (C*valenciaCalBpromI3)*(CDbAuxiliar/3))/(1-D);
+		double puntuacionCalBcatedratico = ((A*i1b) + (B*totalI2) + (C*valenciaCalBpromI3)*(CDbCatedratico/3))/(1-D);
 		
 		
 		//termina calidad docente formula  b
@@ -492,18 +511,24 @@ public class formulas extends I44 {
 		//calidad docente formula c
 		puntuacionCalC = ((B*totalI2 + C*((instrumentoIII[6]+instrumentoIII[7])/2)*3/4+D*instrumentoIV[17]*(3/4)))*(Cdc/3)/(1-A);
 		double puntuacionCalCauxiliar = ((B*totalI2 + C*((instrumentoIII[6]+instrumentoIII[7])/2)*3/4+D*instrumentoIV[17]*(3/4)))*(CDcAuxiliar/3)/(1-A);
+		double puntuacionCalCcatedratico = ((B*totalI2 + C*((instrumentoIII[6]+instrumentoIII[7])/2)*3/4+D*instrumentoIV[17]*(3/4)))*(CDcCatedratico/3)/(1-A);
+
 		
 		//termina calidad docente formula c
 		
 		//calidad docente formula d***********
 		puntuacionCalD = (A*(instrumentoI[16]-1)*(CDd/3)+B*totalI2+(C*(instrumentoIII[2]+instrumentoIII[3])*(3/4))*(CDd/3))/(1-D);
 		double puntuacionCalDauxiliar = (A*(instrumentoI[16]-1)*(CDd/3)+B*totalI2+(C*(instrumentoIII[2]+instrumentoIII[3])*(3/4))*(CDdAuxiliar/3))/(1-D);
+		double puntuacionCalDcatedratico = (A*(instrumentoI[16]-1)*(CDd/3)+B*totalI2+(C*(instrumentoIII[2]+instrumentoIII[3])*(3/4))*(CDdCatedratico/3))/(1-D);
+
 		//termina calidad docente fomula d
 		
 		//calidad docente fomula e
 		double i1e = m/((m+n)*(valenciaCalEpromI1)) + n/((m+n)*(valenciaCalEI1Aprom));
 		puntuacionCalE = (A*i1e+B*totalI2+(C*valenciaCalEpromI3)+(D*instrumentoIV[15]*(3/4)))*(CDe/3);
 		double puntuacionCalEauxiliar = (A*i1e+B*totalI2+(C*valenciaCalEpromI3)+(D*instrumentoIV[15]*(3/4)))*(CDeAuxiliar/3);
+		double puntuacionCalEcatedratico = (A*i1e+B*totalI2+(C*valenciaCalEpromI3)+(D*instrumentoIV[15]*(3/4)))*(CDeCatedratico/3);
+
 		
 		//termina calidad docente fomula e
 		
@@ -511,6 +536,8 @@ public class formulas extends I44 {
 		double i1f = m/((m+n)*(valenciaCalFpromI1)) + n/((m+n)*(valenciaCalFI1Aprom));
 		puntuacionCalF = (A*i1f+B*totalI2+C*valenciaCalFpromI3+D*valenciaCalFpromI4)*(CDf/3);
 		double puntuacionCalFauxiliar = (A*i1f+B*totalI2+C*valenciaCalFpromI3+D*valenciaCalFpromI4)*(CDfAuxiliar/3);
+		double puntuacionCalFcatedratico = (A*i1f+B*totalI2+C*valenciaCalFpromI3+D*valenciaCalFpromI4)*(CDfCatedratrico/3);
+
 		
 		//termina calidad docente fomula f
 		
@@ -525,6 +552,8 @@ public class formulas extends I44 {
 		//Servicio a la institucion a
 		puntuacionSIA = (sB*totalI2 + D*valenciaSIApromI4)/(SIa/3);
 		double puntuacionSIAauxiliar = (sB*totalI2 + D*valenciaSIApromI4)/(SIaAuxiliar/3);
+		double puntuacionSIAcatedratico = (sB*totalI2 + D*valenciaSIApromI4)/(SIaCatedratico/3);
+
 		//Termina servicio a la institucion a
 		
 		//Servicio a la institucion bc
@@ -533,6 +562,8 @@ public class formulas extends I44 {
 		double i4 = (i4b+i4c)/2;
 		puntuacionSIBC = ((sB*totalI2 + sD*i4))*(SIbc/3);
 		double puntuacionSIBCauxiliar = ((sB*totalI2 + sD*i4))*(SIbcAuxiliar/3);
+		double puntuacionSIBCcatedratico = ((sB*totalI2 + sD*i4))*(SIbcCatedratico/3);
+
 		//Termina servicio a la institucion b
 		
 		
@@ -541,17 +572,23 @@ public class formulas extends I44 {
 		double i4e = instrumentoIV[10] * (3/4);
 		puntuacionSIDE = (sB * totalI2 + sD*i4e)*(SIde/3);
 		double puntuacionSIDEauxiliar = (sB * totalI2 + sD*i4e)*(SIdeAuxiliar/3);
+		double puntuacionSIDEcatedratico = (sB * totalI2 + sD*i4e)*(SIdeCatedratico/3);
+
 		//Termina servicio a la institucion de
 		
 		//Servicio a la institucion fg
 		puntuacionSIFG = (totalI2)*(SIfg/3);
 		double puntuacionSIFGauxiliar = (totalI2)*(SIfgAuxiliar/3);
+		double puntuacionSIFGcatedratico = (totalI2)*(SIfgCatedratico/3);
+
 		
 		//Termina Servicio a la institucion fg
 		
 		//Servicio a la comunidad 
 		puntuacionSCAB = 1*totalI2*(SCab/3);
 		double puntuacionSCABauxiliar = 1*totalI2*(SCabAuxiliar/3);
+		double puntuacionSCABcatedratico = 1*totalI2*(SCabCatedratico/3);
+
 		
 		//Termina Servicio ala comunidad
 		
@@ -560,20 +597,32 @@ public class formulas extends I44 {
 		//Investigacion y trabajo creativo
 		puntuacionITa = totalI2*(ITa/3);
 		double puntuacionITaAuxiliar = totalI2*(ITaAuxiliar/3);
+		double puntuacionITaCatedratico = totalI2*(ITaCatedratico/3);
+
 		puntuacionITb = (iB*totalI2) + (iD*instrumentoIV[15])*(3/4);
 		double puntuacionITbAuxiliar = (iB*totalI2) + (iD*instrumentoIV[15])*(3/4); //****************************
+		double puntuacionITbCatedratico = (iB*totalI2) + (iD*instrumentoIV[15])*(3/4); //****************************
+
 		puntuacionITcde = (totalI2)*(ITcde/3);
 		double puntuacionITcdeAuxiliar = (totalI2)*(ITcdeAuxiliar/3);
+		double puntuacionITcdeCatedratico = (totalI2)*(ITcdeCatedratico/3);
+
 		
 		//Termina Investigacion y trabajo creativo
 		
 		//Crecimiento y Sesarrollo Profesional 10%
         puntuacionCDP1 = (totalI2)*(DPabc/3);
         double puntuacionCDP1Auxiliar = (totalI2)*(DPabcAuxiliar/3);
+        double puntuacionCDP1Catedratico = (totalI2)*(DPabcCatedratico/3);
+
         puntuacionCDP2 = (totalI2)*(DPd/3);
         double puntuacionCDP2Auxiliar = (totalI2)*(DPdAuxiliar/3);
+        double puntuacionCDP2Catedratico = (totalI2)*(DPdCatedratico/3);
+
         puntuacionCDP3 = ((CDPB)*(totalI2)+(CDPD*totalI4))*(DPef/3);
         double puntuacionCDP3Auxiliar = ((CDPB)*(totalI2)+(CDPD*totalI4))*(DPefAuxiliar/3);
+        double puntuacionCDP3Catedratico = ((CDPB)*(totalI2)+(CDPD*totalI4))*(DPefCatedratico/3);
+
         //Termina Crecimiento y Desarrollo Profesional
         //*************************************************************************************
         /*
@@ -985,6 +1034,141 @@ try{
 			    System.out.println("Error in connection");
 			
 			}
+			
+			
+			
+			
+try{
+				
+			    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+			    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+			    System.out.println("Connected Successfully");
+			    
+			    Statement stmt = null;
+			    stmt = connection.createStatement();
+			    String query = "Delete * from formulasCatedratico";
+			    stmt.executeUpdate(query);
+			    
+			    
+			    
+			    PreparedStatement preparedStatement=connection.prepareStatement("insert into formulasCatedratico(ID,Respuesta) values(?,?)");
+			    //Setting values for Each Parameter
+			    //Linea 1
+				preparedStatement.setInt(1,1);
+			    preparedStatement.setDouble(2,puntuacionCalAcatedratico);
+			    preparedStatement.executeUpdate();
+			    
+			    //Linea 2
+			    preparedStatement.setInt(1,2);
+			    preparedStatement.setDouble(2,puntuacionCalBcatedratico);
+			    
+			    preparedStatement.executeUpdate();
+			    
+			    //Linea 3
+			    preparedStatement.setInt(1,3);
+			    preparedStatement.setDouble(2,puntuacionCalCcatedratico);
+			    
+			    preparedStatement.executeUpdate();
+			    //Linea 4
+			    preparedStatement.setInt(1,4);
+			    preparedStatement.setDouble(2,puntuacionCalDcatedratico);
+			    
+			    preparedStatement.executeUpdate();
+			    //Linea 5
+			    preparedStatement.setInt(1,5);
+			    preparedStatement.setDouble(2,puntuacionCalEcatedratico);
+			    preparedStatement.executeUpdate();
+			    //Linea 6
+			    preparedStatement.setInt(1, 6);
+			    preparedStatement.setDouble(2,puntuacionCalFcatedratico);
+			    preparedStatement.executeUpdate();
+			  //Linea 7
+			    preparedStatement.setInt(1, 7);
+			    preparedStatement.setDouble(2,69);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 8
+			    preparedStatement.setInt(1, 8);
+			    preparedStatement.setDouble(2,puntuacionSIAcatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 9
+			    preparedStatement.setInt(1, 9);
+			    preparedStatement.setDouble(2,puntuacionSIBCcatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 10
+			    preparedStatement.setInt(1, 10);
+			    preparedStatement.setDouble(2,puntuacionSIDEcatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 11
+			    preparedStatement.setInt(1, 11);
+			    preparedStatement.setDouble(2,puntuacionSIFGcatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 12
+			    preparedStatement.setInt(1, 12);
+			    preparedStatement.setDouble(2,puntuacionSCABcatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 13
+			    preparedStatement.setInt(1, 13);
+			    preparedStatement.setDouble(2,puntuacionITaCatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 14
+			    preparedStatement.setInt(1, 14);
+			    preparedStatement.setDouble(2,puntuacionITbCatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 15
+			    preparedStatement.setInt(1, 15);
+			    preparedStatement.setDouble(2,puntuacionITcdeCatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 16
+			    preparedStatement.setInt(1, 16);
+			    preparedStatement.setDouble(2,puntuacionCDP1Catedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 17
+			    preparedStatement.setInt(1, 17);
+			    preparedStatement.setDouble(2,puntuacionCDP2Catedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 18
+			    preparedStatement.setInt(1, 18);
+			    preparedStatement.setDouble(2,puntuacionCDP3Catedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			   
+			    new valenciaRCA().setVisible(true);
+			    new ValenciaRC().setVisible(true);
+			    new valenciaAUX().setVisible(true);
+				dispose();
+			    
+			    
+				
+			
+			}
+			catch(Exception e){
+			    System.out.println("Error in connection");
+			
+			}
+			
 
 
 
