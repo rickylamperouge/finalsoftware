@@ -56,6 +56,7 @@ public class Evidencias extends JFrame {
 		contentPane.add(panel, BorderLayout.CENTER);
 		panel.setLayout(null);
 		
+		
 		JLabel lblPortafolioDeEvidencias = new JLabel("PORTAFOLIO DE EVIDENCIAS");
 		lblPortafolioDeEvidencias.setFont(new Font("Arial", Font.BOLD, 16));
 		lblPortafolioDeEvidencias.setBounds(311, 33, 260, 42);
