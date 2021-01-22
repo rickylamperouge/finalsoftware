@@ -21,6 +21,7 @@ import javax.swing.SwingConstants;
 import java.awt.SystemColor;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
@@ -65,6 +66,7 @@ public class ValenciaRC extends menu1 {
 	private JTextField textField_29;
 	private JTextField textField_30;
 	private JTextField textField_31;
+	private JTextField textField_32;
 
 	/**
 	 * Launch the application.
@@ -990,6 +992,19 @@ try{
 		textField_31.setBounds(602, 580, 283, 19);
 		panel_3_1.add(textField_31);
 		
+		JLabel lblClase = new JLabel("Clase");
+		lblClase.setFont(new Font("Arial", Font.BOLD, 12));
+		lblClase.setBounds(23, 186, 73, 28);
+		panel_4.add(lblClase);
+		
+		textField_32 = new JTextField();
+		textField_32.setColumns(10);
+		textField_32.setBounds(85, 195, 223, 19);
+		panel_4.add(textField_32);
+		
+		
+		
+		
 		
 		//Print de numeros en formulas 
 				for(int i = 0; i < 18; i++)
@@ -1030,6 +1045,44 @@ try{
 				String profesor = textField.getText();	
 				String fecha = textField_1.getText();
 				String departamento = textField_2.getText();
+				String clase = textField_32.getText();
+				
+				
+				
+				
+			try{
+					        	
+					            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+					            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+					            System.out.println("Connected Successfully");
+					            
+					            PreparedStatement preparedStatement=connection.prepareStatement("insert into valenciaRC(ID,codigoclase,fecha,nombre,Respuesta) values(?,?,?,?,?)");
+					            //Setting values for Each Parameter
+					            //Linea 1
+					           
+					        	preparedStatement.setInt(1,1);
+					            preparedStatement.setString(2,clase);
+					            preparedStatement.setString(3,fecha);
+					            preparedStatement.setString(4,profesor);
+					            preparedStatement.setString(5,valenciaRCAString[0]);
+					            preparedStatement.executeUpdate();
+					            System.out.println("Guardado ValenciaRC");
+					            
+					            
+			
+			
+					        }
+					        catch(Exception e){
+					            System.out.println("Error in connection");
+			
+					        }
+				
+				
+				
+				
+				
+				
+				
 				try {
 					
 					
