@@ -482,6 +482,7 @@ try{
 		lblNewLabel_1_4_1.setBounds(10, 425, 205, 28);
 		panel_1_1.add(lblNewLabel_1_4_1);
 		
+		
 		JLabel lblNewLabel_1_1_1_1 = new JLabel("Catedratico Asociado ");
 		lblNewLabel_1_1_1_1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_1_1_1_1.setFont(new Font("Arial", Font.BOLD, 12));
