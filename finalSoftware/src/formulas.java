@@ -1034,6 +1034,141 @@ try{
 			    System.out.println("Error in connection");
 			
 			}
+			
+			
+			
+			
+try{
+				
+			    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+			    Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+			    System.out.println("Connected Successfully");
+			    
+			    Statement stmt = null;
+			    stmt = connection.createStatement();
+			    String query = "Delete * from formulasCatedratico";
+			    stmt.executeUpdate(query);
+			    
+			    
+			    
+			    PreparedStatement preparedStatement=connection.prepareStatement("insert into formulasCatedratico(ID,Respuesta) values(?,?)");
+			    //Setting values for Each Parameter
+			    //Linea 1
+				preparedStatement.setInt(1,1);
+			    preparedStatement.setDouble(2,puntuacionCalAcatedratico);
+			    preparedStatement.executeUpdate();
+			    
+			    //Linea 2
+			    preparedStatement.setInt(1,2);
+			    preparedStatement.setDouble(2,puntuacionCalBcatedratico);
+			    
+			    preparedStatement.executeUpdate();
+			    
+			    //Linea 3
+			    preparedStatement.setInt(1,3);
+			    preparedStatement.setDouble(2,puntuacionCalCcatedratico);
+			    
+			    preparedStatement.executeUpdate();
+			    //Linea 4
+			    preparedStatement.setInt(1,4);
+			    preparedStatement.setDouble(2,puntuacionCalDcatedratico);
+			    
+			    preparedStatement.executeUpdate();
+			    //Linea 5
+			    preparedStatement.setInt(1,5);
+			    preparedStatement.setDouble(2,puntuacionCalEcatedratico);
+			    preparedStatement.executeUpdate();
+			    //Linea 6
+			    preparedStatement.setInt(1, 6);
+			    preparedStatement.setDouble(2,puntuacionCalFcatedratico);
+			    preparedStatement.executeUpdate();
+			  //Linea 7
+			    preparedStatement.setInt(1, 7);
+			    preparedStatement.setDouble(2,69);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 8
+			    preparedStatement.setInt(1, 8);
+			    preparedStatement.setDouble(2,puntuacionSIAcatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 9
+			    preparedStatement.setInt(1, 9);
+			    preparedStatement.setDouble(2,puntuacionSIBCcatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 10
+			    preparedStatement.setInt(1, 10);
+			    preparedStatement.setDouble(2,puntuacionSIDEcatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 11
+			    preparedStatement.setInt(1, 11);
+			    preparedStatement.setDouble(2,puntuacionSIFGcatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 12
+			    preparedStatement.setInt(1, 12);
+			    preparedStatement.setDouble(2,puntuacionSCABcatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 13
+			    preparedStatement.setInt(1, 13);
+			    preparedStatement.setDouble(2,puntuacionITaCatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 14
+			    preparedStatement.setInt(1, 14);
+			    preparedStatement.setDouble(2,puntuacionITbCatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 15
+			    preparedStatement.setInt(1, 15);
+			    preparedStatement.setDouble(2,puntuacionITcdeCatedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 16
+			    preparedStatement.setInt(1, 16);
+			    preparedStatement.setDouble(2,puntuacionCDP1Catedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 17
+			    preparedStatement.setInt(1, 17);
+			    preparedStatement.setDouble(2,puntuacionCDP2Catedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			  //Linea 18
+			    preparedStatement.setInt(1, 18);
+			    preparedStatement.setDouble(2,puntuacionCDP3Catedratico);
+			    //Executing Query
+			    preparedStatement.executeUpdate();
+			    System.out.println("data inserted successfully");
+			   
+			    new valenciaRCA().setVisible(true);
+			    new ValenciaRC().setVisible(true);
+			    new valenciaAUX().setVisible(true);
+				dispose();
+			    
+			    
+				
+			
+			}
+			catch(Exception e){
+			    System.out.println("Error in connection");
+			
+			}
+			
 
 
 

@@ -782,7 +782,7 @@ try{
 
 		        }
 				
-				//new formulas().setVisible(true);
+				new formulas().setVisible(true);
 				dispose();
 				
 					
