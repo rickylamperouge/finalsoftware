@@ -690,6 +690,7 @@ public class I44 extends I33A {
 				instrumentoIVtxt[19] = textField_18.getText();
 				instrumentoIVtxt[20] = textField_19.getText();
 				instrumentoIVtxt[21] = textField_20.getText();
+				
 				for(int i = 0; i < 26;i++)
 				{
 					totalI4 = instrumentoIV[i] + totalI4;

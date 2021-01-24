@@ -772,7 +772,7 @@ public class I33 extends I22 {
 				instrumentoIIItxt[8] = textField_8.getText();
 				instrumentoIIItxt[9] = textField_9.getText();
 				instrumentoIIItxt[10] = textField_10.getText();
-				instrumentoIIItxt[1] = textField_11.getText();
+				instrumentoIIItxt[11] = textField_11.getText();
 				instrumentoIIItxt[12] = textField_12.getText();
 				instrumentoIIItxt[13] = textField_13.getText();
 				instrumentoIIItxt[14] = textField_14.getText();
@@ -781,6 +781,7 @@ public class I33 extends I22 {
 				instrumentoIIItxt[17] = textField_17.getText();
 				instrumentoIIItxt[18] = textField_18.getText();
 				instrumentoIIItxt[19] = textField_19.getText();
+				
 				
 				
 				

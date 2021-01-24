@@ -409,6 +409,7 @@ public class I11 extends menu1 {
 		spinner23.setBounds(705, 353, 30, 20);
 		spinner29.add(spinner23);
 		
+		
 		JLabel lblNewLabel_6_1_1_1_5 = new JLabel("23");
 		lblNewLabel_6_1_1_1_5.setBounds(745, 360, 46, 14);
 		spinner29.add(lblNewLabel_6_1_1_1_5);

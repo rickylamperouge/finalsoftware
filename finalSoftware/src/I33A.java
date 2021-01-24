@@ -737,6 +737,7 @@ public class I33A extends I33 {
 				//DESARROLLO Y USO DE MÉTODOS Y ESTRATEGIAS DE ENSEÑANZA
 				instrumentoIIIA[17] = (int) spinner_18.getValue();
 				instrumentoIIIA[18] = (int) spinner_19.getValue();
+				
 				//Texto
 				instrumentoIIIAtxt = new String[30];
 				instrumentoIIIAtxt[0] = textField.getText();

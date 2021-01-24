@@ -539,6 +539,7 @@ public class formulas extends I44 {
 		double puntuacionCalFcatedratico = (A*i1f+B*totalI2+C*valenciaCalFpromI3+D*valenciaCalFpromI4)*(CDfCatedratrico/3);
 
 		
+		
 		//termina calidad docente fomula f
 		
 		//calidad docente g y h

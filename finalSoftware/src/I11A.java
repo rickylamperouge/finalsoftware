@@ -556,6 +556,7 @@ public class I11A extends I11 {
 				
 				
 				
+				
 				//Imprimir total
 				for(int i = 0; i < 24;i++)
 				{
