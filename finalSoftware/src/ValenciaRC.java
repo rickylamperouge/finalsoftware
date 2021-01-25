@@ -1053,27 +1053,28 @@ try{
 			try{
 					        	
 					            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
-					            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://C://Users//jonat//Dropbox//My PC (LAPTOP-ABBV6MT5)//Documents//proyecto3.accdb");//Establishing Connection
+					            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
 					            System.out.println("Connected Successfully");
 					            
 					            PreparedStatement preparedStatement=connection.prepareStatement("insert into valenciaRC(ID,codigoclase,fecha,nombre,Respuesta) values(?,?,?,?,?)");
 					            //Setting values for Each Parameter
 					            //Linea 1
-					           
+					           for(int i = 0; i < 18; i++)
+					           {
 					        	preparedStatement.setInt(1,1);
 					            preparedStatement.setString(2,clase);
 					            preparedStatement.setString(3,fecha);
 					            preparedStatement.setString(4,profesor);
-					            preparedStatement.setString(5,valenciaRCAString[0]);
+					            preparedStatement.setString(5,valenciaRCAString[i]);
 					            preparedStatement.executeUpdate();
 					            System.out.println("Guardado ValenciaRC");
-					            
+					           }
 					            
 			
 			
 					        }
 					        catch(Exception e){
-					            System.out.println("Error in connection");
+					            System.out.println("Error in connection Valencia RC");
 			
 					        }
 				
@@ -1231,7 +1232,7 @@ try{
 				
 					
 					document.close();
-					
+					dispose();
 					
 					} catch (Exception e ) {
 						System.err.println(e);

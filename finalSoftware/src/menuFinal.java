@@ -73,7 +73,7 @@ public class menuFinal extends JFrame {
 		      			  if (username.equals(usernameDB) && password.equals(passwordDB))
 		      			  {
 		      				  System.out.println("Login Successful");
-		      				  new menu1().setVisible(true);
+		      				  new registro().setVisible(true);
 		      				  dispose();
 		      			  }
 		      			  else

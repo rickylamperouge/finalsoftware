@@ -181,6 +181,18 @@ public class menu1 extends menuFinal {
 	 public double puntuacionCDP3;
 	
 	//Termina Crecimiento y desarrollo profesional
+	 
+	 
+	 
+	 
+	 
+	 
+
+	 
+	 
+	 
+	 
+	 
 
 	private JPanel contentPane;
 

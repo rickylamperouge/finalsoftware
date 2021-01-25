@@ -24,6 +24,7 @@ import javax.swing.SwingConstants;
 import java.awt.SystemColor;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
@@ -69,6 +70,7 @@ public class valenciaRCA extends menu1 {
 	private JTextField textField_29;
 	private JTextField textField_30;
 	private JTextField textField_31;
+	private JTextField textField_32;
 
 	/**
 	 * Launch the application.
@@ -969,6 +971,16 @@ public class valenciaRCA extends menu1 {
 				textField_7.setText(valenciaRCAString[4]);
 				textField_8.setText(valenciaRCAString[5]);
 				textField_9.setText(valenciaRCAString[6]);
+				
+				textField_32 = new JTextField();
+				textField_32.setColumns(10);
+				textField_32.setBounds(85, 190, 223, 19);
+				panel.add(textField_32);
+				
+				JLabel lblClase = new JLabel("Clase:");
+				lblClase.setFont(new Font("Arial", Font.BOLD, 12));
+				lblClase.setBounds(23, 186, 73, 28);
+				panel.add(lblClase);
 				textField_10.setText(valenciaRCAString[7]);
 				textField_11.setText(valenciaRCAString[8]);
 				textField_12.setText(valenciaRCAString[9]);
@@ -992,10 +1004,52 @@ public class valenciaRCA extends menu1 {
 		JButton btnNewButton = new JButton("Finalizar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-			Document document = new Document();	
-			String profesor = textField.getText();	
-			String fecha = textField_1.getText();
-			String departamento = textField_2.getText();
+				Document document = new Document();	
+				String profesor = textField.getText();	
+				String fecha = textField_1.getText();
+				String departamento = textField_2.getText();
+				String clase = textField_32.getText();
+				
+				
+				
+				
+			try{
+					        	
+					            Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");//Loading Driver
+					            Connection connection = DriverManager.getConnection("jdbc:ucanaccess://E://proyecto3.accdb");//Establishing Connection
+					            System.out.println("Connected Successfully");
+					            
+					            PreparedStatement preparedStatement=connection.prepareStatement("insert into valenciaRCA(ID,codigoclase,fecha,nombre,Respuesta) values(?,?,?,?,?)");
+					            //Setting values for Each Parameter
+					            //Linea 1
+					           for(int i = 0; i < 18; i++)
+					           {
+					        	preparedStatement.setInt(1,1);
+					            preparedStatement.setString(2,clase);
+					            preparedStatement.setString(3,fecha);
+					            preparedStatement.setString(4,profesor);
+					            preparedStatement.setString(5,valenciaRCAString[i]);
+					            preparedStatement.executeUpdate();
+					            System.out.println("Guardado ValenciaRCA");
+					           }
+					            
+			
+			
+					        }
+					        catch(Exception e){
+					            System.out.println("Error in connection Valencia RC");
+			
+					        }
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			try {
 				
 				
@@ -1145,7 +1199,7 @@ public class valenciaRCA extends menu1 {
 			
 				
 				document.close();
-				
+				dispose();
 				
 				} catch (Exception e ) {
 					System.err.println(e);
