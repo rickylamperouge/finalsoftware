@@ -970,7 +970,7 @@ public class valenciaRCA extends menu1 {
 				textField_6.setText(valenciaRCAString[3]);
 				textField_7.setText(valenciaRCAString[4]);
 				textField_8.setText(valenciaRCAString[5]);
-				textField_9.setText(valenciaRCAString[6]);
+				textField_9.setText("8");
 				
 				textField_32 = new JTextField();
 				textField_32.setColumns(10);
@@ -994,6 +994,76 @@ public class valenciaRCA extends menu1 {
 				textField_20.setText(valenciaRCAString[17]);
 				
 				
+				double totalparteI = 0;
+				double totalparteII = 0;
+				double totalparteIII = valenciaRCA[11];
+				double totalparteIV = 0;
+				double totalparteV = 0;
+				double totalFinal = 0;
+				for(int i = 0; i < 7;i++)
+				{
+					totalparteI = valenciaRCA[i] + totalparteI;
+				}
+				if(totalparteI > 66)
+				{
+					totalparteI = 66;
+				}
+				
+				for(int i = 7; i < 11;i++)
+				{
+					totalparteII = valenciaRCA[i] + totalparteII;
+				}
+				if(totalparteII > 12)
+				{
+					totalparteII = 11;
+				}
+				
+				if(totalparteIII > 3)
+				{
+					totalparteIII = 2;
+				}
+				
+				for(int i = 12; i < 15;i++)
+				{
+					totalparteIV = valenciaRCA[i] + totalparteIV;
+				}
+				if(totalparteIV > 13)
+				{
+					totalparteIV = 12;
+				}
+				
+				for(int i = 15; i < 18;i++)
+				{
+					totalparteV = valenciaRCA[i] + totalparteV;
+				}
+				if(totalparteV > 11)
+				{
+					totalparteV = 10;
+				}
+				totalFinal = totalparteI + totalparteII + totalparteIII + totalparteIV + totalparteV;
+				valenciaFinal = new String[30];
+				//Print de numeros en formulas 
+						
+							valenciaFinal[0] = Double.toString(totalparteI);
+							valenciaFinal[1] = Double.toString(totalparteII);
+							valenciaFinal[2] = Double.toString(totalparteIII);
+							valenciaFinal[3] = Double.toString(totalparteIV);
+							valenciaFinal[4] = Double.toString(totalparteV);
+							valenciaFinal[5] = Double.toString(totalFinal);
+					
+				
+				textField_21.setText(valenciaFinal[0]);
+				textField_22.setText(valenciaFinal[1]);
+				textField_23.setText(valenciaFinal[2]);
+				textField_24.setText(valenciaFinal[3]);
+				textField_25.setText(valenciaFinal[4]);
+				textField_26.setText(valenciaFinal[5]);
+				
+				
+				//**********************************
+				
+		
+				
 				
 				
 				
@@ -1009,6 +1079,11 @@ public class valenciaRCA extends menu1 {
 				String fecha = textField_1.getText();
 				String departamento = textField_2.getText();
 				String clase = textField_32.getText();
+				String profesorpg4 = textField_27.getText();
+				String forma = textField_28.getText();
+				String titulo = textField_29.getText();
+				String firmapg4 = textField_30.getText();
+				String fechapg4 = textField_31.getText();
 				
 				
 				
@@ -1195,7 +1270,22 @@ public class valenciaRCA extends menu1 {
 				table.addCell(valenciaRCAString[17]);
 				document.add(table);
 				
+				document.add(d);
 				
+				Paragraph e = new Paragraph("El/ la profesor/a :" + profesorpg4 + "cumple con los criterios requeridos para el Rango de Catedrático Asociado según"
+						+ "consta en la Parte II, 2.2.4 del Manual de Facultad y cumple con los criterios de Experiencia y Calidad Docente, Servicio a la Institución"
+						+ "y Servicio a la Comunidad, según descritos en la Parte V, 5.6 y en las Guías para la Evaluación del Personal Docente,"
+						+ "correspondientes al rango que solicita.");
+				document.add(e);
+				
+				Paragraph f = new Paragraph("Este comité recomienda en forma " + forma + "que se le otorgue a el/la " + titulo + " el ascenso en ranco de Catedratico/a Auxiliar a Catratico/a Asociado/a");
+				document.add(f);
+				
+				Paragraph g = new Paragraph("Firma: " + firmapg4);
+				document.add(g);
+				
+				Paragraph h = new Paragraph("Fecha: " + fechapg4);
+				document.add(h);
 			
 				
 				document.close();

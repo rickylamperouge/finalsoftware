@@ -65,6 +65,7 @@ public class menu1 extends menuFinal {
 	public int[] valenciaRCA;
 	public double[] valenciaRCB;
 	public String[] valenciaRCAString;
+	public String[] valenciaFinal;
 
 	
 	public String[] instrumentoIIItxt;
